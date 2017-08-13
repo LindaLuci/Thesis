@@ -1,0 +1,23 @@
+http://www.slony.info/images/Slony-I-concept.pdf   ( concetti provider / subscriber)   (provider o publisher) 
+
+Postgres sql: (vers. 9.6)
+
+https://www.postgresql.org/about/
+
+
+Postgresql (REPLCA concept)
+https://wiki.postgresql.org/wiki/Replication,_Clustering,_and_Connection_Pooling
+
+https://www.postgresql.org/docs/9.1/static/high-availability.html
+
+https://www.postgresql.org/docs/9.1/static/warm-standby.html#SYNCHRONOUS-REPLICATION  (<-- la funzionalità che vogliamo sfruttare come replica sincrona)
+
+
+Pglogical:
+https://www.2ndquadrant.com/en/resources/pglogical/
+
+https://www.2ndquadrant.com/en/resources/pglogical/pglogical-docs/
+
+
+CASSANDRA
+http://www.ingegneria-informatica.unina.it/sites/default/files/elaborati_tesi/2016/10/Elaborato%20Cutillo%20Stefano%20N46001738.pdf
