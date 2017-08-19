@@ -1,4 +1,25 @@
 \chapter{Definizione del quadro sperimentale}
+\textbf{DA RIVEDERE - http://www.slony.info/images/Slony-I-concept.pdf}\\
+Failover: While it is relatively easy to tell in a master to multiple slave scenar io
+which of the slaves is most recent at the time the master fails, it is
+near ly impossible to tell the actual row delta between two slaves. So in
+the case of a failing master, one slave can be promoted to the master,
+but all other slaves need to be re-synchronized with the new master.
+Perfor mance:
+Stor ing the logging infor mation in one or ver y fe w rotating log tables
+means that the replication engine can retrieve the actual data for one
+replication step with ver y fe w quer ies that select from one table only. In
+contrast to that a system that fetches the current values from the application
+tables at replication time needs to issue the same number of
+quer ies per replicated table and these queries will be joining the log
+table(s) with the application data table. It is obvious that this systems
+perfor mance will be reverse proportional to the number of replicated
+tables. At some time the complete delta to be applied, which can not
+be split as pointed out already, will cause the PostgreSQL database
+system to require less optimal than in memory hash join query plans to
+deal with the number of rows returned by these queries and the replication
+system will be unable to ever catch up unless the wor kload on
+the master drops significantly
 \section{Lancio in configurazione 1}
 \section{Lancio in configurazione 2}
 \section{Lancio in configurazione 3}
