@@ -1,8 +1,24 @@
+%\documentclass{book}
+%\begin{document}
 \chapter{Definizione del problema}
 \setcounter{section}{1}
-
 (replicazione dei dati - introduzione)
 \subsection{Cluster di database}
+Un cluster \`{e} una raccolta di componenti che garantisce scalabit\`{a} e disponibilit\`{a} distribuendone i costi. Un cluster di database (SQL usa il termine cluster di catalogo) \`{e} una collezione di database gestiti da una singola istanza di un server database in esecuzione. Un'istanza \`{e} la raccolta di memoria e processi che interagiscono con un database, cioè l'insieme di file fisici che effettivamente memorizzano i dati. A tal fine, \`{e} possibile creare un cluster di database per applicazioni enterprise high-end, memorizzando e elaborando informazioni sui nodi. L'architettura per un cluster di database \`{e} distinta da come le responsabilit\`{a} dei dati sono condivise tra i nodi di calcolo.
+
+Il clustering offre due vantaggi principali, specialmente in un ambiente di database di alto volume:
+\begin{itemize}
+\item 
+Fault tolerance (tolleranza di guasti): poich\'{e} esiste pi\`{u} di un server o istanza per gli utenti a cui connettersi, il cluster offre un'alternativa, in caso di guasto del singolo server.
+\item
+Load balancing (bilanciamento del carico): la funzionalit\`{a} di clustering \`{e} generalmente impostata per consentire agli utenti di essere assegnati automaticamente al server con il minor carico.
+\end{itemize}
+
+In un'architettura shared-nothing, il partizionamento è tale che ogni nodo di calcolo possiede un sottoinsieme dei dati. Ovvero, un nodo operer\`{a} esclusivamente su un particolare sottoinsieme. La scalabilit\`{a} dipende ovviamente da una giudiziosa partizione. Il partizionamento fisico può essere che un nodo di calcolo pone la sua porzione di dati sul proprio disco locale e che tutti i nodi siano collegati tramite una rete ad alta velocit\`{a}. Tale schema - che assomiglia a una rete di storage - riduce la tolleranza agli errori come un crash di nodi rende inaccessibile una parte del database. Pertanto, la partizione fisica può effettivamente condividere i dischi in modo che un nodo possa "assumere" se un altro nodo si blocca.
+Questa architettura è di gran lunga la più popolare; IBM DB2, Microsoft SQL Server, Cluster MySQL e MPP di Bizgres (basati su PostgreSQL) seguono questo schema. L'aspetto negativo di questa configurazione \`{e} la difficolt\`{a} di installazione e manutenzione.
+In un'architettura shared-everything (o shared-disk), qualsiasi nodo di calcolo può operare in qualsiasi parte del database. Il layout fisico di solito prevede la memorizzazione in rete, in cui tutti i nodi comunicano con un disco condiviso separato (spesso un RAID) tramite un'interconnessione ad alta velocit\`{a} (tradizionalmente Fibre Channel). Ancora una volta, la partizione logica \`{e} la chiave per la scalabilit\`{a}. L'ovvio difetto di un'architettura condivisa \`{e} che ci pu\`{o} essere un'enorme contesa quando numerosi nodi tentano di comunicare contemporaneamente con il disco.
+Come tale, l'unico importante fornitore di database che offre un'architettura condivisa in tutto \`{e} Oracle, il cui prodotto RAC (Real Application Cluster) costruisce una cache condivisa su ciascuno dei nodi di calcolo tramite "Cache Fusion". Questa tecnologia utilizza la rete ad alta velocit\`{a} per mantenere la coerenza della cache.
+Entrambe le architetture possono richiedere tre diverse interconnessioni: Ethernet per la gestione, InfiniBand o Myrinet per la comunicazione internode e Fibre Channel per la comunicazione in blocchi. Data l'andamento della commodificazione, \`{e} possibile che iWARP o Myri-10G emergano come singola interconnessione per un database cluster.
 \subsection{Rete di pari}
 \subsection{Sistemi di ridondanza disco (RAID)}
 \subsection{Codice di correzione errore (erasure coding)}
@@ -10,7 +26,7 @@
 \section{Software utilizzato per gli esperimenti}
 \subsection{PosgreSQL}
 
-\textbf{(spiegazione cinci -audio-}
+\textbf{(spiegazione cinci -audio-)}
 Uno dei punti di forza che ha reso famoso e versatile Posgres è che è un DBMS (Database Management System è un sistema software progettato per consentire la creazione e manipolazione efficiente di database (ovvero di collezioni di dati strutturati) ) (scritto in C). Ha dei rametti dove te riesci ad agganciarci dei software fatti ad OC. te ti agganci a un sistema di segnalistica interna e lui quindi tramite messaggi di scambio interno ti permette di lavorare (ti dice "ho fatto l'inserimento di questa tabella(INSERT), ti scatta il segnale, e te riesci a intercettare e quindi fare delle operazioni)
 
 Pg Logical è un estensione di Posgres. Lui capisce quando fa inserimenti e riesce a duplicare soltando parti di database. Mentre replica di posgres per adesso ti replicherebbe tutto il DB. Invece noi si fa con solo tabelle (R) o quanti record di tabelle (per id maggiori di x) adirittura si vogliono replicare o colonne di tabelle \\
@@ -168,3 +184,4 @@ Le modifiche del database in tempo reale ad altri sistemi
 \texttt{DA METTERE? DIFFERENZA TRA PG LOGICAL E BDR}
 Replica pglogical Bi-Directional Replication (BDR)?
 No. pglogical non fornisce funzionalità complete di replica multi-master e un supporto di modifica dello schema coerente, come fa la BDR. Pglogical incorpora le funzionalità di BDR e le lezioni apprese da BDR per produrre una soluzione più semplice e più semplice da utilizzare per la replica unidirezionale, utilizzabile da più persone per una vasta gamma di casi di utilizzo. BDR è stato progettato innanzitutto per il multi-master della rete a n-way, e questo è stato difficile adattarsi bene alla replica mono-master a senso unico.
+%\end{document}
