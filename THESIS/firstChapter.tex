@@ -4,21 +4,41 @@
 \setcounter{section}{1}
 (replicazione dei dati - introduzione)
 \subsection{Cluster di database}
-Un cluster \`{e} una raccolta di componenti che garantisce scalabit\`{a} e disponibilit\`{a} distribuendone i costi. Un cluster di database (SQL usa il termine cluster di catalogo) \`{e} una collezione di database gestiti da una singola istanza di un server database in esecuzione. Un'istanza \`{e} la raccolta di memoria e processi che interagiscono con un database, cioè l'insieme di file fisici che effettivamente memorizzano i dati. A tal fine, \`{e} possibile creare un cluster di database per applicazioni enterprise high-end, memorizzando e elaborando informazioni sui nodi. L'architettura per un cluster di database \`{e} distinta da come le responsabilit\`{a} dei dati sono condivise tra i nodi di calcolo.
+Un cluster \`{e} una raccolta di componenti che garantisce scalabit\`{a} e disponibilit\`{a} distribuendone i costi. Un cluster di database (SQL usa il termine cluster di catalogo) \`{e} una collezione di database gestiti da una singola istanza di un server database in esecuzione. Un'istanza \`{e} la raccolta di memoria e processi che interagiscono con un database, cio\`{e} l'insieme di file fisici che effettivamente memorizzano i dati.\cite{etichetta1} A tal fine, \`{e} possibile creare un cluster di database per applicazioni enterprise high-end, memorizzando e elaborando informazioni sui nodi.\\ L'architettura per un cluster di database \`{e} distinta da come le responsabilit\`{a} dei dati sono condivise tra i nodi di calcolo.
 
-Il clustering offre due vantaggi principali, specialmente in un ambiente di database di alto volume:
+Seguono due dei vantaggi principarli offerti dal clustering, specialmente in un ambiente di database di alto volume:
 \begin{itemize}
 \item 
-Fault tolerance (tolleranza di guasti): poich\'{e} esiste pi\`{u} di un server o istanza per gli utenti a cui connettersi, il cluster offre un'alternativa, in caso di guasto del singolo server.
+Fault tolerance (tolleranza di guasti): in caso di guasto del singolo server, il cluster offre un'alternativa, poich\'{e} esiste pi\`{u} di un server o istanza per gli utenti a cui connettersi.
 \item
-Load balancing (bilanciamento del carico): la funzionalit\`{a} di clustering \`{e} generalmente impostata per consentire agli utenti di essere assegnati automaticamente al server con il minor carico.
+Load balancing (bilanciamento del carico): la funzionalit\`{a} di clustering \`{e} generalmente impostata per consentire agli utenti di essere assegnati automaticamente al server con il minor carico.\cite{etichetta1} 
 \end{itemize}
+Ci sono differenti tipi di architetture clustering, che si diversificano da come vengono memorizzati i dati e allocate le risorse.
+La prima modalit\`{a} di clustering \`{e} conosciuta come architettura "Shared-Nothing" (SN). \`{E} un'architettura di elaborazione distribuita in cui ogni nodo/server \`{e} del tutto indipendente e autonomo, pertanto nessuno dei nodi condivide memoria o archiviazione del disco. Pi\`{u} generalmente, non esiste un unico punto di contesa nel sistema.\cite{etichetta5} Il partizionamento \`{e} tale che ogni nodo possiede un sottoinsieme dei dati, ovvero un nodo operer\`{a} esclusivamente su un particolare sottoinsieme. 
+((Un esempio di questa forma di clustering potrebbe essere quando un'azienda ha pi\`{u} data centers per un unico sito web. Con molti server in tutto il mondo, nessun singolo server \`{e} un "master".))\\
 
-In un'architettura shared-nothing, il partizionamento è tale che ogni nodo di calcolo possiede un sottoinsieme dei dati. Ovvero, un nodo operer\`{a} esclusivamente su un particolare sottoinsieme. La scalabilit\`{a} dipende ovviamente da una giudiziosa partizione. Il partizionamento fisico può essere che un nodo di calcolo pone la sua porzione di dati sul proprio disco locale e che tutti i nodi siano collegati tramite una rete ad alta velocit\`{a}. Tale schema - che assomiglia a una rete di storage - riduce la tolleranza agli errori come un crash di nodi rende inaccessibile una parte del database. Pertanto, la partizione fisica può effettivamente condividere i dischi in modo che un nodo possa "assumere" se un altro nodo si blocca.
-Questa architettura è di gran lunga la più popolare; IBM DB2, Microsoft SQL Server, Cluster MySQL e MPP di Bizgres (basati su PostgreSQL) seguono questo schema. L'aspetto negativo di questa configurazione \`{e} la difficolt\`{a} di installazione e manutenzione.
-In un'architettura shared-everything (o shared-disk), qualsiasi nodo di calcolo può operare in qualsiasi parte del database. Il layout fisico di solito prevede la memorizzazione in rete, in cui tutti i nodi comunicano con un disco condiviso separato (spesso un RAID) tramite un'interconnessione ad alta velocit\`{a} (tradizionalmente Fibre Channel). Ancora una volta, la partizione logica \`{e} la chiave per la scalabilit\`{a}. L'ovvio difetto di un'architettura condivisa \`{e} che ci pu\`{o} essere un'enorme contesa quando numerosi nodi tentano di comunicare contemporaneamente con il disco.
-Come tale, l'unico importante fornitore di database che offre un'architettura condivisa in tutto \`{e} Oracle, il cui prodotto RAC (Real Application Cluster) costruisce una cache condivisa su ciascuno dei nodi di calcolo tramite "Cache Fusion". Questa tecnologia utilizza la rete ad alta velocit\`{a} per mantenere la coerenza della cache.
-Entrambe le architetture possono richiedere tre diverse interconnessioni: Ethernet per la gestione, InfiniBand o Myrinet per la comunicazione internode e Fibre Channel per la comunicazione in blocchi. Data l'andamento della commodificazione, \`{e} possibile che iWARP o Myri-10G emergano come singola interconnessione per un database cluster.
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.70]{img/Shared_Nothing_Architecture.jpg}\\
+\caption{Architecture Shared Nothing \label{figura1.1} \cite{etichetta7}}
+\end{figure}
+
+I vantaggi dell'architettura SN rispetto a un'entit\`{a} centrale che controlla la rete (un'architettura basata su controller) riguarda l'eliminazione di qualsiasi singolo punto di guasto, consentendo funzionalit\`{a} di (self-healing) auto-riparazione e fornendo un vantaggio nell'offrire aggiornamenti non distruttivi.\cite{etichetta6} 
+
+\textbf{DA LEGGERE PER BENE ARTICOLO CITATO.}
+
+Shared-nothing \`{e} anche noto come "database sharding". In generale, un sistema SN divide i suoi dati in vari nodi su database diversi o pu\`{o} richiedere a ciascun nodo di mantenere la propria copia dei dati dell'applicazione utilizzando un qualche tipo di protocollo di coordinamento.\cite{etichetta5}\\
+
+In un'architettura "shared-disk" (disco condiviso), anche chiamata "shared-everything", tutti i dati vengono memorizzati centralmente e quindi hanno accesso tramite istanze memorizzate su diversi server o nodi.
+\textbf{DA INSERIRE TUTTO PRIMA DELL' IMMAGINE.}
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/Shared_Disk_Architecture.jpg}\\
+\caption{Architecture Shared Disk - Shared Everything \label{figura1.2} \cite{etichetta7}}
+\end{figure}
+
+La distinzione tra i due tipi \`{e} diventata confusa di recente con l'introduzione di grid computing o distribuzione cache. In questa configurazione, i dati sono ancora gestiti centralmente, ma controllati da un potente "server virtuale" composto da molti server che lavorano insieme come uno.\cite{etichetta2} 
+
 \subsection{Rete di pari}
 \subsection{Sistemi di ridondanza disco (RAID)}
 \subsection{Codice di correzione errore (erasure coding)}
@@ -165,20 +185,20 @@ I diagrammi che seguono descrivono i gestori di database delle funzioni che sono
 \centering
 Migrare e aggiornare PostgreSQL con tempi di inattivit\`a quasi a zero
 \includegraphics[scale=0.70]{img/pglogical_1.png}\\
-\caption{Migrazione e aggiornamenti PostgreSQL \label{figura1} \cite{etichetta1}}
+\caption{Migrazione e aggiornamenti PostgreSQL \label{figura1} \cite{etichetta3}}
 Accumulare le modifiche provenienti da server di database scartati in un data warehouse
 \includegraphics[scale=0.70]{img/pglogical_2.png}\\
 \caption{Aggregazione \label{figura2} 
-\cite{etichetta2}}
+\cite{etichetta4}}
 \end{figure}
 \begin{figure}[htbp]
 \centering
 Copiare tutti o una selezione di tabelle di database ad altri nodi di un cluster
 \includegraphics[scale=0.70]{img/pglogical_3.png}\\
-\caption{A cascata e distribuzione dati \label{figura3} \cite{etichetta2}}
+\caption{A cascata e distribuzione dati \label{figura3} \cite{etichetta4}}
 Le modifiche del database in tempo reale ad altri sistemi
 \includegraphics[scale=0.70]{img/pglogical_4.png}\\
-\caption{A cascata e distribuzione dati \label{figura4} \cite{etichetta2}}
+\caption{A cascata e distribuzione dati \label{figura4} \cite{etichetta4}}
 \end{figure}
 
 \texttt{DA METTERE? DIFFERENZA TRA PG LOGICAL E BDR}

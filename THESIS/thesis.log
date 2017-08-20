@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.3)  19 AUG 2017 20:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.3)  21 AUG 2017 01:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1132,7 +1132,9 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (./thesis.aux
-(./titlePage.aux) (./firstChapter.aux))
+(./titlePage.aux) (./firstChapter.aux) (./secondChapter.aux)
+(./thirdChapter.aux) (./fourthChapter.aux) (./esercizi.aux)
+(./Chapters/bibliografia.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
@@ -1334,7 +1336,7 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 \openout2 = `titlePage.aux'.
 
  (./titlePage.tex
-<logo/LOGO.pdf, id=44, 996.72375pt x 483.8075pt>
+<logo/LOGO.pdf, id=96, 996.72375pt x 483.8075pt>
 File: logo/LOGO.pdf Graphic file (type pdf)
  <use logo/LOGO.pdf>
 Package pdftex.def Info: logo/LOGO.pdf used on input line 10.
@@ -1362,7 +1364,11 @@ File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 )) [2]
 Package tocbasic Info: character protrusion at toc deactivated on input line 10
 5.
- (./thesis.toc)
+ (./thesis.toc
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
+)
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -1380,7 +1386,13 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 10
 6.
- (./thesis.lof)
+ (./thesis.lof
+Overfull \hbox (11.41243pt too wide) in paragraph at lines 6--6
+ [][] [][]\T1/pplj/m/n/12 (-20) Architecture Shared Di-sk - Shared Eve-ry-thing
+ [[]][] []  
+ []
+
+)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
@@ -1394,38 +1406,6 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 10
 \openout2 = `firstChapter.aux'.
 
  (./firstChapter.tex
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \documentclass
-                  {book}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.2 \begin{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[7
-
-] [8
-
-
-]
 chapter 1.
 
 Class scrbook Warning: \float@addtolists detected!
@@ -1442,153 +1422,49 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplj/m/sc/12'.
-(microtype)             Ignoring protrusion settings for this character.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 6.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.17 ...partizione. Il partizionamento fisico può
-                                                   essere che un nodo di cal...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Extra }, or forgotten $.
-\mathtwosuperior ->{^2}
-                       
-l.17 ...partizione. Il partizionamento fisico può
-                                                   essere che un nodo di cal...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
-
-LaTeX Warning: Command \` invalid in math mode on input line 17.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 17.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 18.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 18.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.18 Questa architettura è
-                            di gran lunga la più popolare; IBM DB2, Microso...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.18 Questa architettura è
-                            di gran lunga la più popolare; IBM DB2, Microso...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.18 Questa architettura è
-                            di gran lunga la più popolare; IBM DB2, Microso...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 18.
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 18.
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 18.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 19.
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 19.
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 19.
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 19.
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 19.
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 19.
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 20.
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 20.
-
-
-LaTeX Warning: Command \` invalid in math mode on input line 21.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.22 \subsection{Rete di pari}
-                              
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.22 \subsection{Rete di pari}
-                              
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no � in font zeuex10!
-
-Overfull \hbox (482.89816pt too wide) in paragraph at lines 17--22
-\T1/pplj/m/n/12 (-20) pu�$[]\U/zeur/m/n/12 esserecheunnododicalcoloponelasuapor
-zionedidatisulpropriodiscolocaleechetuttiinodisianocollegatitramiteunareteadalt
-avelocit\T1/pplj/m/n/12 (-20) �.\U/zeur/m/n/12 Taleschema \U/zeus/m/n/12 ^^@
  []
 
+[7
 
-Overfull \hbox (9147.60753pt too wide) in paragraph at lines 17--22
-\U/zeur/m/n/12 cheassomigliaaunaretedistorage \U/zeus/m/n/12 ^^@ \U/zeur/m/n/12
- riducelatolleranzaaglierroricomeuncrashdinodirendeinaccessibileunapartedeldata
-base\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 Pertanto; lapartizionefisicapu\T1/ppl
-j/m/n/12 (-20) �[]\U/zeur/m/n/12 effettivamentecondividereidischiinmodocheunnod
-opossa\T1/pplj/m/n/12 (-20) "\U/zeur/m/n/12 assumere\T1/pplj/m/n/12 (-20) "\U/z
-eur/m/n/12 seunaltronodosiblocca\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 Questaarc
-hitettura\T1/pplj/m/n/12 (-20) �[]$ 
- []
 
+
+] <img/Shared_Nothing_Architecture.jpg, id=204, 501.875pt x 379.4175pt>
+File: img/Shared_Nothing_Architecture.jpg Graphic file (type jpg)
+
+<use img/Shared_Nothing_Architecture.jpg>
+Package pdftex.def Info: img/Shared_Nothing_Architecture.jpg used on input line
+ 22.
+(pdftex.def)             Requested size: 351.31009pt x 265.59042pt.
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 29.
-[9]
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 28.
+
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+<img/Shared_Disk_Architecture.jpg, id=209, 715.67375pt x 512.91624pt>
+File: img/Shared_Disk_Architecture.jpg Graphic file (type jpg)
+
+<use img/Shared_Disk_Architecture.jpg>
+Package pdftex.def Info: img/Shared_Disk_Architecture.jpg used on input line 36
+.
+(pdftex.def)             Requested size: 286.26442pt x 205.16286pt.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+ [8 <./img/Shared_Nothing_Architecture.jpg>] [9 <./img/Shared_Disk_Architecture
+.jpg>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.39 In PostgreSQL, ma il discorso può
+l.59 In PostgreSQL, ma il discorso può
                                         essere allargato a tutti i gestori d...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1596,7 +1472,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathtwosuperior ->{^2}
                        
-l.39 In PostgreSQL, ma il discorso può
+l.59 In PostgreSQL, ma il discorso può
                                         essere allargato a tutti i gestori d...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1605,21 +1481,21 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 40.
+LaTeX Warning: Command \~ invalid in math mode on input line 60.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 40.
+LaTeX Warning: Command \~ invalid in math mode on input line 60.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.41 
+l.61 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (1765.75903pt too wide) in paragraph at lines 39--41
+Overfull \hbox (1765.75903pt too wide) in paragraph at lines 59--61
 []\T1/pplj/m/n/12 (-20) In Post-gre-SQL, ma il di-scor-so pu�$[]\U/zeur/m/n/12 
 essereallargatoatuttiigestorididatabaserelazionali; idativengonorappresentatiat
 traversodelletabelleeletabellesonogestiteutilizzandounlinguaggiodialtolivelloch
@@ -1629,10 +1505,6 @@ todigestireleoperazionidiarchiviazioneedisalvaguardiadell[]integrit\T1/pplj/m/n
 /12 (-20) � \U/zeur/m/n/12 deidatiallocati\T1/pplj/m/n/12 (-20) .$ 
  []
 
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplj/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-[10]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `latin1'.
@@ -1641,7 +1513,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.78 ...lied at least to the new master (if that�
+l.98 ...lied at least to the new master (if that�
                                                   �s not the same system) be...
 
 You need to provide a definition with \DeclareInputText 
@@ -1655,17 +1527,17 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.78 ...ied at least to the new master (if that’
+l.98 ...ied at least to the new master (if that’
                                                   s not the same system) before
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[11] [12]
+[10] [11] [12]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.146 ...eSQL 9.4). Pglogical funziona ancora più
+l.166 ...eSQL 9.4). Pglogical funziona ancora più
                                                    veloce con PostgreSQL 9.5...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1673,7 +1545,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathonesuperior ->{^1}
                        
-l.146 ...eSQL 9.4). Pglogical funziona ancora più
+l.166 ...eSQL 9.4). Pglogical funziona ancora più
                                                    veloce con PostgreSQL 9.5...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1684,13 +1556,13 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.147 
+l.167 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (240.68202pt too wide) in paragraph at lines 145--147
+Overfull \hbox (240.68202pt too wide) in paragraph at lines 165--167
 \T1/pplj/m/n/12 (-20) gi-cal fun-zio-na an-co-ra pi�$[]\U/zeur/m/n/12 velocecon
 PostgreSQL9\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 5esuccessive; conbassioverhead
 suentrambiiprovidereabbonati\T1/pplj/m/n/12 (-20) .$ 
@@ -1699,7 +1571,7 @@ suentrambiiprovidereabbonati\T1/pplj/m/n/12 (-20) .$
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.157 ...se da BDR per produrre una soluzione più
+l.177 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1707,7 +1579,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathonesuperior ->{^1}
                        
-l.157 ...se da BDR per produrre una soluzione più
+l.177 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1716,21 +1588,21 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 157.
+LaTeX Warning: Command \~ invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 157.
+LaTeX Warning: Command \~ invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 157.
+LaTeX Warning: Command \~ invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 157.
+LaTeX Warning: Command \" invalid in math mode on input line 177.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.157 ...a vasta gamma di casi di utilizzo. BDR è
+l.177 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1738,7 +1610,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.157 ...a vasta gamma di casi di utilizzo. BDR è
+l.177 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1748,7 +1620,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.157 ...a vasta gamma di casi di utilizzo. BDR è
+l.177 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1756,15 +1628,15 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 157.
+LaTeX Warning: Command \~ invalid in math mode on input line 177.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 157.
+LaTeX Warning: Command \" invalid in math mode on input line 177.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.157 ...ti-master della rete a n-way, e questo è
+l.177 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1772,7 +1644,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.157 ...ti-master della rete a n-way, e questo è
+l.177 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1782,7 +1654,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.157 ...ti-master della rete a n-way, e questo è
+l.177 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1792,7 +1664,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.158 
+l.178 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1800,7 +1672,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.158 
+l.178 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1811,7 +1683,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.158 
+l.178 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1822,95 +1694,61 @@ my insertion and my current dilemma will both disappear.
 Missing character: There is no � in font zeuex10!
 Missing character: There is no � in font zeuex10!
 
-Overfull \hbox (1217.5255pt too wide) in paragraph at lines 150--158
+Overfull \hbox (1217.5255pt too wide) in paragraph at lines 170--178
 \T1/pplj/m/n/12 (-20) pi�$[]\U/zeur/m/n/12 sempliceepi\T1/pplj/m/n/12 (-20) �[]
 \U/zeur/m/n/12 semplicedautilizzareperlareplicaunidirezionale; utilizzabiledapi
 \T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 personeperunavastagammadicasidiutilizzo
 \T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 BDR\T1/pplj/m/n/12 (-20) �[]$ 
  []
 
-<img/pglogical_1.png, id=128, 652.4375pt x 250.9375pt>
+<img/pglogical_1.png, id=240, 652.4375pt x 250.9375pt>
 File: img/pglogical_1.png Graphic file (type png)
 
 <use img/pglogical_1.png>
-Package pdftex.def Info: img/pglogical_1.png used on input line 167.
+Package pdftex.def Info: img/pglogical_1.png used on input line 187.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 166--167
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 186--187
  [] 
  []
 
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 168.
-
-Package natbib Warning: Citation `etichetta1' on page 13 undefined on input lin
-e 168.
-
-
-Package natbib Warning: Citation `etichetta1' on page 13 undefined on input lin
-e 168.
-
-<img/pglogical_2.png, id=130, 652.4375pt x 250.9375pt>
+<img/pglogical_2.png, id=244, 652.4375pt x 250.9375pt>
 File: img/pglogical_2.png Graphic file (type png)
 
 <use img/pglogical_2.png>
-Package pdftex.def Info: img/pglogical_2.png used on input line 170.
+Package pdftex.def Info: img/pglogical_2.png used on input line 190.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 169--170
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 189--190
  [] 
  []
 
-
-Package natbib Warning: Citation `etichetta2' on page 13 undefined on input lin
-e 172.
-
-
-Package natbib Warning: Citation `etichetta2' on page 13 undefined on input lin
-e 172.
-
-<img/pglogical_3.png, id=131, 652.4375pt x 250.9375pt>
+<img/pglogical_3.png, id=247, 652.4375pt x 250.9375pt>
 File: img/pglogical_3.png Graphic file (type png)
 
 <use img/pglogical_3.png>
-Package pdftex.def Info: img/pglogical_3.png used on input line 177.
+Package pdftex.def Info: img/pglogical_3.png used on input line 197.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 176--177
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 196--197
  [] 
  []
 
-
-Package natbib Warning: Citation `etichetta2' on page 13 undefined on input lin
-e 178.
-
-
-Package natbib Warning: Citation `etichetta2' on page 13 undefined on input lin
-e 178.
-
-<img/pglogical_4.png, id=132, 652.4375pt x 250.9375pt>
+<img/pglogical_4.png, id=250, 652.4375pt x 250.9375pt>
 File: img/pglogical_4.png Graphic file (type png)
 
 <use img/pglogical_4.png>
-Package pdftex.def Info: img/pglogical_4.png used on input line 180.
+Package pdftex.def Info: img/pglogical_4.png used on input line 200.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 179--180
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 199--200
  [] 
  []
-
-
-Package natbib Warning: Citation `etichetta2' on page 13 undefined on input lin
-e 181.
-
-
-Package natbib Warning: Citation `etichetta2' on page 13 undefined on input lin
-e 181.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.186 ...se da BDR per produrre una soluzione più
+l.206 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1918,7 +1756,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathonesuperior ->{^1}
                        
-l.186 ...se da BDR per produrre una soluzione più
+l.206 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1927,21 +1765,21 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 186.
+LaTeX Warning: Command \~ invalid in math mode on input line 206.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 186.
+LaTeX Warning: Command \~ invalid in math mode on input line 206.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 186.
+LaTeX Warning: Command \~ invalid in math mode on input line 206.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 186.
+LaTeX Warning: Command \" invalid in math mode on input line 206.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.186 ...a vasta gamma di casi di utilizzo. BDR è
+l.206 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1949,7 +1787,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.186 ...a vasta gamma di casi di utilizzo. BDR è
+l.206 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1959,7 +1797,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.186 ...a vasta gamma di casi di utilizzo. BDR è
+l.206 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1967,15 +1805,15 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 186.
+LaTeX Warning: Command \~ invalid in math mode on input line 206.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 186.
+LaTeX Warning: Command \" invalid in math mode on input line 206.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.186 ...ti-master della rete a n-way, e questo è
+l.206 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1983,7 +1821,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.186 ...ti-master della rete a n-way, e questo è
+l.206 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1993,29 +1831,27 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.186 ...ti-master della rete a n-way, e questo è
+l.206 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
 If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
-
-Package natbib Warning: There were undefined citations.
-
+)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.187 \end{document}
-                    
+l.114 \include{firstChapter}
+                            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.187 \end{document}
-                    
+l.114 \include{firstChapter}
+                            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -2025,8 +1861,8 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.187 \end{document}
-                    
+l.114 \include{firstChapter}
+                            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -2036,7 +1872,7 @@ my insertion and my current dilemma will both disappear.
 Missing character: There is no � in font zeuex10!
 Missing character: There is no � in font zeuex10!
 
-Overfull \hbox (1217.5255pt too wide) in paragraph at lines 184--187
+Overfull \hbox (1217.5255pt too wide) in paragraph at lines 204--114
 \T1/pplj/m/n/12 (-20) pi�$[]\U/zeur/m/n/12 sempliceepi\T1/pplj/m/n/12 (-20) �[]
 \U/zeur/m/n/12 semplicedautilizzareperlareplicaunidirezionale; utilizzabiledapi
 \T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 personeperunavastagammadicasidiutilizzo
@@ -2044,49 +1880,195 @@ Overfull \hbox (1217.5255pt too wide) in paragraph at lines 184--187
  []
 
 [13] [14 <./img/pglogical_1.png> <./img/pglogical_2.png>] [15 <./img/pglogical_
-3.png> <./img/pglogical_4.png>] [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 187.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 187.
- (./thesis.aux (./titlePage.aux)
-(./firstChapter.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 187.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 187.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: DDA488B1A492B64A2CFE1466F0312E48;773.
- ) )
-(\end occurred inside a group at level 6)
+3.png> <./img/pglogical_4.png>]
+\openout2 = `secondChapter.aux'.
 
-### simple group (level 6) entered at line 186 ({)
-### simple group (level 5) entered at line 157 ({)
-### simple group (level 4) entered at line 146 ({)
-### simple group (level 3) entered at line 39 ({)
-### simple group (level 2) entered at line 17 ({)
-### semi simple group (level 1) entered at line 2 (\begingroup)
-### bottom level
-(\end occurred when \iftrue on line 114 was incomplete)
-(\end occurred when \ifnum on line 114 was incomplete) 
+ (./secondChapter.tex [16
+
+
+
+
+]
+chapter 2.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 4.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+|\T1/pplj/m/sc/12 (-6) c o n -s i -d e -r a -z i o -n i s t a -t i -s t i -c h 
+e s u l -l a r i -d o n -d a n -z a d e l m e -t a -d a -
+ []
+
+) [17]
+\openout2 = `thirdChapter.aux'.
+
+ (./thirdChapter.tex [18
+
+
+
+
+]
+chapter 3.
+) [19]
+\openout2 = `fourthChapter.aux'.
+
+ (./fourthChapter.tex [20
+
+
+
+
+]
+chapter 4.
+) [21]
+\openout2 = `esercizi.aux'.
+
+ (./esercizi.tex [22
+
+
+
+
+]
+chapter 5.
+[23]) [24]
+\openout2 = `Chapters/bibliografia.aux'.
+
+ (./Chapters/bibliografia.tex (./thesis.brf)
+\tf@brf=\write7
+\openout7 = `thesis.brf'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+[]\T1/pplj/m/n/12 (+20) Techopedia - \T1/pplj/m/it/12 (+20) De-fi-ni-tion - Wha
+t does Clu-ste-ring mean? \T1/pplj/m/n/12 (+20) -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--6
+[]\T1/pplj/m/n/12 (+20) Techopedia - \T1/pplj/m/it/12 (+20) Te-cho-pe-dia ex-pl
+ains Clu-ste-ring \T1/pplj/m/n/12 (+20) -
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.10 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+<argument> ...abase_Scaling/Shared_Architectures}}
+                                                   
+l.10 
+     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.10 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.10 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (515.84322pt too wide) in paragraph at lines 10--10
+[]\T1/pplj/m/n/12 (-20) DA RI-GUAR-DA-RE - \T1/pplj/m/it/12 (-20) https://en.wi
+kibooks.org/wiki/Oracle$[]\U/zeur/m/n/12 nd[]B2;[] omparison[]nd[]ompatibility=
+Database[]caling=Shared[]rchitectures \U/zeus/m/n/12 �\U/zeur/m/n/12 Citedonpag
+es []3[];[] 8[]; and []9[]\T1/pplj/m/n/12 (-20) .\U/zeus/m/n/12 �[]$ 
+ []
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.17 \end{thebibliography}
+                          
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) [25
+
+
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
+ (./thesis.aux (./titlePage.aux) (./firstChapter.aux)
+(./secondChapter.aux) (./thirdChapter.aux) (./fourthChapter.aux)
+(./esercizi.aux) (./Chapters/bibliografia.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 440149E02EE53BE379864A589ABD55B8;1779.
+Package rerunfilecheck Info: File `thesis.brf' has not changed.
+(rerunfilecheck)             Checksum: D8249C8348B713F97637625D18C965A0;922.
+ )
+(\end occurred inside a group at level 4)
+
+### simple group (level 4) entered at line 206 ({)
+### simple group (level 3) entered at line 177 ({)
+### simple group (level 2) entered at line 166 ({)
+### simple group (level 1) entered at line 59 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 26477 strings out of 493029
- 474146 string characters out of 6136235
+ 26710 strings out of 493029
+ 477577 string characters out of 6136235
  668731 words of memory out of 5000000
- 29291 multiletter control sequences out of 15000+600000
- 83421 words of font info for 302 fonts, out of 8000000 for 9000
+ 29406 multiletter control sequences out of 15000+600000
+ 82948 words of font info for 333 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,13n,73p,10393b,1088s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf
--dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/euler/eurb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/euler/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8
-a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (18 pages, 306955 bytes).
+ 50i,13n,73p,10393b,1189s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/u
+plb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (27 pages, 433513 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 156 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 77418 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 384 PDF objects out of 1000 (max. 8388607)
+ 323 compressed objects within 4 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 77020 words of extra memory for PDF output out of 89155 (max. 10000000)
 
