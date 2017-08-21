@@ -3,12 +3,12 @@
 \vspace {-\cftbeforepartskip }
 \contentsline {chapter}{\numberline {1}Definizione del problema}{7}{chapter.1}
 \contentsline {subsection}{\numberline {1.1.1}Cluster di database}{7}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Rete di pari}{9}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Sistemi di ridondanza disco (RAID)}{9}{subsection.1.1.3}
-\contentsline {subsection}{\numberline {1.1.4}Codice di correzione errore (erasure coding)}{9}{subsection.1.1.4}
-\contentsline {section}{\numberline {1.2}Hardware utilizzato per gli esperimenti}{9}{section.1.2}
-\contentsline {section}{\numberline {1.3}Software utilizzato per gli esperimenti}{9}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}PosgreSQL}{9}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.1.2}Rete di pari}{10}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Sistemi di ridondanza disco (RAID)}{10}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Codice di correzione errore (erasure coding)}{10}{subsection.1.1.4}
+\contentsline {section}{\numberline {1.2}Hardware utilizzato per gli esperimenti}{10}{section.1.2}
+\contentsline {section}{\numberline {1.3}Software utilizzato per gli esperimenti}{10}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}PosgreSQL}{10}{subsection.1.3.1}
 \contentsline {subsection}{\numberline {1.3.2}Concept Provider-Subscriber}{11}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}PG Logical}{12}{subsection.1.3.3}
 \contentsline {chapter}{\numberline {2}Definizione del progetto}{17}{chapter.2}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.3)  21 AUG 2017 01:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.3)  21 AUG 2017 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1423,11 +1423,28 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface .
 
 
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \subsection
+               {Cluster di database}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 7
+[][]
+ []
+
+
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 6.
+(hyperref)                than one, level fixed on input line 7.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--19
+Underfull \hbox (badness 10000) in paragraph at lines 17--20
 
  []
 
@@ -1435,36 +1452,138 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
 
 
-] <img/Shared_Nothing_Architecture.jpg, id=204, 501.875pt x 379.4175pt>
+] <img/Shared_Nothing_Architecture.jpg, id=205, 501.875pt x 379.4175pt>
 File: img/Shared_Nothing_Architecture.jpg Graphic file (type jpg)
 
 <use img/Shared_Nothing_Architecture.jpg>
 Package pdftex.def Info: img/Shared_Nothing_Architecture.jpg used on input line
- 22.
+ 23.
 (pdftex.def)             Requested size: 351.31009pt x 265.59042pt.
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 28.
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--31
-
- []
-
-<img/Shared_Disk_Architecture.jpg, id=209, 715.67375pt x 512.91624pt>
-File: img/Shared_Disk_Architecture.jpg Graphic file (type jpg)
-
-<use img/Shared_Disk_Architecture.jpg>
-Package pdftex.def Info: img/Shared_Disk_Architecture.jpg used on input line 36
-.
-(pdftex.def)             Requested size: 286.26442pt x 205.16286pt.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [8 <./img/Shared_Nothing_Architecture.jpg>] [9 <./img/Shared_Disk_Architecture
-.jpg>]
+ [8 <./img/Shared_Nothing_Architecture.jpg>] <img/Shared_Disk_Architecture.jpg,
+ id=220, 715.67375pt x 512.91624pt>
+File: img/Shared_Disk_Architecture.jpg Graphic file (type jpg)
+
+<use img/Shared_Disk_Architecture.jpg>
+Package pdftex.def Info: img/Shared_Disk_Architecture.jpg used on input line 38
+.
+(pdftex.def)             Requested size: 286.26442pt x 205.16286pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--44
+
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \subsection
+                {Rete di pari}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 47
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \subsection
+                {Sistemi di ridondanza disco (RAID)}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 49
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \subsection
+                {Codice di correzione errore (erasure coding)}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 51
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 \section
+             {Hardware utilizzato per gli esperimenti}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 53
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \section
+             {Software utilizzato per gli esperimenti}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 55
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 \subsection
+                {PosgreSQL}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 57
+[][]
+ []
+
+[9 <./img/Shared_Disk_Architecture.jpg>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.59 In PostgreSQL, ma il discorso può
+l.69 In PostgreSQL, ma il discorso può
                                         essere allargato a tutti i gestori d...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1472,7 +1591,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathtwosuperior ->{^2}
                        
-l.59 In PostgreSQL, ma il discorso può
+l.69 In PostgreSQL, ma il discorso può
                                         essere allargato a tutti i gestori d...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1481,21 +1600,21 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 60.
+LaTeX Warning: Command \~ invalid in math mode on input line 70.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 60.
+LaTeX Warning: Command \~ invalid in math mode on input line 70.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.61 
+l.71 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (1765.75903pt too wide) in paragraph at lines 59--61
+Overfull \hbox (1765.75903pt too wide) in paragraph at lines 69--71
 []\T1/pplj/m/n/12 (-20) In Post-gre-SQL, ma il di-scor-so pu�$[]\U/zeur/m/n/12 
 essereallargatoatuttiigestorididatabaserelazionali; idativengonorappresentatiat
 traversodelletabelleeletabellesonogestiteutilizzandounlinguaggiodialtolivelloch
@@ -1503,6 +1622,24 @@ iamatoSQL; acronimodiStructuredQueryLanguage\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/
 12 Nelcasospecifico; l[]ORDBMSavr\T1/pplj/m/n/12 (-20) � \U/zeur/m/n/12 ilcompi
 todigestireleoperazionidiarchiviazioneedisalvaguardiadell[]integrit\T1/pplj/m/n
 /12 (-20) � \U/zeur/m/n/12 deidatiallocati\T1/pplj/m/n/12 (-20) .$ 
+ []
+
+[10]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \subsection
+                {Concept Provider-Subscriber}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 88
+[][]
  []
 
 
@@ -1513,7 +1650,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98 ...lied at least to the new master (if that�
+l.108 ...ied at least to the new master (if that�
                                                   �s not the same system) be...
 
 You need to provide a definition with \DeclareInputText 
@@ -1527,17 +1664,35 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.98 ...ied at least to the new master (if that’
+l.108 ...ed at least to the new master (if that’
                                                   s not the same system) before
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[10] [11] [12]
+[11]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \subsection
+                 {PG Logical}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 137
+[][]
+ []
+
+[12]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.166 ...eSQL 9.4). Pglogical funziona ancora più
+l.176 ...eSQL 9.4). Pglogical funziona ancora più
                                                    veloce con PostgreSQL 9.5...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1545,7 +1700,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathonesuperior ->{^1}
                        
-l.166 ...eSQL 9.4). Pglogical funziona ancora più
+l.176 ...eSQL 9.4). Pglogical funziona ancora più
                                                    veloce con PostgreSQL 9.5...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1556,13 +1711,13 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.167 
+l.177 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (240.68202pt too wide) in paragraph at lines 165--167
+Overfull \hbox (240.68202pt too wide) in paragraph at lines 175--177
 \T1/pplj/m/n/12 (-20) gi-cal fun-zio-na an-co-ra pi�$[]\U/zeur/m/n/12 velocecon
 PostgreSQL9\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 5esuccessive; conbassioverhead
 suentrambiiprovidereabbonati\T1/pplj/m/n/12 (-20) .$ 
@@ -1571,7 +1726,7 @@ suentrambiiprovidereabbonati\T1/pplj/m/n/12 (-20) .$
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.177 ...se da BDR per produrre una soluzione più
+l.187 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1579,7 +1734,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathonesuperior ->{^1}
                        
-l.177 ...se da BDR per produrre una soluzione più
+l.187 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1588,21 +1743,21 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 177.
+LaTeX Warning: Command \~ invalid in math mode on input line 187.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 177.
+LaTeX Warning: Command \~ invalid in math mode on input line 187.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 177.
+LaTeX Warning: Command \~ invalid in math mode on input line 187.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 177.
+LaTeX Warning: Command \" invalid in math mode on input line 187.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.177 ...a vasta gamma di casi di utilizzo. BDR è
+l.187 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1610,7 +1765,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.177 ...a vasta gamma di casi di utilizzo. BDR è
+l.187 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1620,7 +1775,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.177 ...a vasta gamma di casi di utilizzo. BDR è
+l.187 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1628,15 +1783,15 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 177.
+LaTeX Warning: Command \~ invalid in math mode on input line 187.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 177.
+LaTeX Warning: Command \" invalid in math mode on input line 187.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.177 ...ti-master della rete a n-way, e questo è
+l.187 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1644,7 +1799,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.177 ...ti-master della rete a n-way, e questo è
+l.187 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1654,7 +1809,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.177 ...ti-master della rete a n-way, e questo è
+l.187 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1664,7 +1819,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.178 
+l.188 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1672,7 +1827,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.178 
+l.188 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1683,7 +1838,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.178 
+l.188 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1694,61 +1849,62 @@ my insertion and my current dilemma will both disappear.
 Missing character: There is no � in font zeuex10!
 Missing character: There is no � in font zeuex10!
 
-Overfull \hbox (1217.5255pt too wide) in paragraph at lines 170--178
+Overfull \hbox (1217.5255pt too wide) in paragraph at lines 180--188
 \T1/pplj/m/n/12 (-20) pi�$[]\U/zeur/m/n/12 sempliceepi\T1/pplj/m/n/12 (-20) �[]
 \U/zeur/m/n/12 semplicedautilizzareperlareplicaunidirezionale; utilizzabiledapi
 \T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 personeperunavastagammadicasidiutilizzo
 \T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 BDR\T1/pplj/m/n/12 (-20) �[]$ 
  []
 
-<img/pglogical_1.png, id=240, 652.4375pt x 250.9375pt>
+<img/pglogical_1.png, id=244, 652.4375pt x 250.9375pt>
 File: img/pglogical_1.png Graphic file (type png)
 
 <use img/pglogical_1.png>
-Package pdftex.def Info: img/pglogical_1.png used on input line 187.
-(pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
-
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 186--187
- [] 
- []
-
-<img/pglogical_2.png, id=244, 652.4375pt x 250.9375pt>
-File: img/pglogical_2.png Graphic file (type png)
-
-<use img/pglogical_2.png>
-Package pdftex.def Info: img/pglogical_2.png used on input line 190.
-(pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
-
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 189--190
- [] 
- []
-
-<img/pglogical_3.png, id=247, 652.4375pt x 250.9375pt>
-File: img/pglogical_3.png Graphic file (type png)
-
-<use img/pglogical_3.png>
-Package pdftex.def Info: img/pglogical_3.png used on input line 197.
+Package pdftex.def Info: img/pglogical_1.png used on input line 197.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
 Overfull \hbox (72.59093pt too wide) in paragraph at lines 196--197
  [] 
  []
 
-<img/pglogical_4.png, id=250, 652.4375pt x 250.9375pt>
-File: img/pglogical_4.png Graphic file (type png)
+<img/pglogical_2.png, id=248, 652.4375pt x 250.9375pt>
+File: img/pglogical_2.png Graphic file (type png)
 
-<use img/pglogical_4.png>
-Package pdftex.def Info: img/pglogical_4.png used on input line 200.
+<use img/pglogical_2.png>
+Package pdftex.def Info: img/pglogical_2.png used on input line 200.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
 Overfull \hbox (72.59093pt too wide) in paragraph at lines 199--200
  [] 
  []
 
+<img/pglogical_3.png, id=251, 652.4375pt x 250.9375pt>
+File: img/pglogical_3.png Graphic file (type png)
+
+<use img/pglogical_3.png>
+Package pdftex.def Info: img/pglogical_3.png used on input line 207.
+(pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
+
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 206--207
+ [] 
+ []
+
+<img/pglogical_4.png, id=254, 652.4375pt x 250.9375pt>
+File: img/pglogical_4.png Graphic file (type png)
+
+<use img/pglogical_4.png>
+Package pdftex.def Info: img/pglogical_4.png used on input line 210.
+(pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
+
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 209--210
+ [] 
+ []
+
+[13]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.206 ...se da BDR per produrre una soluzione più
+l.216 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1756,7 +1912,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathonesuperior ->{^1}
                        
-l.206 ...se da BDR per produrre una soluzione più
+l.216 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1765,21 +1921,21 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 206.
+LaTeX Warning: Command \~ invalid in math mode on input line 216.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 206.
+LaTeX Warning: Command \~ invalid in math mode on input line 216.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 206.
+LaTeX Warning: Command \~ invalid in math mode on input line 216.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 206.
+LaTeX Warning: Command \" invalid in math mode on input line 216.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.206 ...a vasta gamma di casi di utilizzo. BDR è
+l.216 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1787,7 +1943,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.206 ...a vasta gamma di casi di utilizzo. BDR è
+l.216 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1797,7 +1953,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.206 ...a vasta gamma di casi di utilizzo. BDR è
+l.216 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1805,15 +1961,15 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 206.
+LaTeX Warning: Command \~ invalid in math mode on input line 216.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 206.
+LaTeX Warning: Command \" invalid in math mode on input line 216.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.206 ...ti-master della rete a n-way, e questo è
+l.216 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1821,7 +1977,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.206 ...ti-master della rete a n-way, e questo è
+l.216 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1831,7 +1987,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.206 ...ti-master della rete a n-way, e questo è
+l.216 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1872,15 +2028,15 @@ my insertion and my current dilemma will both disappear.
 Missing character: There is no � in font zeuex10!
 Missing character: There is no � in font zeuex10!
 
-Overfull \hbox (1217.5255pt too wide) in paragraph at lines 204--114
+Overfull \hbox (1217.5255pt too wide) in paragraph at lines 214--114
 \T1/pplj/m/n/12 (-20) pi�$[]\U/zeur/m/n/12 sempliceepi\T1/pplj/m/n/12 (-20) �[]
 \U/zeur/m/n/12 semplicedautilizzareperlareplicaunidirezionale; utilizzabiledapi
 \T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 personeperunavastagammadicasidiutilizzo
 \T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 BDR\T1/pplj/m/n/12 (-20) �[]$ 
  []
 
-[13] [14 <./img/pglogical_1.png> <./img/pglogical_2.png>] [15 <./img/pglogical_
-3.png> <./img/pglogical_4.png>]
+[14 <./img/pglogical_1.png> <./img/pglogical_2.png>] [15 <./img/pglogical_3.png
+> <./img/pglogical_4.png>]
 \openout2 = `secondChapter.aux'.
 
  (./secondChapter.tex [16
@@ -2009,7 +2165,7 @@ es []3[];[] 8[]; and []9[]\T1/pplj/m/n/12 (-20) .\U/zeus/m/n/12 �[]$
 ! Missing } inserted.
 <inserted text> 
                 }
-l.17 \end{thebibliography}
+l.20 \end{thebibliography}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2027,34 +2183,29 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
  (./thesis.aux (./titlePage.aux) (./firstChapter.aux)
 (./secondChapter.aux) (./thirdChapter.aux) (./fourthChapter.aux)
-(./esercizi.aux) (./Chapters/bibliografia.aux
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-))
+(./esercizi.aux) (./Chapters/bibliografia.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 440149E02EE53BE379864A589ABD55B8;1779.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: D8249C8348B713F97637625D18C965A0;922.
+(rerunfilecheck)             Checksum: F889C2C334E37C676234CC0282E50155;1134.
  )
 (\end occurred inside a group at level 4)
 
-### simple group (level 4) entered at line 206 ({)
-### simple group (level 3) entered at line 177 ({)
-### simple group (level 2) entered at line 166 ({)
-### simple group (level 1) entered at line 59 ({)
+### simple group (level 4) entered at line 216 ({)
+### simple group (level 3) entered at line 187 ({)
+### simple group (level 2) entered at line 176 ({)
+### simple group (level 1) entered at line 69 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26710 strings out of 493029
- 477577 string characters out of 6136235
- 668731 words of memory out of 5000000
- 29406 multiletter control sequences out of 15000+600000
+ 26718 strings out of 493029
+ 477699 string characters out of 6136235
+ 667731 words of memory out of 5000000
+ 29413 multiletter control sequences out of 15000+600000
  82948 words of font info for 333 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,13n,73p,10393b,1189s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,13n,73p,10393b,1193s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/t
@@ -2065,10 +2216,10 @@ onts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/u
 plb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (27 pages, 433513 bytes).
+Output written on thesis.pdf (27 pages, 436432 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
+ 70 named destinations out of 1000 (max. 500000)
  77020 words of extra memory for PDF output out of 89155 (max. 10000000)
 
