@@ -1,6 +1,54 @@
 \chapter{Definizione del progetto}
 \setcounter{section}{1}
-
+\item
+\subsection{Architettura del progetto}
+\textbf{concept Provider-Subscriber - da scegliere dove inserirlo}
+Master to multiple cascaded slaves
+The basic structure of the systems combined in a Slony-I installation is a
+master with one or more slaves nodes. Not all slave nodes must receive the replication
+data directly from the master. Every node that receives the data from a
+valid source can be configured to be able to forward that data to other nodes.
+There are three distinct ideas behind this capability. The first is scalability.
+One database, especially the master that receives all the update transactions
+from the client applications, has only a limited capability to satisfy the slave
+nodes queries during the replication process. In order to satisfy the need for a big
+number of read-only slave systems it must be possible to cascade.
+The second idea is to limit the required networ k bandwidth for a backup site
+while keeping the ability to have multiple slaves at the remote location.
+The third idea is to be able to configure failover scenar ios. In a master to
+multiple slave configuration, it is unlikely that all slave nodes are exactly in the
+same synchronization status when the master fails. To ensure that one slave can
+be promoted to the master it is necessary that all remaining systems can agree
+on the status of the data. Since a committed transaction cannot be rolled back,
+this status is undoubtly the most recent sync status of all remaining slave nodes.
+The delta between this one and every other node must be easily and fast generated
+and applied at least to the new master (if that’s not the same system) before
+the promotion can occur.
+Nodes, Sets and forwarding
+The Slony-I replication system can replicate tables and sequence numbers.
+Replicating sequence numbers is not unproblematic and is discussed in more
+detail in section 2.3.
+Table and sequence objects are logically grouped into sets. Every set
+should contain a group of objects that is independant from other objects originating
+from the same master. In shor t, all tables that have relationships that could
+be expressed as foreign key constraints and all the sequences used to generate
+any ser ial numbers in these tables should be contained in one and the same set.
+Figure 1 illustrates a replication configuration that has 2 data sets with different
+origins. To replicate both date sets to NodeC it is not required that Node C
+really communicates with the origin of Set 1. This scenario has full redundancy
+for every node. Obviously if Node C fails, the masters of Set 1 and Set2 are still
+alive, no problem. If Node A fails, Node B can get promoted to the master of both
+sets. The tricky situation is if Node B fails.
+In the case Node B fails, Node C needs to get promoted to the master of
+Set 2 and it must continue replicating Set 1 from Node A. For that to be possible,
+Node A must have knowledge about Node C and its subscription to Set 1. Generally
+speaking, every node that stores replication log infor mation must keep it until
+all subscribers of the affected set are known to have replicated that data.
+To simplify the logic, the configuration of the whole networ k with all nodes,
+sets and subscriptions will be forwarded to and stored on all nodes. Because the
+sets,anode is not subscribed to must not even exist in its database, this does
+not include the infor mation about what tables and sequences are included in any
+specific set.
 \subsection{Simulazione di un filesystem distribuito (Dati e Metadati)}
 \section{Considerazioni statistiche sulla ridondanza sul dato}
 \section{Considerazioni statistiche sulla ridondanza del metadato}

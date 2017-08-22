@@ -48,9 +48,48 @@ Shared Disk ha due vantaggi: ogni processore ha la propria memoria, il bus di me
 
 \item
 \subsection{Sistemi di ridondanza disco (RAID)}
-RAID, acronimo di "redundant array of independent disks", insieme ridondante di dischi indipendenti, (originariamente "redundant array of inexpensive disks"), \`{e} un modo per memorizzare gli stessi dati in luoghi diversi su pi\`{u} dischi rigidi per proteggere i dati nel caso di un guasto di unit\`{a}. Tuttavia, non tutti i livelli RAID forniscono la ridondanza.
-\textbf{History of RAID?}
-Il RAID funziona mettendo i dati su pi\`{u} dischi e consentendo operazioni di input/output (I/O) di sovrapporsi in modo equilibrato, migliorando le prestazioni. Poich\'{e} l'utilizzo di pi\`{u} dischi aumenta il tempo medio tra i guasti (MTBF), memorizzare dei dati ridondantemente aumenta anche la tolleranza agli errori.
+RAID, acronimo di "Redundant Array of Independent Disks", insieme ridondante di dischi indipendenti (originariamente "Redundant Array of Inexpensive Disks"), \`{e} una tecnologia che permette di memorizzare dati su pi\`{u} dischi rigidi in un computer (o collegati ad esso) in modo da garantire una gestione sicura dei dati.\cite{etichetta9} Consente di ottenere quindi determinate caratteristiche di protezione e velocit\`{a} su sistemi "casalinghi" su dischi economici, in contrapposizione a configurazioni riservate per sistemi professionali ben pi\`{u} costosi.
+%((Il RAID può essere implementata anche nei PC normali, sono infatti disponibili schede raid a basso costo quando non già presente sulle schede madri più sofisticate, ma è una tecnica tipicamente storicamente impiegata nei server o nelle workstation che richiedano grandi volumi o elevate prestazioni di immagazzinamento di dati, ad esempio per ospitare una base di dati)).\\ 
+
+Il RAID, con modalit\`{a} differenti a seconda del tipo di configurazione, tra vantaggio dai principi di ridondanza dei dati e di parallelismo in modo da ottenere:
+\begin{itemize}
+\item 
+incrementi di prestazioni (in lettura/scrittura)
+\item
+aumenti nella capacit\`{a} di memorizzazione disponibile
+\item 
+miglioramenti nella tolleranza ai guasti, ne segue migliore affidabilit\`{a}. \cite{etichetta10} Il RAID rende il sistema resiliente alla perdita di uno o pi\`{u} hard disk, permettendo di sostituirli senza l'interruzione del servizio.
+\end{itemize}
+
+I dati vengono suddivisi in sezioni, anche noti come "stripes" di uguale lunghezza, detta l'unit\`{a} del sezionamento, e scritti su dischi differenti. 
+
+
+La caratteristica fondamentale che identifica una configurazione RAID \`{e} l'array, che identifica il tipo di collegamento logico che c'\`{e} tra i vari dischi.
+Con tale criterio \`{e} determinato il livello RAID, la configurazione della tipologia di RAID  e stabilito il numero minimo di hard disk che sono necessari per attivarlo. 
+A seconda del livello RAID sono implementate diverse tecniche per ottenere maggiori prestazioni o una maggiore sicurezza dei propri dati oppure entrambe le condizioni.
+
+\textbf{History of RAID? non credo}
+Il RAID funziona mettendo i dati su pi\`{u} dischi e consentendo operazioni di input/output (I/O) di sovrapporsi in modo equilibrato, migliorando le prestazioni. Poich\'{e} l'utilizzo di pi\`{u} dischi aumenta il tempo medio tra i guasti (MTBF), memorizzare i dati ridondantemente aumenta anche la tolleranza agli errori.\\
+
+%per proteggere i dati nel caso di un guasto di unit\`{a}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.30]{img/raid00.png}\\
+\caption{Striping - Sezionamento senza ridondanza\label{figura1.3} \cite{etichetta9}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.30]{img/raid11.png}\\
+\caption{Mirroring - Replicazione\label{figura1.4} \cite{etichetta9}}
+\end{figure}
+
+
+\textbf{spiegazione cinci -audio-}
+Nelle macchine non distribuite
+per garantire la ridondanza dei dati si scrive su piu dischi, sincrono (i dati vengono scritti simultaneamente) - come raid mirroring
+ci puo essere o un affarino (scheda) chiamato raid controller. Ha una memoria che puoi configurarlo.. puoi dirgli tra disco 1 e disco 2 imponi un raid 0. Quindi che succede? Da una macchina, cioe dal processore, tutte le volte che viene fatta una scrittura su disco, il raid controller la splitta e viene fatta in entrambi i dischi. quindi hai due dischi clonati (mirroring). Stessa cosa del REPLICA.
 \item
 \subsection{Codice di correzione errore (erasure coding)}
 \textbf{http://searchstorage.techtarget.com/definition/erasure-coding}
@@ -66,7 +105,6 @@ Il RAID funziona mettendo i dati su pi\`{u} dischi e consentendo operazioni di i
 Uno dei punti di forza che ha reso famoso e versatile Posgres è che è un DBMS (Database Management System è un sistema software progettato per consentire la creazione e manipolazione efficiente di database (ovvero di collezioni di dati strutturati) ) (scritto in C). Ha dei rametti dove te riesci ad agganciarci dei software fatti ad OC. te ti agganci a un sistema di segnalistica interna e lui quindi tramite messaggi di scambio interno ti permette di lavorare (ti dice "ho fatto l'inserimento di questa tabella(INSERT), ti scatta il segnale, e te riesci a intercettare e quindi fare delle operazioni)
 
 Pg Logical è un estensione di Posgres. Lui capisce quando fa inserimenti e riesce a duplicare soltando parti di database. Mentre replica di posgres per adesso ti replicherebbe tutto il DB. Invece noi si fa con solo tabelle (R) o quanti record di tabelle (per id maggiori di x) adirittura si vogliono replicare o colonne di tabelle \\
-\textbf{(spiegazione cinci -audio-)}
 
 
 Con il termine PostgreSQL viene denominato un particolare ORDBMS, acronimo di Object-Relational DataBase Management System, cioè un software relazionale e ad oggetti per la gestione di basi di dati.
@@ -89,55 +127,6 @@ to be groups of DDL and DML statements that modify multiple database objects
 and do mass data manipulation like updating a new column to its initial value.
 The Slony-I replication system will have a mechanism to execute SQL
 scr ipts in a controlled fashion as part of the replication process.
-
-\item
-\subsection{Concept Provider-Subscriber}
-Master to multiple cascaded slaves
-The basic structure of the systems combined in a Slony-I installation is a
-master with one or more slaves nodes. Not all slave nodes must receive the replication
-data directly from the master. Every node that receives the data from a
-valid source can be configured to be able to forward that data to other nodes.
-There are three distinct ideas behind this capability. The first is scalability.
-One database, especially the master that receives all the update transactions
-from the client applications, has only a limited capability to satisfy the slave
-nodes queries during the replication process. In order to satisfy the need for a big
-number of read-only slave systems it must be possible to cascade.
-The second idea is to limit the required networ k bandwidth for a backup site
-while keeping the ability to have multiple slaves at the remote location.
-The third idea is to be able to configure failover scenar ios. In a master to
-multiple slave configuration, it is unlikely that all slave nodes are exactly in the
-same synchronization status when the master fails. To ensure that one slave can
-be promoted to the master it is necessary that all remaining systems can agree
-on the status of the data. Since a committed transaction cannot be rolled back,
-this status is undoubtly the most recent sync status of all remaining slave nodes.
-The delta between this one and every other node must be easily and fast generated
-and applied at least to the new master (if that’s not the same system) before
-the promotion can occur.
-Nodes, Sets and forwarding
-The Slony-I replication system can replicate tables and sequence numbers.
-Replicating sequence numbers is not unproblematic and is discussed in more
-detail in section 2.3.
-Table and sequence objects are logically grouped into sets. Every set
-should contain a group of objects that is independant from other objects originating
-from the same master. In shor t, all tables that have relationships that could
-be expressed as foreign key constraints and all the sequences used to generate
-any ser ial numbers in these tables should be contained in one and the same set.
-Figure 1 illustrates a replication configuration that has 2 data sets with different
-origins. To replicate both date sets to NodeC it is not required that Node C
-really communicates with the origin of Set 1. This scenario has full redundancy
-for every node. Obviously if Node C fails, the masters of Set 1 and Set2 are still
-alive, no problem. If Node A fails, Node B can get promoted to the master of both
-sets. The tricky situation is if Node B fails.
-In the case Node B fails, Node C needs to get promoted to the master of
-Set 2 and it must continue replicating Set 1 from Node A. For that to be possible,
-Node A must have knowledge about Node C and its subscription to Set 1. Generally
-speaking, every node that stores replication log infor mation must keep it until
-all subscribers of the affected set are known to have replicated that data.
-To simplify the logic, the configuration of the whole networ k with all nodes,
-sets and subscriptions will be forwarded to and stored on all nodes. Because the
-sets,anode is not subscribed to must not even exist in its database, this does
-not include the infor mation about what tables and sequences are included in any
-specific set.
 
 \item
 \subsection{PG Logical}
