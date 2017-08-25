@@ -48,10 +48,12 @@ Shared Disk ha due vantaggi: ogni processore ha la propria memoria, il bus di me
 
 \item
 \subsection{Sistemi di ridondanza disco (RAID)}
-RAID, acronimo di "Redundant Array of Independent Disks", insieme ridondante di dischi indipendenti (originariamente "Redundant Array of Inexpensive Disks"), \`{e} una tecnologia che permette di memorizzare dati su pi\`{u} dischi rigidi in un computer (o collegati ad esso) in modo da garantire una gestione sicura dei dati.\cite{etichetta9} Consente di ottenere quindi determinate caratteristiche di protezione e velocit\`{a} su sistemi "casalinghi" su dischi economici, in contrapposizione a configurazioni riservate per sistemi professionali ben pi\`{u} costosi.
+RAID, acronimo di "Redundant Array of Independent Disks", insieme ridondante di dischi indipendenti (originariamente "Redundant Array of Inexpensive Disks"), \`{e} una tecnologia che permette di memorizzare dati su pi\`{u} dischi rigidi in un computer (o collegati ad esso) in modo da garantire una gestione sicura dei dati.\cite{etichetta9} I dispositivi RAID sono convenienti per sistemi che abbiano necessit\`{a} di grandi quantit\`{a} di dati continuamente disponibili. \textbf{History of RAID? non credo}
+
+%Consente di ottenere quindi determinate caratteristiche di protezione e velocit\`{a} su sistemi "casalinghi" su dischi economici, in contrapposizione a configurazioni riservate per sistemi professionali ben pi\`{u} costosi.
 %((Il RAID può essere implementata anche nei PC normali, sono infatti disponibili schede raid a basso costo quando non già presente sulle schede madri più sofisticate, ma è una tecnica tipicamente storicamente impiegata nei server o nelle workstation che richiedano grandi volumi o elevate prestazioni di immagazzinamento di dati, ad esempio per ospitare una base di dati)).\\ 
 
-Il RAID, con modalit\`{a} differenti a seconda del tipo di configurazione, tra vantaggio dai principi di ridondanza dei dati e di parallelismo in modo da ottenere:
+Il RAID, con modalit\`{a} differenti a seconda del tipo di configurazione, trae vantaggio dai principi di ridondanza dei dati e di parallelismo in modo da ottenere:
 \begin{itemize}
 \item 
 incrementi di prestazioni (in lettura/scrittura)
@@ -61,29 +63,109 @@ aumenti nella capacit\`{a} di memorizzazione disponibile
 miglioramenti nella tolleranza ai guasti, ne segue migliore affidabilit\`{a}. \cite{etichetta10} Il RAID rende il sistema resiliente alla perdita di uno o pi\`{u} hard disk, permettendo di sostituirli senza l'interruzione del servizio.
 \end{itemize}
 
-I dati vengono suddivisi in sezioni, anche noti come "stripes" di uguale lunghezza, detta l'unit\`{a} del sezionamento, e scritti su dischi differenti. 
+I volumi RAID vengono percepiti dal sistema operativo come una singola unit\`{a}, indipendentemente dal numero di componenti che li costituiscono.
+
+Il RAID funziona mettendo i dati su pi\`{u} dischi e consentendo operazioni di input/output (I/O) di sovrapporsi in modo equilibrato, migliorando le prestazioni. Poich\'{e} l'utilizzo di pi\`{u} dischi aumenta il tempo medio tra i guasti, memorizzare i dati ridondantemente aumenta anche la tolleranza agli errori.\\
+
+I dati vengono suddivisi in "stripes", ovvero in sezioni di stessa  lunghezza, detta l'unit\`{a} del sezionamento e scritti su differenti dischi. Quando si richiede una lettura di dimensione superiore all'unit\`{a} di sezionamento, diverse implementazioni di diversi sistemi RAID distribuiscono l'operazione su pi\`{u} dischi in parallelo, aumentando le prestazioni. Ad esempio, se abbiamo sezioni da 1 bit e un array di D dischi, le sequenze di dati lunghe almeno D bit sfruttano tutti i dischi. \textbf{preso tutto da wikipedia}
+
+\subsubsection{RAID hardware e software}
+Il RAID pu\`{o} essere implementato sia con hardware dedicato che con software specifico.
+
+Nel primo caso si tratta di unit\`{a} di controllo che gestiscono tutto autonomamente, facendo in modo che il sistema operativo veda in pratica un disco normale. 
+Nel secondo caso, \`{e} il sistema operativo che associa i dischi e li gestisce usando una forma di ridondanza attraverso un normale controller (ATA, SCSI, Fibre Channel o altro).
+
+Come si pu\`{o} comprendere, le unit\`{a} di controllo RAID sono pi\`{u} costose di quelle normali; tuttavia, se non si creano altri tipi di problemi, hanno il vantaggio di non creare difficolt\`{a} al sistema operativo.
+\textbf{FARE CITAZIONE e controllare cosa c'e scritto su etichetta9 a riguardo}
+\subsubsection{Controllore RAID}
+
+\subsubsection{Livelli RAID}
+La caratteristica fondamentale che identifica una configurazione RAID \`{e} l'array, che rappresenta il tipo di collegamento logico che c'\`{e} tra i vari dischi.
+Con tale criterio viene determinato il livello RAID, ovvero la configurazione della tipologia di RAID  e stabilito il numero minimo di hard disk che sono necessari per attivarlo. A seconda del livello RAID sono implementate diverse caratteristiche operative per ottenere maggiori prestazioni o una maggiore sicurezza dei propri dati oppure entrambe le condizioni.\\
+Si distinguono sei livelli, da 0 a 5.
+Questo sistema numerato consente di differenziare le versioni e di scegliere come diffondere i dati attraverso l'array. Il numero di livelli \`{e} da allora ampliato ed \`{e} stato suddiviso in tre categorie: livelli RAID standard, nidificati e non standard.\cite{etichetta9}
+
+\paragraph{Livelli RAID Standard}
+\begin{itemize}
+\item 
+\textbf{RAID-O}: livello privo di ridondanza. Si occupa di unire due o pi\`{u} dischi, all'interno dei quali i dati vengono suddivisi equamente (tramite striping o sezionamento), in modo da bilanciare anche il carico di operazioni di lettura e scrittura che li riguardano. In pratica, il livello zero consente di realizzare un disco virtuale di grandi dimensioni, pi\`{u} efficiente, ma la rottura di uno dei dischi porta alla perdita di tutti i dati. RAID-0 \`{e} noto anche con il nome di "block striping".\\\textbf{bibliografia commentata}
+%http://www.webalice.it/climberjak/linux_informatica/gestione_dei_dischi_in_modo_ridondante.htm
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/raid00.png}\\
+\caption{Sezionamento senza ridondanza - Questa configurazione ha sezionamento, ma nessuna ridondanza dei dati. Offre le migliori prestazioni, ma nessuna tolleranza agli errori.\label{figura1.3}\cite{etichetta9}}
+\end{figure}
+
+\item 
+\textbf{RAID-1}: livello che si occupa di unire assieme due o pi\`{u} dischi (generalmente solo due) che si trovano a riprodurre fedelmente tutti gli stessi dati. Questa configurazione mantiene quindi almeno una copia esatta di tutti i dati, detta "mirror". In questo caso, la rottura di un disco non pregiudica l'utilizzo dei dati che sono disponibili nel disco o nei dischi rimanenti.\\textbf{bibliografia commentata} Pi\`{u} precisamente, l'affidabilit\`{a} aumenta linearmente al numero di dischi presenti: un sistema con N dischi \`{e} in grado di resistere alla rottura di N-1 componenti.  RAID-1 \`{e} conosciuto anche come "disk mirroring".\\
+%http://www.webalice.it/climberjak/linux_informatica/gestione_dei_dischi_in_modo_ridondante.htm
+
+%DA WIKIPEDIA
+%A livello prestazionale, il sistema RAID 1 aumenta tipicamente i risultati per le operazioni di lettura, perché molte implementazioni sono in grado di effettuare diverse operazioni in parallelo: mentre la lettura di un blocco è ancora in corso su un disco, cioè, possono effettuarne un'altra su un disco diverso. In ogni caso, la velocità di lettura raggiunge quella del disco più veloce in presenza di dispositivi di memorizzazione con prestazioni diverse: una singola operazione di lettura è richiesta inizialmente e contemporaneamente su tutti i dischi, ma si conclude nel momento della prima risposta ricevuta. Viceversa, la velocità di scrittura scende a quella del disco più lento, perché questo tipo di azione richiede il compimento della replica della stessa operazione su ogni disco dell'insieme.
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/raid11.png}\\
+\caption{Replicazione - Questa configurazione \`{e} costituita da almeno due unit\`{a} che duplicano la memorizzazione dei dati. Non c'\`{e} sezionamento. La lettura delle prestazioni \`{e} migliorata poich\'{e} entrambi i dischi possono essere letti contemporaneamente. La scrittura delle prestazioni \`{e} la stessa di quella per il singolo disco.\label{figura1.4} \cite{etichetta9}}
+\end{figure}
 
 
-La caratteristica fondamentale che identifica una configurazione RAID \`{e} l'array, che identifica il tipo di collegamento logico che c'\`{e} tra i vari dischi.
-Con tale criterio \`{e} determinato il livello RAID, la configurazione della tipologia di RAID  e stabilito il numero minimo di hard disk che sono necessari per attivarlo. 
-A seconda del livello RAID sono implementate diverse tecniche per ottenere maggiori prestazioni o una maggiore sicurezza dei propri dati oppure entrambe le condizioni.
+\item
+\textbf{RAID-2}:
+%http://www.webalice.it/climberjak/linux_informatica/gestione_dei_dischi_in_modo_ridondante.htm
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/raid22.png}\\
+\caption{Sezionamento a livello di bit - Questa configurazione utilizza la rigatura tra i dischi, con alcuni dischi che memorizzano le informazioni di errore di verifica e correzione (ECC).\label{figura1.6} \cite{etichetta9}}
+\end{figure}
 
-\textbf{History of RAID? non credo}
-Il RAID funziona mettendo i dati su pi\`{u} dischi e consentendo operazioni di input/output (I/O) di sovrapporsi in modo equilibrato, migliorando le prestazioni. Poich\'{e} l'utilizzo di pi\`{u} dischi aumenta il tempo medio tra i guasti (MTBF), memorizzare i dati ridondantemente aumenta anche la tolleranza agli errori.\\
+\item
+\textbf{RAID-3}: livello che si occupa di unire assieme più dischi, all'interno dei quali i dati vengono suddivisi equamente, in modo da bilanciare anche il carico di operazioni di lettura e scrittura che li riguardano, dedicando uno di questi dischi al contenimento di un sistema di codici di controllo che permettono di ricostruire i dati nel caso uno degli altri dischi si rompa. In pratica, il livello tre crea una forma di ridondanza, ma meno affidabile del livello uno. Naturalmente, per attuare un livello tre servono almeno tre dischi.
+%http://www.webalice.it/climberjak/linux_informatica/gestione_dei_dischi_in_modo_ridondante.htm
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/raid33.png}\\
+\caption{Sezionamento a livello di byte con disco di parità - Questa tecnica utilizza la rigatura e dedica un'unità a memorizzare informazioni di parità. Le informazioni ECC incorporate vengono utilizzate per rilevare gli errori. Il recupero dei dati viene effettuato calcolando l'esclusiva OR (XOR) delle informazioni registrate sulle altre unità. Poiché un'operazione di I / O indirizza contemporaneamente tutte le unità, RAID 3 non può sovrapporre I / O. Per questo motivo, RAID 3 è la soluzione ideale per i sistemi a singolo utente con applicazioni di registrazione a lungo termine.\label{figura1.7} \cite{etichetta9}}
+\end{figure}
+
+\item
+\textbf{RAID-4}: Il livello quattro dei sistemi RAID è simile al livello tre, con la differenza che vengono distribuiti in modo differente (più efficiente) tra i dischi, ma rimane compito di un disco separato il sistema di codici di controllo che permette la ricostruzione dei dati.
+%http://www.webalice.it/climberjak/linux_informatica/gestione_dei_dischi_in_modo_ridondante.htm
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/raid44.png}\\
+\caption{Sezionamento a livello di blocco con disco di parità\label{figura1.8} \cite{etichetta9}}
+\end{figure}
+
+\item
+\textbf{RAID-5}: Il livello cinque dei sistemi RAID equivale al livello quattro, dove però le informazioni che servono per la ricostruzione dei dati sono distribuite tra i dischi, senza essere così concentrate in uno soltanto. In questo modo si aumenta l'efficienza, in termini di tempi di accesso ai dati.
+%http://www.webalice.it/climberjak/linux_informatica/gestione_dei_dischi_in_modo_ridondante.htm
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/raid55.png}\\
+\caption{Sezionamento a livello di blocco con parità distribuita\label{figura1.9} \cite{etichetta9}}
+\end{figure}
+
+\item
+\textbf{RAID-6}: 
+%http://www.webalice.it/climberjak/linux_informatica/gestione_dei_dischi_in_modo_ridondante.htm
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/raid66.png}\\
+\caption{Sezionamento a livello di blocco con doppia parità distribuita\label{figura1.10} \cite{etichetta9}}
+\end{figure}
+
+\end{itemize}
+
+
+\paragraph{Livelli RAID Nidificati Annidati}
+I livelli Annidati sono dei tipi di livelli pi\`{u} complessi ottenuti dalla combinazione di alcuni livelli RAID Standard. Esempi classici sono le configurazioni RAID 0+1 o 10.
+
+\paragraph{Livelli RAID Non-Standard}
+
 
 %per proteggere i dati nel caso di un guasto di unit\`{a}.
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.30]{img/raid00.png}\\
-\caption{Striping - Sezionamento senza ridondanza\label{figura1.3} \cite{etichetta9}}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.30]{img/raid11.png}\\
-\caption{Mirroring - Replicazione\label{figura1.4} \cite{etichetta9}}
-\end{figure}
 
 
 \textbf{spiegazione cinci -audio-}
@@ -91,7 +173,7 @@ Nelle macchine non distribuite
 per garantire la ridondanza dei dati si scrive su piu dischi, sincrono (i dati vengono scritti simultaneamente) - come raid mirroring
 ci puo essere o un affarino (scheda) chiamato raid controller. Ha una memoria che puoi configurarlo.. puoi dirgli tra disco 1 e disco 2 imponi un raid 0. Quindi che succede? Da una macchina, cioe dal processore, tutte le volte che viene fatta una scrittura su disco, il raid controller la splitta e viene fatta in entrambi i dischi. quindi hai due dischi clonati (mirroring). Stessa cosa del REPLICA.
 \item
-\subsection{Codice di correzione errore (erasure coding)}
+\subsection{Codice di correzione errore (Erasure Coding)}
 \textbf{http://searchstorage.techtarget.com/definition/erasure-coding}
 \item
 \section{Hardware utilizzato per gli esperimenti}
