@@ -5,13 +5,16 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Architecture Shared Nothing \cite {etichetta7}\relax }}{8}{figure.caption.3}
 \contentsline {figure}{\numberline {2}{\ignorespaces Architecture Shared Disk - Shared Everything \cite {etichetta7}\relax }}{9}{figure.caption.4}
 \contentsline {figure}{\numberline {3}{\ignorespaces Sezionamento senza ridondanza - Questa configurazione ha sezionamento, ma nessuna ridondanza dei dati. Offre le migliori prestazioni, ma nessuna tolleranza agli errori.\cite {etichetta9}\relax }}{12}{figure.caption.5}
-\contentsline {figure}{\numberline {4}{\ignorespaces Replicazione - Questa configurazione \`{e} costituita da almeno due unit\`{a} che duplicano la memorizzazione dei dati. Non c'\`{e} sezionamento. La lettura delle prestazioni \`{e} migliorata poich\'{e} entrambi i dischi possono essere letti contemporaneamente. La scrittura delle prestazioni \`{e} la stessa di quella per il singolo disco. \cite {etichetta9}\relax }}{13}{figure.caption.6}
-\contentsline {figure}{\numberline {5}{\ignorespaces Sezionamento a livello di bit - Questa configurazione utilizza la rigatura tra i dischi, con alcuni dischi che memorizzano le informazioni di errore di verifica e correzione (ECC). \cite {etichetta9}\relax }}{13}{figure.caption.7}
-\contentsline {figure}{\numberline {9}{\ignorespaces Sezionamento a livello di blocco con doppia parit\~A\IeC {\nobreakspace } distribuita \cite {etichetta9}\relax }}{14}{figure.caption.11}
-\contentsline {figure}{\numberline {10}{\ignorespaces Migrazione e aggiornamenti PostgreSQL \cite {etichetta3}\relax }}{18}{figure.caption.12}
-\contentsline {figure}{\numberline {11}{\ignorespaces Aggregazione \cite {etichetta4}\relax }}{18}{figure.caption.12}
-\contentsline {figure}{\numberline {12}{\ignorespaces A cascata e distribuzione dati \cite {etichetta4}\relax }}{19}{figure.caption.13}
-\contentsline {figure}{\numberline {13}{\ignorespaces A cascata e distribuzione dati \cite {etichetta4}\relax }}{19}{figure.caption.13}
+\contentsline {figure}{\numberline {4}{\ignorespaces Replicazione - Questa configurazione \`{e} costituita da almeno due unit\`{a} che duplicano la memorizzazione dei dati. Non c'\`{e} sezionamento. \cite {etichetta9}\relax }}{13}{figure.caption.6}
+\contentsline {figure}{\numberline {5}{\ignorespaces Sezionamento a livello di bit - Questa configurazione ha alcuni dischi che memorizzano le informazioni di errore di verifica e correzione (ECC). \cite {etichetta9}\relax }}{14}{figure.caption.7}
+\contentsline {figure}{\numberline {6}{\ignorespaces Sezionamento a livello di byte con disco di parit\`{a} - Questa configurazione utilizza la rigatura e dedica un'unit\`{a} a memorizzare informazioni di parit\`{a}. \cite {etichetta9}\relax }}{15}{figure.caption.8}
+\contentsline {figure}{\numberline {7}{\ignorespaces Sezionamento a livello di blocco con disco di parit\`{a} \cite {etichetta9}\relax }}{16}{figure.caption.9}
+\contentsline {figure}{\numberline {8}{\ignorespaces Sezionamento a livello di blocco con parit\`{a} distribuita \cite {etichetta9}\relax }}{17}{figure.caption.10}
+\contentsline {figure}{\numberline {9}{\ignorespaces Sezionamento a livello di blocco con doppia parit\`{a} distribuita \cite {etichetta9}\relax }}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {10}{\ignorespaces Migrazione e aggiornamenti PostgreSQL \cite {etichetta3}\relax }}{23}{figure.caption.12}
+\contentsline {figure}{\numberline {11}{\ignorespaces Aggregazione \cite {etichetta4}\relax }}{23}{figure.caption.12}
+\contentsline {figure}{\numberline {12}{\ignorespaces A cascata e distribuzione dati \cite {etichetta4}\relax }}{24}{figure.caption.13}
+\contentsline {figure}{\numberline {13}{\ignorespaces A cascata e distribuzione dati \cite {etichetta4}\relax }}{24}{figure.caption.13}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
