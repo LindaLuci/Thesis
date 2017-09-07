@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.3)  25 AUG 2017 15:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.3)  7 SEP 2017 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1452,7 +1452,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--20
 
 
 
-] <img/Shared_Nothing_Architecture.jpg, id=241, 501.875pt x 379.4175pt>
+] <img/Shared_Nothing_Architecture.jpg, id=240, 501.875pt x 379.4175pt>
 File: img/Shared_Nothing_Architecture.jpg Graphic file (type jpg)
 
 <use img/Shared_Nothing_Architecture.jpg>
@@ -1465,7 +1465,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
  [8 <./img/Shared_Nothing_Architecture.jpg>] <img/Shared_Disk_Architecture.jpg,
- id=256, 715.67375pt x 512.91624pt>
+ id=255, 715.67375pt x 512.91624pt>
 File: img/Shared_Disk_Architecture.jpg Graphic file (type jpg)
 
 <use img/Shared_Disk_Architecture.jpg>
@@ -1592,7 +1592,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
-<img/raid00.png, id=273, 602.25pt x 602.25pt>
+<img/raid00.png, id=272, 602.25pt x 602.25pt>
 File: img/raid00.png Graphic file (type png)
  <use img/raid00.png>
 Package pdftex.def Info: img/raid00.png used on input line 101.
@@ -1616,7 +1616,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
-<img/raid11.png, id=277, 602.25pt x 602.25pt>
+<img/raid11.png, id=276, 602.25pt x 602.25pt>
 File: img/raid11.png Graphic file (type png)
  <use img/raid11.png>
 Package pdftex.def Info: img/raid11.png used on input line 113.
@@ -1640,7 +1640,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
-<img/raid22.png, id=281, 602.25pt x 229.85875pt>
+<img/raid22.png, id=280, 602.25pt x 229.85875pt>
 File: img/raid22.png Graphic file (type png)
  <use img/raid22.png>
 Package pdftex.def Info: img/raid22.png used on input line 122.
@@ -1664,7 +1664,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--130
 
  []
 
-<img/raid33.png, id=285, 602.25pt x 380.42125pt>
+<img/raid33.png, id=284, 602.25pt x 380.42125pt>
 File: img/raid33.png Graphic file (type png)
  <use img/raid33.png>
 Package pdftex.def Info: img/raid33.png used on input line 133.
@@ -1683,7 +1683,7 @@ l.139 \textbf{RAID \verb"4"}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<img/raid44.png, id=289, 602.25pt x 380.42125pt>
+<img/raid44.png, id=288, 602.25pt x 380.42125pt>
 File: img/raid44.png Graphic file (type png)
  <use img/raid44.png>
 Package pdftex.def Info: img/raid44.png used on input line 143.
@@ -1707,7 +1707,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
-<img/raid55.png, id=293, 602.25pt x 380.42125pt>
+<img/raid55.png, id=292, 602.25pt x 380.42125pt>
 File: img/raid55.png Graphic file (type png)
  <use img/raid55.png>
 Package pdftex.def Info: img/raid55.png used on input line 155.
@@ -1731,7 +1731,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
 
-<img/raid66.png, id=297, 602.25pt x 334.24875pt>
+<img/raid66.png, id=296, 602.25pt x 334.24875pt>
 File: img/raid66.png Graphic file (type png)
  <use img/raid66.png>
 Package pdftex.def Info: img/raid66.png used on input line 165.
@@ -1760,26 +1760,10 @@ Underfull \hbox (badness 10000) detected at line 186
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.210 ...                 		\verb"r = "\frac{k}{n}
-                                                   {k \over n}
+l.210                        		\verb"r = "\sqrt{
+                                                \frac{k}{n}}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\frac  #1#2->{\begingroup #1\endgroup \@@over #2}
-                                                 
-l.210 ...                 		\verb"r = "\frac{k}{n}
-                                                   {k \over n}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-Package amsmath Warning: Foreign command \over;
-(amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 210.
 
 
 LaTeX Warning: Command \` invalid in math mode on input line 211.
@@ -1834,24 +1818,6 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.212 \end{itemize}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (50.79782pt too wide) in paragraph at lines 209--213
-[]\T1/pplj/m/n/12 (-20) la va-ria-bi-le []\T1/fvm/m/n/12 r\T1/pplj/m/n/12 (-20)
- , de-fi-ni-ta nel se-guen-te mo-do: []\T1/fvm/m/n/12 r = \T1/pplj/m/n/12 (-20)
- k$[]$ 
- []
-
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -1905,14 +1871,635 @@ Underfull \hbox (badness 10000) detected at line 224
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--230
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 ...razione per la tolleranza agli errori. È
+                                                   estremamente scalabile si...
+
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+[20]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.251 ...eSQL esegue procedure memorizzate in più
+                                                   di una dozzina di linguag...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\mathonesuperior ->{^1}
+                       
+l.251 ...eSQL esegue procedure memorizzate in più
+                                                   di una dozzina di linguag...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 251.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 251.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 251.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.252 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (389.82103pt too wide) in paragraph at lines 251--252
+[]\T1/pplj/m/n/12 (-20) PostgreSQL ese-gue pro-ce-du-re me-mo-riz-za-te in pi�$
+[]\U/zeur/m/n/12 diunadozzinadilinguaggidiprogrammazione; tracuiJava; Perl; Pyt
+hon; Ruby; Tcl; C=C \U/zeus/m/n/12 �
+ []
+
+
+Overfull \hbox (4520.96687pt too wide) in paragraph at lines 251--252
+\U/zeus/m/n/12 �\U/zeur/m/n/12 eilproprioPL=pgSQL; simileaPL=SQLdiOracle\T1/ppl
+j/m/n/12 (-20) .\U/zeur/m/n/12 Inclusinellasualibreriadifunzionistandardsonocen
+tinaiadifunzioniintegratechevannodallamatematicaedalleoperazionidistringhedibas
+eallacrittografiaeallacompatibilit\T1/pplj/m/n/12 (-20) � \U/zeur/m/n/12 diOrac
+le\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 Itriggerelestoredprocedurepossonoessere
+scrittiinCecaricatineldatabasecomelibreria; permettendounagrandeflessibilit\T1/
+pplj/m/n/12 (-20) � \U/zeur/m/n/12 nell[]estensionedellesuefunzionalit\T1/pplj/
+m/n/12 (-20) � .\U/zeur/m/n/12 Allostessomodo; PostgreSQLincludeunframeworkchec
+onsenteaglisviluppatorididefinireecreareipropritipididatipersonalizzatiinsiemea
+funzionidisupportoeoperatorichedefinisconoillorocomportamento\T1/pplj/m/n/12 (-
+20) .\U/zeur/m/n/12 Diconseguenza; sonostaticreatimoltitipididatiavanzatichevan
+nodalleprimitivegeometricheespazialiagliindirizzidiretefinoaitipididatiISBN=ISS
+N\U/zeus/m/n/12 �\U/zeur/m/n/12 InternationalStandardBookNumber=InternationalSt
+andardSerialNumber\U/zeus/m/n/12 �\U/zeur/m/n/12 ; tuttieventualmenteaggiuntiai
+lsistema\T1/pplj/m/n/12 (-20) .$ 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.262 ...solverli è molto diverso. E come si può
+                                                   vedere da questi esempi, ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\mathtwosuperior ->{^2}
+                       
+l.262 ...solverli è molto diverso. E come si può
+                                                   vedere da questi esempi, ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 262.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 262.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.262 ...ti. Una grande fonte per questo sfondo è
+                                                   nelle Termini e definizio...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.262 ...ti. Una grande fonte per questo sfondo è
+                                                   nelle Termini e definizio...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.262 ...ti. Una grande fonte per questo sfondo è
+                                                   nelle Termini e definizio...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 262.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 262.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.262 ...to principale teorico che non menziona è
+                                                   come risolvere la risoluz...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.262 ...to principale teorico che non menziona è
+                                                   come risolvere la risoluz...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.262 ...to principale teorico che non menziona è
+                                                   come risolvere la risoluz...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.263 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.263 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.263 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font zeuex10!
+Missing character: There is no � in font zeuex10!
+
+Overfull \hbox (2045.5972pt too wide) in paragraph at lines 258--263
+\T1/pplj/m/n/12 (-20) pu�$[]\U/zeur/m/n/12 vederedaquestiesempi; lareplicahamol
+teterminologiespecifichechedovraicapirepercapirequaleclassedisoluzionehasensope
+rituoirequisiti\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 Unagrandefonteperquestosfo
+ndo\T1/pplj/m/n/12 (-20) �[]$ 
+ []
+
+[21]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.264 ...na replica binaria asincrona a uno o più
+                                                   standby. Gli standby poss...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\mathonesuperior ->{^1}
+                       
+l.264 ...na replica binaria asincrona a uno o più
+                                                   standby. Gli standby poss...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 264.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 264.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.264 ... come database di sola lettura. Questo è
+                                                   il tipo di replica più v...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.264 ... come database di sola lettura. Questo è
+                                                   il tipo di replica più v...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.264 ... come database di sola lettura. Questo è
+                                                   il tipo di replica più v...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 264.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 265.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 265.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.265 Warm Standby / Log Spedizione è
+                                       una soluzione HA che replica un clust...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.265 Warm Standby / Log Spedizione è
+                                       una soluzione HA che replica un clust...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.265 Warm Standby / Log Spedizione è
+                                       una soluzione HA che replica un clust...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 265.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 265.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 265.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.265 ...query) server standby. Il sovraccarico è
+                                                   molto basso e è facile d...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.265 ...query) server standby. Il sovraccarico è
+                                                   molto basso e è facile d...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.265 ...query) server standby. Il sovraccarico è
+                                                   molto basso e è facile d...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 265.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 265.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.265 ...ndby. Il sovraccarico è molto basso e è
+                                                   facile da installare. Que...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.265 ...ndby. Il sovraccarico è molto basso e è
+                                                   facile da installare. Que...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.265 ...ndby. Il sovraccarico è molto basso e è
+                                                   facile da installare. Que...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 265.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 265.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.265 ...asso e è facile da installare. Questa è
+                                                   una soluzione semplice e ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.265 ...asso e è facile da installare. Questa è
+                                                   una soluzione semplice e ...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.265 ...asso e è facile da installare. Questa è
+                                                   una soluzione semplice e ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 265.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 265.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 265.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.265 ...opriata se tutto ciò che ti interessa è
+                                                   un backup continuo e brev...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.265 ...opriata se tutto ciò che ti interessa è
+                                                   un backup continuo e brev...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.265 ...opriata se tutto ciò che ti interessa è
+                                                   un backup continuo e brev...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 266.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 267.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 267.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.267 ...cus del progetto principale, ma questo è
+                                                   cambiato nel 2008, vedere...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.267 ...cus del progetto principale, ma questo è
+                                                   cambiato nel 2008, vedere...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.267 ...cus del progetto principale, ma questo è
+                                                   cambiato nel 2008, vedere...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 267.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 267.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.267 ...l'istruzione del Team Core. La replica è
+                                                   ora un focus significativ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.267 ...l'istruzione del Team Core. La replica è
+                                                   ora un focus significativ...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.267 ...l'istruzione del Team Core. La replica è
+                                                   ora un focus significativ...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.268 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.268 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.268 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.268 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.268 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.268 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.268 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.268 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.268 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font zeuex10!
+Missing character: There is no � in font zeuex10!
+Missing character: There is no � in font zeuex10!
+Missing character: There is no � in font zeuex10!
+Missing character: There is no � in font zeuex10!
+Missing character: There is no � in font zeuex10!
+Missing character: There is no � in font zeuex10!
+Missing character: There is no � in font zeuex10!
+
+Overfull \hbox (5993.04886pt too wide) in paragraph at lines 264--268
+\T1/pplj/m/n/12 (-20) gre-SQL 9.0 e for-ni-sce una re-pli-ca bi-na-ria asin-cro
+-na a uno o pi�$[]\U/zeur/m/n/12 standby\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 G
+listandbypossonoanchediventarestandbyscaldi; chepossonoessererichiesticomedatab
+asedisolalettura\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 Questo\T1/pplj/m/n/12 (-2
+0) �[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.235 In PostgreSQL, ma il discorso può
+l.278 In PostgreSQL, ma il discorso può
                                          essere allargato a tutti i gestori ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1920,7 +2507,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathtwosuperior ->{^2}
                        
-l.235 In PostgreSQL, ma il discorso può
+l.278 In PostgreSQL, ma il discorso può
                                          essere allargato a tutti i gestori ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1929,21 +2516,21 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 236.
+LaTeX Warning: Command \~ invalid in math mode on input line 279.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 236.
+LaTeX Warning: Command \~ invalid in math mode on input line 279.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.237 
+l.280 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (1765.75903pt too wide) in paragraph at lines 235--237
+Overfull \hbox (1765.75903pt too wide) in paragraph at lines 278--280
 []\T1/pplj/m/n/12 (-20) In Post-gre-SQL, ma il di-scor-so pu�$[]\U/zeur/m/n/12 
 essereallargatoatuttiigestorididatabaserelazionali; idativengonorappresentatiat
 traversodelletabelleeletabellesonogestiteutilizzandounlinguaggiodialtolivelloch
@@ -1953,7 +2540,7 @@ todigestireleoperazionidiarchiviazioneedisalvaguardiadell[]integrit\T1/pplj/m/n
 /12 (-20) � \U/zeur/m/n/12 deidatiallocati\T1/pplj/m/n/12 (-20) .$ 
  []
 
-[20]
+[22]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -1961,232 +2548,64 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.254 \subsection
-                 {PG Logical}
+l.297 \subsection
+                 {Pglogical}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 254
+Underfull \hbox (badness 10000) detected at line 297
 [][]
  []
 
-[21]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.293 ...eSQL 9.4). Pglogical funziona ancora più
-                                                   veloce con PostgreSQL 9.5...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\mathonesuperior ->{^1}
-                       
-l.293 ...eSQL 9.4). Pglogical funziona ancora più
-                                                   veloce con PostgreSQL 9.5...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.294 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (240.68202pt too wide) in paragraph at lines 292--294
-\T1/pplj/m/n/12 (-20) gi-cal fun-zio-na an-co-ra pi�$[]\U/zeur/m/n/12 velocecon
-PostgreSQL9\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 5esuccessive; conbassioverhead
-suentrambiiprovidereabbonati\T1/pplj/m/n/12 (-20) .$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.304 ...se da BDR per produrre una soluzione più
-                                                   semplice e più semplice ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\mathonesuperior ->{^1}
-                       
-l.304 ...se da BDR per produrre una soluzione più
-                                                   semplice e più semplice ...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 304.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 304.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 304.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 304.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.304 ...a vasta gamma di casi di utilizzo. BDR è
-                                                   stato progettato innanzit...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.304 ...a vasta gamma di casi di utilizzo. BDR è
-                                                   stato progettato innanzit...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.304 ...a vasta gamma di casi di utilizzo. BDR è
-                                                   stato progettato innanzit...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 304.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 304.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.304 ...ti-master della rete a n-way, e questo è
-                                                   stato difficile adattarsi...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.304 ...ti-master della rete a n-way, e questo è
-                                                   stato difficile adattarsi...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.304 ...ti-master della rete a n-way, e questo è
-                                                   stato difficile adattarsi...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.305 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.305 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.305 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no � in font zeuex10!
-Missing character: There is no � in font zeuex10!
-
-Overfull \hbox (1217.5255pt too wide) in paragraph at lines 297--305
-\T1/pplj/m/n/12 (-20) pi�$[]\U/zeur/m/n/12 sempliceepi\T1/pplj/m/n/12 (-20) �[]
-\U/zeur/m/n/12 semplicedautilizzareperlareplicaunidirezionale; utilizzabiledapi
-\T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 personeperunavastagammadicasidiutilizzo
-\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 BDR\T1/pplj/m/n/12 (-20) �[]$ 
- []
-
-<img/pglogical_1.png, id=360, 652.4375pt x 250.9375pt>
+[23] <img/pglogical_1.png, id=371, 652.4375pt x 250.9375pt>
 File: img/pglogical_1.png Graphic file (type png)
 
 <use img/pglogical_1.png>
-Package pdftex.def Info: img/pglogical_1.png used on input line 314.
+Package pdftex.def Info: img/pglogical_1.png used on input line 340.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 313--314
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 339--340
  [] 
  []
 
-<img/pglogical_2.png, id=364, 652.4375pt x 250.9375pt>
+<img/pglogical_2.png, id=375, 652.4375pt x 250.9375pt>
 File: img/pglogical_2.png Graphic file (type png)
 
 <use img/pglogical_2.png>
-Package pdftex.def Info: img/pglogical_2.png used on input line 317.
+Package pdftex.def Info: img/pglogical_2.png used on input line 345.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 316--317
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 344--345
  [] 
  []
 
-<img/pglogical_3.png, id=367, 652.4375pt x 250.9375pt>
+<img/pglogical_3.png, id=378, 652.4375pt x 250.9375pt>
 File: img/pglogical_3.png Graphic file (type png)
 
 <use img/pglogical_3.png>
-Package pdftex.def Info: img/pglogical_3.png used on input line 324.
+Package pdftex.def Info: img/pglogical_3.png used on input line 353.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 323--324
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 352--353
  [] 
  []
 
-<img/pglogical_4.png, id=370, 652.4375pt x 250.9375pt>
+<img/pglogical_4.png, id=381, 652.4375pt x 250.9375pt>
 File: img/pglogical_4.png Graphic file (type png)
 
 <use img/pglogical_4.png>
-Package pdftex.def Info: img/pglogical_4.png used on input line 327.
+Package pdftex.def Info: img/pglogical_4.png used on input line 357.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 326--327
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 356--357
  [] 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.333 ...se da BDR per produrre una soluzione più
+l.384 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2194,7 +2613,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathonesuperior ->{^1}
                        
-l.333 ...se da BDR per produrre una soluzione più
+l.384 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2203,21 +2622,21 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 333.
+LaTeX Warning: Command \~ invalid in math mode on input line 384.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 333.
+LaTeX Warning: Command \~ invalid in math mode on input line 384.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 333.
+LaTeX Warning: Command \~ invalid in math mode on input line 384.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 333.
+LaTeX Warning: Command \" invalid in math mode on input line 384.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.333 ...a vasta gamma di casi di utilizzo. BDR è
+l.384 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2225,7 +2644,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.333 ...a vasta gamma di casi di utilizzo. BDR è
+l.384 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2235,7 +2654,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.333 ...a vasta gamma di casi di utilizzo. BDR è
+l.384 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2243,15 +2662,15 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 333.
+LaTeX Warning: Command \~ invalid in math mode on input line 384.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 333.
+LaTeX Warning: Command \" invalid in math mode on input line 384.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.333 ...ti-master della rete a n-way, e questo è
+l.384 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2259,7 +2678,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.333 ...ti-master della rete a n-way, e questo è
+l.384 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2269,7 +2688,143 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.333 ...ti-master della rete a n-way, e questo è
+l.384 ...ti-master della rete a n-way, e questo è
+                                                   stato difficile adattarsi...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.385 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.385 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.385 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no � in font zeuex10!
+Missing character: There is no � in font zeuex10!
+
+Overfull \hbox (1324.91829pt too wide) in paragraph at lines 384--385
+\T1/pplj/m/n/12 (-20) dur-re una so-lu-zio-ne pi�$[]\U/zeur/m/n/12 sempliceepi\
+T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 semplicedautilizzareperlareplicaunidirez
+ionale; utilizzabiledapi\T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 personeperunava
+stagammadicasidiutilizzo\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 BDR\T1/pplj/m/n/1
+2 (-20) �[]$ 
+ []
+
+[24] [25 <./img/pglogical_1.png> <./img/pglogical_2.png>] [26 <./img/pglogical_
+3.png> <./img/pglogical_4.png>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.391 ...se da BDR per produrre una soluzione più
+                                                   semplice e più semplice ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\mathonesuperior ->{^1}
+                       
+l.391 ...se da BDR per produrre una soluzione più
+                                                   semplice e più semplice ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 391.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 391.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 391.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 391.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.391 ...a vasta gamma di casi di utilizzo. BDR è
+                                                   stato progettato innanzit...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.391 ...a vasta gamma di casi di utilizzo. BDR è
+                                                   stato progettato innanzit...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.391 ...a vasta gamma di casi di utilizzo. BDR è
+                                                   stato progettato innanzit...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 391.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 391.
+
+! Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...ctor \spacefactor }\accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.391 ...ti-master della rete a n-way, e questo è
+                                                   stato difficile adattarsi...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+! Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.391 ...ti-master della rete a n-way, e questo è
+                                                   stato difficile adattarsi...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.391 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2310,18 +2865,22 @@ my insertion and my current dilemma will both disappear.
 Missing character: There is no � in font zeuex10!
 Missing character: There is no � in font zeuex10!
 
-Overfull \hbox (1217.5255pt too wide) in paragraph at lines 331--114
+Overfull \hbox (1217.5255pt too wide) in paragraph at lines 389--114
 \T1/pplj/m/n/12 (-20) pi�$[]\U/zeur/m/n/12 sempliceepi\T1/pplj/m/n/12 (-20) �[]
 \U/zeur/m/n/12 semplicedautilizzareperlareplicaunidirezionale; utilizzabiledapi
 \T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 personeperunavastagammadicasidiutilizzo
 \T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 BDR\T1/pplj/m/n/12 (-20) �[]$ 
  []
 
-[22] [23 <./img/pglogical_1.png> <./img/pglogical_2.png>] [24 <./img/pglogical_
-3.png> <./img/pglogical_4.png>]
+[27]
 \openout2 = `secondChapter.aux'.
 
- (./secondChapter.tex
+ (./secondChapter.tex [28
+
+
+
+
+]
 chapter 2.
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
@@ -2372,23 +2931,18 @@ l.25 ...ied at least to the new master (if that’
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[25
-
-
-
-
-]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 54--54
 |\T1/pplj/m/sc/12 (-6) c o n -s i -d e -r a -z i o -n i s t a -t i -s t i -c h 
 e s u l -l a r i -d o n -d a n -z a d e l m e -t a -d a -
  []
 
-) [26]
+) [30]
 \openout2 = `thirdChapter.aux'.
 
  (./thirdChapter.tex
 chapter 3.
-) [27
+) [31
 
 
 
@@ -2396,24 +2950,24 @@ chapter 3.
 ]
 \openout2 = `fourthChapter.aux'.
 
- (./fourthChapter.tex [28
+ (./fourthChapter.tex [32
 
 
 
 
 ]
 chapter 4.
-) [29]
+) [33]
 \openout2 = `esercizi.aux'.
 
- (./esercizi.tex [30
+ (./esercizi.tex [34
 
 
 
 
 ]
 chapter 5.
-[31]) [32]
+[35]) [36]
 \openout2 = `Chapters/bibliografia.aux'.
 
  (./Chapters/bibliografia.tex (./thesis.brf)
@@ -2489,7 +3043,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [33
+) [37
 
 
 
@@ -2503,41 +3057,43 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: F74053BE8870E74F5270771402FD91B6;1782.
+(rerunfilecheck)             Checksum: 89AE1B79C32D73AE918CA2E8C1E53328;1781.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 89E39FB118D45D48441CAAEA2F49A34E;2924.
+(rerunfilecheck)             Checksum: DCFA8F43A82157CF32F2D942F6E19D23;3142.
  )
-(\end occurred inside a group at level 4)
+(\end occurred inside a group at level 6)
 
-### simple group (level 4) entered at line 333 ({)
-### simple group (level 3) entered at line 304 ({)
-### simple group (level 2) entered at line 293 ({)
-### simple group (level 1) entered at line 235 ({)
+### simple group (level 6) entered at line 391 ({)
+### simple group (level 5) entered at line 384 ({)
+### simple group (level 4) entered at line 278 ({)
+### simple group (level 3) entered at line 264 ({)
+### simple group (level 2) entered at line 262 ({)
+### simple group (level 1) entered at line 251 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26911 strings out of 493029
- 480110 string characters out of 6136235
+ 26917 strings out of 493029
+ 480187 string characters out of 6136235
  679731 words of memory out of 5000000
- 29504 multiletter control sequences out of 15000+600000
- 93626 words of font info for 400 fonts, out of 8000000 for 9000
+ 29507 multiletter control sequences out of 15000+600000
+ 90486 words of font info for 398 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,14n,73p,10393b,1198s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,14n,73p,10393b,1239s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (35 pages, 967998 bytes).
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/fpl/fplbj8a.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/f
+pl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (39 pages, 983246 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 439 compressed objects within 5 object streams
- 88 named destinations out of 1000 (max. 500000)
+ 550 PDF objects out of 1000 (max. 8388607)
+ 460 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
  78079 words of extra memory for PDF output out of 89155 (max. 10000000)
 

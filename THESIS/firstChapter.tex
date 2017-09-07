@@ -184,14 +184,14 @@ ci puo essere o un affarino (scheda) chiamato raid controller. Ha una memoria ch
 
 \item
 \subsection{Codice di correzione errore (Erasure Coding)}
-La codifica di cancellazione, noto come \emph{Erasure Coding} (EC) \`{e} un metodo di protezione dei dati. Quest'ultimi vengono suddivisi in frammenti, estesi e codificati con pezzi di dati ridondanti e memorizzati su un insieme di posizioni o supporti di memorizzazione diversi.\cite{etichetta11}
+La codifica di cancellazione, noto come \emph{Erasure Coding} (EC) \`{e} un metodo di protezione dei dati,i quali vengono suddivisi in frammenti, estesi e codificati con pezzi di dati ridondanti e memorizzati su un insieme di posizioni o supporti di memorizzazione diversi.\cite{etichetta11}
 
 L'obiettivo della codifica di cancellazione \`{e} quello di consentire di ricostruire i dati che vengono danneggiati utilizzando le informazioni sui dati memorizzati altrove nell'array. I codici di cancellazione vengono spesso utilizzati anzich\'{e} RAID tradizionali a causa della loro capacit\`{a} di ridurre il tempo e le spese generali necessarie per ricostruire i dati. Lo svantaggio della codifica di cancellazione \`{e} che pu\`{o} essere pi\`{u} intenso della CPU e che pu\`{o} tradursi in una maggiore latenza.\cite{etichetta11}
 
 La codifica di cancellazione \`{e} utile con la presenza di grandi quantit\`{a} di dati e tutte le applicazioni o sistemi che devono tollerare i guasti, come sistemi di array a dischi, griglie di dati, applicazioni di archiviazione distribuite, negozi di oggetti e archiviazione di archiviazione. Un caso comune di utilizzo corrente per la codifica di cancellazione \`{e} in un sistema object-based cloud storage\cite{etichetta11}.
 
 \subsubsection{Come funziona?}
-La codifica di cancellazione crea una funzione matematica per descrivere un insieme di numeri in modo che possano essere controllati per l'accuratezza e recuperati in caso di perdita. Destinato a interpolazione polinomiale o oversampling, questo \`{e} il concetto fondamentale dei metodi di codifica di cancellazione, implementati pi\`{u} frequentemente utilizzando i codici \textit{Reed-Solomon}\cite{etichetta11}. 
+La codifica di cancellazione crea una funzione matematica per descrivere un insieme di numeri in modo che possano essere controllati per l'accuratezza e recuperati in caso di perdita. Questo \`{e} il concetto fondamentale dei metodi di codifica di cancellazione, implementati pi\`{u} frequentemente utilizzando i codici \textit{Reed-Solomon}\cite{etichetta11}. 
 
 In termini matematici, la protezione offerta dalla codifica di cancellazione pu\`{o} essere rappresentata in forma semplice dalla seguente equazione:  
 \begin{verbatim}
@@ -200,20 +200,20 @@ In termini matematici, la protezione offerta dalla codifica di cancellazione pu\
 dove:
 \begin{itemize}
 \item 
-la variabile \verb"k" \`{e} la quantit\`{a} originale di dati o simboli. 
+la variabile \verb"k" \`{e} la quantit\`{a} originale di dati o simboli 
 \item
-la variabile \verb"m" indica i simboli aggiuntivi o ridondanti che vengono aggiunti per fornire protezione dai guasti. 
+la variabile \verb"m" indica i simboli aggiuntivi o ridondanti che vengono aggiunti per fornire protezione dai guasti
 \item
-la variabile \verb"n" \`{e} il numero totale di simboli creati dopo il processo di codifica di cancellazione\cite{etichetta11}.
+la variabile \verb"n" \`{e} il numero totale di simboli creati dopo il processo di codifica di cancellazione\cite{etichetta11}
 \item
-la variabile \verb"r", definita nel seguente modo: 
-                       		\verb"r = "{k \over n}
+la variabile \verb"r", definita nel seguente modo: \\
+                       		\verb"r = "\sqrt{\frac{k}{n}}\\
 \`{e} chiamata la velocit\`{a} di codice.\textbf{preso wiki}
 \end{itemize}
 
 Ad esempio, in una configurazione 10 di 16, o EC 10/16, sei simboli supplementari (\verb"m") saranno aggiunti ai 10 simboli di base (\verb"k"). I 16 frammenti di dati (\verb"n") saranno diffusi su 16 unit\`{a}, nodi o posizioni geografiche. Il file originale potrebbe essere ricostruito da 10 frammenti verificati.\cite{etichetta11}
 
-I codici di cancellazione, noti anche come codici di correzione degli errori di avanzamento (FEC), sono stati sviluppati pi\`{u} di 50 anni fa. Da quel momento sono emersi diversi tipi. In uno dei tipi pi\`{u} comuni, Reed-Solomon, i dati possono essere ricostruiti utilizzando qualsiasi combinazione di simboli \verb"k" o pezzi di dati, anche se i simboli \verb"m" sono persi o non sono disponibili. Ad esempio, in EC 10/16, sei unit\`{a}, nodi o posizioni geografiche potrebbero essere persi o non disponibili e il file originale sar\`{a} ancora recuperabile.\cite{etichetta11}
+I codici di cancellazione, noti anche come codici di correzione degli errori di avanzamento (FEC), sono stati sviluppati pi\`{u} di 50 anni fa. Da quel momento sono emersi diversi tipi. In uno dei tipi pi\`{u} comuni, \textit{Reed-Solomon}, i dati possono essere ricostruiti utilizzando qualsiasi combinazione di simboli \verb"k" o pezzi di dati, anche se i simboli \verb"m" sono persi o non sono disponibili. Ad esempio, in EC 10/16, sei unit\`{a}, nodi o posizioni geografiche potrebbero essere persi o non disponibili e il file originale sar\`{a} ancora recuperabile.\cite{etichetta11}
  
 \item
 \section{Hardware utilizzato per gli esperimenti}
@@ -222,6 +222,49 @@ I codici di cancellazione, noti anche come codici di correzione degli errori di 
 \section{Software utilizzato per gli esperimenti}
 \item
 \subsection{PosgreSQL}
+
+PostgreSQL \`{e} un potente sistema open source di database relazionale. Ha pi\`{u} di 15 anni di sviluppo attivo e un'architettura collaudata che ha guadagnato una notevole reputazione per l'affidabilit\`{a}, l'integrit\`{a} dei dati e la correttezza. 
+%Funziona su tutti i principali sistemi operativi, tra cui Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, MacOS, Solaris, Tru64) e Windows. È completamente compatibile con ACID, ha un pieno supporto per le chiavi straniere, unisce, visualizza, innesca e memorizza le procedure (in più lingue). Include la maggior parte dei tipi di dati SQL: 2008, inclusi INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVAL e TIMESTAMP. Supporta anche la memorizzazione di oggetti grandi binari, tra cui immagini, suoni o video. Ha interfacce di programmazione native per C / C ++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, tra gli altri, e documentazione eccezionale.
+
+Un database di classe enterprise, PostgreSQL vanta funzionalit\`{a} sofisticate come Multi-Version Concurrency Control (MVCC), ripristino in tempo reale, spazi di tabelle, replica asincrona, transazioni nidificate (punti di salvataggio), backup online / hot, un sofisticato pianificatore di query / ottimizzatore di query e scrivere avanti la registrazione per la tolleranza agli errori. È estremamente scalabile sia nella quantit\`{a} pura di dati che pu\`{o} gestire sia nel numero di utenti concorrenti che pu\`{o} ospitare. Esistono sistemi Active PostgreSQL in ambienti di produzione che gestiscono oltre 4 terabyte di dati. 
+
+
+Caratteristica e standard conforme
+
+PostgreSQL si vanta di essere conforme alle norme. La sua implementazione SQL è fortemente conforme allo standard ANSI-SQL: 2008. Ha il pieno supporto per le subquery (incluse sottotitoli nella clausola FROM), i livelli di isolamento delle transazioni di lettura e serializzabili. E mentre PostgreSQL ha un catalogo di sistema completamente relazionale che supporta pi\`{u} schemi per database, il suo catalogo \`{e} accessibile anche attraverso lo schema di informazioni definito nello standard SQL.
+
+Le funzionalit\`{a} di integrit\`{a} dei dati includono le chiavi primarie (combinate), le chiavi estranee con aggiornamenti e cancellazioni a cascata, i controlli dei vincoli, i vincoli unici e non i vincoli nullo.
+
+Ha anche una serie di estensioni e funzionalit\`{a} avanzate. PostgreSQL supporta indici composti, unici, parziali e funzionali che possono utilizzare qualsiasi metodo di archiviazione B-tree, R-tree, hash o GiST.
+
+%L'indicizzazione di GiST (Generalized Search Tree) è un sistema avanzato che riunisce un'ampia gamma di diversi tipi di algoritmi di selezione e ricerca, tra cui B-tree, B +, albero R, alberi di somma parziale, B + -trees classificati e molti altri. Fornisce inoltre un'interfaccia che consente sia la creazione di tipi di dati personalizzati sia i metodi di query estensibili con cui eseguire la ricerca. Così, GiST offre la flessibilit\`{a} per specificare ciò che memorizzi, come memorizzi, e la capacità di definire nuovi modi di ricercare attraverso di essa --- vie che superano di gran lunga quelle offerte da standard B-tree, R-tree e altre generalizzazioni di ricerca algoritmi.GiST serve come base per molti progetti pubblici che utilizzano PostgreSQL come OpenFTS e PostGIS. OpenFTS (motore di ricerca full-text open source) fornisce l'indicizzazione in linea dei dati e la classificazione di pertinenza per la ricerca del database. PostGIS è un progetto che aggiunge il supporto per gli oggetti geografici in PostgreSQL, consentendolo di essere utilizzato come database spaziale per i sistemi di informazioni geografiche (GIS), molto simile a SDE di ESRI o all'estensione spaziale di Oracle.
+
+Altre funzionalit\`{a} avanzate includono l'ereditariet\`{a} delle tabelle, i sistemi di regole e gli eventi del database. L'ereditarietà di tabella mette un orientamento orientato all'oggetto sulla creazione della tabella, consentendo ai progettisti di database di derivare nuove tabelle da altre tabelle, trattandole come classi di base. Ancora meglio, PostgreSQL supporta sia l'ereditarietà singola che quella multipla in questo modo.
+
+Il sistema di regole, chiamato anche il sistema di riscrittura delle query, consente al progettista del database di creare regole che identificano operazioni specifiche per una determinata tabella o vista e le trasformano dinamicamente in operazioni alternative quando vengono elaborate.
+
+Il sistema eventi è un sistema di comunicazione interprocesso in cui i messaggi e gli eventi possono essere trasmessi tra i client utilizzando i comandi LISTEN e NOTIFY, consentendo sia la semplice comunicazione peer to peer sia un coordinamento avanzato sugli eventi del database. Poiché le notifiche possono essere rilasciate da trigger e stored procedure, i client PostgreSQL possono monitorare eventi di database come gli aggiornamenti, gli inserti o le eliminazioni di tabella quando vengono eseguiti.
+
+
+Elevata personalizzazione
+
+PostgreSQL esegue procedure memorizzate in più di una dozzina di linguaggi di programmazione, tra cui Java, Perl, Python, Ruby, Tcl, C / C ++ e il proprio PL / pgSQL, simile a PL / SQL di Oracle. Inclusi nella sua libreria di funzioni standard sono centinaia di funzioni integrate che vanno dalla matematica e dalle operazioni di stringhe di base alla crittografia e alla compatibilità di Oracle. I trigger e le stored procedure possono essere scritti in C e caricati nel database come libreria, permettendo una grande flessibilità nell'estensione delle sue funzionalità. Allo stesso modo, PostgreSQL include un framework che consente agli sviluppatori di definire e creare i propri tipi di dati personalizzati insieme a funzioni di supporto e operatori che definiscono il loro comportamento. Di conseguenza, sono stati creati molti tipi di dati avanzati che vanno dalle primitive geometriche e spaziali agli indirizzi di rete fino ai tipi di dati ISBN / ISSN (International Standard Book Number / International Standard Serial Number), tutti eventualmente aggiunti a il sistema.
+
+Proprio come ci sono molte lingue di procedura supportate da PostgreSQL, ci sono anche molte interfacce di libreria, consentendo a diverse lingue sia compilato e interpretato per interfacciarsi con PostgreSQL. Ci sono interfacce per Java (JDBC), ODBC, Perl, Python, Ruby, C, C ++, PHP, Lisp, Schema e Qt solo per citarne alcuni.
+
+Meglio di tutti, il codice sorgente PostgreSQL è disponibile sotto una licenza libera open source: la licenza PostgreSQL. Questa licenza ti dà la libertà di utilizzare, modificare e distribuire PostgreSQL in qualsiasi forma che ti piace, sorgente aperta o chiusa. Le modifiche, i miglioramenti o le modifiche apportate sono i tuoi a che fare con quanto ti piace. Come tale, PostgreSQL non è solo un potente sistema di database in grado di gestire l'azienda, ma è una piattaforma di sviluppo su cui sviluppare prodotti software in-house, web o commerciali che richiedono un RDBMS capace.
+
+
+Ci sono molti approcci disponibili per scalare PostgreSQL oltre l'esecuzione su un singolo server. Una descrizione della terminologia e delle tecnologie di base coinvolte è quella di Alta disponibilità e bilanciamento del carico. C'è una presentazione che copre alcune di queste soluzioni.
+Non esiste un unico formato per tutti i software di replica. Devi capire le tue esigenze e come si adattino diversi approcci. Ad esempio, ecco due estremi nello spazio del problema di replica:
+Hai alcuni server collegati a una rete locale che vuoi mantenere sempre la corrente per scopi di failover e di bilanciamento del carico. Qui si considererebbero soluzioni sincrone, desiderose e quindi prive di conflitti.
+I tuoi utenti prendono una copia locale del database con loro sui computer portatili quando lasciano l'ufficio, apportano modifiche mentre sono lontani e hanno bisogno di unire quelli con il database principale quando tornano. Qui si desidera un approccio asincrono e pigro di replica e sarà costretto a considerare come gestire i conflitti nei casi in cui lo stesso record sia stato modificato sia sul server master che su una copia locale.
+Questi sono problemi di replica del database, ma il modo migliore per risolverli è molto diverso. E come si può vedere da questi esempi, la replica ha molte terminologie specifiche che dovrai capire per capire quale classe di soluzione ha senso per i tuoi requisiti. Una grande fonte per questo sfondo è nelle Termini e definizioni di Postgres-R per la replica del database. L'argomento principale teorico che non menziona è come risolvere la risoluzione dei conflitti nei casi di pigri repliche come la situazione del computer portatile, che riguarda il voto e simili schemi.
+
+Hot Standby / Streaming Replication è disponibile a partire da PostgreSQL 9.0 e fornisce una replica binaria asincrona a uno o più standby. Gli standby possono anche diventare standbys caldi, che possono essere richiesti come database di sola lettura. Questo è il tipo di replica più veloce disponibile in quanto i dati WAL vengono inviati immediatamente piuttosto che aspettare che un intero segmento venga prodotto e spedito.
+Warm Standby / Log Spedizione è una soluzione HA che replica un cluster di database ad un archivio o un caldo (può essere portato in fretta, ma non disponibile per la query) server standby. Il sovraccarico è molto basso e è facile da installare. Questa è una soluzione semplice e appropriata se tutto ciò che ti interessa è un backup continuo e brevi tempi di failover.
+L'estrazione Logical Changeset di PostgreSQL 9.4 forma il fondamento della funzionalità di replica di reazione bidirezionale e Log Log Logging Streaming che viene aggiunto a PostgreSQL.
+Storicamente, il team di base di PostgreSQL ha considerato la tecnologia di replica e clustering al di fuori dell'ambito del focus del progetto principale, ma questo è cambiato nel 2008, vedere l'istruzione del Team Core. La replica è ora un focus significativo dello sviluppo continuativo
 
 \textbf{(spiegazione cinci -audio-)}
 Uno dei punti di forza che ha reso famoso e versatile Posgres è che è un DBMS (Database Management System è un sistema software progettato per consentire la creazione e manipolazione efficiente di database (ovvero di collezioni di dati strutturati) ) (scritto in C). Ha dei rametti dove te riesci ad agganciarci dei software fatti ad OC. te ti agganci a un sistema di segnalistica interna e lui quindi tramite messaggi di scambio interno ti permette di lavorare (ti dice "ho fatto l'inserimento di questa tabella(INSERT), ti scatta il segnale, e te riesci a intercettare e quindi fare delle operazioni)
@@ -251,13 +294,12 @@ The Slony-I replication system will have a mechanism to execute SQL
 scr ipts in a controlled fashion as part of the replication process.
 
 \item
-\subsection{PG Logical}
-L'estensione pglogical fornisce la replica logica di streaming per PostgreSQL, utilizzando un modulo di pubblicazione / sottoscrizione. Si basa sulla tecnologia sviluppata come parte del Progetto BDR.
+\subsection{Pglogical}
+Pglogical \`{e} un sistema logico di replica implementato come estensione di PostgreSQL. Completamente integrato, non richiede alcun triggers o programmi esterni. Questa alternativa alla replica fisica \`{e} un metodo altamente efficiente per replicare i dati utilizzando un modello di \textit{publish/subscribe} per la replica selettiva.\cite{etichetta3}
+%Metodo di replicazione : Master-Slave
 
-
-PG Logical \`e un sistema logico di replica implementato come estensione di PostgreSQL. Completamente integrato, non richiede alcun triggers o programmi esterni. Questa alternativa alla replica fisica \`e un metodo altamente efficiente per replicare i dati utilizzando un modello di publish/subscribe per la replica selettiva.
-
-I vantaggi offerti da Pg Logical sono i seguenti:
+\subsubsection{Vantaggi}
+I vantaggi offerti da Pglogical sono i seguenti:
 \begin{itemize}
 \item
 Replica sincrona
@@ -280,53 +322,69 @@ Il sottoscrittore non \`{e} in ripristino di riposo caldo, in modo da poter util
 \item
 Non \`{e} necessario annullare le query per consentire alla replica di continuare la riproduzione
 \item
-Il sottoscrittore (Subscriber) pu\`{o} avere diversi utenti e protezione, indici diversi, impostazioni di parametri diversi
+Il sottoscrittore (\textit{subscriber}) pu\`{o} avere diversi utenti e protezione, indici diversi, impostazioni di parametri diversi
 \item
-Replica solo un database o un sottoinsieme di tabelle, noto come set di replica (Replication Sets)
+Replica solo un database o un sottoinsieme di tabelle, noto come set di replica (\textit{Replication Sets})
 \item
 Replicare in versioni o architetture di PostgreSQL, consentendo aggiornamenti a bassa o zero-downtime
 \item
-Pi\`{u} server a monte in un singolo subscriber per l'accumulo di cambiamenti
+Pi\`{u} server a monte in un singolo subscriber per l'accumulo di cambiamenti.\cite{etichetta3}
 \end{itemize}
 
-Come funziona pglogical?
-Pglogical utilizza le funzioni di Decodifica Logica aggiunte da 2ndQuadrant (e disponibili da PostgreSQL 9.4). Pglogical funziona ancora più veloce con PostgreSQL 9.5 e successive, con bassi overhead su entrambi i provider e abbonati.
+\subsubsection{Casi di uso}
+I diagrammi che seguono descrivono i gestori di database delle funzioni che sono in grado di eseguire con pglogical:
 
-Pglogical si basa molto sulle caratteristiche introdotte nell'ambito dello sviluppo BDR, tra cui:
-
-Decodifica logica
-Slot di replica
-Lavoratori di sfondo statico
-Origini di replica
-Impegnano timestamp
-Messaggi WAL logici
-Replica pglogical Bi-Directional Replication (BDR)?
-No. pglogical non fornisce funzionalità complete di replica multi-master e un supporto di modifica dello schema coerente, come fa la BDR. Pglogical incorpora le funzionalità di BDR e le lezioni apprese da BDR per produrre una soluzione più semplice e più semplice da utilizzare per la replica unidirezionale, utilizzabile da più persone per una vasta gamma di casi di utilizzo. BDR è stato progettato innanzitutto per il multi-master della rete a n-way, e questo è stato difficile adattarsi bene alla replica mono-master a senso unico.
-
-Lo sviluppo di BDR continuerà per quelli che richiedono piena capacità multi-master, riutilizzando gran parte del codice da pglogical.
-
-
-Casi di uso:
-I diagrammi che seguono descrivono i gestori di database delle funzioni che sono in grado di eseguire con PgLogical.
 \begin{figure}[htbp]
 \centering
-Migrare e aggiornare PostgreSQL con tempi di inattivit\`a quasi a zero
+Migrare e aggiornare PostgreSQL con tempi di inattivit\`{a} quasi a zero
 \includegraphics[scale=0.70]{img/pglogical_1.png}\\
+
 \caption{Migrazione e aggiornamenti PostgreSQL \label{figura1} \cite{etichetta3}}
+
 Accumulare le modifiche provenienti da server di database scartati in un data warehouse
 \includegraphics[scale=0.70]{img/pglogical_2.png}\\
-\caption{Aggregazione \label{figura2} 
-\cite{etichetta4}}
+
+\caption{Aggregazione \label{figura2} \cite{etichetta3}}
 \end{figure}
+
 \begin{figure}[htbp]
 \centering
 Copiare tutti o una selezione di tabelle di database ad altri nodi di un cluster
 \includegraphics[scale=0.70]{img/pglogical_3.png}\\
-\caption{A cascata e distribuzione dati \label{figura3} \cite{etichetta4}}
+
+\caption{A cascata e distribuzione dati \label{figura3} \cite{etichetta3}}
 Le modifiche del database in tempo reale ad altri sistemi
 \includegraphics[scale=0.70]{img/pglogical_4.png}\\
-\caption{A cascata e distribuzione dati \label{figura4} \cite{etichetta4}}
+
+\caption{A cascata e distribuzione dati \label{figura4} \cite{etichetta3}}
 \end{figure}
+
+\subsubsection{Come funziona pglogical?}
+Pglogical utilizza le funzioni di Decodifica Logica aggiunte da 2ndQuadrant (e disponibili da PostgreSQL 9.4). Pglogical funziona ancora pi\`{u} veloce con PostgreSQL 9.5 e successive, con bassi overhead su entrambi i provider e abbonati.
+
+Pglogical si basa molto sulle caratteristiche introdotte nell'ambito dello sviluppo BDR, tra cui:
+
+\begin{itemize}
+\item
+Decodifica logica
+\item
+\item
+Slot di replica
+\item
+Lavoratori di sfondo statico
+\item
+Origini di replica
+\item
+Impegnano timestamp
+\item
+Messaggi WAL logici.\cite{etichetta3}
+\end{itemize}
+
+\subsubsection{Replica pglogical Bi-Directional Replication (BDR)?}
+No. pglogical non fornisce funzionalità complete di replica multi-master e un supporto di modifica dello schema coerente, come fa la BDR. Pglogical incorpora le funzionalità di BDR e le lezioni apprese da BDR per produrre una soluzione più semplice e più semplice da utilizzare per la replica unidirezionale, utilizzabile da più persone per una vasta gamma di casi di utilizzo. BDR è stato progettato innanzitutto per il multi-master della rete a n-way, e questo è stato difficile adattarsi bene alla replica mono-master a senso unico.
+
+Lo sviluppo di BDR continuerà per quelli che richiedono piena capacità multi-master, riutilizzando gran parte del codice da pglogical.\cite{etichetta3}
+
 
 \texttt{DA METTERE? DIFFERENZA TRA PG LOGICAL E BDR}
 Replica pglogical Bi-Directional Replication (BDR)?
