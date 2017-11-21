@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.3)  11 SEP 2017 10:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=latex 2017.11.17)  20 NOV 2017 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **bibliografia.tex
 (./bibliografia.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 6 language(s) loaded.
 
 ! LaTeX Error: Environment thebibliography undefined.
 
@@ -890,17 +890,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.20 \bibitem{etichetta10}
-                          {Derek Vadala - \emph{Managing RAID on Linux, O' R...
-
+l.20 \bibitem{etichetta12}
+                          {SearchStorage - \emph{RAID controller}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
 <argument> \@listctr 
                      
-l.20 \bibitem{etichetta10}
-                          {Derek Vadala - \emph{Managing RAID on Linux, O' R...
+l.20 \bibitem{etichetta12}
+                          {SearchStorage - \emph{RAID controller}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -910,19 +909,14 @@ and I'll forget about whatever was undefined.
 ! You can't use `\relax' after \the.
 <recently read> \c@ 
                     
-l.20 \bibitem{etichetta10}
-                          {Derek Vadala - \emph{Managing RAID on Linux, O' R...
+l.20 \bibitem{etichetta12}
+                          {SearchStorage - \emph{RAID controller}}
 I'm forgetting what you said and using zero instead.
 
-\bibcite{etichetta10}{0}
+\bibcite{etichetta12}{0}
 
-Overfull \hbox (25.05533pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/it/10 Derek
- []
-
-
-Overfull \hbox (29.6665pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/it/10 Vadala
+Overfull \hbox (60.31064pt too wide) in paragraph at lines 20--21
+\OT1/cmr/m/it/10 SearchStorage
  []
 
 
@@ -931,48 +925,18 @@ Overfull \hbox (3.57774pt too wide) in paragraph at lines 20--21
  []
 
 
-Overfull \hbox (23.0556pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/n/10 Man-
- []
-
-
-Overfull \hbox (13.33336pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/n/10 ag-
- []
-
-
-Overfull \hbox (13.33337pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/n/10 ing
- []
-
-
 Overfull \hbox (26.11115pt too wide) in paragraph at lines 20--21
 \OT1/cmr/m/n/10 RAID
  []
 
 
-Overfull \hbox (10.55559pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/n/10 on
+Overfull \hbox (18.33336pt too wide) in paragraph at lines 20--21
+\OT1/cmr/m/n/10 con-
  []
 
 
-Overfull \hbox (27.91675pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/n/10 Linux,
- []
-
-
-Overfull \hbox (10.55559pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/n/10 O'
- []
-
-
-Overfull \hbox (27.36116pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/n/10 Reilly,
- []
-
-
-Overfull \hbox (20.00006pt too wide) in paragraph at lines 20--21
-\OT1/cmr/m/n/10 2002 
+Overfull \hbox (26.72227pt too wide) in paragraph at lines 20--21
+\OT1/cmr/m/n/10 troller 
  []
 
 
@@ -989,7 +953,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+[1]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -997,7 +961,99 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 \bibitem{etichetta11}
+l.22 \bibitem{etichetta10}
+                          {Derek Vadala - \emph{Managing RAID on Linux, O' R...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.22 \bibitem{etichetta10}
+                          {Derek Vadala - \emph{Managing RAID on Linux, O' R...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.22 \bibitem{etichetta10}
+                          {Derek Vadala - \emph{Managing RAID on Linux, O' R...
+I'm forgetting what you said and using zero instead.
+
+\bibcite{etichetta10}{0}
+
+Overfull \hbox (25.05533pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/it/10 Derek
+ []
+
+
+Overfull \hbox (29.6665pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/it/10 Vadala
+ []
+
+
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/it/10 -
+ []
+
+
+Overfull \hbox (23.0556pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 Man-
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ag-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 ing
+ []
+
+
+Overfull \hbox (26.11115pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 RAID
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 on
+ []
+
+
+Overfull \hbox (27.91675pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 Linux,
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 O'
+ []
+
+
+Overfull \hbox (27.36116pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 Reilly,
+ []
+
+
+Overfull \hbox (20.00006pt too wide) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 2002 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 \bibitem{etichetta11}
                           {SearchStorage - \emph{erasure coding}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1005,7 +1061,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <argument> \@listctr 
                      
-l.22 \bibitem{etichetta11}
+l.24 \bibitem{etichetta11}
                           {SearchStorage - \emph{erasure coding}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1016,38 +1072,38 @@ and I'll forget about whatever was undefined.
 ! You can't use `\relax' after \the.
 <recently read> \c@ 
                     
-l.22 \bibitem{etichetta11}
+l.24 \bibitem{etichetta11}
                           {SearchStorage - \emph{erasure coding}}
 I'm forgetting what you said and using zero instead.
 
 \bibcite{etichetta11}{0}
 
-Overfull \hbox (60.31064pt too wide) in paragraph at lines 22--24
+Overfull \hbox (60.31064pt too wide) in paragraph at lines 24--26
 \OT1/cmr/m/it/10 SearchStorage
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 22--24
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 24--26
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (16.69446pt too wide) in paragraph at lines 22--24
+Overfull \hbox (16.69446pt too wide) in paragraph at lines 24--26
 \OT1/cmr/m/n/10 era-
  []
 
 
-Overfull \hbox (17.86113pt too wide) in paragraph at lines 22--24
+Overfull \hbox (17.86113pt too wide) in paragraph at lines 24--26
 \OT1/cmr/m/n/10 sure
  []
 
 
-Overfull \hbox (18.61115pt too wide) in paragraph at lines 22--24
+Overfull \hbox (18.61115pt too wide) in paragraph at lines 24--26
 \OT1/cmr/m/n/10 cod-
  []
 
 
-Overfull \hbox (13.33337pt too wide) in paragraph at lines 22--24
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 24--26
 \OT1/cmr/m/n/10 ing 
  []
 
@@ -1058,7 +1114,53 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.25 \bibitem{etichetta3}
+l.27 \bibitem{etichetta12}
+                          {PosgreSQL - \emph{About}}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+<argument> \@listctr 
+                     
+l.27 \bibitem{etichetta12}
+                          {PosgreSQL - \emph{About}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! You can't use `\relax' after \the.
+<recently read> \c@ 
+                    
+l.27 \bibitem{etichetta12}
+                          {PosgreSQL - \emph{About}}
+I'm forgetting what you said and using zero instead.
+
+\bibcite{etichetta12}{0}
+
+Overfull \hbox (48.44966pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/10 PosgreSQL
+ []
+
+
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/it/10 -
+ []
+
+
+Overfull \hbox (27.77786pt too wide) in paragraph at lines 27--28
+\OT1/cmr/m/n/10 About 
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \bibitem{etichetta3}
                          {2ndQuadrant Ltd - \emph{pglogical}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1066,7 +1168,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <argument> \@listctr 
                      
-l.25 \bibitem{etichetta3}
+l.29 \bibitem{etichetta3}
                          {2ndQuadrant Ltd - \emph{pglogical}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1077,43 +1179,43 @@ and I'll forget about whatever was undefined.
 ! You can't use `\relax' after \the.
 <recently read> \c@ 
                     
-l.25 \bibitem{etichetta3}
+l.29 \bibitem{etichetta3}
                          {2ndQuadrant Ltd - \emph{pglogical}}
 I'm forgetting what you said and using zero instead.
 
 \bibcite{etichetta3}{0}
 
-Overfull \hbox (56.86076pt too wide) in paragraph at lines 25--26
+Overfull \hbox (56.86076pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 2ndQuadrant
  []
 
 
-Overfull \hbox (14.70544pt too wide) in paragraph at lines 25--26
+Overfull \hbox (14.70544pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 Ltd
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 25--26
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (13.88892pt too wide) in paragraph at lines 25--26
+Overfull \hbox (13.88892pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/n/10 pg-
  []
 
 
-Overfull \hbox (16.11115pt too wide) in paragraph at lines 25--26
+Overfull \hbox (16.11115pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/n/10 log-
  []
 
 
-Overfull \hbox (6.11111pt too wide) in paragraph at lines 25--26
+Overfull \hbox (6.11111pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/n/10 i-
  []
 
 
-Overfull \hbox (12.22224pt too wide) in paragraph at lines 25--26
+Overfull \hbox (12.22224pt too wide) in paragraph at lines 29--30
 \OT1/cmr/m/n/10 cal 
  []
 
@@ -1124,7 +1226,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.27 \bibitem{etichetta4}
+l.31 \bibitem{etichetta4}
                          {Autore - \emph{Titolo} - altre informazioni}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1132,7 +1234,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Undefined control sequence.
 <argument> \@listctr 
                      
-l.27 \bibitem{etichetta4}
+l.31 \bibitem{etichetta4}
                          {Autore - \emph{Titolo} - altre informazioni}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1143,53 +1245,53 @@ and I'll forget about whatever was undefined.
 ! You can't use `\relax' after \the.
 <recently read> \c@ 
                     
-l.27 \bibitem{etichetta4}
+l.31 \bibitem{etichetta4}
                          {Autore - \emph{Titolo} - altre informazioni}
 I'm forgetting what you said and using zero instead.
 
 \bibcite{etichetta4}{0}
 
-Overfull \hbox (29.2831pt too wide) in paragraph at lines 27--28
+Overfull \hbox (29.2831pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/it/10 Autore
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 27--28
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (26.66673pt too wide) in paragraph at lines 27--28
+Overfull \hbox (26.66673pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/n/10 Titolo
  []
 
 
-Overfull \hbox (3.57774pt too wide) in paragraph at lines 27--28
+Overfull \hbox (3.57774pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/it/10 -
  []
 
 
-Overfull \hbox (11.24437pt too wide) in paragraph at lines 27--28
+Overfull \hbox (11.24437pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/it/10 al-
  []
 
 
-Overfull \hbox (11.62766pt too wide) in paragraph at lines 27--28
+Overfull \hbox (11.62766pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/it/10 tre
  []
 
 
-Overfull \hbox (12.26659pt too wide) in paragraph at lines 27--28
+Overfull \hbox (12.26659pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/it/10 in-
  []
 
 
-Overfull \hbox (15.9721pt too wide) in paragraph at lines 27--28
+Overfull \hbox (15.9721pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/it/10 for-
  []
 
 
-Overfull \hbox (34.24426pt too wide) in paragraph at lines 27--28
+Overfull \hbox (34.24426pt too wide) in paragraph at lines 31--32
 \OT1/cmr/m/it/10 mazioni 
  []
 
@@ -1200,7 +1302,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.29 \end{thebibliography}
+l.33 \end{thebibliography}
                           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1209,7 +1311,7 @@ or  <return>  to continue without it.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.29 \end{thebibliography}
+l.33 \end{thebibliography}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1220,7 +1322,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.29 \end{thebibliography}
+l.33 \end{thebibliography}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1236,11 +1338,11 @@ my insertion and my current dilemma will both disappear.
 
  
 Here is how much of TeX's memory you used:
- 15 strings out of 493029
- 268 string characters out of 6136235
- 57075 words of memory out of 5000000
- 3648 multiletter control sequences out of 15000+600000
+ 14 strings out of 494902
+ 258 string characters out of 6179511
+ 49482 words of memory out of 5000000
+ 3407 multiletter control sequences out of 15000+600000
  3986 words of font info for 15 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
+ 36 hyphenation exceptions out of 8191
  20i,4n,13p,206b,162s stack positions out of 5000i,500n,10000p,200000b,80000s
-!  ==> Fatal error occurred, no output PDF file produced!
+Output written on bibliografia.dvi (1 page, 1436 bytes).

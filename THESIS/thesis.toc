@@ -4,22 +4,22 @@
 \contentsline {chapter}{\numberline {1}Definizione del problema}{7}{chapter.1}
 \contentsline {subsection}{\numberline {1.1.1}Cluster di database}{7}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Rete di pari}{10}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Sistemi di ridondanza disco (RAID)}{10}{subsection.1.1.3}
-\contentsline {subsubsection}{RAID hardware e software}{11}{subsection.1.1.3}
-\contentsline {subsubsection}{Controllore RAID}{11}{subsection.1.1.3}
-\contentsline {subsubsection}{Livelli RAID}{11}{subsection.1.1.3}
-\contentsline {paragraph}{Livelli RAID Standard}{12}{subsection.1.1.3}
-\contentsline {paragraph}{Livelli RAID Nidificati Annidati}{16}{figure.caption.11}
-\contentsline {subsection}{\numberline {1.1.4}Codice di correzione errore (Erasure Coding)}{16}{subsection.1.1.4}
-\contentsline {subsubsection}{Come funziona}{17}{subsection.1.1.4}
-\contentsline {section}{\numberline {1.2}Hardware utilizzato per gli esperimenti}{17}{section.1.2}
-\contentsline {section}{\numberline {1.3}Software utilizzato per gli esperimenti}{18}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}PosgreSQL}{18}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Pglogical}{21}{subsection.1.3.2}
-\contentsline {subsubsection}{Vantaggi}{21}{subsection.1.3.2}
-\contentsline {subsubsection}{Casi di uso}{22}{subsection.1.3.2}
-\contentsline {subsubsection}{Come funziona pglogical?}{22}{figure.caption.13}
-\contentsline {subsubsection}{Replica pglogical Bi-Directional Replication (BDR)?}{25}{figure.caption.13}
+\contentsline {subsection}{\numberline {1.1.3}Sistemi di ridondanza disco (RAID)}{11}{subsection.1.1.3}
+\contentsline {subsubsection}{RAID hardware e software}{12}{subsection.1.1.3}
+\contentsline {subsubsection}{Controllore RAID}{12}{subsection.1.1.3}
+\contentsline {subsubsection}{Livelli RAID}{12}{subsection.1.1.3}
+\contentsline {paragraph}{Livelli RAID Standard}{13}{subsection.1.1.3}
+\contentsline {paragraph}{Livelli RAID Nidificati Annidati}{17}{figure.caption.11}
+\contentsline {subsection}{\numberline {1.1.4}Codice di correzione errore (Erasure Coding)}{17}{subsection.1.1.4}
+\contentsline {subsubsection}{Come funziona}{18}{subsection.1.1.4}
+\contentsline {section}{\numberline {1.2}Hardware utilizzato per gli esperimenti}{18}{section.1.2}
+\contentsline {section}{\numberline {1.3}Software utilizzato per gli esperimenti}{19}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}PosgreSQL}{19}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Pglogical}{22}{subsection.1.3.2}
+\contentsline {subsubsection}{Vantaggi}{22}{subsection.1.3.2}
+\contentsline {subsubsection}{Casi di uso}{23}{subsection.1.3.2}
+\contentsline {subsubsection}{Come funziona pglogical?}{23}{figure.caption.13}
+\contentsline {subsubsection}{Replica pglogical Bi-Directional Replication (BDR)?}{26}{figure.caption.13}
 \contentsline {chapter}{\numberline {2}Definizione del progetto}{27}{chapter.2}
 \contentsline {subsection}{\numberline {2.1.1}Architettura del progetto}{27}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Simulazione di un filesystem distribuito (Dati e Metadati)}{28}{subsection.2.1.2}

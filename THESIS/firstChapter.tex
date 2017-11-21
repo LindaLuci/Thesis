@@ -14,9 +14,10 @@ Seguono due dei vantaggi principarli offerti dal clustering, specialmente in un 
 \item
 \textit{Load balancing} (bilanciamento del carico): la funzionalit\`{a} di clustering \`{e} generalmente impostata per consentire agli utenti di essere assegnati automaticamente al server con il minor carico.\cite{etichetta1} 
 \end{itemize}
-Ci sono differenti tipi di architetture clustering, che si diversificano da come vengono memorizzati i dati e allocate le risorse.
+Ci sono differenti tipi di architetture clustering che si diversificano da come vengono memorizzati i dati e allocate le risorse.
 La prima modalit\`{a} di clustering \`{e} conosciuta come architettura "\textit{shared-nothing}" (SN). \`{E} un'architettura di elaborazione distribuita in cui ogni nodo/server \`{e} totalmente indipendente e autonomo, pertanto nessuno dei nodi condivide memoria o archiviazione del disco. Pi\`{u} generalmente, non esiste un unico punto di contesa nel sistema.\cite{etichetta5} Il partizionamento \`{e} tale che ogni nodo possiede un sottoinsieme dei dati, ovvero ogni nodo ha accesso esclusivo su quel particolare sottoinsieme. 
-((Un esempio di questa forma di clustering potrebbe essere quando un'azienda ha pi\`{u} data centers per un unico sito web. Con molti server in tutto il mondo, nessun singolo server \`{e} un "master".\cite{etichetta2}))\\
+%((Un esempio di questa forma di clustering potrebbe essere quando un'azienda ha pi\`{u} data centers per un unico sito web. Con molti server in tutto il mondo, nessun singolo server \`{e} un "master"
+\cite{etichetta2}))\\
 
 \begin{figure}[htbp]
 \centering
@@ -24,11 +25,13 @@ La prima modalit\`{a} di clustering \`{e} conosciuta come architettura "\textit{
 \caption{Architecture Shared Nothing \label{figura1.1} \cite{etichetta7}}
 \end{figure}
 
-I vantaggi dell'architettura SN rispetto a un'entit\`{a} centrale che controlla la rete (un'architettura basata su controller) riguarda l'eliminazione di qualsiasi singolo punto di guasto, consentendo funzionalit\`{a} di (self-healing) auto-riparazione e fornendo un vantaggio nell'offrire aggiornamenti non distruttivi.\cite{etichetta6} 
-\textbf{DA LEGGERE PER BENE ARTICOLO CITATO.}
+I vantaggi dell'architettura SN rispetto a un'entit\`{a} centrale che controlla la rete (un'architettura basata su controller) riguarda l'eliminazione di qualsiasi singolo punto di guasto, consentendo funzionalit\`{a} di auto-riparazione (\textit{self-healing}) e fornendo un vantaggio nell'offrire aggiornamenti non distruttivi.\cite{etichetta6} 
+%\textbf{DA LEGGERE PER BENE ARTICOLO CITATO.}
 \textit{Shared-nothing} \`{e} anche noto come "\textit{database sharding}". In generale, un sistema SN divide i suoi dati in vari nodi su database diversi o pu\`{o} richiedere a ciascun nodo di mantenere la propria copia dei dati dell'applicazione utilizzando un qualche tipo di protocollo di coordinamento.\cite{etichetta5}\\
+
+
 Si oppone a quest'ultima, l'architettura nota come "\textit{shared-disk}" (disco condiviso), in cui tutti i dati vengono memorizzati centralmente in un unico disco e sono accessibili da tutti i nodi di cluster.\cite{etichetta7} In questo tipo di struttura quindi pi\`{u} istanze di database vengono raggruppate in un singolo database sul disco. Nei sistemi di dischi condivisi, i blocchi (o pagine) di dati su disco possono avere un solo proprietario.((
-La proprietà dei blocchi (o pagine) viene trasferita all'istanza che sta facendo l'aggiornamento. Questo genera traffico di rete e in genere un'infrastruttura dedicata viene implementata tra le istanze di database per far fronte a questo traffico.))
+%La propriet\`{a} dei blocchi (o pagine) viene trasferita all'istanza che sta facendo l'aggiornamento. Questo genera traffico di rete e in genere un'infrastruttura dedicata viene implementata tra le istanze di database per far fronte a questo traffico.))
 L'architettura \textit{shared-disk} \`{e} un esempio di \textit{Synchronous multi-master}, ovvero ogni istanza del database pu\`{o} scrivere (cio\`{e} \`{e} un master) in modo sincrono.\cite{etichetta7}
 \textbf{DA CHIEDERE E DA CONTROLLARE ULTIME FRASI. GUARDA COMMENTO per il sito}
 %https://en.wikibooks.org/wiki/Oracle_and_DB2,_Comparison_and_Compatibility/Database_Scaling/Shared_Architectures}}
@@ -40,11 +43,42 @@ L'architettura \textit{shared-disk} \`{e} un esempio di \textit{Synchronous mult
 \end{figure}
 
 In un'architettura SD, grandi reti di computer possono operare su un singolo set di dati senza la necessit\`{a} di replicare o bloccare quel set di dati.\cite{etichetta7}
-\textit{Shared disk} ha due vantaggi: ogni processore ha la propria memoria, il bus di memoria non \`{e} un collo di bottiglia (contrariamente all'architettura "\textit{shared-everything}"). Inoltre il sistema offre un modo semplice per fornire un certo grado di tolleranza agli errori.\\
+\textit{Shared disk} ha due vantaggi:
+\begin{itemize}
+\item
+ogni processore ha la propria memoria, 
+\item
+il bus di memoria non \`{e} un collo di bottiglia (contrariamente all'architettura "\textit{shared-everything}"), 
+\item 
+il sistema offre un modo semplice per fornire un certo grado di tolleranza agli errori.\\
+\end{itemize}
+La distinzione tra i due tipi \`{e} diventata confusa di recente con l'introduzione di distribuzione della cache. In questa configurazione, i dati sono ancora gestiti centralmente, ma controllati da un potente "server virtuale" composto da molti server che lavorano insieme come uno.\cite{etichetta2}
 
-((La distinzione tra i due tipi \`{e} diventata confusa di recente con l'introduzione di grid computing o distribuzione cache. In questa configurazione, i dati sono ancora gestiti centralmente, ma controllati da un potente "server virtuale" composto da molti server che lavorano insieme come uno.\cite{etichetta2}))
 \item
 \subsection{Rete di pari}
+\textit{Peer-to-peer networking} (P2P) \`{e} un modello di comunicazione decentralizzato in cui ciascuna parte ha la stessa responsabilit\`{a} per l'elaborazione dei dati e ciascuna parte pu\`{o} avviare una sessione di comunicazione. A differenza del modello\textit{ client/server}, in cui il client effettua una richiesta di servizio e il server soddisfa la richiesta, il modello di rete P2P, noto anche come \textit{peer networking}, consente a ciascun nodo di funzionare sia come client che come server.\cite{etichetta13}\\
+Quando una rete P2P viene stabilita su Internet, \`{e} possibile utilizzare un server centrale per indicizzare i file oppure stabilire una rete distribuita in cui la condivisione dei file viene suddivisa tra tutti gli utenti della rete che memorizzano un determinato file. Le dimensioni della rete e i file disponibili consentono di condividere enormi quantit\`{a} di dati.\\ 
+Le prime reti P2P come Napster utilizzavano il software client e un server centrale, mentre reti successive come Kazaa e BitTorrent eliminavano il server centrale e dividevano i compiti di condivisione tra pi\`{u} nodi per liberare la larghezza di banda.\\
+
+
+Seguono i vantaggi di una rete \textit{peer-to-peer}:
+\begin{itemize}
+\item
+se un dispositivo collegato interrompe la connessione, il servizio non termina a differenza del modello \textit{client-server},
+
+\item 
+\`{e} possibile configurare i computer in gruppi di lavoro \textit{peer-to-peer} per consentire la condivisione di file e altre risorse su tutti i dispositivi. \textit{Peer networking} consente di condividere facilmente i dati in entrambe le direzioni, sia per i \textit{download} sul computer che per gli \textit{upload} dal computer,
+
+\item
+su Internet, le reti peer-to-peer gestiscono un volume elevato di traffico di condivisione file distribuendo il carico su pi\`{u} computer. Poich\'{e} non si basano esclusivamente sui server centrali, le reti P2P possono scalare meglio e sono pi\`{u} resistenti delle reti \textit{client-server} in caso di guasti o colli di bottiglia del traffico,
+
+\item
+Le reti \textit{peer-to-peer} sono relativamente facili da espandere. Con l'aumentare del numero di dispositivi nella rete, aumenta la potenza della rete P2P, poich\'{e} ogni computer aggiuntivo \`{e} disponibile per l'elaborazione dei dati.\cite{etichetta14}
+\end{itemize}
+
+Le reti \textit{peer-to-peer} sono vulnerabili agli attacchi di sicurezza. Poich\'{e} ogni dispositivo partecipa al traffico di routing attraverso la rete, gli hacker possono facilmente lanciare attacchi \textit{denial of service}.
+Il software P2P funge da server e client, il che rende le \textit{peer networking} pi\`{u} vulnerabili agli attacchi remoti rispetto alle reti client-server.
+I dati corrotti possono essere condivisi su reti P2P modificando i file gi\`{a} presenti in rete per introdurre codice dannoso.\cite{etichetta14}
 
 \item
 \subsection{Sistemi di ridondanza disco (RAID)}
@@ -227,16 +261,13 @@ I codici di cancellazione, noti anche come codici di correzione degli errori di 
 \item
 \subsection{PosgreSQL}
 
-PostgreSQL \`{e} un potente sistema open source di database relazionale. \`{E} un sistema generale di gestione di database e di oggetti relazionali. Ha pi\`{u} di 15 anni di sviluppo attivo e un'architettura collaudata che ha guadagnato una notevole reputazione per l'affidabilit\`{a}, l'integrit\`{a} dei dati e la correttezza. \cite{etichetta12}
+PostgreSQL \`{e} un potente sistema \textit{open source} di database relazionale. \`{E} un sistema generale di gestione di database e di oggetti relazionali. Ha pi\`{u} di 15 anni di sviluppo attivo e un'architettura collaudata che ha guadagnato una notevole reputazione per l'affidabilit\`{a}, l'integrit\`{a} dei dati e la correttezza.\cite{etichetta12}
 
-PostgreSQL è il primo sistema di gestione del database che implementa la funzionalit\`{a} di controllo della concorrenza multi-versione (\textit{Multi-Version Concurrency Control}, MVCC), anche prima di Oracle. La funzionalità MMVC è conosciuta come isolamento istantaneo in Oracle.
+PostgreSQL \`{e} il primo sistema di gestione del database che implementa la funzionalit\`{a} di controllo della concorrenza multi-versione (\textit{Multi-Version Concurrency Control}, MVCC), anche prima di Oracle.
 
-PostgreSQL è un sistema di gestione dei database relazionale object-relational. Permette di aggiungere funzioni personalizzate sviluppate utilizzando diversi linguaggi di programmazione quali C / C ++, Java, ecc.
+PostgreSQL \`{e} un sistema di gestione dei database relazionale \textit{object-relational}. Permette di aggiungere funzioni personalizzate sviluppate utilizzando diversi linguaggi di programmazione quali C/C++, Java, e molti altri.\cite{etichetta12}
 
-PostgreSQL è progettato per essere estensibile. In PostgreSQL è possibile definire i propri tipi di dati, tipi di indici, lingue funzionali, ecc. Se non ti piace una parte del sistema, puoi sempre sviluppare un plugin personalizzato per ottimizzarlo per soddisfare le tue esigenze, ad esempio aggiungendo un nuovo ottimizzatore.
-
-Se hai bisogno di un supporto, una comunità attiva è disponibile per aiutarti. È sempre possibile trovare le risposte della comunità di PostgreSQL per i problemi che si possono avere quando si lavora con PostgreSQL. Molte aziende offrono servizi di supporto commerciale in caso di necessità.
-
+PostgreSQL \`{e} progettato per essere estensibile, poichè \`{e} possibile definire i propri tipi di dati, tipi di indici e lingue funzionali. Inoltre vi \`{e} la possibilit\`{a} di ottimizzarlo per soddisfare le proprie esigenze, tramite uno sviluppo di un plugin personalizzato.
 
 Un database di classe enterprise, PostgreSQL vanta funzionalit\`{a} sofisticate come Multi-Version Concurrency Control (MVCC), ripristino in tempo reale, spazi di tabelle, replica asincrona, transazioni nidificate (punti di salvataggio), backup online / hot, un sofisticato pianificatore di query / ottimizzatore di query e scrivere avanti la registrazione per la tolleranza agli errori. È estremamente scalabile sia nella quantit\`{a} pura di dati che pu\`{o} gestire sia nel numero di utenti concorrenti che pu\`{o} ospitare. Esistono sistemi Active PostgreSQL in ambienti di produzione che gestiscono oltre 4 terabyte di dati. 
 

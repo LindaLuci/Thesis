@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.3)  11 SEP 2017 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  21 NOV 2017 17:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1447,7 +1447,7 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 7.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 17--20
+Underfull \hbox (badness 10000) in paragraph at lines 17--21
 
  []
 
@@ -1460,23 +1460,28 @@ File: img/Shared_Nothing_Architecture.jpg Graphic file (type jpg)
 
 <use img/Shared_Nothing_Architecture.jpg>
 Package pdftex.def Info: img/Shared_Nothing_Architecture.jpg used on input line
- 23.
+ 24.
 (pdftex.def)             Requested size: 351.31009pt x 265.59042pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--31
+
+ []
+
 LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 36.
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [8 <./img/Shared_Nothing_Architecture.jpg>] <img/Shared_Disk_Architecture.jpg,
- id=255, 715.67375pt x 512.91624pt>
+[8 <./img/Shared_Nothing_Architecture.jpg>]
+<img/Shared_Disk_Architecture.jpg, id=254, 715.67375pt x 512.91624pt>
 File: img/Shared_Disk_Architecture.jpg Graphic file (type jpg)
 
 <use img/Shared_Disk_Architecture.jpg>
-Package pdftex.def Info: img/Shared_Disk_Architecture.jpg used on input line 38
+Package pdftex.def Info: img/Shared_Disk_Architecture.jpg used on input line 41
 .
 (pdftex.def)             Requested size: 286.26442pt x 205.16286pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
@@ -1487,16 +1492,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 \subsection
+l.58 \subsection
                 {Rete di pari}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 47
+Underfull \hbox (badness 10000) detected at line 58
 [][]
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--62
+
+ []
+
+[9 <./img/Shared_Disk_Architecture.jpg>] [10]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -1504,24 +1515,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.50 \subsection
+l.84 \subsection
                 {Sistemi di ridondanza disco (RAID)}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 50
+Underfull \hbox (badness 10000) detected at line 84
 [][]
  []
 
-[9 <./img/Shared_Disk_Architecture.jpg>]
-Overfull \hbox (18.89758pt too wide) in paragraph at lines 63--64
+
+Overfull \hbox (24.89758pt too wide) in paragraph at lines 97--98
 []\T1/pplj/m/n/12 (-20) miglioramenti nel-la tol-le-ran-za ai gua-sti, ne se-gu
 e mi-glio-re affidabilit�[[]].
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
@@ -1532,123 +1543,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 \subsubsection
-                   {RAID hardware e software}
+l.107 \subsubsection
+                    {RAID hardware e software}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 73
-[][]
- []
-
-[10]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.83 \subsubsection
-                   {Controllore RAID}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 83
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 \subsubsection
-                   {Livelli RAID}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 93
+Underfull \hbox (badness 10000) detected at line 107
 [][]
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
-
- []
-
-<img/raid00.png, id=279, 602.25pt x 602.25pt>
-File: img/raid00.png Graphic file (type png)
- <use img/raid00.png>
-Package pdftex.def Info: img/raid00.png used on input line 109.
-(pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 117--119
-
- []
-
-<img/raid11.png, id=283, 602.25pt x 602.25pt>
-File: img/raid11.png Graphic file (type png)
- <use img/raid11.png>
-Package pdftex.def Info: img/raid11.png used on input line 123.
-(pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--131
-
- []
-
-<img/raid22.png, id=287, 602.25pt x 229.85875pt>
-File: img/raid22.png Graphic file (type png)
- <use img/raid22.png>
-Package pdftex.def Info: img/raid22.png used on input line 133.
-(pdftex.def)             Requested size: 301.12425pt x 114.92908pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--140
-
- []
-
-<img/raid33.png, id=291, 602.25pt x 380.42125pt>
-File: img/raid33.png Graphic file (type png)
- <use img/raid33.png>
-Package pdftex.def Info: img/raid33.png used on input line 143.
-(pdftex.def)             Requested size: 240.89572pt x 152.16579pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
-
- []
-
-<img/raid44.png, id=295, 602.25pt x 380.42125pt>
-File: img/raid44.png Graphic file (type png)
- <use img/raid44.png>
-Package pdftex.def Info: img/raid44.png used on input line 154.
-(pdftex.def)             Requested size: 240.89572pt x 152.16579pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--162
-
- []
-
-<img/raid55.png, id=299, 602.25pt x 380.42125pt>
-File: img/raid55.png Graphic file (type png)
- <use img/raid55.png>
-Package pdftex.def Info: img/raid55.png used on input line 164.
-(pdftex.def)             Requested size: 240.89572pt x 152.16579pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
-
- []
-
-<img/raid66.png, id=303, 602.25pt x 334.24875pt>
-File: img/raid66.png Graphic file (type png)
- <use img/raid66.png>
-Package pdftex.def Info: img/raid66.png used on input line 174.
-(pdftex.def)             Requested size: 240.89572pt x 133.69713pt.
- [12 <./img/raid00.png>] [13 <./img/raid11.png>] [14 <./img/raid22.png> <./img/
-raid33.png>] [15 <./img/raid44.png> <./img/raid55.png>]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -1656,25 +1561,131 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.189 \subsection
+l.117 \subsubsection
+                    {Controllore RAID}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 117
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \subsubsection
+                    {Livelli RAID}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 127
+[][]
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 139--141
+
+ []
+
+<img/raid00.png, id=288, 602.25pt x 602.25pt>
+File: img/raid00.png Graphic file (type png)
+ <use img/raid00.png>
+Package pdftex.def Info: img/raid00.png used on input line 143.
+(pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
+
+ []
+
+<img/raid11.png, id=292, 602.25pt x 602.25pt>
+File: img/raid11.png Graphic file (type png)
+ <use img/raid11.png>
+Package pdftex.def Info: img/raid11.png used on input line 157.
+(pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--165
+
+ []
+
+<img/raid22.png, id=296, 602.25pt x 229.85875pt>
+File: img/raid22.png Graphic file (type png)
+ <use img/raid22.png>
+Package pdftex.def Info: img/raid22.png used on input line 167.
+(pdftex.def)             Requested size: 301.12425pt x 114.92908pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
+
+ []
+
+<img/raid33.png, id=300, 602.25pt x 380.42125pt>
+File: img/raid33.png Graphic file (type png)
+ <use img/raid33.png>
+Package pdftex.def Info: img/raid33.png used on input line 177.
+(pdftex.def)             Requested size: 240.89572pt x 152.16579pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
+
+ []
+
+<img/raid44.png, id=304, 602.25pt x 380.42125pt>
+File: img/raid44.png Graphic file (type png)
+ <use img/raid44.png>
+Package pdftex.def Info: img/raid44.png used on input line 188.
+(pdftex.def)             Requested size: 240.89572pt x 152.16579pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
+
+ []
+
+<img/raid55.png, id=308, 602.25pt x 380.42125pt>
+File: img/raid55.png Graphic file (type png)
+ <use img/raid55.png>
+Package pdftex.def Info: img/raid55.png used on input line 198.
+(pdftex.def)             Requested size: 240.89572pt x 152.16579pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--205
+
+ []
+
+<img/raid66.png, id=312, 602.25pt x 334.24875pt>
+File: img/raid66.png Graphic file (type png)
+ <use img/raid66.png>
+Package pdftex.def Info: img/raid66.png used on input line 208.
+(pdftex.def)             Requested size: 240.89572pt x 133.69713pt.
+ [13 <./img/raid00.png>] [14 <./img/raid11.png>] [15 <./img/raid22.png> <./img/
+raid33.png>] [16 <./img/raid44.png> <./img/raid55.png>]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.223 \subsection
                  {Codice di correzione errore (Erasure Coding)}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 189
+Underfull \hbox (badness 10000) detected at line 223
 [][]
  []
 
-[16 <./img/raid66.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+[17 <./img/raid66.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.214 						\verb"r = "\sqrt{
+l.248 						\verb"r = "\sqrt{
                              \frac{k}{n}}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1682,7 +1693,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.215 
+l.249 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1690,7 +1701,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.215 
+l.249 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1701,7 +1712,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.215 
+l.249 
       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1716,13 +1727,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.223 \section
+l.257 \section
               {Hardware utilizzato per gli esperimenti}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 223
+Underfull \hbox (badness 10000) detected at line 257
 [][]
  []
 
@@ -1733,13 +1744,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.226 \section
+l.260 \section
               {Software utilizzato per gli esperimenti}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 226
+Underfull \hbox (badness 10000) detected at line 260
 [][]
  []
 
@@ -1750,17 +1761,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.228 \subsection
+l.262 \subsection
                  {PosgreSQL}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 228
+Underfull \hbox (badness 10000) detected at line 262
 [][]
  []
 
-[17]
+[18]
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `latin1'.
@@ -1769,17 +1780,17 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.232 ...razione per la tolleranza agli errori. È
+l.272 ...razione per la tolleranza agli errori. È
                                                    estremamente scalabile si...
 
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[18]
+[19]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.254 ...eSQL esegue procedure memorizzate in più
+l.294 ...eSQL esegue procedure memorizzate in più
                                                    di una dozzina di linguag...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1787,7 +1798,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathonesuperior ->{^1}
                        
-l.254 ...eSQL esegue procedure memorizzate in più
+l.294 ...eSQL esegue procedure memorizzate in più
                                                    di una dozzina di linguag...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1796,31 +1807,31 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 254.
+LaTeX Warning: Command \~ invalid in math mode on input line 294.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 254.
+LaTeX Warning: Command \~ invalid in math mode on input line 294.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 254.
+LaTeX Warning: Command \~ invalid in math mode on input line 294.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.255 
+l.295 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (389.82103pt too wide) in paragraph at lines 254--255
+Overfull \hbox (389.82103pt too wide) in paragraph at lines 294--295
 []\T1/pplj/m/n/12 (-20) PostgreSQL ese-gue pro-ce-du-re me-mo-riz-za-te in pi�$
 []\U/zeur/m/n/12 diunadozzinadilinguaggidiprogrammazione; tracuiJava; Perl; Pyt
 hon; Ruby; Tcl; C=C \U/zeus/m/n/12 �
  []
 
 
-Overfull \hbox (4520.96687pt too wide) in paragraph at lines 254--255
+Overfull \hbox (4520.96687pt too wide) in paragraph at lines 294--295
 \U/zeus/m/n/12 �\U/zeur/m/n/12 eilproprioPL=pgSQL; simileaPL=SQLdiOracle\T1/ppl
 j/m/n/12 (-20) .\U/zeur/m/n/12 Inclusinellasualibreriadifunzionistandardsonocen
 tinaiadifunzioniintegratechevannodallamatematicaedalleoperazionidistringhedibas
@@ -1841,7 +1852,7 @@ lsistema\T1/pplj/m/n/12 (-20) .$
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.265 ...solverli è molto diverso. E come si può
+l.305 ...solverli è molto diverso. E come si può
                                                    vedere da questi esempi, ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1849,7 +1860,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathtwosuperior ->{^2}
                        
-l.265 ...solverli è molto diverso. E come si può
+l.305 ...solverli è molto diverso. E come si può
                                                    vedere da questi esempi, ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1858,15 +1869,15 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 265.
+LaTeX Warning: Command \~ invalid in math mode on input line 305.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 265.
+LaTeX Warning: Command \" invalid in math mode on input line 305.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.265 ...ti. Una grande fonte per questo sfondo è
+l.305 ...ti. Una grande fonte per questo sfondo è
                                                    nelle Termini e definizio...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1874,7 +1885,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.265 ...ti. Una grande fonte per questo sfondo è
+l.305 ...ti. Una grande fonte per questo sfondo è
                                                    nelle Termini e definizio...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1884,7 +1895,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.265 ...ti. Una grande fonte per questo sfondo è
+l.305 ...ti. Una grande fonte per questo sfondo è
                                                    nelle Termini e definizio...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1892,15 +1903,15 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 265.
+LaTeX Warning: Command \~ invalid in math mode on input line 305.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 265.
+LaTeX Warning: Command \" invalid in math mode on input line 305.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.265 ...to principale teorico che non menziona è
+l.305 ...to principale teorico che non menziona è
                                                    come risolvere la risoluz...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1908,7 +1919,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.265 ...to principale teorico che non menziona è
+l.305 ...to principale teorico che non menziona è
                                                    come risolvere la risoluz...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1918,7 +1929,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.265 ...to principale teorico che non menziona è
+l.305 ...to principale teorico che non menziona è
                                                    come risolvere la risoluz...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1928,7 +1939,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.266 
+l.306 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1936,7 +1947,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.266 
+l.306 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1947,7 +1958,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.266 
+l.306 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1958,18 +1969,18 @@ my insertion and my current dilemma will both disappear.
 Missing character: There is no � in font zeuex10!
 Missing character: There is no � in font zeuex10!
 
-Overfull \hbox (2045.5972pt too wide) in paragraph at lines 261--266
+Overfull \hbox (2045.5972pt too wide) in paragraph at lines 301--306
 \T1/pplj/m/n/12 (-20) pu�$[]\U/zeur/m/n/12 vederedaquestiesempi; lareplicahamol
 teterminologiespecifichechedovraicapirepercapirequaleclassedisoluzionehasensope
 rituoirequisiti\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 Unagrandefonteperquestosfo
 ndo\T1/pplj/m/n/12 (-20) �[]$ 
  []
 
-[19]
+[20]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.267 ...na replica binaria asincrona a uno o più
+l.307 ...na replica binaria asincrona a uno o più
                                                    standby. Gli standby poss...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1977,7 +1988,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathonesuperior ->{^1}
                        
-l.267 ...na replica binaria asincrona a uno o più
+l.307 ...na replica binaria asincrona a uno o più
                                                    standby. Gli standby poss...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1986,15 +1997,15 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 267.
+LaTeX Warning: Command \~ invalid in math mode on input line 307.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 267.
+LaTeX Warning: Command \" invalid in math mode on input line 307.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.267 ... come database di sola lettura. Questo è
+l.307 ... come database di sola lettura. Questo è
                                                    il tipo di replica più v...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2002,7 +2013,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.267 ... come database di sola lettura. Questo è
+l.307 ... come database di sola lettura. Questo è
                                                    il tipo di replica più v...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2012,7 +2023,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.267 ... come database di sola lettura. Questo è
+l.307 ... come database di sola lettura. Questo è
                                                    il tipo di replica più v...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2020,18 +2031,18 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 267.
+LaTeX Warning: Command \~ invalid in math mode on input line 307.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 268.
+LaTeX Warning: Command \~ invalid in math mode on input line 308.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 268.
+LaTeX Warning: Command \" invalid in math mode on input line 308.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.268 Warm Standby / Log Spedizione è
+l.308 Warm Standby / Log Spedizione è
                                        una soluzione HA che replica un clust...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2039,7 +2050,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.268 Warm Standby / Log Spedizione è
+l.308 Warm Standby / Log Spedizione è
                                        una soluzione HA che replica un clust...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2049,7 +2060,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.268 Warm Standby / Log Spedizione è
+l.308 Warm Standby / Log Spedizione è
                                        una soluzione HA che replica un clust...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2057,18 +2068,18 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 268.
+LaTeX Warning: Command \~ invalid in math mode on input line 308.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 268.
+LaTeX Warning: Command \~ invalid in math mode on input line 308.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 268.
+LaTeX Warning: Command \" invalid in math mode on input line 308.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.268 ...query) server standby. Il sovraccarico è
+l.308 ...query) server standby. Il sovraccarico è
                                                    molto basso e è facile d...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2076,7 +2087,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.268 ...query) server standby. Il sovraccarico è
+l.308 ...query) server standby. Il sovraccarico è
                                                    molto basso e è facile d...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2086,7 +2097,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.268 ...query) server standby. Il sovraccarico è
+l.308 ...query) server standby. Il sovraccarico è
                                                    molto basso e è facile d...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2094,15 +2105,15 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 268.
+LaTeX Warning: Command \~ invalid in math mode on input line 308.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 268.
+LaTeX Warning: Command \" invalid in math mode on input line 308.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.268 ...ndby. Il sovraccarico è molto basso e è
+l.308 ...ndby. Il sovraccarico è molto basso e è
                                                    facile da installare. Que...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2110,7 +2121,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.268 ...ndby. Il sovraccarico è molto basso e è
+l.308 ...ndby. Il sovraccarico è molto basso e è
                                                    facile da installare. Que...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2120,7 +2131,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.268 ...ndby. Il sovraccarico è molto basso e è
+l.308 ...ndby. Il sovraccarico è molto basso e è
                                                    facile da installare. Que...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2128,15 +2139,15 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 268.
+LaTeX Warning: Command \~ invalid in math mode on input line 308.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 268.
+LaTeX Warning: Command \" invalid in math mode on input line 308.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.268 ...asso e è facile da installare. Questa è
+l.308 ...asso e è facile da installare. Questa è
                                                    una soluzione semplice e ...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2144,7 +2155,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.268 ...asso e è facile da installare. Questa è
+l.308 ...asso e è facile da installare. Questa è
                                                    una soluzione semplice e ...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2154,7 +2165,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.268 ...asso e è facile da installare. Questa è
+l.308 ...asso e è facile da installare. Questa è
                                                    una soluzione semplice e ...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2162,18 +2173,18 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 268.
+LaTeX Warning: Command \~ invalid in math mode on input line 308.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 268.
+LaTeX Warning: Command \~ invalid in math mode on input line 308.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 268.
+LaTeX Warning: Command \" invalid in math mode on input line 308.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.268 ...opriata se tutto ciò che ti interessa è
+l.308 ...opriata se tutto ciò che ti interessa è
                                                    un backup continuo e brev...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2181,7 +2192,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.268 ...opriata se tutto ciò che ti interessa è
+l.308 ...opriata se tutto ciò che ti interessa è
                                                    un backup continuo e brev...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2191,7 +2202,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.268 ...opriata se tutto ciò che ti interessa è
+l.308 ...opriata se tutto ciò che ti interessa è
                                                    un backup continuo e brev...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2199,18 +2210,18 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 269.
+LaTeX Warning: Command \~ invalid in math mode on input line 309.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 270.
+LaTeX Warning: Command \~ invalid in math mode on input line 310.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 270.
+LaTeX Warning: Command \" invalid in math mode on input line 310.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.270 ...cus del progetto principale, ma questo è
+l.310 ...cus del progetto principale, ma questo è
                                                    cambiato nel 2008, vedere...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2218,7 +2229,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.270 ...cus del progetto principale, ma questo è
+l.310 ...cus del progetto principale, ma questo è
                                                    cambiato nel 2008, vedere...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2228,7 +2239,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.270 ...cus del progetto principale, ma questo è
+l.310 ...cus del progetto principale, ma questo è
                                                    cambiato nel 2008, vedere...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2236,15 +2247,15 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 270.
+LaTeX Warning: Command \~ invalid in math mode on input line 310.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 270.
+LaTeX Warning: Command \" invalid in math mode on input line 310.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.270 ...l'istruzione del Team Core. La replica è
+l.310 ...l'istruzione del Team Core. La replica è
                                                    ora un focus significativ...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2252,7 +2263,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.270 ...l'istruzione del Team Core. La replica è
+l.310 ...l'istruzione del Team Core. La replica è
                                                    ora un focus significativ...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2262,7 +2273,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.270 ...l'istruzione del Team Core. La replica è
+l.310 ...l'istruzione del Team Core. La replica è
                                                    ora un focus significativ...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2272,7 +2283,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.271 
+l.311 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2280,7 +2291,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.271 
+l.311 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2291,7 +2302,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.271 
+l.311 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2302,7 +2313,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.271 
+l.311 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2313,7 +2324,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.271 
+l.311 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2324,7 +2335,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.271 
+l.311 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2335,7 +2346,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.271 
+l.311 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2346,7 +2357,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.271 
+l.311 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2357,7 +2368,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.271 
+l.311 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2374,7 +2385,7 @@ Missing character: There is no � in font zeuex10!
 Missing character: There is no � in font zeuex10!
 Missing character: There is no � in font zeuex10!
 
-Overfull \hbox (5993.04886pt too wide) in paragraph at lines 267--271
+Overfull \hbox (5993.04886pt too wide) in paragraph at lines 307--311
 \T1/pplj/m/n/12 (-20) gre-SQL 9.0 e for-ni-sce una re-pli-ca bi-na-ria asin-cro
 -na a uno o pi�$[]\U/zeur/m/n/12 standby\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 G
 listandbypossonoanchediventarestandbyscaldi; chepossonoessererichiesticomedatab
@@ -2383,14 +2394,14 @@ asedisolalettura\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 Questo\T1/pplj/m/n/12 (-2
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 275--276
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.281 In PostgreSQL, ma il discorso può
+l.321 In PostgreSQL, ma il discorso può
                                          essere allargato a tutti i gestori ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2398,7 +2409,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathtwosuperior ->{^2}
                        
-l.281 In PostgreSQL, ma il discorso può
+l.321 In PostgreSQL, ma il discorso può
                                          essere allargato a tutti i gestori ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2407,21 +2418,21 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 282.
+LaTeX Warning: Command \~ invalid in math mode on input line 322.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 282.
+LaTeX Warning: Command \~ invalid in math mode on input line 322.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.283 
+l.323 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Overfull \hbox (1765.75903pt too wide) in paragraph at lines 281--283
+Overfull \hbox (1765.75903pt too wide) in paragraph at lines 321--323
 []\T1/pplj/m/n/12 (-20) In Post-gre-SQL, ma il di-scor-so pu�$[]\U/zeur/m/n/12 
 essereallargatoatuttiigestorididatabaserelazionali; idativengonorappresentatiat
 traversodelletabelleeletabellesonogestiteutilizzandounlinguaggiodialtolivelloch
@@ -2431,7 +2442,7 @@ todigestireleoperazionidiarchiviazioneedisalvaguardiadell[]integrit\T1/pplj/m/n
 /12 (-20) � \U/zeur/m/n/12 deidatiallocati\T1/pplj/m/n/12 (-20) .$ 
  []
 
-[20]
+[21]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -2439,64 +2450,66 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.300 \subsection
+l.340 \subsection
                  {Pglogical}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 300
+Underfull \hbox (badness 10000) detected at line 340
 [][]
  []
 
-[21] <img/pglogical_1.png, id=363, 652.4375pt x 250.9375pt>
+[22] <img/pglogical_1.png, id=373, 652.4375pt x 250.9375pt>
 File: img/pglogical_1.png Graphic file (type png)
 
 <use img/pglogical_1.png>
-Package pdftex.def Info: img/pglogical_1.png used on input line 343.
+Package pdftex.def Info: img/pglogical_1.png used on input line 383.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 342--343
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 382--383
  [] 
  []
 
-<img/pglogical_2.png, id=367, 652.4375pt x 250.9375pt>
+<img/pglogical_2.png, id=377, 652.4375pt x 250.9375pt>
 File: img/pglogical_2.png Graphic file (type png)
 
 <use img/pglogical_2.png>
-Package pdftex.def Info: img/pglogical_2.png used on input line 348.
+Package pdftex.def Info: img/pglogical_2.png used on input line 388.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 347--348
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 387--388
  [] 
  []
 
-<img/pglogical_3.png, id=370, 652.4375pt x 250.9375pt>
+<img/pglogical_3.png, id=380, 652.4375pt x 250.9375pt>
 File: img/pglogical_3.png Graphic file (type png)
 
 <use img/pglogical_3.png>
-Package pdftex.def Info: img/pglogical_3.png used on input line 356.
+Package pdftex.def Info: img/pglogical_3.png used on input line 396.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 355--356
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 395--396
  [] 
  []
 
-<img/pglogical_4.png, id=373, 652.4375pt x 250.9375pt>
+<img/pglogical_4.png, id=383, 652.4375pt x 250.9375pt>
 File: img/pglogical_4.png Graphic file (type png)
 
 <use img/pglogical_4.png>
-Package pdftex.def Info: img/pglogical_4.png used on input line 360.
+Package pdftex.def Info: img/pglogical_4.png used on input line 400.
 (pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 359--360
+Overfull \hbox (72.59093pt too wide) in paragraph at lines 399--400
  [] 
  []
 
+[23] [24 <./img/pglogical_1.png> <./img/pglogical_2.png>] [25 <./img/pglogical_
+3.png> <./img/pglogical_4.png>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.387 ...se da BDR per produrre una soluzione più
+l.427 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2504,7 +2517,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathonesuperior ->{^1}
                        
-l.387 ...se da BDR per produrre una soluzione più
+l.427 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2513,21 +2526,21 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 387.
+LaTeX Warning: Command \~ invalid in math mode on input line 427.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 387.
+LaTeX Warning: Command \~ invalid in math mode on input line 427.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 387.
+LaTeX Warning: Command \~ invalid in math mode on input line 427.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 387.
+LaTeX Warning: Command \" invalid in math mode on input line 427.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.387 ...a vasta gamma di casi di utilizzo. BDR è
+l.427 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2535,7 +2548,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.387 ...a vasta gamma di casi di utilizzo. BDR è
+l.427 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2545,7 +2558,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.387 ...a vasta gamma di casi di utilizzo. BDR è
+l.427 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2553,15 +2566,15 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 387.
+LaTeX Warning: Command \~ invalid in math mode on input line 427.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 387.
+LaTeX Warning: Command \" invalid in math mode on input line 427.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.387 ...ti-master della rete a n-way, e questo è
+l.427 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2569,7 +2582,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.387 ...ti-master della rete a n-way, e questo è
+l.427 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2579,7 +2592,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.387 ...ti-master della rete a n-way, e questo è
+l.427 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2589,7 +2602,7 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.388 
+l.428 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2597,7 +2610,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.388 
+l.428 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2608,7 +2621,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.388 
+l.428 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2619,7 +2632,7 @@ my insertion and my current dilemma will both disappear.
 Missing character: There is no � in font zeuex10!
 Missing character: There is no � in font zeuex10!
 
-Overfull \hbox (1324.91829pt too wide) in paragraph at lines 387--388
+Overfull \hbox (1324.91829pt too wide) in paragraph at lines 427--428
 \T1/pplj/m/n/12 (-20) dur-re una so-lu-zio-ne pi�$[]\U/zeur/m/n/12 sempliceepi\
 T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 semplicedautilizzareperlareplicaunidirez
 ionale; utilizzabiledapi\T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 personeperunava
@@ -2627,12 +2640,10 @@ stagammadicasidiutilizzo\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 BDR\T1/pplj/m/n/1
 2 (-20) �[]$ 
  []
 
-[22] [23 <./img/pglogical_1.png> <./img/pglogical_2.png>] [24 <./img/pglogical_
-3.png> <./img/pglogical_4.png>]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.394 ...se da BDR per produrre una soluzione più
+l.434 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2640,7 +2651,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \mathonesuperior ->{^1}
                        
-l.394 ...se da BDR per produrre una soluzione più
+l.434 ...se da BDR per produrre una soluzione più
                                                    semplice e più semplice ...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2649,21 +2660,21 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 394.
+LaTeX Warning: Command \~ invalid in math mode on input line 434.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 394.
+LaTeX Warning: Command \~ invalid in math mode on input line 434.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 394.
+LaTeX Warning: Command \~ invalid in math mode on input line 434.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 394.
+LaTeX Warning: Command \" invalid in math mode on input line 434.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.394 ...a vasta gamma di casi di utilizzo. BDR è
+l.434 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2671,7 +2682,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.394 ...a vasta gamma di casi di utilizzo. BDR è
+l.434 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2681,7 +2692,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.394 ...a vasta gamma di casi di utilizzo. BDR è
+l.434 ...a vasta gamma di casi di utilizzo. BDR è
                                                    stato progettato innanzit...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2689,15 +2700,15 @@ If you're in the wrong mode, you might be able to
 return to the right one by typing `I}' or `I$' or `I\par'.
 
 
-LaTeX Warning: Command \~ invalid in math mode on input line 394.
+LaTeX Warning: Command \~ invalid in math mode on input line 434.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 394.
+LaTeX Warning: Command \" invalid in math mode on input line 434.
 
 ! Please use \mathaccent for accents in math mode.
 \MT@orig@add@accent ...ctor \spacefactor }\accent 
                                                   #1 #2\egroup \spacefactor ...
-l.394 ...ti-master della rete a n-way, e questo è
+l.434 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -2705,7 +2716,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Missing { inserted.
 <to be read again> 
                    \egroup 
-l.394 ...ti-master della rete a n-way, e questo è
+l.434 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2715,7 +2726,7 @@ so that I will find a matching right brace soon.
 ! You can't use `\spacefactor' in math mode.
 \MT@orig@add@accent ... #1 #2\egroup \spacefactor 
                                                   \accent@spacefactor 
-l.394 ...ti-master della rete a n-way, e questo è
+l.434 ...ti-master della rete a n-way, e questo è
                                                    stato difficile adattarsi...
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -2756,22 +2767,17 @@ my insertion and my current dilemma will both disappear.
 Missing character: There is no � in font zeuex10!
 Missing character: There is no � in font zeuex10!
 
-Overfull \hbox (1217.5255pt too wide) in paragraph at lines 392--114
+Overfull \hbox (1217.5255pt too wide) in paragraph at lines 432--114
 \T1/pplj/m/n/12 (-20) pi�$[]\U/zeur/m/n/12 sempliceepi\T1/pplj/m/n/12 (-20) �[]
 \U/zeur/m/n/12 semplicedautilizzareperlareplicaunidirezionale; utilizzabiledapi
 \T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 personeperunavastagammadicasidiutilizzo
 \T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 BDR\T1/pplj/m/n/12 (-20) �[]$ 
  []
 
-[25]
+[26]
 \openout2 = `secondChapter.aux'.
 
- (./secondChapter.tex [26
-
-
-
-
-]
+ (./secondChapter.tex
 chapter 2.
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
@@ -2822,7 +2828,12 @@ l.25 ...ied at least to the new master (if that’
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-[27]
+[27
+
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 54--54
 |\T1/pplj/m/sc/12 (-6) c o n -s i -d e -r a -z i o -n i s t a -t i -s t i -c h 
 e s u l -l a r i -d o n -d a n -z a d e l m e -t a -d a -
@@ -2926,7 +2937,7 @@ es []3[];[] 8[]; and []9[]\T1/pplj/m/n/12 (-20) .\U/zeus/m/n/12 �[]$
 ! Missing } inserted.
 <inserted text> 
                 }
-l.33 \end{thebibliography}
+l.40 \end{thebibliography}
                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2964,25 +2975,25 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 89AE1B79C32D73AE918CA2E8C1E53328;1781.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 6150D17B08A61D39C0E402BE5F4CFE69;3197.
+(rerunfilecheck)             Checksum: C26BD7C2E0242F6A2FDBB2BABE910AC3;3417.
  )
 (\end occurred inside a group at level 6)
 
-### simple group (level 6) entered at line 394 ({)
-### simple group (level 5) entered at line 387 ({)
-### simple group (level 4) entered at line 281 ({)
-### simple group (level 3) entered at line 267 ({)
-### simple group (level 2) entered at line 265 ({)
-### simple group (level 1) entered at line 254 ({)
+### simple group (level 6) entered at line 434 ({)
+### simple group (level 5) entered at line 427 ({)
+### simple group (level 4) entered at line 321 ({)
+### simple group (level 3) entered at line 307 ({)
+### simple group (level 2) entered at line 305 ({)
+### simple group (level 1) entered at line 294 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 26958 strings out of 493029
- 480596 string characters out of 6136235
- 674731 words of memory out of 5000000
- 29507 multiletter control sequences out of 15000+600000
- 89903 words of font info for 429 fonts, out of 8000000 for 9000
+ 26968 strings out of 493029
+ 480777 string characters out of 6136233
+ 674776 words of memory out of 5000000
+ 29516 multiletter control sequences out of 15000+600000
+ 89908 words of font info for 429 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,14n,73p,10393b,1239s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,14n,73p,10393b,1241s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texl
@@ -2994,10 +3005,10 @@ ype1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (37 pages, 978533 bytes).
+Output written on thesis.pdf (37 pages, 982156 bytes).
 PDF statistics:
- 541 PDF objects out of 1000 (max. 8388607)
- 454 compressed objects within 5 object streams
- 91 named destinations out of 1000 (max. 500000)
+ 549 PDF objects out of 1000 (max. 8388607)
+ 462 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
  77055 words of extra memory for PDF output out of 89155 (max. 10000000)
 
