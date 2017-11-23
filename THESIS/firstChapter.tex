@@ -56,9 +56,9 @@ La distinzione tra i due tipi \`{e} diventata confusa di recente con l'introduzi
 
 \item
 \subsection{Rete di pari}
-\textit{Peer-to-peer networking} (P2P) \`{e} un modello di comunicazione decentralizzato in cui ciascuna parte ha la stessa responsabilit\`{a} per l'elaborazione dei dati e ciascuna parte pu\`{o} avviare una sessione di comunicazione. A differenza del modello\textit{ client/server}, in cui il client effettua una richiesta di servizio e il server soddisfa la richiesta, il modello di rete P2P, noto anche come \textit{peer networking}, consente a ciascun nodo di funzionare sia come client che come server.\cite{etichetta13}\\
-Quando una rete P2P viene stabilita su Internet, \`{e} possibile utilizzare un server centrale per indicizzare i file oppure stabilire una rete distribuita in cui la condivisione dei file viene suddivisa tra tutti gli utenti della rete che memorizzano un determinato file. Le dimensioni della rete e i file disponibili consentono di condividere enormi quantit\`{a} di dati.\\ 
-Le prime reti P2P come Napster utilizzavano il software client e un server centrale, mentre reti successive come Kazaa e BitTorrent eliminavano il server centrale e dividevano i compiti di condivisione tra pi\`{u} nodi per liberare la larghezza di banda.\\
+\textit{Peer-to-peer networking} (P\verb"2"P) \`{e} un modello di comunicazione decentralizzato in cui ciascuna parte ha la stessa responsabilit\`{a} per l'elaborazione dei dati e ciascuna parte pu\`{o} avviare una sessione di comunicazione. A differenza del modello\textit{ client/server}, in cui il client effettua una richiesta di servizio e il server soddisfa la richiesta, il modello di rete P\verb"2"P, noto anche come \textit{peer networking}, consente a ciascun nodo di funzionare sia come client che come server.\cite{etichetta13}\\
+Quando una rete P\verb"2"P viene stabilita su Internet, \`{e} possibile utilizzare un server centrale per indicizzare i file oppure stabilire una rete distribuita in cui la condivisione dei file viene suddivisa tra tutti gli utenti della rete che memorizzano un determinato file. Le dimensioni della rete e i file disponibili consentono di condividere enormi quantit\`{a} di dati.\\ 
+Le prime reti P\verb"2"P come Napster utilizzavano il software client e un server centrale, mentre reti successive come Kazaa e BitTorrent eliminavano il server centrale e dividevano i compiti di condivisione tra pi\`{u} nodi per liberare la larghezza di banda.\\
 
 
 Seguono i vantaggi di una rete \textit{peer-to-peer}:
@@ -70,15 +70,15 @@ se un dispositivo collegato interrompe la connessione, il servizio non termina a
 \`{e} possibile configurare i computer in gruppi di lavoro \textit{peer-to-peer} per consentire la condivisione di file e altre risorse su tutti i dispositivi. \textit{Peer networking} consente di condividere facilmente i dati in entrambe le direzioni, sia per i \textit{download} sul computer che per gli \textit{upload} dal computer,
 
 \item
-su Internet, le reti peer-to-peer gestiscono un volume elevato di traffico di condivisione file distribuendo il carico su pi\`{u} computer. Poich\'{e} non si basano esclusivamente sui server centrali, le reti P2P possono scalare meglio e sono pi\`{u} resistenti delle reti \textit{client-server} in caso di guasti o colli di bottiglia del traffico,
+su Internet, le reti peer-to-peer gestiscono un volume elevato di traffico di condivisione file distribuendo il carico su pi\`{u} computer. Poich\'{e} non si basano esclusivamente sui server centrali, le reti P\verb"2"P possono scalare meglio e sono pi\`{u} resistenti delle reti \textit{client-server} in caso di guasti o colli di bottiglia del traffico,
 
 \item
-Le reti \textit{peer-to-peer} sono relativamente facili da espandere. Con l'aumentare del numero di dispositivi nella rete, aumenta la potenza della rete P2P, poich\'{e} ogni computer aggiuntivo \`{e} disponibile per l'elaborazione dei dati.\cite{etichetta14}
+Le reti \textit{peer-to-peer} sono relativamente facili da espandere. Con l'aumentare del numero di dispositivi nella rete, aumenta la potenza della rete P\verb"2"P, poich\'{e} ogni computer aggiuntivo \`{e} disponibile per l'elaborazione dei dati.\cite{etichetta14}
 \end{itemize}
 
 Le reti \textit{peer-to-peer} sono vulnerabili agli attacchi di sicurezza. Poich\'{e} ogni dispositivo partecipa al traffico di routing attraverso la rete, gli hacker possono facilmente lanciare attacchi \textit{denial of service}.
-Il software P2P funge da server e client, il che rende le \textit{peer networking} pi\`{u} vulnerabili agli attacchi remoti rispetto alle reti client-server.
-I dati corrotti possono essere condivisi su reti P2P modificando i file gi\`{a} presenti in rete per introdurre codice dannoso.\cite{etichetta14}
+Il software P\verb"2"P funge da server e client, il che rende le \textit{peer networking} pi\`{u} vulnerabili agli attacchi remoti rispetto alle reti client-server.
+I dati corrotti possono essere condivisi su reti P\verb"2"P modificando i file gi\`{a} presenti in rete per introdurre codice dannoso.\cite{etichetta14}
 
 \item
 \subsection{Sistemi di ridondanza disco (RAID)}
@@ -260,46 +260,84 @@ I codici di cancellazione, noti anche come codici di correzione degli errori di 
 \section{Software utilizzato per gli esperimenti}
 \item
 \subsection{PosgreSQL}
+PostgreSQL \`{e} un potente sistema \textit{Open Source} di database relazionale (DBMS, \textit{Database Management System}) cio\`{e} \`{e} un sistema software progettato per consentire la creazione e manipolazione efficiente di database, ovvero di collezioni di dati strutturati. Ha pi\`{u} di \verb"15" anni di sviluppo attivo e un'architettura collaudata che ha guadagnato una notevole reputazione per l'affidabilit\`{a}, l'integrit\`{a} dei dati e la correttezza.
 
-PostgreSQL \`{e} un potente sistema \textit{open source} di database relazionale. \`{E} un sistema generale di gestione di database e di oggetti relazionali. Ha pi\`{u} di 15 anni di sviluppo attivo e un'architettura collaudata che ha guadagnato una notevole reputazione per l'affidabilit\`{a}, l'integrit\`{a} dei dati e la correttezza.\cite{etichetta12}
+PostgreSQL \`{e} un sistema di gestione dei database relazionale (\textit{Object-Relational}) e ha il compito di gestire le operazioni di archiviazione e di salvaguardia dell'integrit\`{a} dei dati allocati.\\
+Funziona su tutti i principali sistemi operativi, tra cui Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64), e Windows.\cite{etichetta15}\\
+%Permette di aggiungere funzioni personalizzate sviluppate utilizzando diversi linguaggi di programmazione quali C/C++, Java, Perl, Python, Ruby, Tcl e Open Database Connectivity (ODBC).
 
-PostgreSQL \`{e} il primo sistema di gestione del database che implementa la funzionalit\`{a} di controllo della concorrenza multi-versione (\textit{Multi-Version Concurrency Control}, MVCC), anche prima di Oracle.
+Seguono le caratteristiche principali di PostgreSQL; le funzionalit\`{a} introdotte nella recente versione \verb"9.1" :
+\begin{itemize}
+\item 
+elevata aderenza agli standard SQL;
+\item 
+architettura client-server con una gamma completa di driver e di client;
+\item 
+progettato in modo altamente concorrente, evitando che i processi in scrittura blocchino i processi in lettura;
+\item 
+altamente configurabile ed estendibile, consentendo svariati tipi di applicazioni;
+\item 
+elevate scalabilit\`{a} e prestazioni, unite a un ampio spettro di possibilit\`{a} per tarare la configurazione;
+\item 
+sofisticato ottimizzatore delle query, adeguato per la business intelligence;
+\item 
+supporto completo per Java, Python, Perl, PHP e molti altri linguaggi, sia per le procedure interne al server di database che per l'accesso da parte di client;
+\item 
+elevata affidabilit\`{a}, con una vasta serie di caratteristiche per durabilit\`{a} e alta disponibilit\`{a};
+\item 
+tipi di dati avanzati, come ad esempio GIS, full text search, e molti altri;
+\item 
+internazionalizzazione, codifiche multibyte e collation. \cite{etichetta12}
+\end{itemize}\\
 
-PostgreSQL \`{e} un sistema di gestione dei database relazionale \textit{object-relational}. Permette di aggiungere funzioni personalizzate sviluppate utilizzando diversi linguaggi di programmazione quali C/C++, Java, e molti altri.\cite{etichetta12}
+PostgreSQL \`{e} progettato per essere estensibile, poich\'{e} \`{e} possibile definire i propri tipi di dati, tipi di indici e lingue funzionali. Offre un ricco set di strumenti per gli sviluppatori in modo da gestire l'accesso simultaneo ai dati. Inoltre vi \`{e} la possibilit\`{a} di ottimizzarlo per soddisfare le proprie esigenze, tramite uno sviluppo di un plugin personalizzato.
 
-PostgreSQL \`{e} progettato per essere estensibile, poichè \`{e} possibile definire i propri tipi di dati, tipi di indici e lingue funzionali. Inoltre vi \`{e} la possibilit\`{a} di ottimizzarlo per soddisfare le proprie esigenze, tramite uno sviluppo di un plugin personalizzato.
+Un database di classe enterprise, PostgreSQL vanta funzionalit\`{a} sofisticate come il controllo della concorrenza multiversione, il ripristino in tempo reale (\textit{point in time recovery}), \textit{tablespaces}, replica asincrona, transazioni nidificate (\textit{savepoints}), backup in linea/a caldo, un sofisticato query planner/optimizer, ed il \textit{write ahead logging} per una maggiore tolleranza ai guasti.\\
+\`{E} estremamente scalabile sia nella quantit\`{a} pura di dati che pu\`{o} gestire sia nel numero di utenti concorrenti che pu\`{o} ospitare. Esistono sistemi Active PostgreSQL in	 ambienti di produzione che gestiscono oltre 4 terabyte di dati.\cite{etichetta15}
 
-Un database di classe enterprise, PostgreSQL vanta funzionalit\`{a} sofisticate come Multi-Version Concurrency Control (MVCC), ripristino in tempo reale, spazi di tabelle, replica asincrona, transazioni nidificate (punti di salvataggio), backup online / hot, un sofisticato pianificatore di query / ottimizzatore di query e scrivere avanti la registrazione per la tolleranza agli errori. È estremamente scalabile sia nella quantit\`{a} pura di dati che pu\`{o} gestire sia nel numero di utenti concorrenti che pu\`{o} ospitare. Esistono sistemi Active PostgreSQL in ambienti di produzione che gestiscono oltre 4 terabyte di dati. 
+Alcuni limiti generali di PostgreSQL sono inclusi nei punti riportati di seguito:
+\begin{itemize}
+\item 
+Dimensione massima del database: Illimitato
+\item 
+Dimensione massima Tabella: \verb"32 TB"
+\item 
+Dimensione massima Riga: \verb"1,6 TB"
+\item 
+Dimensione Massima campo: \verb"1 GB"
+\item 
+Numero Massimo Righe per tabella: Illimitato
+\item 
+Numero Massimo colonne per la tabella : \verb"250 - 1600" a seconda dei tipi di dati delle colonne
+\item 
+Numero Massimo indici per la tabella: Illimitato\cite{etichetta12}
+\end{itemize}\\
 
+MVCC (\textit{Multi-Version Concurrency Control}) \`{e} una tecnica avanzata per migliorare le prestazioni del database in un ambiente multiutente, mantenendo la coerenza dei dati. 
+A differenza della maggior parte degli altri sistemi di database che utilizzano i \textit{locks} per il controllo della concorrenza, Postgres mantiene la coerenza dei dati utilizzando questo modello. Ci\`{o} significa che durante l'interrogazione di un database ogni transazione vede un'istantanea di dati (una versione del database), indipendentemente dallo stato corrente dei dati sottostanti. Questo protegge la transazione dalla visualizzazione di dati incoerenti che potrebbero essere causati da altri eventuali aggiornamenti simultanei delle transazioni sulle stesse righe di dati, fornendo l'isolamento della transazione per ciascuna sessione del database.
 
-Caratteristica e standard conforme
+La differenza principale tra i modelli multiversione e di blocco \`{e} che nei blocchi MVCC acquisiti per la query (lettura) i dati non sono in conflitto con i blocchi acquisiti per la scrittura dei dati e quindi la lettura non blocca mai la scrittura e la scrittura non blocca mai la lettura.\cite{etichetta15}
 
-PostgreSQL si vanta di essere conforme alle norme. La sua implementazione SQL è fortemente conforme allo standard ANSI-SQL: 2008. Ha il pieno supporto per le subquery (incluse sottotitoli nella clausola FROM), i livelli di isolamento delle transazioni di lettura e serializzabili. E mentre PostgreSQL ha un catalogo di sistema completamente relazionale che supporta pi\`{u} schemi per database, il suo catalogo \`{e} accessibile anche attraverso lo schema di informazioni definito nello standard SQL.
+\subsubsection{Caratteristiche PostgreSQL}
+PostgreSQL ha il pieno supporto per le subquery (incluse sottotitoli nella clausola FROM), i livelli di isolamento delle transazioni di lettura e serializzabili. E mentre PostgreSQL ha un catalogo di sistema completamente relazionale che supporta pi\`{u} schemi per database, il suo catalogo \`{e} accessibile anche attraverso lo schema di informazioni definito nello standard SQL.
 
 Le funzionalit\`{a} di integrit\`{a} dei dati includono le chiavi primarie (combinate), le chiavi estranee con aggiornamenti e cancellazioni a cascata, i controlli dei vincoli, i vincoli unici e non i vincoli nullo.
 
 Ha anche una serie di estensioni e funzionalit\`{a} avanzate. PostgreSQL supporta indici composti, unici, parziali e funzionali che possono utilizzare qualsiasi metodo di archiviazione B-tree, R-tree, hash o GiST.
 
-%L'indicizzazione di GiST (Generalized Search Tree) è un sistema avanzato che riunisce un'ampia gamma di diversi tipi di algoritmi di selezione e ricerca, tra cui B-tree, B +, albero R, alberi di somma parziale, B + -trees classificati e molti altri. Fornisce inoltre un'interfaccia che consente sia la creazione di tipi di dati personalizzati sia i metodi di query estensibili con cui eseguire la ricerca. Così, GiST offre la flessibilit\`{a} per specificare ciò che memorizzi, come memorizzi, e la capacità di definire nuovi modi di ricercare attraverso di essa --- vie che superano di gran lunga quelle offerte da standard B-tree, R-tree e altre generalizzazioni di ricerca algoritmi.GiST serve come base per molti progetti pubblici che utilizzano PostgreSQL come OpenFTS e PostGIS. OpenFTS (motore di ricerca full-text open source) fornisce l'indicizzazione in linea dei dati e la classificazione di pertinenza per la ricerca del database. PostGIS è un progetto che aggiunge il supporto per gli oggetti geografici in PostgreSQL, consentendolo di essere utilizzato come database spaziale per i sistemi di informazioni geografiche (GIS), molto simile a SDE di ESRI o all'estensione spaziale di Oracle.
-
 Altre funzionalit\`{a} avanzate includono l'ereditariet\`{a} delle tabelle, i sistemi di regole e gli eventi del database. L'ereditarietà di tabella mette un orientamento orientato all'oggetto sulla creazione della tabella, consentendo ai progettisti di database di derivare nuove tabelle da altre tabelle, trattandole come classi di base. Ancora meglio, PostgreSQL supporta sia l'ereditarietà singola che quella multipla in questo modo.
 
 Il sistema di regole, chiamato anche il sistema di riscrittura delle query, consente al progettista del database di creare regole che identificano operazioni specifiche per una determinata tabella o vista e le trasformano dinamicamente in operazioni alternative quando vengono elaborate.
 
-Il sistema eventi è un sistema di comunicazione interprocesso in cui i messaggi e gli eventi possono essere trasmessi tra i client utilizzando i comandi LISTEN e NOTIFY, consentendo sia la semplice comunicazione peer to peer sia un coordinamento avanzato sugli eventi del database. Poiché le notifiche possono essere rilasciate da trigger e stored procedure, i client PostgreSQL possono monitorare eventi di database come gli aggiornamenti, gli inserti o le eliminazioni di tabella quando vengono eseguiti.
+Il sistema eventi \`{e} un sistema di comunicazione interprocesso in cui i messaggi e gli eventi possono essere trasmessi tra i client utilizzando i comandi \verb"LISTEN" e \verb"NOTIFY", consentendo sia la semplice comunicazione peer to peer sia un coordinamento avanzato sugli eventi del database. Poich\'{e} le notifiche possono essere rilasciate da trigger e stored procedure, i client PostgreSQL possono monitorare eventi di database come gli aggiornamenti, gli \verb"insert" o le eliminazioni di tabella quando vengono eseguiti.\cite{etichetta15}
 
+\subsubsection{Elevata personalizzazione}
+PostgreSQL esegue procedure memorizzate in pi\`{u} di una dozzina di linguaggi di programmazione, tra cui Java, Perl, Python, Ruby, Tcl, C / C ++ e il proprio PL / pgSQL, simile a PL / SQL di Oracle. I trigger e le stored procedure possono essere scritti in C e caricati nel database come libreria, permettendo una grande flessibilit\`{a} nell'estensione delle sue funzionalit\`{a}. Allo stesso modo, PostgreSQL include un \textit{framework} che consente agli sviluppatori di definire e creare i propri tipi di dati personalizzati insieme a funzioni di supporto e operatori che definiscono il loro comportamento.
 
-Elevata personalizzazione
+Il codice sorgente di PostgreSQL \`{e} disponibile sotto una licenza libera open source: la licenza PostgreSQL. Questa licenza d\`{a} la libert\`{a} di utilizzare, modificare e distribuire PostgreSQL in qualsiasi forma, sorgente aperta o chiusa.\cite{etichetta15}
 
-PostgreSQL esegue procedure memorizzate in più di una dozzina di linguaggi di programmazione, tra cui Java, Perl, Python, Ruby, Tcl, C / C ++ e il proprio PL / pgSQL, simile a PL / SQL di Oracle. Inclusi nella sua libreria di funzioni standard sono centinaia di funzioni integrate che vanno dalla matematica e dalle operazioni di stringhe di base alla crittografia e alla compatibilità di Oracle. I trigger e le stored procedure possono essere scritti in C e caricati nel database come libreria, permettendo una grande flessibilità nell'estensione delle sue funzionalità. Allo stesso modo, PostgreSQL include un framework che consente agli sviluppatori di definire e creare i propri tipi di dati personalizzati insieme a funzioni di supporto e operatori che definiscono il loro comportamento. Di conseguenza, sono stati creati molti tipi di dati avanzati che vanno dalle primitive geometriche e spaziali agli indirizzi di rete fino ai tipi di dati ISBN / ISSN (International Standard Book Number / International Standard Serial Number), tutti eventualmente aggiunti a il sistema.
-
-Proprio come ci sono molte lingue di procedura supportate da PostgreSQL, ci sono anche molte interfacce di libreria, consentendo a diverse lingue sia compilato e interpretato per interfacciarsi con PostgreSQL. Ci sono interfacce per Java (JDBC), ODBC, Perl, Python, Ruby, C, C ++, PHP, Lisp, Schema e Qt solo per citarne alcuni.
-
-Meglio di tutti, il codice sorgente PostgreSQL è disponibile sotto una licenza libera open source: la licenza PostgreSQL. Questa licenza ti dà la libertà di utilizzare, modificare e distribuire PostgreSQL in qualsiasi forma che ti piace, sorgente aperta o chiusa. Le modifiche, i miglioramenti o le modifiche apportate sono i tuoi a che fare con quanto ti piace. Come tale, PostgreSQL non è solo un potente sistema di database in grado di gestire l'azienda, ma è una piattaforma di sviluppo su cui sviluppare prodotti software in-house, web o commerciali che richiedono un RDBMS capace.
-
-
-Ci sono molti approcci disponibili per scalare PostgreSQL oltre l'esecuzione su un singolo server. Una descrizione della terminologia e delle tecnologie di base coinvolte è quella di Alta disponibilità e bilanciamento del carico. C'è una presentazione che copre alcune di queste soluzioni.
-Non esiste un unico formato per tutti i software di replica. Devi capire le tue esigenze e come si adattino diversi approcci. Ad esempio, ecco due estremi nello spazio del problema di replica:
+%Ci sono molti approcci disponibili per scalare PostgreSQL oltre l'esecuzione su un singolo server. Una descrizione della terminologia e delle tecnologie di base coinvolte è quella di Alta disponibilità e bilanciamento del carico. C'è una presentazione che copre alcune di queste soluzioni.
+Non esiste un unico formato per tutti i software di replica. \`{E} necessario capire le proprie esigenze e come si adattino diversi approcci. Ad esempio, ecco due estremi nello spazio del problema di replica:
 Hai alcuni server collegati a una rete locale che vuoi mantenere sempre la corrente per scopi di failover e di bilanciamento del carico. Qui si considererebbero soluzioni sincrone, desiderose e quindi prive di conflitti.
 I tuoi utenti prendono una copia locale del database con loro sui computer portatili quando lasciano l'ufficio, apportano modifiche mentre sono lontani e hanno bisogno di unire quelli con il database principale quando tornano. Qui si desidera un approccio asincrono e pigro di replica e sarà costretto a considerare come gestire i conflitti nei casi in cui lo stesso record sia stato modificato sia sul server master che su una copia locale.
 Questi sono problemi di replica del database, ma il modo migliore per risolverli è molto diverso. E come si può vedere da questi esempi, la replica ha molte terminologie specifiche che dovrai capire per capire quale classe di soluzione ha senso per i tuoi requisiti. Una grande fonte per questo sfondo è nelle Termini e definizioni di Postgres-R per la replica del database. L'argomento principale teorico che non menziona è come risolvere la risoluzione dei conflitti nei casi di pigri repliche come la situazione del computer portatile, che riguarda il voto e simili schemi.
@@ -310,19 +348,10 @@ L'estrazione Logical Changeset di PostgreSQL 9.4 forma il fondamento della funzi
 Storicamente, il team di base di PostgreSQL ha considerato la tecnologia di replica e clustering al di fuori dell'ambito del focus del progetto principale, ma questo è cambiato nel 2008, vedere l'istruzione del Team Core. La replica è ora un focus significativo dello sviluppo continuativo
 
 \textbf{(spiegazione cinci -audio-)}
-Uno dei punti di forza che ha reso famoso e versatile Posgres è che è un DBMS (Database Management System è un sistema software progettato per consentire la creazione e manipolazione efficiente di database (ovvero di collezioni di dati strutturati) ) (scritto in C). Ha dei rametti dove te riesci ad agganciarci dei software fatti ad OC. te ti agganci a un sistema di segnalistica interna e lui quindi tramite messaggi di scambio interno ti permette di lavorare (ti dice "ho fatto l'inserimento di questa tabella(INSERT), ti scatta il segnale, e te riesci a intercettare e quindi fare delle operazioni)
+%Uno dei punti di forza che ha reso famoso e versatile Posgres è che è un (Database Management System è un sistema software progettato per consentire la creazione e manipolazione efficiente di database (ovvero di collezioni di dati strutturati) ) (scritto in C). Ha dei rametti dove te riesci ad agganciarci dei software fatti ad OC. te ti agganci a un sistema di segnalistica interna e lui quindi tramite messaggi di scambio interno ti permette di lavorare (ti dice "ho fatto l'inserimento di questa tabella(INSERT), ti scatta il segnale, e te riesci a intercettare e quindi fare delle operazioni)
 
-Pg Logical è un estensione di Posgres. Lui capisce quando fa inserimenti e riesce a duplicare soltando parti di database. Mentre replica di posgres per adesso ti replicherebbe tutto il DB. Invece noi si fa con solo tabelle (R) o quanti record di tabelle (per id maggiori di x) adirittura si vogliono replicare o colonne di tabelle \\
+%Pg Logical è un estensione di Posgres. Lui capisce quando fa inserimenti e riesce a duplicare soltando parti di database. Mentre replica di posgres per adesso ti replicherebbe tutto il DB. Invece noi si fa con solo tabelle (R) o quanti record di tabelle (per id maggiori di x) adirittura si vogliono replicare o colonne di tabelle \\
 
-
-Con il termine PostgreSQL viene denominato un particolare ORDBMS, acronimo di Object-Relational DataBase Management System, cioè un software relazionale e ad oggetti per la gestione di basi di dati.
-PostgreSQL è Open Source, quindi il suo codice sorgente è disponibile pubblicamente ed "aperto" ai contributi degli sviluppatori che volontariamente intendono partecipare alla sua implementazione.
-
-In PostgreSQL, ma il discorso può essere allargato a tutti i gestori di database relazionali, i dati vengono rappresentati attraverso delle tabelle e le tabelle sono gestite utilizzando un linguaggio di alto livello chiamato SQL, acronimo di Structured Query Language.
-Nel caso specifico, l'ORDBMS avrà il compito di gestire le operazioni di archiviazione e di salvaguardia dell'integrità dei dati allocati.
-
-L'SQL è quindi un linguaggio a disposizione dell'utente da impiegare per "interfacciarsi" ai gestori di database; esso ha la caratteristica di agire in modo "trasparente", infatti le operazioni svolte a carico dei dati saranno portate avanti senza bisogno che l'utilizzatore sappia in che modo essi vengono trattati.\\
-\textbf{(spiegazione cinci -audio-}\\
 \textbf{(http://www.slony.info/images/Slony-I-concept.pdf}\\
 Replicating schema changes is an often discussed problem and only ver y
 fe w database systems provide the necessary hooks to implement it. PostgreSQL

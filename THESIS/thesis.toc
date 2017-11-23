@@ -15,22 +15,24 @@
 \contentsline {section}{\numberline {1.2}Hardware utilizzato per gli esperimenti}{18}{section.1.2}
 \contentsline {section}{\numberline {1.3}Software utilizzato per gli esperimenti}{19}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}PosgreSQL}{19}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Pglogical}{22}{subsection.1.3.2}
-\contentsline {subsubsection}{Vantaggi}{22}{subsection.1.3.2}
-\contentsline {subsubsection}{Casi di uso}{23}{subsection.1.3.2}
-\contentsline {subsubsection}{Come funziona pglogical?}{23}{figure.caption.13}
-\contentsline {subsubsection}{Replica pglogical Bi-Directional Replication (BDR)?}{26}{figure.caption.13}
-\contentsline {chapter}{\numberline {2}Definizione del progetto}{27}{chapter.2}
-\contentsline {subsection}{\numberline {2.1.1}Architettura del progetto}{27}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Simulazione di un filesystem distribuito (Dati e Metadati)}{28}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Considerazioni statistiche sulla ridondanza sul dato}{28}{section.2.2}
-\contentsline {section}{\numberline {2.3}Considerazioni statistiche sulla ridondanza del metadato}{28}{section.2.3}
-\contentsline {section}{\numberline {2.4}Resilienza ai cambiamenti di rete}{28}{section.2.4}
-\contentsline {chapter}{\numberline {3}Definizione del quadro sperimentale}{29}{chapter.3}
-\contentsline {section}{\numberline {3.1}Lancio in configurazione 1}{29}{section.3.1}
-\contentsline {section}{\numberline {3.2}Lancio in configurazione 2}{29}{section.3.2}
-\contentsline {section}{\numberline {3.3}Lancio in configurazione 3}{29}{section.3.3}
-\contentsline {chapter}{\numberline {4}Conclusioni e possibili evoluzioni}{31}{chapter.4}
-\contentsline {section}{\numberline {4.1}Utilizzo di dischi SSD}{31}{section.4.1}
-\contentsline {section}{\numberline {4.2}Utilizzo di processori Dual Core}{31}{section.4.2}
-\contentsline {chapter}{\numberline {5}esercizi}{33}{chapter.5}
+\contentsline {subsubsection}{Caratteristiche PostgreSQL}{21}{subsection.1.3.1}
+\contentsline {subsubsection}{Elevata personalizzazione}{22}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Pglogical}{23}{subsection.1.3.2}
+\contentsline {subsubsection}{Vantaggi}{23}{subsection.1.3.2}
+\contentsline {subsubsection}{Casi di uso}{24}{subsection.1.3.2}
+\contentsline {subsubsection}{Come funziona pglogical?}{24}{figure.caption.13}
+\contentsline {subsubsection}{Replica pglogical Bi-Directional Replication (BDR)?}{27}{figure.caption.13}
+\contentsline {chapter}{\numberline {2}Definizione del progetto}{29}{chapter.2}
+\contentsline {subsection}{\numberline {2.1.1}Architettura del progetto}{29}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Simulazione di un filesystem distribuito (Dati e Metadati)}{30}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Considerazioni statistiche sulla ridondanza sul dato}{30}{section.2.2}
+\contentsline {section}{\numberline {2.3}Considerazioni statistiche sulla ridondanza del metadato}{30}{section.2.3}
+\contentsline {section}{\numberline {2.4}Resilienza ai cambiamenti di rete}{30}{section.2.4}
+\contentsline {chapter}{\numberline {3}Definizione del quadro sperimentale}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lancio in configurazione 1}{31}{section.3.1}
+\contentsline {section}{\numberline {3.2}Lancio in configurazione 2}{31}{section.3.2}
+\contentsline {section}{\numberline {3.3}Lancio in configurazione 3}{31}{section.3.3}
+\contentsline {chapter}{\numberline {4}Conclusioni e possibili evoluzioni}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Utilizzo di dischi SSD}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}Utilizzo di processori Dual Core}{33}{section.4.2}
+\contentsline {chapter}{\numberline {5}esercizi}{35}{chapter.5}
