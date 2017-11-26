@@ -11,11 +11,17 @@
 \contentsline {figure}{\numberline {7}{\ignorespaces Sezionamento a livello di blocco con disco di parit\`{a} \cite {etichetta9}\relax }}{16}{figure.caption.9}
 \contentsline {figure}{\numberline {8}{\ignorespaces Sezionamento a livello di blocco con parit\`{a} distribuita \cite {etichetta9}\relax }}{16}{figure.caption.10}
 \contentsline {figure}{\numberline {9}{\ignorespaces Sezionamento a livello di blocco con doppia parit\`{a} distribuita \cite {etichetta9}\relax }}{17}{figure.caption.11}
-\contentsline {figure}{\numberline {10}{\ignorespaces Migrazione e aggiornamenti PostgreSQL \cite {etichetta3}\relax }}{25}{figure.caption.12}
-\contentsline {figure}{\numberline {11}{\ignorespaces Aggregazione \cite {etichetta3}\relax }}{25}{figure.caption.12}
-\contentsline {figure}{\numberline {12}{\ignorespaces A cascata e distribuzione dati \cite {etichetta3}\relax }}{26}{figure.caption.13}
-\contentsline {figure}{\numberline {13}{\ignorespaces A cascata e distribuzione dati \cite {etichetta3}\relax }}{26}{figure.caption.13}
+\contentsline {figure}{\numberline {10}{\ignorespaces Migrazione e aggiornamenti PostgreSQL \cite {etichetta3}\relax }}{42}{figure.caption.12}
+\contentsline {figure}{\numberline {11}{\ignorespaces Aggregazione \cite {etichetta3}\relax }}{42}{figure.caption.12}
+\contentsline {figure}{\numberline {12}{\ignorespaces A cascata e distribuzione dati \cite {etichetta3}\relax }}{43}{figure.caption.13}
+\contentsline {figure}{\numberline {13}{\ignorespaces A cascata e distribuzione dati \cite {etichetta3}\relax }}{43}{figure.caption.13}
+\contentsline {figure}{\numberline {14}{\ignorespaces immagine1 \cite {etichetta9}\relax }}{45}{figure.caption.14}
+\contentsline {figure}{\numberline {15}{\ignorespaces immagine2 \cite {etichetta9}\relax }}{46}{figure.caption.15}
+\contentsline {figure}{\numberline {16}{\ignorespaces rack \cite {etichetta9}\relax }}{47}{figure.caption.16}
+\contentsline {figure}{\numberline {17}{\ignorespaces server \cite {etichetta9}\relax }}{48}{figure.caption.17}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {18}{\ignorespaces Semplice esempio di un Provider e tre Subscriber abbonati \relax }}{49}{figure.caption.18}
+\contentsline {figure}{\numberline {19}{\ignorespaces Set di replica o (\textit {replication set}) \relax }}{51}{figure.caption.19}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -254,16 +254,31 @@ Ad esempio, in una configurazione \verb"10" di \verb"16", o EC \verb"10/16", sei
 I codici di cancellazione, noti anche come codici di correzione degli errori di avanzamento (FEC), sono stati sviluppati pi\`{u} di 50 anni fa. Da quel momento sono emersi diversi tipi. In uno dei tipi pi\`{u} comuni, \textit{Reed-Solomon}, i dati possono essere ricostruiti utilizzando qualsiasi combinazione di simboli \verb"k" o pezzi di dati, anche se i simboli \verb"m" sono persi o non sono disponibili. Ad esempio, in EC \verb"10/16", sei unit\`{a}, nodi o posizioni geografiche potrebbero essere persi o non disponibili e il file originale sar\`{a} ancora recuperabile.\cite{etichetta11}
  
 \item
-\section{Hardware utilizzato per gli esperimenti}
-\textbf{Inserire foto hardware con descrizione}
-\item
 \section{Software utilizzato per gli esperimenti}
 \item
 \subsection{PosgreSQL}
-PostgreSQL \`{e} un potente sistema \textit{Open Source} di database relazionale (DBMS, \textit{Database Management System}) cio\`{e} \`{e} un sistema software progettato per consentire la creazione e manipolazione efficiente di database, ovvero di collezioni di dati strutturati. Ha pi\`{u} di \verb"15" anni di sviluppo attivo e un'architettura collaudata che ha guadagnato una notevole reputazione per l'affidabilit\`{a}, l'integrit\`{a} dei dati e la correttezza.
+PostgreSQL \`{e} un potente sistema \textit{Open Source} di database relazionale (DBMS, \textit{Database Management System}) cio\`{e} \`{e} un sistema software progettato per consentire la creazione e manipolazione efficiente di database, ovvero di collezioni di dati strutturati.\\ 
+Ha pi\`{u} di \verb"15" anni di sviluppo attivo e un'architettura collaudata che ha guadagnato una notevole reputazione per l'affidabilit\`{a}, l'integrit\`{a} e la salvaguardia dei dati allocati e la correttezza di archiviazione.
 
-PostgreSQL \`{e} un sistema di gestione dei database relazionale (\textit{Object-Relational}) e ha il compito di gestire le operazioni di archiviazione e di salvaguardia dell'integrit\`{a} dei dati allocati.\\
+PostgreSQL \`{e} un sistema di gestione dei database relazionale (\textit{Object-Relational}, acronimo ORDBMS) basato su POSTGRES, Versione 4.2, sviluppato presso l'Universit\`{a} della California presso il Dipartimento di Informatica di Berkeley.\cite{etichetta15}\\
 Funziona su tutti i principali sistemi operativi, tra cui Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64), e Windows.\cite{etichetta15}\\
+
+Supporta gran parte dello standard SQL e offre molte funzionalit\`{a} moderne:
+\begin{itemize}
+\item 
+\textit{queries} complesse
+\item
+foreign keys
+\item
+triggers
+\item
+views aggiornabili
+\item
+integrit\`{a} transazionale
+\item
+controllo della concorrenza multiversione.
+\end{itemize}
+
 %Permette di aggiungere funzioni personalizzate sviluppate utilizzando diversi linguaggi di programmazione quali C/C++, Java, Perl, Python, Ruby, Tcl e Open Database Connectivity (ODBC).
 
 Seguono le caratteristiche principali di PostgreSQL; le funzionalit\`{a} introdotte nella recente versione \verb"9.1" :
@@ -295,23 +310,28 @@ PostgreSQL \`{e} progettato per essere estensibile, poich\'{e} \`{e} possibile d
 Un database di classe enterprise, PostgreSQL vanta funzionalit\`{a} sofisticate come il controllo della concorrenza multiversione, il ripristino in tempo reale (\textit{point in time recovery}), \textit{tablespaces}, replica asincrona, transazioni nidificate (\textit{savepoints}), backup in linea/a caldo, un sofisticato query planner/optimizer, ed il \textit{write ahead logging} per una maggiore tolleranza ai guasti.\\
 \`{E} estremamente scalabile sia nella quantit\`{a} pura di dati che pu\`{o} gestire sia nel numero di utenti concorrenti che pu\`{o} ospitare. Esistono sistemi Active PostgreSQL in	 ambienti di produzione che gestiscono oltre 4 terabyte di dati.\cite{etichetta15}
 
-Alcuni limiti generali di PostgreSQL sono inclusi nei punti riportati di seguito:
-\begin{itemize}
-\item 
-Dimensione massima del database: Illimitato
-\item 
-Dimensione massima Tabella: \verb"32 TB"
-\item 
-Dimensione massima Riga: \verb"1,6 TB"
-\item 
-Dimensione Massima campo: \verb"1 GB"
-\item 
-Numero Massimo Righe per tabella: Illimitato
-\item 
-Numero Massimo colonne per la tabella : \verb"250 - 1600" a seconda dei tipi di dati delle colonne
-\item 
-Numero Massimo indici per la tabella: Illimitato\cite{etichetta12}
-\end{itemize}\\
+Alcuni limiti generali di PostgreSQL sono inclusi nei punti riportati di seguito:\\
+
+\begin{tabular}{|l|l|r|}
+%seconde parantesi 1cr se non vuoi linee e togli \hline
+\hline
+Dimensione massima del database & Illimitato\\
+\hline
+Dimensione massima Tabella & \verb"32 TB"\\
+\hline
+Dimensione massima Riga & \verb"1,6 TB"\\
+\hline
+Dimensione Massima campo & \verb"1 GB"\\
+\hline
+Numero Massimo Righe per tabella & Illimitato\\
+\hline
+Numero Massimo colonne per la tabella & \verb"250 - 1600"\\
+%a seconda dei tipi di dati delle colonne\\
+\hline
+Numero Massimo indici per la tabella & Illimitato\cite{etichetta12}\\
+\hline
+\end{tabular}\\
+
 
 MVCC (\textit{Multi-Version Concurrency Control}) \`{e} una tecnica avanzata per migliorare le prestazioni del database in un ambiente multiutente, mantenendo la coerenza dei dati. 
 A differenza della maggior parte degli altri sistemi di database che utilizzano i \textit{locks} per il controllo della concorrenza, Postgres mantiene la coerenza dei dati utilizzando questo modello. Ci\`{o} significa che durante l'interrogazione di un database ogni transazione vede un'istantanea di dati (una versione del database), indipendentemente dallo stato corrente dei dati sottostanti. Questo protegge la transazione dalla visualizzazione di dati incoerenti che potrebbero essere causati da altri eventuali aggiornamenti simultanei delle transazioni sulle stesse righe di dati, fornendo l'isolamento della transazione per ciascuna sessione del database.
@@ -352,19 +372,673 @@ Storicamente, il team di base di PostgreSQL ha considerato la tecnologia di repl
 
 %Pg Logical è un estensione di Posgres. Lui capisce quando fa inserimenti e riesce a duplicare soltando parti di database. Mentre replica di posgres per adesso ti replicherebbe tutto il DB. Invece noi si fa con solo tabelle (R) o quanti record di tabelle (per id maggiori di x) adirittura si vogliono replicare o colonne di tabelle \\
 
-\textbf{(http://www.slony.info/images/Slony-I-concept.pdf}\\
-Replicating schema changes is an often discussed problem and only ver y
-fe w database systems provide the necessary hooks to implement it. PostgreSQL
-does not provide the ability to define triggers called on schema changes, so a
-transparent way to replicate schema changes is not possible without substantial
-work in the core PostgreSQL system.
-Moreover, ver y often database schema chages are not single, isolated DDL
-statements that can occur at any time within a running system. Instead they tend
-to be groups of DDL and DML statements that modify multiple database objects
-and do mass data manipulation like updating a new column to its initial value.
-The Slony-I replication system will have a mechanism to execute SQL
-scr ipts in a controlled fashion as part of the replication process.
+La replica delle modifiche dello schema \`{e} un problema frequentemente discusso e solo pochi sistemi di database forniscono le estensioni necessarie per implementarlo. PostgreSQL non fornisce la possibilit\`{a} di definire i trigger richiamati sulle modifiche dello schema, quindi un modo trasparente per replicare le modifiche dello schema non \`{e} possibile senza un sostanziale lavoro nel sistema centrale di PostgreSQL.
+Invece tendono ad essere gruppi di istruzioni DDL e DML che modificano pi\`{u} oggetti di database e fanno manipolazioni di dati di massa come l'aggiornamento di una nuova colonna al suo valore iniziale.
+Il sistema di replica Pglogical avr\`{a} un meccanismo per eseguire script SQL in modo controllato come parte del processo di replica.
 
+\item
+\subsubsection{Write-Ahead Loggin (WAL)}
+\textit{Write-Ahead Logging} (WAL) \`{e} un metodo standard per garantire l'integrit\`{a} dei dati. Il concetto centrale di WAL \`{e} che le modifiche ai file di dati (dove risiedono tabelle e indici) devono essere scritte solo dopo che tali modifiche sono state registrate, ovvero dopo che i record di registro che descrivono le modifiche sono stati scaricati nella memoria permanente. Se viene seguita questa procedura, non abbiamo bisogno di svuotare le pagine di dati sul disco su ogni \textit{commit} di transazione, perch\'{e} sappiamo che in caso di crash saremo in grado di recuperare il database usando il log: eventuali modifiche che non sono state applicate alle pagine di dati possono essere rifatte dai record del registro. Questo \`{e} il recupero \textit{roll-forward}, noto anche come REDO.\\
+
+Poich\'{e} WAL ripristina il contenuto del file di database dopo un arresto anomalo, i \textit{filesystem} registrati non sono necessari per l'archiviazione affidabile dei file di dati o dei file WAL. \\
+%In effetti, l'overhead del journaling può ridurre le prestazioni, specialmente se l'inserimento nel journal fa sì che i dati del file system vengano scaricati su disco. Fortunatamente, lo svuotamento dei dati durante l'inserimento nel journal può spesso essere disabilitato con un'opzione di montaggio del file system, ad es. data = writeback su un file system Linux ext3. I file system journalizzati migliorano la velocità di avvio dopo un arresto anomalo.
+L'utilizzo di WAL determina un numero notevolmente ridotto di scritture su disco, poich\'{e} \`{e} necessario scaricare il file di registro sul disco per garantire che una transazione venga eseguita, piuttosto che ogni file di dati modificato dalla transazione. \\
+Il file di registro viene scritto in modo sequenziale e pertanto il costo della sincronizzazione del log \`{e} molto inferiore al costo dello svuotamento delle pagine di dati. Ci\`{o} \`{e} particolarmente vero per i server che gestiscono molte piccole transazioni toccando diverse parti dell'archivio dati. Inoltre, quando il server sta elaborando molte piccole transazioni simultanee, un \verb"fsync" del file di log pu\`{o} essere sufficiente per il \textit{commit} di molte transazioni.\cite{etichetta15}
+
+Archiviando i dati WAL possiamo supportare il ripristino in qualsiasi istante dei dati WAL disponibili: installiamo semplicemente un backup fisico preliminare del database e riproduciamo il registro WAL fino al momento desiderato. Inoltre, il backup fisico non deve essere un'istantanea istantanea dello stato del database: se viene eseguito per un certo periodo di tempo, la riproduzione del log WAL per quel periodo risolver\`{a} eventuali incoerenze interne.\textbf{vedere se metterlo}
+
+\item 
+\subsubsection{File di configurazione di PostgreSQL}
+Segue parte del file di configurazione di PostgreSQL chiamato \verb"postgresql.conf" ottenuta dall'ultima versione \verb"10.0", ponendo attenzione ai parametri dei lanci di configurazione:
+\\ 
+
+\vspace{-0.5cm}
+\begin{verbatim}
+ 
+# -----------------------------
+# PostgreSQL configuration file
+# -----------------------------
+#
+# This file consists of lines of the form:
+#
+#   name = value
+#
+# (The "=" is optional.)  Whitespace may be used.  Comments are introduced with
+# "#" anywhere on a line.  The complete list of parameter names and allowed
+# values can be found in the PostgreSQL documentation.
+#
+# The commented-out settings shown in this file represent the default values.
+# Re-commenting a setting is NOT sufficient to revert it to the default value;
+# you need to reload the server.
+#
+# This file is read on server startup and when the server receives a SIGHUP
+# signal.  If you edit the file on a running system, you have to SIGHUP the
+# server for the changes to take effect, run "pg_ctl reload", or execute
+# "SELECT pg_reload_conf()".  Some parameters, which are marked below,
+# require a server shutdown and restart to take effect.
+#
+# Any parameter can also be given as a command-line option to the server, e.g.,
+# "postgres -c log_connections=on".  Some parameters can be changed at run time
+# with the "SET" SQL command.
+#
+# Memory units:  kB = kilobytes        Time units:  ms  = milliseconds
+#                MB = megabytes                     s   = seconds
+#                GB = gigabytes                     min = minutes
+#                TB = terabytes                     h   = hours
+#                                                   d   = days
+
+
+#------------------------------------------------------------------------------
+# FILE LOCATIONS
+#------------------------------------------------------------------------------
+
+# The default values of these variables are driven from the -D command-line
+# option or PGDATA environment variable, represented here as ConfigDir.
+
+#data_directory = 'ConfigDir'		# use data in another directory
+					# (change requires restart)
+#hba_file = 'ConfigDir/pg_hba.conf'	# host-based authentication file
+					# (change requires restart)
+#ident_file = 'ConfigDir/pg_ident.conf'	# ident configuration file
+					# (change requires restart)
+
+# If external_pid_file is not explicitly set, no extra PID file is written.
+#external_pid_file = ''			# write an extra PID file
+					# (change requires restart)
+
+
+#------------------------------------------------------------------------------
+# CONNECTIONS AND AUTHENTICATION
+#------------------------------------------------------------------------------
+
+# - Connection Settings -
+
+listen_addresses = '*'			# what IP address(es) to listen on;
+					# comma-separated list of addresses;
+					# defaults to 'localhost'; use '*' for all
+					# (change requires restart)
+port = 5432				# (change requires restart)
+max_connections = 100			# (change requires restart)
+#superuser_reserved_connections = 3	# (change requires restart)
+#unix_socket_directories = '/tmp'	# comma-separated list of directories
+					# (change requires restart)
+#unix_socket_group = ''			# (change requires restart)
+#unix_socket_permissions = 0777		# begin with 0 to use octal notation
+					# (change requires restart)
+#bonjour = off				# advertise server via Bonjour
+					# (change requires restart)
+#bonjour_name = ''			# defaults to the computer name
+					# (change requires restart)
+
+# - Security and Authentication -
+
+#authentication_timeout = 1min		# 1s-600s
+#ssl = off
+#ssl_ciphers = 'HIGH:MEDIUM:+3DES:!aNULL' # allowed SSL ciphers
+#ssl_prefer_server_ciphers = on
+#ssl_ecdh_curve = 'prime256v1'
+#ssl_dh_params_file = ''
+#ssl_cert_file = 'server.crt'
+#ssl_key_file = 'server.key'
+#ssl_ca_file = ''
+#ssl_crl_file = ''
+#password_encryption = md5		# md5 or scram-sha-256
+#db_user_namespace = off
+#row_security = on
+
+# GSSAPI using Kerberos
+#krb_server_keyfile = ''
+#krb_caseins_users = off
+
+# - TCP Keepalives -
+# see "man 7 tcp" for details
+
+#tcp_keepalives_idle = 0		# TCP_KEEPIDLE, in seconds;
+					# 0 selects the system default
+#tcp_keepalives_interval = 0		# TCP_KEEPINTVL, in seconds;
+					# 0 selects the system default
+#tcp_keepalives_count = 0		# TCP_KEEPCNT;
+					# 0 selects the system default
+
+
+#------------------------------------------------------------------------------
+# RESOURCE USAGE (except WAL)
+#------------------------------------------------------------------------------
+
+# - Memory -
+
+shared_buffers = 256MB			# min 128kB
+					# (change requires restart)
+#huge_pages = try			# on, off, or try
+					# (change requires restart)
+#temp_buffers = 8MB			# min 800kB
+max_prepared_transactions = 100		# zero disables the feature
+					# (change requires restart)
+# Caution: it is not advisable to set max_prepared_transactions nonzero unless
+# you actively intend to use prepared transactions.
+#work_mem = 32MB				# min 64kB
+#maintenance_work_mem = 128MB		# min 1MB
+#replacement_sort_tuples = 150000	# limits use of replacement selection sort
+#autovacuum_work_mem = -1		# min 1MB, or -1 to use maintenance_work_mem
+#max_stack_depth = 2MB			# min 100kB
+dynamic_shared_memory_type = posix	# the default is the first option
+					# supported by the operating system:
+					#   posix
+					#   sysv
+					#   windows
+					#   mmap
+					# use none to disable dynamic shared memory
+					# (change requires restart)
+
+# - Disk -
+
+#temp_file_limit = -1			# limits per-process temp file space
+					# in kB, or -1 for no limit
+
+# - Kernel Resource Usage -
+
+#max_files_per_process = 1000		# min 25
+					# (change requires restart)
+shared_preload_libraries = 'pglogical'		# (change requires restart)
+
+# - Cost-Based Vacuum Delay -
+
+#vacuum_cost_delay = 0			# 0-100 milliseconds
+#vacuum_cost_page_hit = 1		# 0-10000 credits
+#vacuum_cost_page_miss = 10		# 0-10000 credits
+#vacuum_cost_page_dirty = 20		# 0-10000 credits
+#vacuum_cost_limit = 200		# 1-10000 credits
+
+# - Background Writer -
+
+#bgwriter_delay = 200ms			# 10-10000ms between rounds
+#bgwriter_lru_maxpages = 100		# 0-1000 max buffers written/round
+#bgwriter_lru_multiplier = 2.0		# 0-10.0 multiplier on buffers scanned/round
+#bgwriter_flush_after = 512kB		# measured in pages, 0 disables
+
+# - Asynchronous Behavior -
+
+#effective_io_concurrency = 1		# 1-1000; 0 disables prefetching
+max_worker_processes = 64		# (change requires restart)
+#max_parallel_workers_per_gather = 2	# taken from max_parallel_workers
+#max_parallel_workers = 8		# maximum number of max_worker_processes that
+					# can be used in parallel queries
+#old_snapshot_threshold = -1		# 1min-60d; -1 disables; 0 is immediate
+					# (change requires restart)
+#backend_flush_after = 0		# measured in pages, 0 disables
+
+
+#------------------------------------------------------------------------------
+# WRITE AHEAD LOG
+#------------------------------------------------------------------------------
+
+# - Settings -
+
+wal_level = logical			# minimal, archive, hot_standby, or logical
+					# (change requires restart)
+#fsync = on				# turns forced synchronization on or off
+synchronous_commit = off		# synchronization level;
+														# off, local, remote_write, or on
+#wal_sync_method = fsync		# the default is the first option
+					# supported by the operating system:
+					#   open_datasync
+					#   fdatasync (default on Linux)
+					#   fsync
+					#   fsync_writethrough
+					#   open_sync
+#full_page_writes = on			# recover from partial page writes
+#wal_compression = off			# enable compression of full-page writes
+#wal_log_hints = off			# also do full page writes of non-critical updates
+					# (change requires restart)
+#wal_buffers = -1			# min 32kB, -1 sets based on shared_buffers
+					# (change requires restart)
+#wal_writer_delay = 200ms		# 1-10000 milliseconds
+#wal_writer_flush_after = 1MB		# measured in pages, 0 disables
+
+#commit_delay = 0			# range 0-100000, in microseconds
+#commit_siblings = 5			# range 1-1000
+
+# - Checkpoints -
+
+#checkpoint_timeout = 5min		# range 30s-1d
+#max_wal_size = 1GB
+#min_wal_size = 80MB
+#checkpoint_completion_target = 0.5	# checkpoint target duration, 0.0 - 1.0
+#checkpoint_flush_after = 256kB		# measured in pages, 0 disables
+#checkpoint_warning = 30s		# 0 disables
+
+# - Archiving -
+
+#archive_mode = off		# enables archiving; off, on, or always
+				# (change requires restart)
+#archive_command = ''		# command to use to archive a logfile segment
+				# placeholders: %p = path of file to archive
+				#               %f = file name only
+				# e.g. 'test ! -f /mnt/server/archivedir/%f && cp %p /mnt/server/archivedir/%f'
+#archive_timeout = 0		# force a logfile segment switch after this
+				# number of seconds; 0 disables
+
+
+#------------------------------------------------------------------------------
+# REPLICATION
+#------------------------------------------------------------------------------
+
+# - Sending Server(s) -
+
+# Set these on the master and on any standby that will send replication data.
+
+max_wal_senders = 64		# max number of walsender processes
+				# (change requires restart)
+#wal_keep_segments = 0		# in logfile segments, 16MB each; 0 disables
+#wal_sender_timeout = 60s	# in milliseconds; 0 disables
+
+max_replication_slots = 64	# max number of replication slots
+				# (change requires restart)
+track_commit_timestamp = on	# collect timestamp of transaction commit
+				# (change requires restart)
+
+# - Master Server -
+
+# These settings are ignored on a standby server.
+
+synchronous_standby_names = '1 (r1, r2, r3, r4)'
+				# standby servers that provide sync rep
+				# method to choose sync standbys, number of sync standbys,
+				# and comma-separated list of application_name
+				# from standby(s); '*' = all
+#vacuum_defer_cleanup_age = 0	# number of xacts by which cleanup is delayed
+
+# - Standby Servers -
+
+# These settings are ignored on a master server.
+
+#hot_standby = on			# "off" disallows queries during recovery
+					# (change requires restart)
+#max_standby_archive_delay = 30s	# max delay before canceling queries
+					# when reading WAL from archive;
+					# -1 allows indefinite delay
+#max_standby_streaming_delay = 30s	# max delay before canceling queries
+					# when reading streaming WAL;
+					# -1 allows indefinite delay
+#wal_receiver_status_interval = 10s	# send replies at least this often
+					# 0 disables
+#hot_standby_feedback = off		# send info from standby to prevent
+					# query conflicts
+#wal_receiver_timeout = 60s		# time that receiver waits for
+					# communication from master
+					# in milliseconds; 0 disables
+#wal_retrieve_retry_interval = 5s	# time to wait before retrying to
+					# retrieve WAL after a failed attempt
+
+# - Subscribers -
+
+# These settings are ignored on a publisher.
+
+max_logical_replication_workers =  16 #4	# taken from max_worker_processes
+					# (change requires restart)
+#max_sync_workers_per_subscription = 2	# taken from max_logical_replication_workers
+
+
+#------------------------------------------------------------------------------
+# QUERY TUNING
+#------------------------------------------------------------------------------
+
+# - Planner Method Configuration -
+
+#enable_bitmapscan = on
+#enable_hashagg = on
+#enable_hashjoin = on
+#enable_indexscan = on
+#enable_indexonlyscan = on
+#enable_material = on
+#enable_mergejoin = on
+#enable_nestloop = on
+#enable_seqscan = on
+#enable_sort = on
+#enable_tidscan = on
+
+# - Planner Cost Constants -
+
+#seq_page_cost = 1.0			# measured on an arbitrary scale
+#random_page_cost = 4.0			# same scale as above
+#cpu_tuple_cost = 0.01			# same scale as above
+#cpu_index_tuple_cost = 0.005		# same scale as above
+#cpu_operator_cost = 0.0025		# same scale as above
+#parallel_tuple_cost = 0.1		# same scale as above
+#parallel_setup_cost = 1000.0	# same scale as above
+#min_parallel_table_scan_size = 8MB
+#min_parallel_index_scan_size = 512kB
+#effective_cache_size = 4GB
+
+# - Genetic Query Optimizer -
+
+#geqo = on
+#geqo_threshold = 12
+#geqo_effort = 5			# range 1-10
+#geqo_pool_size = 0			# selects default based on effort
+#geqo_generations = 0			# selects default based on effort
+#geqo_selection_bias = 2.0		# range 1.5-2.0
+#geqo_seed = 0.0			# range 0.0-1.0
+
+# - Other Planner Options -
+
+#default_statistics_target = 100	# range 1-10000
+#constraint_exclusion = partition	# on, off, or partition
+#cursor_tuple_fraction = 0.1		# range 0.0-1.0
+#from_collapse_limit = 8
+#join_collapse_limit = 8		# 1 disables collapsing of explicit
+					# JOIN clauses
+#force_parallel_mode = off
+
+
+#------------------------------------------------------------------------------
+# ERROR REPORTING AND LOGGING
+#------------------------------------------------------------------------------
+
+# - Where to Log -
+
+#log_destination = 'stderr'		# Valid values are combinations of
+					# stderr, csvlog, syslog, and eventlog,
+					# depending on platform.  csvlog
+					# requires logging_collector to be on.
+
+# This is used when logging to stderr:
+#logging_collector = off		# Enable capturing of stderr and csvlog
+					# into log files. Required to be on for
+					# csvlogs.
+					# (change requires restart)
+
+# These are only used if logging_collector is on:
+#log_directory = 'log'			# directory where log files are written,
+					# can be absolute or relative to PGDATA
+#log_filename = 'postgresql-%Y-%m-%d_%H%M%S.log'	# log file name pattern,
+					# can include strftime() escapes
+#log_file_mode = 0600			# creation mode for log files,
+					# begin with 0 to use octal notation
+#log_truncate_on_rotation = off		# If on, an existing log file with the
+					# same name as the new log file will be
+					# truncated rather than appended to.
+					# But such truncation only occurs on
+					# time-driven rotation, not on restarts
+					# or size-driven rotation.  Default is
+					# off, meaning append to existing files
+					# in all cases.
+#log_rotation_age = 1d			# Automatic rotation of logfiles will
+					# happen after that time.  0 disables.
+#log_rotation_size = 10MB		# Automatic rotation of logfiles will
+					# happen after that much log output.
+					# 0 disables.
+
+# These are relevant when logging to syslog:
+#syslog_facility = 'LOCAL0'
+#syslog_ident = 'postgres'
+#syslog_sequence_numbers = on
+#syslog_split_messages = on
+
+# This is only relevant when logging to eventlog (win32):
+# (change requires restart)
+#event_source = 'PostgreSQL'
+
+# - When to Log -
+
+#client_min_messages = notice		# values in order of decreasing detail:
+					#   debug5
+					#   debug4
+					#   debug3
+					#   debug2
+					#   debug1
+					#   log
+					#   notice
+					#   warning
+					#   error
+
+#log_min_messages = warning		# values in order of decreasing detail:
+					#   debug5
+					#   debug4
+					#   debug3
+					#   debug2
+					#   debug1
+					#   info
+					#   notice
+					#   warning
+					#   error
+					#   log
+					#   fatal
+					#   panic
+
+#log_min_error_statement = error	# values in order of decreasing detail:
+					#   debug5
+					#   debug4
+					#   debug3
+					#   debug2
+					#   debug1
+					#   info
+					#   notice
+					#   warning
+					#   error
+					#   log
+					#   fatal
+					#   panic (effectively off)
+
+#log_min_duration_statement = -1	# -1 is disabled, 0 logs all statements
+					# and their durations, > 0 logs only
+					# statements running at least this number
+					# of milliseconds
+
+
+# - What to Log -
+
+#debug_print_parse = off
+#debug_print_rewritten = off
+#debug_print_plan = off
+#debug_pretty_print = on
+#log_checkpoints = off
+#log_connections = off
+#log_disconnections = off
+#log_duration = off
+#log_error_verbosity = default		# terse, default, or verbose messages
+#log_hostname = off
+#log_line_prefix = '%m [%p] '		# special values:
+					#   %a = application name
+					#   %u = user name
+					#   %d = database name
+					#   %r = remote host and port
+					#   %h = remote host
+					#   %p = process ID
+					#   %t = timestamp without milliseconds
+					#   %m = timestamp with milliseconds
+					#   %n = timestamp with milliseconds (as a Unix epoch)
+					#   %i = command tag
+					#   %e = SQL state
+					#   %c = session ID
+					#   %l = session line number
+					#   %s = session start timestamp
+					#   %v = virtual transaction ID
+					#   %x = transaction ID (0 if none)
+					#   %q = stop here in non-session
+					#        processes
+					#   %% = '%'
+					# e.g. '<%u%%%d> '
+#log_lock_waits = off			# log lock waits >= deadlock_timeout
+#log_statement = 'none'			# none, ddl, mod, all
+#log_replication_commands = off
+#log_temp_files = -1			# log temporary files equal or larger
+					# than the specified size in kilobytes;
+					# -1 disables, 0 logs all temp files
+log_timezone = 'UTC'
+
+
+# - Process Title -
+
+#cluster_name = ''			# added to process titles if nonempty
+					# (change requires restart)
+#update_process_title = on
+
+
+#------------------------------------------------------------------------------
+# RUNTIME STATISTICS
+#------------------------------------------------------------------------------
+
+# - Query/Index Statistics Collector -
+
+#track_activities = on
+#track_counts = on
+#track_io_timing = off
+#track_functions = none			# none, pl, all
+#track_activity_query_size = 1024	# (change requires restart)
+#update_process_title = on
+#stats_temp_directory = 'pg_stat_tmp'
+
+
+# - Statistics Monitoring -
+
+#log_parser_stats = off
+#log_planner_stats = off
+#log_executor_stats = off
+#log_statement_stats = off
+
+
+#------------------------------------------------------------------------------
+# AUTOVACUUM PARAMETERS
+#------------------------------------------------------------------------------
+
+#autovacuum = on			# Enable autovacuum subprocess?  'on'
+					# requires track_counts to also be on.
+#log_autovacuum_min_duration = -1	# -1 disables, 0 logs all actions and
+					# their durations, > 0 logs only
+					# actions running at least this number
+					# of milliseconds.
+#autovacuum_max_workers = 3		# max number of autovacuum subprocesses
+					# (change requires restart)
+#autovacuum_naptime = 1min		# time between autovacuum runs
+
+# - Statement Behavior -
+
+#search_path = '"$user", public'	# schema names
+#default_tablespace = ''		# a tablespace name, '' uses the default
+#temp_tablespaces = ''			# a list of tablespace names, '' uses
+					# only default tablespace
+#check_function_bodies = on
+#default_transaction_isolation = 'read committed'
+#default_transaction_read_only = off
+#default_transaction_deferrable = off
+#session_replication_role = 'origin'
+#statement_timeout = 0			# in milliseconds, 0 is disabled
+#lock_timeout = 0			# in milliseconds, 0 is disabled
+#idle_in_transaction_session_timeout = 0	# in milliseconds, 0 is disabled
+#vacuum_freeze_min_age = 50000000
+#vacuum_freeze_table_age = 150000000
+#vacuum_multixact_freeze_min_age = 5000000
+#vacuum_multixact_freeze_table_age = 150000000
+#bytea_output = 'hex'			# hex, escape
+#xmlbinary = 'base64'
+#xmloption = 'content'
+#gin_fuzzy_search_limit = 0
+#gin_pending_list_limit = 4MB
+
+# - Locale and Formatting -
+
+datestyle = 'iso, mdy'
+#intervalstyle = 'postgres'
+timezone = 'UTC'
+#timezone_abbreviations = 'Default'     # Select the set of available time zone
+					# abbreviations.  Currently, there are
+					#   Default
+					#   Australia (historical usage)
+					#   India
+					# You can create your own file in
+					# share/timezonesets/.
+#extra_float_digits = 0			# min -15, max 3
+#client_encoding = sql_ascii		# actually, defaults to database
+					# encoding
+
+# These settings are initialized by initdb, but they can be changed.
+lc_messages = 'C'			# locale for system error message
+					# strings
+lc_monetary = 'C'			# locale for monetary formatting
+lc_numeric = 'C'			# locale for number formatting
+lc_time = 'C'				# locale for time formatting
+
+# default configuration for text search
+default_text_search_config = 'pg_catalog.english'
+
+# - Other Defaults -
+
+#dynamic_library_path = '/cyone1/postgres10/usr/lib/postgresql/'
+#local_preload_libraries = ''
+#session_preload_libraries = ''
+
+
+#------------------------------------------------------------------------------
+# LOCK MANAGEMENT
+#------------------------------------------------------------------------------
+
+#deadlock_timeout = 1s
+#max_locks_per_transaction = 64		# min 10
+					# (change requires restart)
+#max_pred_locks_per_transaction = 64	# min 10
+					# (change requires restart)
+#max_pred_locks_per_relation = -2	# negative values mean
+					# (max_pred_locks_per_transaction
+					#  / -max_pred_locks_per_relation) - 1
+#max_pred_locks_per_page = 2            # min 0
+
+
+#------------------------------------------------------------------------------
+# VERSION/PLATFORM COMPATIBILITY
+#------------------------------------------------------------------------------
+
+# - Previous PostgreSQL Versions -
+
+#array_nulls = on
+#backslash_quote = safe_encoding	# on, off, or safe_encoding
+#default_with_oids = off
+#escape_string_warning = on
+#lo_compat_privileges = off
+#operator_precedence_warning = off
+#quote_all_identifiers = off
+#sql_inheritance = on
+#standard_conforming_strings = on
+#synchronize_seqscans = on
+
+# - Other Platforms and Clients -
+
+#transform_null_equals = off
+
+
+#------------------------------------------------------------------------------
+# ERROR HANDLING
+#------------------------------------------------------------------------------
+
+#exit_on_error = off			# terminate session on any error?
+#restart_after_crash = on		# reinitialize after backend crash?
+
+
+#------------------------------------------------------------------------------
+# CONFIG FILE INCLUDES
+#------------------------------------------------------------------------------
+
+# These options allow settings to be loaded from files other than the
+# default postgresql.conf.
+
+#include_dir = 'conf.d'			# include files ending in '.conf' from
+					# directory 'conf.d'
+#include_if_exists = 'exists.conf'	# include file only if it exists
+#include = 'special.conf'		# include file
+
+
+#------------------------------------------------------------------------------
+# CUSTOMIZED OPTIONS
+#------------------------------------------------------------------------------
+
+# Add settings for extensions here
+
+
+
+pglogical.conflict_resolution = 'last_update_wins'
+\end{verbatim}
+ \vspace{-0.3cm}
+ 
 \item
 \subsection{Pglogical}
 Pglogical \`{e} un sistema logico di replica implementato come estensione di PostgreSQL. Completamente integrato, non richiede alcun triggers o programmi esterni. Questa alternativa alla replica fisica \`{e} un metodo altamente efficiente per replicare i dati utilizzando un modello di \textit{publish/subscribe} per la replica selettiva.\cite{etichetta3}
@@ -462,3 +1136,58 @@ Lo sviluppo di BDR continuerà per quelli che richiedono piena capacità multi-m
 Replica pglogical Bi-Directional Replication (BDR)?
 No. pglogical non fornisce funzionalità complete di replica multi-master e un supporto di modifica dello schema coerente, come fa la BDR. Pglogical incorpora le funzionalità di BDR e le lezioni apprese da BDR per produrre una soluzione più semplice e più semplice da utilizzare per la replica unidirezionale, utilizzabile da più persone per una vasta gamma di casi di utilizzo. BDR è stato progettato innanzitutto per il multi-master della rete a n-way, e questo è stato difficile adattarsi bene alla replica mono-master a senso unico.
 %\end{document}
+
+L'estensione pglogical fornisce la replica dello streaming logico per PostgreSQL, utilizzando il modello \textit{Provider/Subscribe}. Si basa sulla tecnologia sviluppata come parte del Progetto BDR.
+
+Utilizziamo i seguenti termini per descrivere i flussi di dati tra i nodi:
+
+\begin{itemize}
+\item
+\textbf{Nodi}: istanze del database PostgreSQL
+\item 
+\textbf{Provider/Subscibers}: ruoli presi dai nodi
+\item 
+\textbf{Set di replica}: una raccolta di tabelle che identificano i dati da replicare.
+\end{itemize}
+
+
+I casi d'uso supportati sono:
+\begin{itemize}
+\item 
+Replica completa del database
+\item 
+Replica selettiva di insiemi di tabelle mediante set di repliche
+\item 
+Replica selettiva delle righe della tabella sul lato del publisher o del sottoscrittore (\verb"row_filter")
+\item 
+Replica selettiva delle colonne della tabella sul lato dell'editore
+\item 
+Raccolta dati / unione da pi\`{u} server upstream. \cite{etichetta3}
+\end{itemize}
+
+\item
+\section{Hardware utilizzato per gli esperimenti}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/CY7x2.png}\\
+\caption{immagine1 \label{figura1.10} \cite{etichetta9}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/CY7.png}\\
+\caption{immagine2 \label{figura1.11} \cite{etichetta9}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/rack.png}\\
+\caption{rack \label{figura1.12} \cite{etichetta9}}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.40]{img/Server.png}\\
+\caption{server \label{figura1.13} \cite{etichetta9}}
+\end{figure}
