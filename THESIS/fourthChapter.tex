@@ -1,3 +1,13 @@
 \chapter{Conclusioni e possibili evoluzioni}
 \section{Utilizzo di dischi SSD}
+Per gli SSD, viste le prestazioni attuali invece, non ci attendiamo miglioramenti, se non in termini di minori consumi.
+
 \section{Utilizzo di processori Dual Core}
+per i processori dual-core, inserisci una piccola valutazione, in cui dici che sostanzialmente i processi coinvolti sono due (il DB postgres e il frontend nodejs che ci scrive)
+usando un processo a single-core, i due processi si contendono il processore
+e si costringono a svariati context-switch di memoria.
+Visto che i prezzi si stanno riducendo, un'evoluzione è quella di usare un dual-core
+così che a tendere ogni processo abbia un core dedicato
+non esegua context-switch
+a tutto vantaggio
+delle prestazioni.
