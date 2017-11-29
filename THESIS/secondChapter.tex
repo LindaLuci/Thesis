@@ -44,38 +44,158 @@ Ogni set corrisponde ai dati da replicare. \`{E} composto da una serie di flussi
 
 
 La figura illustra un semplice esempio di una configurazione di replica. Il set di replica \`{e} composto dal flusso di dati $R_1$, $R_2$ e $R_3$.
-Questo scenario raffigura quattro host (nel seguente caso quattro nodi) in cui il NODO A ha il ruolo di \textit{publish} e i restanti sono i suoi sottoscrittori.
-\verb"Data 1" rappresenta il flusso di dati nativi di A da replicare. Ciascun \textit{subscriber} ha esattamente i dati originali del NODO A, in quanto abbonati, in aggiunta ai propri nativi (\verb"Data 2",\verb"Data 3" e \verb"Data 4"). \\
-In questo modo se il \textit{provider} fallisce (o per altri motivi non vi \`{e} pi\`{u} la possibilit\`{a} di scriverci nuovi dati), l'HOST B, in quanto suo successivo, pu\`{o} essere promosso come \textit{master} di entrambi i set.
+Questo scenario raffigura quattro host (nel seguente caso quattro nodi) in cui il \textbf{NODO A} ha il ruolo di \textit{publish} e i restanti sono i suoi sottoscrittori.\\
+\verb"Data 1" rappresenta il flusso di dati nativi di \textbf{A} da replicare. Ciascun \textit{subscriber}, in aggiunta ai propri nativi (\verb"Data 2", \verb"Data 3" e \verb"Data 4"), ha esattamente i dati originali del \textbf{NODO A}, in quanto abbonati. \\
+In questo modo se fallisce una scrittura di nuovi dati sul \textit{provider}, l'\textbf{HOST B}, in quanto suo successivo, pu\`{o} essere promosso come \textit{master} della sottoscrizione di replica.
 
 \subsection{Simulazione di un filesystem distribuito (Dati e Metadati)}
 
-\textbf{inserisci organizzazione mappa - per far vedere come funziona il concetto di pub/sub, range, db}
-Ciascun File viene inserito dentro un \textit{bucket}, che \`{e} un insieme di record all'interno di un database, ovvero un oggetto, contenente un insieme di campi o elementi, ciascuno dei quali \`{e} identificato da un nome univoco e da un tipo di dato.\\
+Ogni file viene inserito dentro un \textit{bucket}, che \`{e} un insieme di record all'interno di un database, ovvero un oggetto, contenente un insieme di campi o elementi, ciascuno dei quali \`{e} identificato da un nome univoco e da un tipo di dato.\\
 
 Di ciascun File vengono scritte due informazioni:
 \begin{enumerate}
 \item 
 file intero diviso in chunk,
 \item
-una parte di metadato.
-\end{enumerate}\\
+una parte di metadato.\\
+\end{enumerate}
 
-\`{E} necessario replicare i metadati sulle varie \textit{Board} in modo tale che, in casi di fault, guasti o perdite, sia possibile ottenere nuovamente il dato originale.\\
+\`{E} necessario replicare i dati/metadati sulle varie \textit{board} in modo tale che, in casi di \textit{fault}, guasti o perdite, sia possibile ottenere nuovamente il dato originale.\\
 
-Per i metadati la replica segue il concetto del modello \textit{provider/subscriber}. 
-Quando \`{e} scritto un File, per ogni chunk viene fatto un calcolo di un numero \textbf{(scia e qualcosa)} combinato con un numero pseudocasuale che restituisce un ID.
-Ogni Board gestisce un range di ID. \\
+Ci domandiamo quindi: in che modo possiamo ottenere maggiore affidabilit\`{a}?
+
+%Per i metadati la replica segue il concetto del modello \textit{provider/subscriber}. 
+
+Quando \`{e} scritto un file, per ogni \textit{chunk} e per ogni metadato, viene generato un numero pseudocasuale che definisce un ID. 
+Ogni \textit{board} gestisce un range di ID.
+L'ID ottenuto \`{e} passato a una mappa che restituisce la posizione della \textit{board} a cui appartiene; pi\`{u} precisamente il suo indirizzo IP. Di conseguenza sono identificate anche le \textit{board} precedenti e successive a essa.\\
+Per ottenere una garanzia della replica del dato, \`{e} indispensabile replicarlo almeno due volte su \textit{board} differenti. Il dato deve essere quindi scritto sulla \textit{board} a cui appartiene e sul suo successore.
+
+Inizialmente una stessa \textit{board} gestiva due range diversi tra loro. Ciascuna \textit{board} conteneva perci\`{o} due nodi e quindi due database.\\
+Prendiamo come esempio la \verb"BOARD 01", che per semplificare chiameremo \verb"B 01 01", dove il primo numero rappresenta lo \textit{chassis} e il secondo identifica la \textit{board}.\\
+La rappresentazione della mappa avr\`{a} una forma simile a quella che segue:\\
+
+\begin{center}
+\begin{tabular}{ | l | c | r}
+\hline
+\textbf{BOARD} & \textbf{range ID}\\
+\hline
+\verb"B 01 01" & \verb"0-10"\\
+\verb"B 01 02" & \verb"11-20"\\
+\verb"B 01 03" & \verb"21-30"\\
+\verb"B 01 01" & \verb"31-40"\\
+\verb"B 01 02" & \verb"41-50"\\
+\verb"B 01 03" & \verb"51-60"\\
+\hline
+\end{tabular}
+\end{center}
+\\
+
+Da questo scenario emerge che la \verb"BOARD 01" gestisce gli ID compresi tra \verb"0-10" e \verb"51-60".\\
+Il problema sta nel fatto che se la \verb"BOARD 01" muore, il successivo e quindi il \textit{subscriber}, sar\`{a} in entrambi i casi la \verb"BOARD 02".\\
+Ci\`{o} \`{e} fonte di debolezza; \`{e} fondamentale che i dati siano replicati su \textit{board} diverse. Questo implica che ogni nodo di una \textit{board} deve avere nella mappa differenti successori, allo scopo di garantire una distribuzione dei dati pi\`{u} uniforme.\\
+
+La gestione delle repliche \`{e} coordinata direttamente da PostgreSQL.
+Quest ultimo consente la creazione e manipolazione efficiente di database, tuttavia ha la limitazione di replicare in modo totale i dati presenti in un host; altro motivo per cui non \`{e} possibile avere una struttura come quella raffigurata precedentemente.\\
+La soluzione \`{e} fornita da Pglogical, che permette la replica selettiva di righe o tabelle, rendendo in questo modo agevole la copia su pi\`{u} \textit{board}: una riga di una tabella pu\`{o} essere replicata sulla \verb"BOARD 02" e un'altra su una diversa \textit{board}.\\
+
+Nello scenario descritto precedentemente, in cui sono configurate due nodi per \textit{board}, contemporaneamente posso avere due connessioni (ossia due client differenti eseguono due transazioni parallele in simultanea), che richiedono la scrittura su due tabelle della stessa \textit{board}. Ad esempio: due client vogliono scrivere un dato con ID \verb"8" e \verb"58" con due transazioni parallele; i client si aspettano una risposta di successo una volta avvenuta la scrittura sulla \verb"BOARD 01" e sulla sua successiva (configurabile dal parametro \verb"synchronous_commit" di PostgreSQL). Questo non \`{e} possibile, poich\`{e} Postgres, come detto, replica un intero database.
+
+L'occupazione del disco dei metadati rispetto a quello dei dati \`{e} decisamente minore, infatti il grosso dell'occupazione del disco sono i \textit{chunk} del file. Di fatto i metadati hanno grandezza fissa; l'unico metadato che cresce \`{e} la lista di un file presente in un \textit{bucket}. I metadati possono cambiare a runtime: c'\`{e} la necessit\`{a} di gestire la replica tramite Pglogical.
+I dati, invece, quando sono scritti non cambiano nel corso del tempo, avendo dimensione fissa. 
+Per questo motivo \`{e} stata fatta la seguente distinzione:
+\begin{itemize}
+\item 
+la mappa che coordina i \textit{chunk} di un file, quindi i dati, gestisce pi\`{u} nodi per \textit{board},
+\item
+la mappa dei metadati, gestisce un solo nodo per \textit{board}, un solo database, quindi una sola replica (sincrona).\\
+\end{itemize}
+
+Siamo arrivati alla conclusione che i database per i dati e i metadati devono essere separati.\\
+Ogni \textit{board} ha otto database di dati, che corrispondono a otto nodi, e uno solo di metadati.\\
+Scrivere la ridondanza dei dati \`{e} di conseguenza pi\`{u} semplice: 
+\begin{enumerate}
+\item
+viene calcolato l'ID del \textit{chunk} e il rispettivo contenuto;
+\item
+una funzione, a cui viene passato l'ID ottenuto, restituisce dalla mappa la \textit{board} con il range di cui fa parte e la \textit{board} successiva. Nel caso in cui una \textit{board} \`{e} morta, c'\`{e} un meccanismo per cui viene restituita quella successiva ancora (fino ad arrivare a un massimo di \verb"5" \textit{board}, che corrisponde alla massima catena di replica); 
+\item 
+sono aperte due connessioni;
+\item
+il \textit{frontend} si connette a due Postgres, lanciando una query in parallelo, che permette la scrittura dei \textit{chunk} su due host differenti;
+\item
+sono chiuse le connessioni.
+\end{enumerate}
+\textbf{figura con due host e query in parallelo}
+
+Se tutte le \textit{board} sono morte, non si effettua alcuna scrittura. Di fatto se quattro \textit{board} sono gi\`{u} ho solo una \textit{board} per scrivere il dato, non rispettando la necessit\`{a} di replicarlo almeno due volte.\\
+Tuttavia la probabilit\`{a} di avere quattro \textit{board} consecutive morte \`{e} decisamente bassa.\\
+
+Di conseguenza le repliche sono utilizzate solo per quanto riguarda i metadati. 
+
+
+%2a01:84a0:1001:a001::1:4;3000000000000000000000000000000000000000;4000000000000000000000000000000000000000;30000000
+%2a01:84a0:1001:a001::1:5;4000000000000000000000000000000000000000;5000000000000000000000000000000000000000;40000000
+%2a01:84a0:1001:a001::1:6;5000000000000000000000000000000000000000;6000000000000000000000000000000000000000;50000000
+%2a01:84a0:1001:a001::2:1;6000000000000000000000000000000000000000;7000000000000000000000000000000000000000;60000000
+
+
+Segue un esempio di una mappa che gestisce i metadati:
+\scriptsize
+%\footnotesize
+\begin{verbatim}
+
+2a01:84a0:1001:a001::2:2;7000000000000000000000000000000000000000;8000000000000000000000000000000000000000;70000000
+2a01:84a0:1001:a001::2:3;8000000000000000000000000000000000000000;9000000000000000000000000000000000000000;80000000
+2a01:84a0:1001:a001::2:4;9000000000000000000000000000000000000000;a000000000000000000000000000000000000000;90000000
+2a01:84a0:1001:a001::2:5;a000000000000000000000000000000000000000;b000000000000000000000000000000000000000;a0000000
+2a01:84a0:1001:a001::2:6;b000000000000000000000000000000000000000;c000000000000000000000000000000000000000;b0000000
+
+\end{verbatim}
+\normalsize
+
 
 \textbf{figura con le board e le replication sets}
-
-\\
 Sono replicate dalle \verb"5" alle \verb"8" Board (numero gestibile da un parametro configurabile).
 
-\\
-Per quanto riguarda i dati \`{e} indispensabile scrivere i chunk.\\ 
-Il dato viene splittato in due connessioni e mandato in due \textit{hosts} diversi. Pi\`{u} precisamente, \`{e} lanciata una \textit{query} in parallelo che permette la scrittura in diversi database. \\
-\textbf{figura con due host e query in parallelo}
+
+\subsubsection{Replica sincrona e asincrona}
+
+Quando la scrittura di un dato \`{e} andata a buon fine, viene confermata al client con un messaggio di risposta di successo. Come abbiamo detto, per una questione di affidabilit\`{a}, deve essere garantita la replicazione di un dato almeno due volte. Ci\`{o} \`{e} permesso da un importante funzionalit\`{a} di Postgres: il \verb"synchronous_commit".\\
+
+Ci sono due tecniche di repliche che esamineremo: 
+\begin{itemize}
+\item 
+replica asincrona 
+\item
+replica sincrona
+\end{itemize}
+
+La replica asincrona \`{e} un approccio \textit{store and forward}.
+\`{E} la modalit\`{a} di archiviazione dei dati in cui i dati non vengono immediatamente sottoposti a backup; di fatto non aspetta che lo storage primario confermi la completa scrittura del dato sul disco. La replica asincrona ha come obiettivo di eseguire la copia di un dato in un determinato periodo di tempo prestabilito. Pi\`{u} precisamente, il client ha la conferma di avvenuto successo quando il dato da replicare \`{e} stato scritto sul WAL. Questo metodo si traduce in un sistema con buone prestazioni e minori requisiti di larghezza di banda, poich\'{e} i dati non vengono replicati in backup in tempo reale. Ci\`{o} non garantisce per\`{o} che il dato sia immediatamente disponibile, di conseguenza, questo tipo di approccio dovrebbe essere usato per dati o informazioni meno sensibili che hanno tolleranza alla perdita. Nel caso in cui, in una minima frazione di tempo, muore una \textit{board}, il dato \`{e} tracciabile solo sul WAL. La sua latenza di rete e la tolleranza della larghezza di banda lo rendono adatto per la replica a lunga distanza.\\
+
+La replica sincrona viene utilizzata principalmente per le applicazioni transazionali di fascia alta che richiedono il \textit{failover} istantaneo in caso di guasto del nodo primario. 
+Questa tecnica \`{e} preferibile per le applicazioni con obiettivi a basso tempo di recupero che non possono tollerare la perdita di dati.\\
+Il seguente approccio ha i suoi svantaggi. La replica sincrona \`{e} pi\`{u} costosa di altre forme di replica dei dati, introduce la latenza che rallenta l'applicazione principale e funziona solo a brevi distanze. Il vantaggio risiede nel fatto che garantisce la scrittura della replica su un'altra \textit{board}, comunicando al client che la copia \`{e} avvenuta con successo. \\
+
+La differenza principale tra la replica sincrona e la replica asincrona \`{e} il modo in cui i dati vengono scritti nella replica. La maggior parte dei prodotti di replica sincrona scrive i dati nello storage primario e nella replica contemporaneamente. In quanto tale, la copia primaria e la replica dovrebbero rimanere sempre sincronizzati.\\
+Al contrario, i prodotti di replica asincrona scrivono prima i dati nella memoria primaria e quindi copiano i dati nella replica. Sebbene il processo di replica possa verificarsi quasi in tempo reale, \`{e} pi\`{u} comune che la replica si verifichi su base pianificata. \\
+
+Il nostro scopo \`{e} di trovare un giusto compromesso tra garanzia e velocit\`{a} della replicazione di dati.
+
+\subsubsection{Parametri del file di configurazione di PostgreSQL}
+La replica del metadato su almeno due \textit{board} \`{e} realizzabile utilizzando l'attendibilit\`{a} della tecnica di replica sincrona, ottenuta tramite PostgreSQL, con la configurazione del parametro \verb"synchronous_commit".\\
+\`{E} uno dei parametri pi\`{u} importanti con una quantit\`{a} di opzioni sopra la media. Specifica se il \verb"commit" della transazione attende che i record WAL vengano scritti sul disco prima che il comando restituisca un'indicazione "riuscita" al client. 
+
+I valori validi sono \verb"on", \verb"remote_write", \verb"local" e \verb"off". Quando una \textit{board} \`{e} \textit{offline}, pu\`{o} verificarsi un ritardo tra il momento in cui viene segnalato il successo al client e quando la transazione \`{e} realmente garantita per essere sicura contro un arresto anomalo del server. 
+%(il ritardo massimo è tre volte wal_writer_delay.) 
+L'impostazione di questo parametro su \verb"off" non crea alcun rischio di incoerenza del database: un sistema operativo o un arresto anomalo del database potrebbe causare la perdita di alcune transazioni presunte recenti, ma lo stato del database \`{e} proprio come se quelle transazioni fossero state cancellate in modo pulito. Pertanto, disattivare \verb"synchronous_commit" pu\`{o} essere un'alternativa utile quando le prestazioni sono pi\`{u} importanti della certezza esatta sulla durata di una transazione.\cite{etichetta12}
+
+Se \verb"synchronous_standby_names" \`{e} impostato, questo parametro controlla anche se i \verb"commit" delle transazioni attenderanno che i record WAL della transazione vengano replicati sul server di standby. Quando \`{e} impostato su \verb"on", \verb"commit" attender\`{a} fino a quando una risposta dall'attuale standby sincrono indica che ha ricevuto il record di \verb"commit" della transazione e lo ha scaricato sul disco. Ci\`{o} garantisce che la transazione non vada persa a meno che sia il primario che lo standby subiscano un danneggiamento della memoria del database. Quando \`{e} impostato su \verb"remote_write", i \verb"commit" attenderanno fino a quando una risposta dall'attuale standby sincrono indica che ha ricevuto il record di \verb"commit" della transazione e lo ha scritto sul sistema operativo in standby, ma i dati non hanno necessariamente raggiunto una stabile archiviazione in standby. Questa impostazione \`{e} sufficiente per garantire la conservazione dei dati anche se l'istanza di PostgreSQL in standby si arresta in modo anomalo, ma non se lo standby subisce un arresto anomalo del sistema operativo.
+
+Quando \`{e} in uso la replica sincrona, normalmente sar\`{a} ragionevole attendere sia lo svuotamento locale su disco sia la replica dei record WAL o consentire alla transazione di eseguire il \verb"commit" in modo asincrono. Se \verb"synchronous_standby_names" non \`{e} impostato, le impostazioni \verb"on", \verb"remote_write" e \verb"local" forniscono tutti lo stesso livello di sincronizzazione: la transazione impegna solo l'attesa per il flush locale su disco.
+
+
 
 \section{Considerazioni statistiche sulla ridondanza sul dato}
 \section{Considerazioni statistiche sulla ridondanza del metadato}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  26 NOV 2017 23:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  29 NOV 2017 01:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1144,34 +1144,34 @@ Package natbib Warning: Citation `etichetta12' multiply defined.
 ))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 90.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Try loading font information for T1+pplj on input line 89.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Try loading font information for T1+pplj on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
-LaTeX Info: Redefining \it@ocap on input line 89.
-LaTeX Info: Redefining \it@ccap on input line 89.
-LaTeX Info: Redefining \dots on input line 89.
+LaTeX Info: Redefining \it@ocap on input line 90.
+LaTeX Info: Redefining \it@ccap on input line 90.
+LaTeX Info: Redefining \dots on input line 90.
 \c@lstlisting=\count194
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
@@ -1186,8 +1186,8 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
 \AtBeginShipoutBox=\box54
-Package backref Info: ** backref set up for natbib ** on input line 89.
-Package hyperref Info: Link coloring OFF on input line 89.
+Package backref Info: ** backref set up for natbib ** on input line 90.
+Package hyperref Info: Link coloring OFF on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1197,9 +1197,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count195
 )
-LaTeX Info: Redefining \ref on input line 89.
-LaTeX Info: Redefining \pageref on input line 89.
-LaTeX Info: Redefining \nameref on input line 89.
+LaTeX Info: Redefining \ref on input line 90.
+LaTeX Info: Redefining \pageref on input line 90.
+LaTeX Info: Redefining \nameref on input line 90.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write4
@@ -1234,7 +1234,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 89.
+LaTeX Info: Redefining \microtypecontext on input line 90.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1284,14 +1284,14 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c__siunitx_mathsf_int=\count268
-LaTeX Font Info:    Try loading font information for U+zeur on input line 89.
+LaTeX Font Info:    Try loading font information for U+zeur on input line 90.
 (/usr/share/texlive/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeus on input line 89.
+LaTeX Font Info:    Try loading font information for U+zeus on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
@@ -1299,12 +1299,12 @@ File: uzeus.fd 2005/01/11 v4.0 (WaS)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
-LaTeX Font Info:    Try loading font information for U+zeuex on input line 89.
+LaTeX Font Info:    Try loading font information for U+zeuex on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 89.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 90.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -1314,7 +1314,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `zplm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 89.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1324,21 +1324,21 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \c__siunitx_mathtt_int=\count269
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 89.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 90.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 10.20007pt on input line 89.
+(Font)              scaled to size 10.20007pt on input line 90.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 89.
+(Font)              scaled to size 7.65005pt on input line 90.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 5.95004pt on input line 89.
+(Font)              scaled to size 5.95004pt on input line 90.
 \openout2 = `titlePage.aux'.
 
  (./titlePage.tex
@@ -1369,7 +1369,7 @@ LaTeX Font Info:    Try loading font information for TS1+pplj on input line 44.
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
 )) [2]
 Package tocbasic Info: character protrusion at toc deactivated on input line 10
-5.
+6.
  (./thesis.toc
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/12'.
@@ -1379,9 +1379,9 @@ Package microtype Info: Character `029' is missing
 \openout5 = `thesis.toc'.
 
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 106.
+(Font)              scaled to size 9.30756pt on input line 107.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 5.10004pt on input line 106.
+(Font)              scaled to size 5.10004pt on input line 107.
 [1
 
 
@@ -1391,7 +1391,7 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 
 ]
 Package tocbasic Info: character protrusion at lof deactivated on input line 10
-6.
+7.
  (./thesis.lof
 Overfull \hbox (11.41243pt too wide) in paragraph at lines 6--6
  [][] [][]\T1/pplj/m/n/12 (-20) Architecture Shared Di-sk - Shared Eve-ry-thing
@@ -3398,18 +3398,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[50] <img/setreplica.png, id=557, 505.89pt x 472.76625pt>
+[50] <img/setreplica.png, id=557, 845.40843pt x 597.73312pt>
 File: img/setreplica.png Graphic file (type png)
 
 <use img/setreplica.png>
 Package pdftex.def Info: img/setreplica.png used on input line 38.
-(pdftex.def)             Requested size: 303.53633pt x 283.66193pt.
+(pdftex.def)             Requested size: 507.24896pt x 358.64264pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
+Overfull \hbox (123.13676pt too wide) in paragraph at lines 38--38
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 [51 <./img/setreplica.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
+
+ []
+
+[52]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -3417,20 +3437,60 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.63 
+l.93 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--65
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 66--69
+Underfull \hbox (badness 10000) in paragraph at lines 98--101
 
+ []
+
+[53]
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
+
+ []
+
+
+Overfull \hbox (86.65501pt too wide) in paragraph at lines 154--154
+[]\T1/fvm/m/n/8 2a01:84a0:1001:a001::2:2;70000000000000000000000000000000000000
+00;8000000000000000000000000000000000000000;70000000[] 
+ []
+
+
+Overfull \hbox (86.65501pt too wide) in paragraph at lines 154--154
+[]\T1/fvm/m/n/8 2a01:84a0:1001:a001::2:3;80000000000000000000000000000000000000
+00;9000000000000000000000000000000000000000;80000000[] 
+ []
+
+
+Overfull \hbox (86.65501pt too wide) in paragraph at lines 154--154
+[]\T1/fvm/m/n/8 2a01:84a0:1001:a001::2:4;90000000000000000000000000000000000000
+00;a000000000000000000000000000000000000000;90000000[] 
+ []
+
+
+Overfull \hbox (86.65501pt too wide) in paragraph at lines 154--154
+[]\T1/fvm/m/n/8 2a01:84a0:1001:a001::2:5;a0000000000000000000000000000000000000
+00;b000000000000000000000000000000000000000;a0000000[] 
+ []
+
+[54]
+Overfull \hbox (86.65501pt too wide) in paragraph at lines 154--154
+[]\T1/fvm/m/n/8 2a01:84a0:1001:a001::2:6;b0000000000000000000000000000000000000
+00;c000000000000000000000000000000000000000;b0000000[] 
  []
 
 
@@ -3440,70 +3500,72 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 S
-      ono replicate dalle \verb"5" alle \verb"8" Board (numero gestibile da ...
+l.161 S
+       ono replicate dalle \verb"5" alle \verb"8" Board (numero gestibile da...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: There's no line here to end.
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.76 P
-      er quanto riguarda i dati \`{e} indispensabile scrivere i chunk.\\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 81--81
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--182
+
+ []
+
+[55]
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
+
+ []
+
+[56]
+Underfull \hbox (badness 10000) in paragraph at lines 203--203
 |\T1/pplj/m/sc/12 (-6) c o n -s i -d e -r a -z i o -n i s t a -t i -s t i -c h 
 e s u l -l a r i -d o n -d a n -z a d e l m e -t a -d a -
  []
 
-) [52]
+) [57]
 \openout2 = `thirdChapter.aux'.
 
- (./thirdChapter.tex
-chapter 3.
-) [53
+ (./thirdChapter.tex [58
 
 
 
 
 ]
+chapter 3.
+) [59]
 \openout2 = `fourthChapter.aux'.
 
- (./fourthChapter.tex [54
+ (./fourthChapter.tex [60
 
 
 
 
 ]
 chapter 4.
-) [55]
-\openout2 = `esercizi.aux'.
-
- (./esercizi.tex [56
-
-
-
-
-]
-chapter 5.
-[57]) [58]
+) [61]
 \openout2 = `Chapters/bibliografia.aux'.
 
  (./Chapters/bibliografia.tex (./thesis.brf)
 \tf@brf=\write7
 \openout7 = `thesis.brf'.
 
+ [62
 
+
+
+
+]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -3572,13 +3634,8 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) [59
-
-
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.etichett
-a12}) has been already used, duplicate ignored
+) [63pdfTeX warning (ext4): destination with the same identifier (name{cite.eti
+chetta12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -3590,8 +3647,7 @@ Package natbib Warning: There were multiply defined citations.
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
 (./thesis.aux (./titlePage.aux) (./firstChapter.aux) (./secondChapter.aux)
-(./thirdChapter.aux) (./fourthChapter.aux) (./esercizi.aux)
-(./Chapters/bibliografia.aux
+(./thirdChapter.aux) (./fourthChapter.aux) (./Chapters/bibliografia.aux
 
 Package natbib Warning: Citation(s) may have changed.
 (natbib)                Rerun to get citations correct.
@@ -3599,11 +3655,17 @@ Package natbib Warning: Citation(s) may have changed.
 ))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 34F7094433168F3EAAA65EA2729584F6;1781.
-Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 5C3E20F68847B59F636E7ECFF5094780;4269.
 
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: 34F7094433168F3EAAA65EA2729584F6;1781
+(rerunfilecheck)             After:  0693E39A9A8637FB2C358EEC02293B9E;1737.
+Package rerunfilecheck Info: File `thesis.brf' has not changed.
+(rerunfilecheck)             Checksum: 4C7ED4D820C77D4541F7E1EB2E3A122F;4315.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -3616,28 +3678,31 @@ LaTeX Warning: There were multiply-defined labels.
 ### simple group (level 1) entered at line 363 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 27152 strings out of 493029
- 482923 string characters out of 6136233
+ 27172 strings out of 493029
+ 483078 string characters out of 6136233
  674776 words of memory out of 5000000
- 29584 multiletter control sequences out of 15000+600000
- 96346 words of font info for 485 fonts, out of 8000000 for 9000
+ 29587 multiletter control sequences out of 15000+600000
+ 97503 words of font info for 498 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,14n,73p,10393b,1241s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/euler/eurb10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (61 pages, 4520047 bytes).
+ 50i,14n,73p,10357b,1122s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{chapter.5} has been referenced but 
+does not exist, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/euler/eurb10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/euler/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/
+fplrij8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on thesis.pdf (65 pages, 4339660 bytes).
 PDF statistics:
- 720 PDF objects out of 1000 (max. 8388607)
- 592 compressed objects within 6 object streams
- 128 named destinations out of 1000 (max. 500000)
+ 742 PDF objects out of 1000 (max. 8388607)
+ 609 compressed objects within 7 object streams
+ 133 named destinations out of 1000 (max. 500000)
  85277 words of extra memory for PDF output out of 89155 (max. 10000000)
 
