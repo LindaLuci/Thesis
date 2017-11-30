@@ -1,13 +1,32 @@
 \chapter{Conclusioni e possibili evoluzioni}
-\section{Utilizzo di dischi SSD}
-Per gli SSD, viste le prestazioni attuali invece, non ci attendiamo miglioramenti, se non in termini di minori consumi.
 
 \section{Utilizzo di processori Dual Core}
-per i processori dual-core, inserisci una piccola valutazione, in cui dici che sostanzialmente i processi coinvolti sono due (il DB postgres e il frontend nodejs che ci scrive)
-usando un processo a single-core, i due processi si contendono il processore
-e si costringono a svariati context-switch di memoria.
-Visto che i prezzi si stanno riducendo, un'evoluzione è quella di usare un dual-core
-così che a tendere ogni processo abbia un core dedicato
-non esegua context-switch
-a tutto vantaggio
-delle prestazioni.
+I processi coinvolti per la replicazione dei dati e dei metadati sono due: 
+\begin{itemize}
+\item 
+il database Postgres;
+\item
+il \textit{frontend nodejs} che scrive sul database.\\
+\end{itemize}
+
+Usando un processo a \textit{single-core}, i due processi si contengono il processore e si constringono a svariati \textit{context-switch} di memoria.\\
+Il \textit{context-switch} \`{e} fonte di \textit{overhead} non indifferente, generato ad esempio:
+\begin{itemize}
+\item 
+tempo impiegato a salvare in memoria lo stato;
+\item
+blocco e riattivazione delle \textit{pipeline} di calcolo del processore;
+\item 
+svuotamento e ripopolamento delle cache.
+\end{itemize}
+
+\`{E} di conseguenza necessario evitare di effettuare un numero eccessivo di \textit{context-switch}.\\
+
+Poich\`{e} i prezzi si stanno riducendo, una possibile evoluzione \`{e} quella di usare un \textit{dual-core}, in modo che ogni processo abbia un \textit{core} dedicato e non siano eseguiti numerosi \textit{context-switch}.\\
+Ci\`{o} potrebbe consentire un vantaggio nelle prestazioni
+
+\textbf{per i processori dual-core, inserisci una piccola valutazione
+}
+
+\section{Utilizzo di dischi SSD}
+Per gli SSD, viste le prestazioni attuali invece, non ci attendiamo miglioramenti, se non in termini di minori consumi.

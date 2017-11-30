@@ -134,7 +134,7 @@ Consegue la rappresentazione del host preso in considerazione:
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[scale=0.20]{img/focus_provider.png}\\
+\includegraphics[scale=0.70]{img/focus_provider.png}\\
 \caption{\verb"BOARD 02 02": \verb"2a01:84a0:1001:a001::2:2;70;80;70". \label{figura1.16}}
 \end{figure}
 
@@ -159,7 +159,6 @@ Illustriamo il set di replicazione sottoscritta:
 
 \`{E} stato configurato che il metadato viene replicato su quattro host differenti sottoscritti alla \verb"BOARD 02".\\
 $R_1$ replica i metadati con ID \verb"70, 60, 50, 40", $R_2$ \verb"70,60,50", $R_3$ \verb"70,60" e $R_4$ \verb"70".\\
-
 A sua volta, l'host preso in considerazione, funziona come \textit{subscriber} a un altro set di replica; come segue:
 
 \begin{figure}[htbp]
@@ -242,19 +241,47 @@ Impostare una sola replica sincrona pu\`{o} essere il giusto compromesso tra aff
 
 Questi parametri possono essere impostati solo nel file di configurazione di PostgreSQL \verb"postgresql.conf".
 
-\section{Considerazioni statistiche sulla ridondanza sul dato}
+\section{Considerazioni statistiche sulla ridondanza sul dato e sul metadato}
+L'occupazione dei dati del disco \`{e} maggiore rispetto a quella dei metadati, in quanto un dato rappresenta il contenuto del file stesso.\\
 
+Durante l'\textit{upload} il file viene suddiviso in \textit{chunk} di varie dimensioni. Ogni \textit{chunk} \`{e} ridondato due volte.\\
+Oltre la ridondanza, tramite lo \verb"XOR" byte a byte \textbf{O BIT A BIT CHIEDERE A STEF} di sei \textit{chunk} viene costruito un \textit{chunk} chiamato di parit\`{a}, ridondato anch'esso due volte. 
+Nel caso sia perso un \textit{chunk} appartenente al set di parit\`{a} \`{e} possibile ricostruirlo tramite il \textit{chunk} di parit\`{a}, eseguendo l'operazione inversa.
+
+L'utilizzo di algoritmi di parit\`{a} sono applicati solo a file di svariati \textit{chunk}. Di fatto se \`{e} caricato un file di solo un \textit{chunk} di grandezza \verb"d", l'occupazione sar\`{a} \verb"4d". Se il file \`{e} di \verb"6" \textit{chunk} l'occupazione \`{e} di \verb"14d", di cui \verb"6*2*d" sono ottenuti dalla ridondanza dei \verb"6" \textit{chunk} e \verb"2*d" dalla ridondanza di parit\`{a}.\\
+\`{E} sconveniente di conseguenza usare questo metodo di parit\`{a} per file di solo un \textit{chunk}, poich\`{e} il rapporto tra dati uploadati e dati salvati \`{e} di \verb"4" rispetto al rapporto di \verb"2,3" nel caso di file di \verb"chunk".\\
+La seguente figura illustra il caso in cui \`{e} perso un chunk, quindi anche la sua ridondanza. Questo scenario garantisce tuttavia la possibilit\`{a} di ricostruire il dato.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.55]{img/chunk1.png}\\
+\caption{Perdita di un \textit{chunk} \label{figura1.21}}
+\end{figure}
+
+Seguono i due scenari in cui pu\`{o} accadere che un dato non possa essere recuperato.
+Se viene perso un \textit{chunk} e il \textit{chunk} di parit\`{a} (quindi la sua ridondanza) non \`{e} realizzabile ricreare il dato (\textit{figura 25}). Ugualmente se sono persi due \textit{chunk} del set di parit\`{a}.(\textit{figura 26}).
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.55]{img/chunk2.png}\\
+\caption{Perdita di un \textit{chunk} e del \textit{chunk} di parit\`{a} \label{figura1.22}}\\
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.55]{img/chunk3.png}\\
+\caption{Perdita di due \textit{chunk} \label{figura1.23}}\\
+\end{figure}
+
+Il metadato \`{e} di piccole dimensioni, poich\`{e} rappresenta l'informazione anagrafica del dato. 
+Per questo motivo non \`{e} conveniente utilizzare metodi di parit\`{a} per ricostruire l'informazione anche se \`{e} perso in parte.
+Per il metadato \`{e} sufficiente creare quattro repliche, garantendo ugualmente la stessa sicurezza. \\
+La perdita del metadato si verifica soltanto se tutte e \verb"5" le \textit{board} contenente l'informazione muoiono.
+
+
+
+\section{Resilienza ai cambiamenti di rete}
+\textbf{CHIEDERE STEFANO ( da mettere section sopra)
 per il dato/metadato dovremmo fare dei conti per mostrare come arriviamo a quei 99.99999999%
-1) il metadato è in genere piccolo (come dimensioni in KB)
-non è possibile usare pezzi di metadato, quindi, per generare una parità che ci permetta di ricostruirlo se lo perdiamo anche in parte.
-quindi l'utilizzo di algoritmi di parità si applica solo a file di svariati chunk
-per il metadato ci limitiamo a farne n repliche 
-tanto occupano poco spazio e la sicurezza che otteniamo è la stessa
 un'altra riflessione da fare è sull'erasure-coding
 usare un vero e proprio erasure-coding, ci costringerebbe a decodificare i dati quando li recuperiamo
-impegnando il processore, che si per sé è poco prestazionale
-usare delle parità ci aiuta, perché ci consente di ottenere alta affidabilità
-ed avere dati quasi sempre in chiaro (andando ad incrociarli per ricostruirli solo quando sono effettivamente persi)
-
-\section{Considerazioni statistiche sulla ridondanza del metadato}
-\section{Resilienza ai cambiamenti di rete}
+impegnando il processore, che si per sé è poco prestazionale}

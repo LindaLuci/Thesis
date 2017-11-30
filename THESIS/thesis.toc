@@ -1,0 +1,42 @@
+\select@language {italian}
+\select@language {italian}
+\vspace {-\cftbeforepartskip }
+\contentsline {chapter}{\numberline {1}Definizione del problema}{5}{chapter.1}
+\contentsline {subsection}{\numberline {1.1.1}Cluster di database}{5}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Rete di pari}{8}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Sistemi di ridondanza disco (RAID)}{9}{subsection.1.1.3}
+\contentsline {subsubsection}{RAID hardware e software}{10}{subsection.1.1.3}
+\contentsline {subsubsection}{Controllore RAID}{10}{subsection.1.1.3}
+\contentsline {subsubsection}{Livelli RAID}{10}{subsection.1.1.3}
+\contentsline {paragraph}{Livelli RAID Standard}{11}{subsection.1.1.3}
+\contentsline {paragraph}{Livelli RAID Nidificati Annidati}{15}{figure.caption.10}
+\contentsline {subsection}{\numberline {1.1.4}Codice di correzione errore (Erasure Coding)}{15}{subsection.1.1.4}
+\contentsline {subsubsection}{Come funziona}{16}{subsection.1.1.4}
+\contentsline {section}{\numberline {1.2}Software utilizzato per gli esperimenti}{17}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}PosgreSQL}{17}{subsection.1.2.1}
+\contentsline {subsubsection}{Caratteristiche PostgreSQL}{19}{subsection.1.2.1}
+\contentsline {subsubsection}{Elevata personalizzazione}{20}{subsection.1.2.1}
+\contentsline {subsubsection}{Write-Ahead Loggin (WAL)}{21}{subsection.1.2.1}
+\contentsline {subsubsection}{File di configurazione di PostgreSQL}{22}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Pglogical}{24}{subsection.1.2.2}
+\contentsline {subsubsection}{Vantaggi}{25}{subsection.1.2.2}
+\contentsline {subsubsection}{Casi di uso}{25}{subsection.1.2.2}
+\contentsline {subsubsection}{Come funziona pglogical?}{28}{figure.caption.12}
+\contentsline {subsubsection}{Replica pglogical Bi-Directional Replication (BDR)?}{28}{figure.caption.12}
+\contentsline {section}{\numberline {1.3}Hardware utilizzato per gli esperimenti}{29}{section.1.3}
+\contentsline {chapter}{\numberline {2}Definizione del progetto}{33}{chapter.2}
+\contentsline {subsection}{\numberline {2.1.1}Architettura del progetto}{33}{subsection.2.1.1}
+\contentsline {subsubsection}{Concetto Provider/Subscriber}{33}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Simulazione di un filesystem distribuito (Dati e Metadati)}{36}{subsection.2.1.2}
+\contentsline {subsubsection}{Native subscribtions}{40}{figure.caption.21}
+\contentsline {subsubsection}{Replica sincrona e asincrona}{41}{figure.caption.23}
+\contentsline {subsubsection}{Parametri del file di configurazione di PostgreSQL}{44}{figure.caption.23}
+\contentsline {section}{\numberline {2.2}Considerazioni statistiche sulla ridondanza sul dato e sul metadato}{45}{section.2.2}
+\contentsline {section}{\numberline {2.3}Resilienza ai cambiamenti di rete}{47}{section.2.3}
+\contentsline {chapter}{\numberline {3}Definizione del quadro sperimentale}{49}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lancio in configurazione 1}{49}{section.3.1}
+\contentsline {section}{\numberline {3.2}Lancio in configurazione 2}{49}{section.3.2}
+\contentsline {section}{\numberline {3.3}Lancio in configurazione 3}{49}{section.3.3}
+\contentsline {chapter}{\numberline {4}Conclusioni e possibili evoluzioni}{51}{chapter.4}
+\contentsline {section}{\numberline {4.1}Utilizzo di processori Dual Core}{51}{section.4.1}
+\contentsline {section}{\numberline {4.2}Utilizzo di dischi SSD}{51}{section.4.2}
