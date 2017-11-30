@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  30 NOV 2017 04:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  30 NOV 2017 17:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1132,8 +1132,15 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (./thesis.aux
-(./titlePage.aux) (./firstChapter.aux) (./secondChapter.aux)
-(./thirdChapter.aux) (./fourthChapter.aux) (./Chapters/bibliografia.aux
+(./titlePage.aux) (./firstChapter.aux
+
+LaTeX Warning: Label `figura1.100' multiply defined.
+
+
+LaTeX Warning: Label `figura1.10' multiply defined.
+
+) (./secondChapter.aux) (./thirdChapter.aux) (./fourthChapter.aux)
+(./Chapters/bibliografia.aux
 
 Package natbib Warning: Citation `etichetta12' multiply defined.
 
@@ -1409,28 +1416,22 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface .
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.5 \subsection
-               {Cluster di database}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 5
-[][]
  []
 
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 5.
+Underfull \hbox (badness 10000) in paragraph at lines 14--16
+
+ []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--19
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
@@ -1438,36 +1439,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--19
 
 
 
-] <img/Shared_Nothing_Architecture.jpg, id=167, 501.875pt x 379.4175pt>
-File: img/Shared_Nothing_Architecture.jpg Graphic file (type jpg)
-
-<use img/Shared_Nothing_Architecture.jpg>
-Package pdftex.def Info: img/Shared_Nothing_Architecture.jpg used on input line
- 22.
-(pdftex.def)             Requested size: 351.31009pt x 265.59042pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--29
-
- []
-
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 34.
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplj/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-[6 <./img/Shared_Nothing_Architecture.jpg>]
-<img/Shared_Disk_Architecture.jpg, id=183, 715.67375pt x 512.91624pt>
-File: img/Shared_Disk_Architecture.jpg Graphic file (type jpg)
-
-<use img/Shared_Disk_Architecture.jpg>
-Package pdftex.def Info: img/Shared_Disk_Architecture.jpg used on input line 39
-.
-(pdftex.def)             Requested size: 286.26442pt x 205.16286pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 51--52
-
- []
-
+]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -1475,65 +1447,117 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 \subsection
+l.32 \subsection
+                {Cluster di database}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 32
+[][]
+ []
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 32.
+
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 42--46
+
+ []
+
+<img/Shared_Nothing_Architecture.jpg, id=172, 501.875pt x 379.4175pt>
+File: img/Shared_Nothing_Architecture.jpg Graphic file (type jpg)
+
+<use img/Shared_Nothing_Architecture.jpg>
+Package pdftex.def Info: img/Shared_Nothing_Architecture.jpg used on input line
+ 49.
+(pdftex.def)             Requested size: 351.31009pt x 265.59042pt.
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 50.
+
+
+Package natbib Warning: Citation `etichetta7' on page 7 undefined on input line
+ 50.
+
+
+Package natbib Warning: Citation `etichetta7' on page 7 undefined on input line
+ 50.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--57
+
+ []
+
+[7 <./img/Shared_Nothing_Architecture.jpg>]
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 59.
+
+
+Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
+ 59.
+
+
+Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
+ 62.
+
+<img/Shared_Disk_Architecture.jpg, id=184, 715.67375pt x 512.91624pt>
+File: img/Shared_Disk_Architecture.jpg Graphic file (type jpg)
+
+<use img/Shared_Disk_Architecture.jpg>
+Package pdftex.def Info: img/Shared_Disk_Architecture.jpg used on input line 66
+.
+(pdftex.def)             Requested size: 357.836pt x 256.45749pt.
+
+
+Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
+ 67.
+
+
+Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
+ 67.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 
+     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
+ 71.
+
+[8 <./img/Shared_Disk_Architecture.jpg>]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \subsection
                 {Rete di pari}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 56
+Underfull \hbox (badness 10000) detected at line 84
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--60
+Underfull \hbox (badness 10000) in paragraph at lines 85--89
 
- []
-
-[7 <./img/Shared_Disk_Architecture.jpg>] [8]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.82 \subsection
-                {Sistemi di ridondanza disco (RAID)}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 82
-[][]
- []
-
-
-Overfull \hbox (24.89758pt too wide) in paragraph at lines 95--96
-[]\T1/pplj/m/n/12 (-20) miglioramenti nel-la tol-le-ran-za ai gua-sti, ne se-gu
-e mi-glio-re affidabilit�[[]].
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.105 \subsubsection
-                    {RAID hardware e software}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 105
-[][]
  []
 
 [9]
@@ -1544,16 +1568,73 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.115 \subsubsection
+l.110 \subsection
+                 {Sistemi di ridondanza disco (RAID)}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 110
+[][]
+ []
+
+
+Overfull \hbox (20.99759pt too wide) in paragraph at lines 120--121
+[]\T1/pplj/m/n/12 (-20) miglioramenti nel-la tol-le-ran-za ai gua-sti, ne se-gu
+e mi-glio-re affidabilit�.[[]]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+[10]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \subsubsection
+                    {RAID hardware e software}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 128
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \subsubsection
                     {Controllore RAID}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 115
+Underfull \hbox (badness 10000) detected at line 138
 [][]
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--143
+
+ []
+
+[11]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -1561,88 +1642,219 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125 \subsubsection
+l.148 \subsubsection
                     {Livelli RAID}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 125
+Underfull \hbox (badness 10000) detected at line 148
 [][]
  []
 
-[10]
-Underfull \hbox (badness 10000) in paragraph at lines 137--139
-
- []
-
-<img/raid00.png, id=219, 602.25pt x 602.25pt>
-File: img/raid00.png Graphic file (type png)
- <use img/raid00.png>
-Package pdftex.def Info: img/raid00.png used on input line 141.
-(pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
-<img/raid11.png, id=223, 602.25pt x 602.25pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 168--170
+
+ []
+
+<img/raid00.png, id=220, 602.25pt x 602.25pt>
+File: img/raid00.png Graphic file (type png)
+ <use img/raid00.png>
+Package pdftex.def Info: img/raid00.png used on input line 172.
+(pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
+ [12]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176 \end
+          {figure}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 179--181
+
+ []
+
+<img/raid11.png, id=232, 602.25pt x 602.25pt>
 File: img/raid11.png Graphic file (type png)
  <use img/raid11.png>
-Package pdftex.def Info: img/raid11.png used on input line 155.
+Package pdftex.def Info: img/raid11.png used on input line 184.
 (pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
-
- []
-
-<img/raid22.png, id=227, 602.25pt x 229.85875pt>
-File: img/raid22.png Graphic file (type png)
- <use img/raid22.png>
-Package pdftex.def Info: img/raid22.png used on input line 165.
-(pdftex.def)             Requested size: 301.12425pt x 114.92908pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
-
- []
-
-<img/raid33.png, id=231, 602.25pt x 380.42125pt>
-File: img/raid33.png Graphic file (type png)
- <use img/raid33.png>
-Package pdftex.def Info: img/raid33.png used on input line 175.
-(pdftex.def)             Requested size: 240.89572pt x 152.16579pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--183
-
- []
-
-<img/raid44.png, id=235, 602.25pt x 380.42125pt>
-File: img/raid44.png Graphic file (type png)
- <use img/raid44.png>
-Package pdftex.def Info: img/raid44.png used on input line 186.
-(pdftex.def)             Requested size: 240.89572pt x 152.16579pt.
-
+ [13 <./img/raid00.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
-<img/raid55.png, id=239, 602.25pt x 380.42125pt>
-File: img/raid55.png Graphic file (type png)
- <use img/raid55.png>
-Package pdftex.def Info: img/raid55.png used on input line 196.
-(pdftex.def)             Requested size: 240.89572pt x 152.16579pt.
+<img/raid22.png, id=242, 602.25pt x 229.85875pt>
+File: img/raid22.png Graphic file (type png)
+ <use img/raid22.png>
+Package pdftex.def Info: img/raid22.png used on input line 196.
+(pdftex.def)             Requested size: 361.35278pt x 137.91629pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Overfull \hbox (6.61528pt too wide) in paragraph at lines 196--197
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
 
  []
 
-<img/raid66.png, id=243, 602.25pt x 334.24875pt>
+[14 <./img/raid11.png> <./img/raid22.png>]
+<img/raid33.png, id=253, 602.25pt x 380.42125pt>
+File: img/raid33.png Graphic file (type png)
+ <use img/raid33.png>
+Package pdftex.def Info: img/raid33.png used on input line 206.
+(pdftex.def)             Requested size: 301.12425pt x 190.21014pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
+
+ []
+
+<img/raid44.png, id=257, 602.25pt x 380.42125pt>
+File: img/raid44.png Graphic file (type png)
+ <use img/raid44.png>
+Package pdftex.def Info: img/raid44.png used on input line 217.
+(pdftex.def)             Requested size: 301.12425pt x 190.21014pt.
+ [15 <./img/raid33.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
+
+ []
+
+<img/raid55.png, id=268, 602.25pt x 380.42125pt>
+File: img/raid55.png Graphic file (type png)
+ <use img/raid55.png>
+Package pdftex.def Info: img/raid55.png used on input line 228.
+(pdftex.def)             Requested size: 301.12425pt x 190.21014pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
+ []
+
+[16 <./img/raid44.png> <./img/raid55.png>]
+<img/raid66.png, id=279, 602.25pt x 334.24875pt>
 File: img/raid66.png Graphic file (type png)
  <use img/raid66.png>
-Package pdftex.def Info: img/raid66.png used on input line 206.
-(pdftex.def)             Requested size: 240.89572pt x 133.69713pt.
- [11 <./img/raid00.png>] [12 <./img/raid11.png>] [13 <./img/raid22.png> <./img/
-raid33.png>] [14 <./img/raid44.png> <./img/raid55.png>]
+Package pdftex.def Info: img/raid66.png used on input line 239.
+(pdftex.def)             Requested size: 331.23851pt x 183.83737pt.
+
+<img/raid10.png, id=283, 602.25pt x 441.65pt>
+File: img/raid10.png Graphic file (type png)
+ <use img/raid10.png>
+Package pdftex.def Info: img/raid10.png used on input line 258.
+(pdftex.def)             Requested size: 301.12425pt x 220.82445pt.
+ [17 <./img/raid66.png>]
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.262 ...1" \label{figura1.100} \cite{etichetta9}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.262 ...1" \label{figura1.100} \cite{etichetta9}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.262 ...1" \label{figura1.100} \cite{etichetta9}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \caption@ydblarg has an extra }.
+<inserted text> 
+                \par 
+l.262 ...1" \label{figura1.100} \cite{etichetta9}}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+{\@caption \@captype }{\def \reserved@a *{\@sverb }\reserved@a }\def \ETC.
+! Paragraph ended before \caption@ydblarg was complete.
+<to be read again> 
+                   \par 
+l.262 ...1" \label{figura1.100} \cite{etichetta9}}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+! LaTeX Error: \verb illegal in command argument.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.262 ...1" \label{figura1.100} \cite{etichetta9}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \verb illegal in command argument.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.262 ...1" \label{figura1.100} \cite{etichetta9}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: \begin{document} ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.264 \end{itemize}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.264 \end{itemize}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -1650,42 +1862,234 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.221 \subsection
+l.271 \subsection
                  {Codice di correzione errore (Erasure Coding)}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 221
+Underfull \hbox (badness 10000) detected at line 271
 [][]
  []
 
-[15 <./img/raid66.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 244--245
+[18
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.281 \begin{verbatim}
+                      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.281 \begin{verbatim}
+                      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.281 \begin{verbatim}
+                      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.281 \begin{verbatim}
+                      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.281 \begin{verbatim}
+                      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.281 \begin{verbatim}
+                      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.281 \begin{verbatim}
+                      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.281 \begin{verbatim}
+                      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Incomplete \iffalse; all text was ignored after line 281.
+<inserted text> 
+                \fi 
+l.281 \begin{verbatim}
+                      
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+! Incomplete \iffalse; all text was ignored after line 281.
+<inserted text> 
+                \fi 
+l.281 \begin{verbatim}
+                      
+A forbidden control sequence occurred in skipped text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+Runaway text?
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.281 \begin{verbatim}
+                      
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+Runaway text?
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.281 \begin{verbatim}
+                      
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+Runaway text?
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.281 \begin{verbatim}
+                      
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+Runaway text?
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.281 \begin{verbatim}
+                      
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+Runaway text?
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.281 \begin{verbatim}
+                      
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+Runaway text?
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.281 \begin{verbatim}
+                      
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+ <./img/raid10.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 293--294
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.246 						\verb"r = "\sqrt{
-                             \frac{k}{n}}
+l.295 						\verb"r = "\sqrt{
+                             \frac{k}{n}}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.295 						\verb"r = "\sqrt{\frac{k}{n}}\\
+                                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.247 
-      
+l.295 						\verb"r = "\sqrt{\frac{k}{n}}\\
+                                           
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.247 
-      
+l.295 						\verb"r = "\sqrt{\frac{k}{n}}\\
+                                           
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1695,54 +2099,14 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.247 
-      
+l.295 						\verb"r = "\sqrt{\frac{k}{n}}\\
+                                           
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.255 \section
-              {Software utilizzato per gli esperimenti}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 255
-[][]
- []
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.257 \subsection
-                 {PosgreSQL}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 257
-[][]
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 261--263
-
- []
-
-[17]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -1750,565 +2114,109 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.305 
+l.300 A
+       d esempio, in una configurazione \verb"10" di \verb"16", o EC \verb"1...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.305 \section
+              {Software utilizzato per gli esperimenti}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 305
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.307 \subsection
+                 {PosgreSQL}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 307
+[][]
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 311--313
+
+ []
+
+[20]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.351 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--312
+Underfull \hbox (badness 10000) in paragraph at lines 354--356
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 313--332
+Underfull \hbox (badness 10000) in paragraph at lines 357--358
 
  []
 
-[18] [19]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.361 ...solverli è molto diverso. E come si può
-                                                   vedere da questi esempi, ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Extra }, or forgotten $.
-\mathtwosuperior ->{^2}
-                       
-l.361 ...solverli è molto diverso. E come si può
-                                                   vedere da questi esempi, ...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+Underfull \hbox (badness 10000) in paragraph at lines 359--378
 
-
-LaTeX Warning: Command \~ invalid in math mode on input line 361.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 361.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.361 ...ti. Una grande fonte per questo sfondo è
-                                                   nelle Termini e definizio...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.361 ...ti. Una grande fonte per questo sfondo è
-                                                   nelle Termini e definizio...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.361 ...ti. Una grande fonte per questo sfondo è
-                                                   nelle Termini e definizio...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 361.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 361.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.361 ...to principale teorico che non menziona è
-                                                   come risolvere la risoluz...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.361 ...to principale teorico che non menziona è
-                                                   come risolvere la risoluz...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.361 ...to principale teorico che non menziona è
-                                                   come risolvere la risoluz...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.362 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.362 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.362 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no � in font zeuex10!
-Missing character: There is no � in font zeuex10!
-
-Overfull \hbox (2045.5972pt too wide) in paragraph at lines 358--362
-\T1/pplj/m/n/12 (-20) pu�$[]\U/zeur/m/n/12 vederedaquestiesempi; lareplicahamol
-teterminologiespecifichechedovraicapirepercapirequaleclassedisoluzionehasensope
-rituoirequisiti\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 Unagrandefonteperquestosfo
-ndo\T1/pplj/m/n/12 (-20) �[]$ 
  []
 
-[20]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.363 ...na replica binaria asincrona a uno o più
-                                                   standby. Gli standby poss...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Extra }, or forgotten $.
-\mathonesuperior ->{^1}
-                       
-l.363 ...na replica binaria asincrona a uno o più
-                                                   standby. Gli standby poss...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+Underfull \hbox (badness 10000) in paragraph at lines 380--383
 
+ []
 
-LaTeX Warning: Command \~ invalid in math mode on input line 363.
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
 
+ []
 
-LaTeX Warning: Command \" invalid in math mode on input line 363.
 
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.363 ... come database di sola lettura. Questo è
-                                                   il tipo di replica più v...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
+Underfull \hbox (badness 10000) in paragraph at lines 393--395
 
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.363 ... come database di sola lettura. Questo è
-                                                   il tipo di replica più v...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
+ []
 
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.363 ... come database di sola lettura. Questo è
-                                                   il tipo di replica più v...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 400--402
 
+ []
 
-LaTeX Warning: Command \~ invalid in math mode on input line 363.
 
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
-LaTeX Warning: Command \~ invalid in math mode on input line 364.
+ []
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 364.
+Underfull \hbox (badness 10000) in paragraph at lines 405--408
 
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.364 Warm Standby / Log Spedizione è
-                                       una soluzione HA che replica un clust...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.364 Warm Standby / Log Spedizione è
-                                       una soluzione HA che replica un clust...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.364 Warm Standby / Log Spedizione è
-                                       una soluzione HA che replica un clust...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 364.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 364.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 364.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.364 ...query) server standby. Il sovraccarico è
-                                                   molto basso e è facile d...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.364 ...query) server standby. Il sovraccarico è
-                                                   molto basso e è facile d...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.364 ...query) server standby. Il sovraccarico è
-                                                   molto basso e è facile d...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 364.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 364.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.364 ...ndby. Il sovraccarico è molto basso e è
-                                                   facile da installare. Que...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.364 ...ndby. Il sovraccarico è molto basso e è
-                                                   facile da installare. Que...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.364 ...ndby. Il sovraccarico è molto basso e è
-                                                   facile da installare. Que...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 364.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 364.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.364 ...asso e è facile da installare. Questa è
-                                                   una soluzione semplice e ...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.364 ...asso e è facile da installare. Questa è
-                                                   una soluzione semplice e ...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.364 ...asso e è facile da installare. Questa è
-                                                   una soluzione semplice e ...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 364.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 364.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 364.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.364 ...opriata se tutto ciò che ti interessa è
-                                                   un backup continuo e brev...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.364 ...opriata se tutto ciò che ti interessa è
-                                                   un backup continuo e brev...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.364 ...opriata se tutto ciò che ti interessa è
-                                                   un backup continuo e brev...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 365.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 366.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 366.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.366 ...cus del progetto principale, ma questo è
-                                                   cambiato nel 2008, vedere...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.366 ...cus del progetto principale, ma questo è
-                                                   cambiato nel 2008, vedere...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.366 ...cus del progetto principale, ma questo è
-                                                   cambiato nel 2008, vedere...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 366.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 366.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.366 ...l'istruzione del Team Core. La replica è
-                                                   ora un focus significativ...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.366 ...l'istruzione del Team Core. La replica è
-                                                   ora un focus significativ...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.366 ...l'istruzione del Team Core. La replica è
-                                                   ora un focus significativ...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.367 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.367 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no � in font zeuex10!
-Missing character: There is no � in font zeuex10!
-Missing character: There is no � in font zeuex10!
-Missing character: There is no � in font zeuex10!
-Missing character: There is no � in font zeuex10!
-Missing character: There is no � in font zeuex10!
-Missing character: There is no � in font zeuex10!
-Missing character: There is no � in font zeuex10!
-
-Overfull \hbox (5993.04886pt too wide) in paragraph at lines 363--367
-\T1/pplj/m/n/12 (-20) gre-SQL 9.0 e for-ni-sce una re-pli-ca bi-na-ria asin-cro
--na a uno o pi�$[]\U/zeur/m/n/12 standby\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 G
-listandbypossonoanchediventarestandbyscaldi; chepossonoessererichiesticomedatab
-asedisolalettura\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 Questo\T1/pplj/m/n/12 (-2
-0) �[]$ 
  []
 
 
@@ -2318,128 +2226,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.378 \subsubsection
+l.414 \subsubsection
                     {Write-Ahead Loggin (WAL)}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 378
+Underfull \hbox (badness 10000) detected at line 414
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--380
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
- []
-
-[21]
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.389 \subsubsection
-                    {File di configurazione di PostgreSQL}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 389
-[][]
- []
-
-
-Overfull \hbox (31.4641pt too wide) in paragraph at lines 390--392
-\T1/pplj/m/n/12 (-20) Segue par-te del fi-le di con-fi-gu-ra-zio-ne di Post-gre
--SQL chia-ma-to []\T1/fvm/m/n/12 postgresql.conf
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 390--392
-
- []
-
-
-Overfull \hbox (97.91249pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 #-------------------------------------------------------------
------------------[] 
- []
-
-
-Overfull \hbox (97.91249pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 #-------------------------------------------------------------
------------------[] 
- []
-
-
-Overfull \hbox (2.42964pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 wal_level = logical # minimal, archive, hot_standby, or logica
-l[] 
- []
-
-[22]
-Overfull \hbox (97.91249pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 #-------------------------------------------------------------
------------------[] 
- []
-
-
-Overfull \hbox (97.91249pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 #-------------------------------------------------------------
------------------[] 
- []
-
-
-Overfull \hbox (84.4076pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 # Set these on the master and on any standby that will send re
-plication data.[] 
- []
-
-
-Overfull \hbox (27.29741pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 #wal_keep_segments = 0 # in logfile segments, 16MB each; 0 dis
-ables[] 
- []
-
-
-Overfull \hbox (39.5783pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 track_commit_timestamp = on # collect timestamp of transaction
- commit[] 
  []
 
 [23]
-Overfull \hbox (76.42094pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 #vacuum_defer_cleanup_age = 0 # number of xacts by which clean
-up is delayed[] 
- []
-
-
-Overfull \hbox (97.91249pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 #-------------------------------------------------------------
------------------[] 
- []
-
-
-Overfull \hbox (97.91249pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 #-------------------------------------------------------------
------------------[] 
- []
-
-
-Overfull \hbox (97.91249pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 #-------------------------------------------------------------
------------------[] 
- []
-
-
-Overfull \hbox (97.91249pt too wide) in paragraph at lines 484--484
-[]\T1/fvm/m/n/12 #-------------------------------------------------------------
------------------[] 
- []
-
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -2447,335 +2249,67 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.488 \subsection
+l.423 \subsection
                  {Pglogical}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 488
+Underfull \hbox (badness 10000) detected at line 423
 [][]
  []
 
-[24] <img/pglogical_1.png, id=336, 652.4375pt x 250.9375pt>
+[24] <img/pglogical_1.png, id=349, 652.4375pt x 250.9375pt>
 File: img/pglogical_1.png Graphic file (type png)
 
 <use img/pglogical_1.png>
-Package pdftex.def Info: img/pglogical_1.png used on input line 531.
-(pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
+Package pdftex.def Info: img/pglogical_1.png used on input line 462.
+(pdftex.def)             Requested size: 391.46552pt x 150.56364pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 530--531
+Overfull \hbox (7.35332pt too wide) in paragraph at lines 462--462
  [] 
  []
 
-<img/pglogical_2.png, id=340, 652.4375pt x 250.9375pt>
+<img/pglogical_2.png, id=352, 652.4375pt x 250.9375pt>
 File: img/pglogical_2.png Graphic file (type png)
 
 <use img/pglogical_2.png>
-Package pdftex.def Info: img/pglogical_2.png used on input line 536.
-(pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
+Package pdftex.def Info: img/pglogical_2.png used on input line 471.
+(pdftex.def)             Requested size: 391.46552pt x 150.56364pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 535--536
+Overfull \hbox (7.35332pt too wide) in paragraph at lines 471--471
  [] 
  []
 
-<img/pglogical_3.png, id=343, 652.4375pt x 250.9375pt>
+[25 <./img/pglogical_1.png>]
+<img/pglogical_3.png, id=361, 652.4375pt x 250.9375pt>
 File: img/pglogical_3.png Graphic file (type png)
 
 <use img/pglogical_3.png>
-Package pdftex.def Info: img/pglogical_3.png used on input line 544.
-(pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
+Package pdftex.def Info: img/pglogical_3.png used on input line 480.
+(pdftex.def)             Requested size: 391.46552pt x 150.56364pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 543--544
+Overfull \hbox (7.35332pt too wide) in paragraph at lines 480--480
  [] 
  []
 
-<img/pglogical_4.png, id=346, 652.4375pt x 250.9375pt>
+<img/pglogical_4.png, id=364, 652.4375pt x 250.9375pt>
 File: img/pglogical_4.png Graphic file (type png)
 
 <use img/pglogical_4.png>
-Package pdftex.def Info: img/pglogical_4.png used on input line 548.
-(pdftex.def)             Requested size: 456.70313pt x 175.65504pt.
+Package pdftex.def Info: img/pglogical_4.png used on input line 489.
+(pdftex.def)             Requested size: 391.46552pt x 150.56364pt.
 
-Overfull \hbox (72.59093pt too wide) in paragraph at lines 547--548
+Overfull \hbox (7.35332pt too wide) in paragraph at lines 489--489
  [] 
  []
 
-[25] [26 <./img/pglogical_1.png> <./img/pglogical_2.png>] [27 <./img/pglogical_
-3.png> <./img/pglogical_4.png>]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.575 ...se da BDR per produrre una soluzione più
-                                                   semplice e più semplice ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\mathonesuperior ->{^1}
-                       
-l.575 ...se da BDR per produrre una soluzione più
-                                                   semplice e più semplice ...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 575.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 575.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 575.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 575.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.575 ...a vasta gamma di casi di utilizzo. BDR è
-                                                   stato progettato innanzit...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.575 ...a vasta gamma di casi di utilizzo. BDR è
-                                                   stato progettato innanzit...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.575 ...a vasta gamma di casi di utilizzo. BDR è
-                                                   stato progettato innanzit...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 575.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 575.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.575 ...ti-master della rete a n-way, e questo è
-                                                   stato difficile adattarsi...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.575 ...ti-master della rete a n-way, e questo è
-                                                   stato difficile adattarsi...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.575 ...ti-master della rete a n-way, e questo è
-                                                   stato difficile adattarsi...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.576 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.576 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.576 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no � in font zeuex10!
-Missing character: There is no � in font zeuex10!
-
-Overfull \hbox (1324.91829pt too wide) in paragraph at lines 575--576
-\T1/pplj/m/n/12 (-20) dur-re una so-lu-zio-ne pi�$[]\U/zeur/m/n/12 sempliceepi\
-T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 semplicedautilizzareperlareplicaunidirez
-ionale; utilizzabiledapi\T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 personeperunava
-stagammadicasidiutilizzo\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 BDR\T1/pplj/m/n/1
-2 (-20) �[]$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.582 ...se da BDR per produrre una soluzione più
-                                                   semplice e più semplice ...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\mathonesuperior ->{^1}
-                       
-l.582 ...se da BDR per produrre una soluzione più
-                                                   semplice e più semplice ...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 582.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 582.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 582.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 582.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.582 ...a vasta gamma di casi di utilizzo. BDR è
-                                                   stato progettato innanzit...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.582 ...a vasta gamma di casi di utilizzo. BDR è
-                                                   stato progettato innanzit...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.582 ...a vasta gamma di casi di utilizzo. BDR è
-                                                   stato progettato innanzit...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-LaTeX Warning: Command \~ invalid in math mode on input line 582.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 582.
-
-! Please use \mathaccent for accents in math mode.
-\MT@orig@add@accent ...ctor \spacefactor }\accent 
-                                                  #1 #2\egroup \spacefactor ...
-l.582 ...ti-master della rete a n-way, e questo è
-                                                   stato difficile adattarsi...
-I'm changing \accent to \mathaccent here; wish me luck.
-(Accents are not the same in formulas as they are in text.)
-
-! Missing { inserted.
-<to be read again> 
-                   \egroup 
-l.582 ...ti-master della rete a n-way, e questo è
-                                                   stato difficile adattarsi...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! You can't use `\spacefactor' in math mode.
-\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
-                                                  \accent@spacefactor 
-l.582 ...ti-master della rete a n-way, e questo è
-                                                   stato difficile adattarsi...
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.584 
-      
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.584 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.584 
-      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no � in font zeuex10!
-Missing character: There is no � in font zeuex10!
-
-Overfull \hbox (1217.5255pt too wide) in paragraph at lines 580--584
-\T1/pplj/m/n/12 (-20) pi�$[]\U/zeur/m/n/12 sempliceepi\T1/pplj/m/n/12 (-20) �[]
-\U/zeur/m/n/12 semplicedautilizzareperlareplicaunidirezionale; utilizzabiledapi
-\T1/pplj/m/n/12 (-20) �[]\U/zeur/m/n/12 personeperunavastagammadicasidiutilizzo
-\T1/pplj/m/n/12 (-20) .\U/zeur/m/n/12 BDR\T1/pplj/m/n/12 (-20) �[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 585--586
+[26 <./img/pglogical_2.png> <./img/pglogical_3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 514--516
 
  []
 
-[28]
+[27 <./img/pglogical_4.png>]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
 
@@ -2783,54 +2317,42 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.614 \section
+l.541 \section
               {Hardware utilizzato per gli esperimenti}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 614
+Underfull \hbox (badness 10000) detected at line 541
 [][]
  []
 
-<img/CY7x2.png, id=375, 739.563pt x 456.5055pt>
-File: img/CY7x2.png Graphic file (type png)
- <use img/CY7x2.png>
-Package pdftex.def Info: img/CY7x2.png used on input line 618.
-(pdftex.def)             Requested size: 295.81996pt x 182.59895pt.
 
-<img/CY7.png, id=376, 1541.76pt x 522.45187pt>
-File: img/CY7.png Graphic file (type png)
- <use img/CY7.png>
-Package pdftex.def Info: img/CY7.png used on input line 626.
-(pdftex.def)             Requested size: 308.34654pt x 104.48851pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 631--632
+Underfull \hbox (badness 10000) in paragraph at lines 542--543
 
  []
 
-[29 <./img/CY7x2.png>] <img/rack.png, id=384, 392.46625pt x 1003.75pt>
-File: img/rack.png Graphic file (type png)
+<img/CY7.png, id=384, 1541.76pt x 522.45187pt>
+File: img/CY7.png Graphic file (type png)
+ <use img/CY7.png>
+Package pdftex.def Info: img/CY7.png used on input line 548.
+(pdftex.def)             Requested size: 308.34654pt x 104.48851pt.
 
-<use img/rack.png>
-Package pdftex.def Info: img/rack.png used on input line 645.
+<img/CY7x2.png, id=385, 739.563pt x 456.5055pt>
+File: img/CY7x2.png Graphic file (type png)
+ <use img/CY7x2.png>
+Package pdftex.def Info: img/CY7x2.png used on input line 557.
+(pdftex.def)             Requested size: 295.81996pt x 182.59895pt.
+ [28 <./img/CY7.png>] <img/rack.png, id=392, 392.46625pt x 1003.75pt>
+File: img/rack.png Graphic file (type png)
+ <use img/rack.png>
+Package pdftex.def Info: img/rack.png used on input line 566.
 (pdftex.def)             Requested size: 117.74077pt x 301.12732pt.
- [30 <./img/CY7.png> <./img/rack.png>]
-<img/Server.png, id=393, 478.78876pt x 478.78876pt>
-File: img/Server.png Graphic file (type png)
- <use img/Server.png>
-Package pdftex.def Info: img/Server.png used on input line 671.
-(pdftex.def)             Requested size: 191.5121pt x 191.5121pt.
 )
-[31 <./img/Server.png>]
+[29 <./img/CY7x2.png> <./img/rack.png>] [30]
 \openout2 = `secondChapter.aux'.
 
- (./secondChapter.tex [32
-
-
-
-
-]
+ (./secondChapter.tex
 chapter 2.
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
@@ -2853,18 +2375,23 @@ Underfull \hbox (badness 10000) detected at line 4
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4.
 
-<img/pubsub_1.png, id=404, 845.40843pt x 597.73312pt>
+<img/pubsub_1.png, id=406, 845.40843pt x 597.73312pt>
 File: img/pubsub_1.png Graphic file (type png)
  <use img/pubsub_1.png>
 Package pdftex.def Info: img/pubsub_1.png used on input line 9.
 (pdftex.def)             Requested size: 338.15738pt x 239.089pt.
 
-[33 <./img/pubsub_1.png>]
+[31
+
+
+
+
+ <./img/pubsub_1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-<img/setreplica.png, id=411, 845.40843pt x 597.73312pt>
+<img/setreplica.png, id=413, 845.40843pt x 597.73312pt>
 File: img/setreplica.png Graphic file (type png)
 
 <use img/setreplica.png>
@@ -2875,7 +2402,7 @@ Overfull \hbox (123.13676pt too wide) in paragraph at lines 31--31
  [][] 
  []
 
-[34] [35 <./img/setreplica.png>]
+[32] [33 <./img/setreplica.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
@@ -2885,7 +2412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--58
 
  []
 
-[36]
+[34]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2900,12 +2427,12 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[37]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 104--107
 
  []
 
-[38] <img/focus_provider.png, id=445, 185.94469pt x 192.72pt>
+[36] <img/focus_provider.png, id=447, 185.94469pt x 192.72pt>
 File: img/focus_provider.png Graphic file (type png)
 
 <use img/focus_provider.png>
@@ -3014,7 +2541,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<img/prov_replica.png, id=446, 845.40843pt x 597.73312pt>
+<img/prov_replica.png, id=448, 845.40843pt x 597.73312pt>
 File: img/prov_replica.png Graphic file (type png)
 
 <use img/prov_replica.png>
@@ -3105,7 +2632,7 @@ l.157 ...me \textit{provider}. \label{figura1.17}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[39
+[37
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
@@ -3533,7 +3060,7 @@ l.158 \end{figure}
                   
 Call for help
 
-<img/sub_replica.png, id=454, 845.40843pt x 597.73312pt>
+<img/sub_replica.png, id=456, 845.40843pt x 597.73312pt>
 File: img/sub_replica.png Graphic file (type png)
 
 <use img/sub_replica.png>
@@ -3620,7 +3147,7 @@ l.167 ... \textit{subscriber}. \label{figura1.18}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[40
+[38
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
@@ -3920,7 +3447,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
  <./img/prov_replica.png>]
-<img/prov_native.png, id=462, 845.40843pt x 597.73312pt>
+<img/prov_native.png, id=464, 845.40843pt x 597.73312pt>
 File: img/prov_native.png Graphic file (type png)
 
 <use img/prov_native.png>
@@ -4007,7 +3534,7 @@ l.184 ...me \textit{provider}. \label{figura1.19}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<img/sub_native.png, id=463, 845.40843pt x 597.73312pt>
+<img/sub_native.png, id=465, 845.40843pt x 597.73312pt>
 File: img/sub_native.png Graphic file (type png)
 
 <use img/sub_native.png>
@@ -4094,7 +3621,7 @@ l.192 ... \textit{subscriber}. \label{figura1.20}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[41
+[39
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
@@ -4286,7 +3813,7 @@ to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
- <./img/sub_replica.png>] [42
+ <./img/sub_replica.png>] [40
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
@@ -4674,7 +4201,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--210
 
  []
 
-[43]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 217--218
 
  []
@@ -4689,7 +4216,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 237--239
 
  []
 
-[44]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 240--241
 
  []
@@ -4705,7 +4232,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
-<img/chunk1.png, id=489, 362.85562pt x 349.305pt>
+<img/chunk1.png, id=491, 362.85562pt x 349.305pt>
 File: img/chunk1.png Graphic file (type png)
  <use img/chunk1.png>
 Package pdftex.def Info: img/chunk1.png used on input line 257.
@@ -4715,7 +4242,7 @@ Overfull \hbox (65.83185pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[45] <img/chunk2.png, id=494, 412.54124pt x 328.97906pt>
+[43] <img/chunk2.png, id=496, 412.54124pt x 328.97906pt>
 File: img/chunk2.png Graphic file (type png)
  <use img/chunk2.png>
 Package pdftex.def Info: img/chunk2.png used on input line 265.
@@ -4734,7 +4261,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<img/chunk3.png, id=495, 417.05812pt x 321.45094pt>
+<img/chunk3.png, id=497, 417.05812pt x 321.45094pt>
 File: img/chunk3.png Graphic file (type png)
  <use img/chunk3.png>
 Package pdftex.def Info: img/chunk3.png used on input line 271.
@@ -4753,10 +4280,10 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[46 <./img/chunk1.png> <./img/chunk2.png>]
+[44 <./img/chunk1.png> <./img/chunk2.png>]
 LaTeX Font Info:    Font shape `TS1/pplj/bx/n' in size <12> not available
 (Font)              Font shape `TS1/pplj/b/n' tried instead on input line 287.
-) [47 <./img/chunk3.png>]
+) [45 <./img/chunk3.png>]
 ! Extra \else.
 \@include ...ediate \closeout \@partaux \fi \else 
                                                   \deadcycles \z@ \@nameuse ...
@@ -4766,17 +4293,17 @@ I'm ignoring this; it doesn't match any \if.
 
 \openout2 = `thirdChapter.aux'.
 
-(./thirdChapter.tex [48
+(./thirdChapter.tex [46
 
 
 
 
 ]
 chapter 3.
-) [49]
+) [47]
 \openout2 = `fourthChapter.aux'.
 
- (./fourthChapter.tex [50
+ (./fourthChapter.tex [48
 
 
 
@@ -4793,94 +4320,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
-) [51]
+) [49]
 \openout2 = `Chapters/bibliografia.aux'.
 
  (./Chapters/bibliografia.tex (./thesis.brf)
 \tf@brf=\write6
 \openout6 = `thesis.brf'.
 
- [52
+ [50
 
 
 
 
-]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.12 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.12 
-     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-<argument> ...abase_Scaling/Shared_Architectures}}
-                                                   
-l.12 
-     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.12 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.12 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (499.17128pt too wide) in paragraph at lines 12--12
-[]\T1/pplj/m/n/12 (-20) DA RI-GUAR-DA-RE - \T1/pplj/m/it/12 (-20) https://en.wi
-kibooks.org/wiki/Oracle$[]\U/zeur/m/n/12 nd[]B2;[] omparison[]nd[]ompatibility=
-Database[]caling=Shared[]rchitectures \U/zeus/m/n/12 �\U/zeur/m/n/12 Citedonpag
-es []6[]and []7[]\T1/pplj/m/n/12 (-20) .\U/zeus/m/n/12 �[]$ 
- []
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.41 \end{thebibliography}
-                          
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-) [53pdfTeX warning (ext4): destination with the same identifier (name{cite.eti
-chetta12}) has been already used, duplicate ignored
+]) [51pdfTeX warning (ext4): destination with the same identifier (name{cite.et
+ichetta12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.119 \include{Chapters/bibliografia}
                                      ]
+
+Package natbib Warning: There were undefined citations.
+
 
 Package natbib Warning: There were multiply defined citations.
 
@@ -4895,33 +4356,15 @@ Package natbib Warning: Citation(s) may have changed.
 ))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: E56D546EC1CF64356BC9138FBF77A5A9;1649.
+Package rerunfilecheck Info: File `thesis.brf' has not changed.
+(rerunfilecheck)             Checksum: 67E426230B22B639350903555264874B;3146.
 
 
-Package rerunfilecheck Warning: File `thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `thesis.out':
-(rerunfilecheck)             Before: 0F5F017FB28328D94CD4AF5362C41A1F;1649
-(rerunfilecheck)             After:  E56D546EC1CF64356BC9138FBF77A5A9;1649.
-
-Package rerunfilecheck Warning: File `thesis.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `thesis.brf':
-(rerunfilecheck)             Before: 39D388E6E56CFBA9FB1140298539CD8D;3451
-(rerunfilecheck)             After:  BBE197C1B4E02A900DBE511B828219A1;3243.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred inside a group at level 4)
-
-### simple group (level 4) entered at line 582 ({)
-### simple group (level 3) entered at line 575 ({)
-### simple group (level 2) entered at line 363 ({)
-### simple group (level 1) entered at line 361 ({)
-### bottom level
 (\end occurred when \ifnum on line 198 was incomplete)
 (\end occurred when \iffalse on line 158 was incomplete)
 (\end occurred when \ifnum on line 158 was incomplete)
@@ -4930,30 +4373,29 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 (\end occurred when \iftrue on line 116 was incomplete)
 (\end occurred when \ifnum on line 116 was incomplete) 
 Here is how much of TeX's memory you used:
- 27237 strings out of 493029
- 484103 string characters out of 6136233
- 673776 words of memory out of 5000000
- 29619 multiletter control sequences out of 15000+600000
- 100400 words of font info for 528 fonts, out of 8000000 for 9000
+ 27210 strings out of 493029
+ 483833 string characters out of 6136233
+ 666762 words of memory out of 5000000
+ 29608 multiletter control sequences out of 15000+600000
+ 101201 words of font info for 514 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,14n,73p,10357b,1060s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,13n,73p,10357b,919s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf
 -dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/euler/eufm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/e
-uler/eurb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/eule
-r/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/bera/fvmro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/pal
-atino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (55 pages, 4689622 bytes).
+msfonts/euler/eurb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/euler/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fpl
+bj8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/bera/fvmro8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
+no/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
+fb>
+Output written on thesis.pdf (53 pages, 5376070 bytes).
 PDF statistics:
- 657 PDF objects out of 1000 (max. 8388607)
- 521 compressed objects within 6 object streams
- 128 named destinations out of 1000 (max. 500000)
- 86325 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 650 PDF objects out of 1000 (max. 8388607)
+ 512 compressed objects within 6 object streams
+ 130 named destinations out of 1000 (max. 500000)
+ 86837 words of extra memory for PDF output out of 89155 (max. 10000000)
 
