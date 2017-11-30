@@ -1,34 +1,21 @@
 \chapter{Conclusioni e possibili evoluzioni}
+%\setcounter{section}{-1}
 
+\item
+\section{Evoluzioni hardware}
 
-evulazione hw. 
-SSD hanno due vantaggi:
-quando costeranno il costo a storage il costo a gb sarà lo stesso degli hard disk avranno il vantaggio che il tasso di guasto sarà molto piu basso. si rompono 0 quindi si potranno ridurre queste ridondaze di dati perchè tenere x esempio la parità. vantaggio del 20 per cento. se ci permette di avere comunque due copie noi siamo tranquilli
-
-il costo dell ssd incide sul costi di servizio.
-
- 
-
-perchè i costi di servizio sono quelli che noi facciamo pagare ai clienti per storare il dato possiamo fare pagare meno se usiamo meno storage per ogni loro dato perchè invece di usare per ogni loro gb usare 2,3 gb come in questo caso usiamo per ogni gb due gb. gli ddiamo un 30 per cento di spazio in meno che cmq ci permette di diminuire il costo a gb.
-
-
-gli ssd consumano molto meno e questo incide/influisce sui costi di esercizio, è quello che noi spendiamo che ci sia o non ci sia un cliente. il consumo elettrico consumiamo sempre sia che il cliente lo usi o no. il costo di esercizio lo diminuiamo diminuendo i consumi. se lssd ci permette di dimuinire i costumi da un punto di vista busness è un vantaggio enorme perchè subito abbiamo un taglio dei costi.
-
-ovviamente oggi hanno un costo elevato e quindi il loro costo non ci conviene farlo per ora.
-
-
-
-\section{Utilizzo di processori Dual Core}
+\item 
+\subsection{Utilizzo di processori dual core}
 I processi coinvolti per la replicazione dei dati e dei metadati sono due: 
-\begin{itemize}
+\begin{enumerate}
 \item 
 il database Postgres;
 \item
-il \textit{frontend nodejs} che scrive sul database.\\
-\end{itemize}
+il \textit{frontend nodejs} che scrive sul database.
+\end{enumerate}
 
-Usando un processo a \textit{single-core}, i due processi si contengono il processore e si constringono a svariati \textit{context-switch} di memoria.\\
-Il \textit{context-switch} \`{e} fonte di \textit{overhead} non indifferente, generato ad esempio:
+Usando un processo a \textit{single-core}, i due processi si contendono il processore e si constringono a svariati \textit{context-switch} di memoria.\\
+Il \textit{context-switch} \`{e} fonte di \textit{overhead} non indifferente, generato da:
 
 \begin{itemize}
 \item 
@@ -39,24 +26,39 @@ blocco e riattivazione delle \textit{pipeline} di calcolo del processore;
 svuotamento e ripopolamento delle cache.
 \end{itemize}
 
-\`{E} di conseguenza necessario evitare di effettuare un numero eccessivo di \textit{context-switch}.\\
+\`{E} di conseguenza consigliabile evitare di effettuare un numero eccessivo di \textit{context-switch}.\\
 
-Poich\`{e} i prezzi si stanno riducendo, una possibile evoluzione \`{e} quella di usare un \textit{dual-core}, in modo che ogni processo abbia un \textit{core} dedicato e non siano eseguiti numerosi \textit{context-switch}.\\
-Ci\`{o} potrebbe consentire un vantaggio nelle prestazioni
+Poich\`{e} i prezzi si stanno riducendo, una possibile evoluzione \`{e} quella di usare un \textit{dual-core}, in modo che ogni processo abbia un \textit{core} dedicato e non siano eseguiti numerosi \textit{context-switch}. Questo tipo di architettura consente di aumentare la potenza di calcolo di una CPU senza aumentare la frequenza di lavoro. \\
+Ci\`{o} potrebbe consentire numerosi vantaggi, tra cui miglioramenti per quanto riguardano le prestazioni.
 
-\section{Utilizzo di dischi SSD}
-Per gli SSD, viste le prestazioni attuali invece, non ci attendiamo miglioramenti, se non in termini di minori consumi.
+\item
+\subsection{Utilizzo di dischi SSD}
+Per gli SSD (\textit{solid-state disk}), viste le prestazioni attuali, non sono attesi eccessivi miglioramenti, se non in termini di minori consumi.\\
+
+Esaminiamo i principali fattori di vantaggio dell'utilizzo di dischi SSD.\\
+Quando il costo di \textit{storage}, ossia il costo a \verb"GB", sar\`{a} lo stesso degli \textit{hard disk}, l'utilizzo degli SSD consentir{a} di diminuire il tasso di guasto.\\ 
+L'unit\`{a} a stato solido \`{e} di fatto pi\`{u} resistente, dal momento che non contengono parti in movimento (come il motore e il disco magnetico degli HD).\\
+Non ci sar\`{a} alcuna perdit\`{a} del disco, di conseguenza sar\`{a} possibile ridurre le ridondanze di dati. L'utilizzo della parit\`{a}, ad esempio, non sar\`{a} pi\`{u} conveniente, tuttavia diverr\`{a} fonte di eccessiva occupazione del disco. \\
+
+Il costo degli SSD incide sul costo di servizio. \\
+I costi di servizio sono quelli che sono pagati dai clienti per avere uno  \textit{storage} dei loro dati.\\
+Sarebbe possibile diminuire i costi se ci fosse la possibili\`{a} di usare meno \textit{storage} per storare ogni dato degli utenti. \\
+Per mantenere nello \textit{storage} \verb"1 GB", sono occupati in realt\`{a} \verb"2,3 GB", in modo da garantire la sicurezza del dato in caso di perdita. \\
+Con l'utilizzo degli SSD sarebbe possibile occupare solo \verb"2 GB" per ogni \verb"GB" del cliente, concendendo un \verb"30%" di spazio in meno che per\`{o} ci permette di diminuire il costo a \verb"GB".\\
+
+L'utilizzo di questo tipo di harware influisce sui costi di esercizio, ovvero il valore che \`{e} spesa dall'azienda anche qualora non ci sia alcun cliente che usufruisce dello spazio, come il consumo elettrico necessario.\\
+Il costo di esercizio si pu\`{o} diminuire riducendo i consumi. Se l'uso degli SSD permettesse un calo dei consumi, da un punto di vista di costi, sarebbe un ulteriore vantaggio. Ci sarebbe un garantito taglio dei costi.\\
+
+Tuttavia attualmente il costo degli SSD \`{e} estremamente alto e, per questo, non \`{e} conveniente.
+
+\item
+\section{Evoluzioni software}
+In questa tesi \`{e} stato esaminato come la replicazione dei dati possa essere gestito da Postgres e dai cluster di database.\\
+Una possibile evoluzione software \`{e} di non limitarsi pi\`{u} a offrire un servizio RESTful API basato su \textit{object storage}, ma in qualcosa di pi\`{u} evoluto. Nello specifico, potrebbe essere un software che contenga un linguaggio di query, permettendo di aggregare i dati in un altro modo. Cominciare cos\`{i} a dare degli strumenti di analisi sui dati direttamente sullo \textit{storage} invece di dare soltanto la possibilit\`{a} di accedere ai dati per caricarli o scaricarli dallo spazio virtuale.\\
+Questo tipo di servizio \`{e} sempre pi\`{u} richiesto.
+%cioè storage un dato ridammi il dato
+
+%(\textit{REpresentational State Transfer}, ovvero una rappresentazione del trasferimento di stato di un determinato dato).
 
 
-
-
-evoluzioni sw
-
-
-siamo arrivati a utilizzare i databse postgres, come db relazionale, e i cluster di db una possibile evoluzione sw è quella di non limitarsi piu a offrire un servizio rest di APi basato piu su object storage , cioè storage un dato ridammi un dato. ma un qualcosa di piu evoluto che magari contenga un linguaggio di query che permetta di aggregare i dati in qualche modo. quindi cominciare a dare degli strumenti di analisi sui dati direttamente sul nostro storage invece di dare soltanto la possibilità di accedere ai dati per caricarli e scaricarli.
-questo servizio ci viene sempre piu richiesto.lo stiamo progettando.
-nelle prossime realease ci sarà la possibilità di fare analisi invece di utilizzarlo come storage e basta. 
-
-
-
-
+% API si intende Application Programming Interface e non è altro che la creazione di una serie di endpoint (delle URL) che rispondono alle richieste fatte da uno sviluppatore.

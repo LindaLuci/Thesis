@@ -36,5 +36,7 @@
 \contentsline {section}{\numberline {3.2}Lancio in configurazione 2}{47}{section.3.2}
 \contentsline {section}{\numberline {3.3}Lancio in configurazione 3}{47}{section.3.3}
 \contentsline {chapter}{\numberline {4}Conclusioni e possibili evoluzioni}{49}{chapter.4}
-\contentsline {section}{\numberline {4.1}Utilizzo di processori Dual Core}{49}{section.4.1}
-\contentsline {section}{\numberline {4.2}Utilizzo di dischi SSD}{49}{section.4.2}
+\contentsline {section}{\numberline {4.1}Evoluzioni hardware}{49}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Utilizzo di processori dual core}{49}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Utilizzo di dischi SSD}{50}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Evoluzioni software}{50}{section.4.2}

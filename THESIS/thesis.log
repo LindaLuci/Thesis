@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  30 NOV 2017 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  30 NOV 2017 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1354,7 +1354,7 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 \openout2 = `titlePage.aux'.
 
  (./titlePage.tex
-<logo/LOGO.pdf, id=84, 996.72375pt x 483.8075pt>
+<logo/LOGO.pdf, id=92, 996.72375pt x 483.8075pt>
 File: logo/LOGO.pdf Graphic file (type pdf)
  <use logo/LOGO.pdf>
 Package pdftex.def Info: logo/LOGO.pdf used on input line 10.
@@ -1478,7 +1478,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--46
 
  []
 
-<img/Shared_Nothing_Architecture.jpg, id=167, 501.875pt x 379.4175pt>
+<img/Shared_Nothing_Architecture.jpg, id=177, 501.875pt x 379.4175pt>
 File: img/Shared_Nothing_Architecture.jpg Graphic file (type jpg)
 
 <use img/Shared_Nothing_Architecture.jpg>
@@ -1513,7 +1513,7 @@ Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
 Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
  62.
 
-<img/Shared_Disk_Architecture.jpg, id=179, 715.67375pt x 512.91624pt>
+<img/Shared_Disk_Architecture.jpg, id=189, 715.67375pt x 512.91624pt>
 File: img/Shared_Disk_Architecture.jpg Graphic file (type jpg)
 
 <use img/Shared_Disk_Architecture.jpg>
@@ -1671,7 +1671,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
 
-<img/raid00.png, id=215, 602.25pt x 602.25pt>
+<img/raid00.png, id=225, 602.25pt x 602.25pt>
 File: img/raid00.png Graphic file (type png)
  <use img/raid00.png>
 Package pdftex.def Info: img/raid00.png used on input line 172.
@@ -1695,7 +1695,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--181
 
  []
 
-<img/raid11.png, id=227, 602.25pt x 602.25pt>
+<img/raid11.png, id=237, 602.25pt x 602.25pt>
 File: img/raid11.png Graphic file (type png)
  <use img/raid11.png>
 Package pdftex.def Info: img/raid11.png used on input line 184.
@@ -1705,7 +1705,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
-<img/raid22.png, id=237, 602.25pt x 229.85875pt>
+<img/raid22.png, id=247, 602.25pt x 229.85875pt>
 File: img/raid22.png Graphic file (type png)
  <use img/raid22.png>
 Package pdftex.def Info: img/raid22.png used on input line 196.
@@ -1721,7 +1721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--204
  []
 
 [14 <./img/raid11.png> <./img/raid22.png>]
-<img/raid33.png, id=248, 602.25pt x 380.42125pt>
+<img/raid33.png, id=258, 602.25pt x 380.42125pt>
 File: img/raid33.png Graphic file (type png)
  <use img/raid33.png>
 Package pdftex.def Info: img/raid33.png used on input line 206.
@@ -1731,7 +1731,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
-<img/raid44.png, id=252, 602.25pt x 380.42125pt>
+<img/raid44.png, id=262, 602.25pt x 380.42125pt>
 File: img/raid44.png Graphic file (type png)
  <use img/raid44.png>
 Package pdftex.def Info: img/raid44.png used on input line 217.
@@ -1741,7 +1741,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-<img/raid55.png, id=263, 602.25pt x 380.42125pt>
+<img/raid55.png, id=273, 602.25pt x 380.42125pt>
 File: img/raid55.png Graphic file (type png)
  <use img/raid55.png>
 Package pdftex.def Info: img/raid55.png used on input line 228.
@@ -1752,13 +1752,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 236--237
  []
 
 [16 <./img/raid44.png> <./img/raid55.png>]
-<img/raid66.png, id=274, 602.25pt x 334.24875pt>
+<img/raid66.png, id=284, 602.25pt x 334.24875pt>
 File: img/raid66.png Graphic file (type png)
  <use img/raid66.png>
 Package pdftex.def Info: img/raid66.png used on input line 239.
 (pdftex.def)             Requested size: 331.23851pt x 183.83737pt.
 
-<img/raid10.png, id=278, 602.25pt x 441.65pt>
+<img/raid10.png, id=288, 602.25pt x 441.65pt>
 File: img/raid10.png Graphic file (type png)
  <use img/raid10.png>
 Package pdftex.def Info: img/raid10.png used on input line 258.
@@ -2268,7 +2268,7 @@ Underfull \hbox (badness 10000) detected at line 423
 [][]
  []
 
-[24] <img/pglogical_1.png, id=344, 652.4375pt x 250.9375pt>
+[24] <img/pglogical_1.png, id=354, 652.4375pt x 250.9375pt>
 File: img/pglogical_1.png Graphic file (type png)
 
 <use img/pglogical_1.png>
@@ -2279,7 +2279,7 @@ Overfull \hbox (7.35332pt too wide) in paragraph at lines 462--462
  [] 
  []
 
-<img/pglogical_2.png, id=347, 652.4375pt x 250.9375pt>
+<img/pglogical_2.png, id=357, 652.4375pt x 250.9375pt>
 File: img/pglogical_2.png Graphic file (type png)
 
 <use img/pglogical_2.png>
@@ -2291,7 +2291,7 @@ Overfull \hbox (7.35332pt too wide) in paragraph at lines 471--471
  []
 
 [25 <./img/pglogical_1.png>]
-<img/pglogical_3.png, id=356, 652.4375pt x 250.9375pt>
+<img/pglogical_3.png, id=366, 652.4375pt x 250.9375pt>
 File: img/pglogical_3.png Graphic file (type png)
 
 <use img/pglogical_3.png>
@@ -2302,7 +2302,7 @@ Overfull \hbox (7.35332pt too wide) in paragraph at lines 480--480
  [] 
  []
 
-<img/pglogical_4.png, id=359, 652.4375pt x 250.9375pt>
+<img/pglogical_4.png, id=369, 652.4375pt x 250.9375pt>
 File: img/pglogical_4.png Graphic file (type png)
 
 <use img/pglogical_4.png>
@@ -2341,18 +2341,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 542--543
 
  []
 
-<img/CY7.png, id=379, 1541.76pt x 522.45187pt>
+<img/CY7.png, id=389, 1541.76pt x 522.45187pt>
 File: img/CY7.png Graphic file (type png)
  <use img/CY7.png>
 Package pdftex.def Info: img/CY7.png used on input line 548.
 (pdftex.def)             Requested size: 308.34654pt x 104.48851pt.
 
-<img/CY7x2.png, id=380, 739.563pt x 456.5055pt>
+<img/CY7x2.png, id=390, 739.563pt x 456.5055pt>
 File: img/CY7x2.png Graphic file (type png)
  <use img/CY7x2.png>
 Package pdftex.def Info: img/CY7x2.png used on input line 557.
 (pdftex.def)             Requested size: 295.81996pt x 182.59895pt.
- [28 <./img/CY7.png>] <img/rack.png, id=387, 392.46625pt x 1003.75pt>
+ [28 <./img/CY7.png>] <img/rack.png, id=397, 392.46625pt x 1003.75pt>
 File: img/rack.png Graphic file (type png)
  <use img/rack.png>
 Package pdftex.def Info: img/rack.png used on input line 566.
@@ -2389,7 +2389,7 @@ Underfull \hbox (badness 10000) detected at line 4
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4.
 
-<img/pubsub_1.png, id=400, 537.50812pt x 444.91219pt>
+<img/pubsub_1.png, id=410, 537.50812pt x 444.91219pt>
 File: img/pubsub_1.png Graphic file (type png)
  <use img/pubsub_1.png>
 Package pdftex.def Info: img/pubsub_1.png used on input line 10.
@@ -2400,7 +2400,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<img/setreplica.png, id=407, 505.89pt x 469.00218pt>
+<img/setreplica.png, id=417, 505.89pt x 469.00218pt>
 File: img/setreplica.png Graphic file (type png)
  <use img/setreplica.png>
 Package pdftex.def Info: img/setreplica.png used on input line 35.
@@ -2434,7 +2434,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
  []
 
-[36] <img/focus_provider.png, id=441, 182.93344pt x 181.42781pt>
+[36] <img/focus_provider.png, id=451, 182.93344pt x 181.42781pt>
 File: img/focus_provider.png Graphic file (type png)
 
 <use img/focus_provider.png>
@@ -2543,7 +2543,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<img/prov_replica.png, id=442, 758.08218pt x 396.7322pt>
+<img/prov_replica.png, id=452, 758.08218pt x 396.7322pt>
 File: img/prov_replica.png Graphic file (type png)
 
 <use img/prov_replica.png>
@@ -2986,7 +2986,7 @@ I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
  <./img/focus_provider.png> <./img/prov_replica.png>]
-<img/sub_replica.png, id=450, 790.45313pt x 397.485pt>
+<img/sub_replica.png, id=461, 790.45313pt x 397.485pt>
 File: img/sub_replica.png Graphic file (type png)
 
 <use img/sub_replica.png>
@@ -3675,7 +3675,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
  <./img/sub_replica.png>]
-<img/prov_native.png, id=460, 783.67781pt x 388.45125pt>
+<img/prov_native.png, id=470, 783.67781pt x 388.45125pt>
 File: img/prov_native.png Graphic file (type png)
 
 <use img/prov_native.png>
@@ -3766,7 +3766,7 @@ l.201 ...me \textit{provider}. \label{figura1.17}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<img/sub_native.png, id=461, 753.5653pt x 395.22656pt>
+<img/sub_native.png, id=471, 753.5653pt x 395.22656pt>
 File: img/sub_native.png Graphic file (type png)
 
 <use img/sub_native.png>
@@ -4624,7 +4624,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--274
 
  []
 
-<img/chunk1.png, id=485, 362.85562pt x 349.305pt>
+<img/chunk1.png, id=495, 362.85562pt x 349.305pt>
 File: img/chunk1.png Graphic file (type png)
  <use img/chunk1.png>
 Package pdftex.def Info: img/chunk1.png used on input line 278.
@@ -4634,13 +4634,13 @@ Overfull \hbox (65.83185pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[43] <img/chunk2.png, id=492, 412.54124pt x 328.97906pt>
+[43] <img/chunk2.png, id=502, 412.54124pt x 328.97906pt>
 File: img/chunk2.png Graphic file (type png)
  <use img/chunk2.png>
 Package pdftex.def Info: img/chunk2.png used on input line 288.
 (pdftex.def)             Requested size: 226.89838pt x 180.93904pt.
 
-<img/chunk3.png, id=493, 417.05812pt x 321.45094pt>
+<img/chunk3.png, id=503, 417.05812pt x 321.45094pt>
 File: img/chunk3.png Graphic file (type png)
  <use img/chunk3.png>
 Package pdftex.def Info: img/chunk3.png used on input line 295.
@@ -4760,22 +4760,22 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-)
+
 Overfull \hbox (65.83185pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[45 <./img/chunk3.png>]
+[45 <./img/chunk3.png>]) [46]
 \openout2 = `thirdChapter.aux'.
 
- (./thirdChapter.tex [46
+ (./thirdChapter.tex
+chapter 3.
+) [47
 
 
 
 
 ]
-chapter 3.
-) [47]
 \openout2 = `fourthChapter.aux'.
 
  (./fourthChapter.tex [48
@@ -4786,28 +4786,111 @@ chapter 3.
 ]
 chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \section
+            {Evoluzioni hardware}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 5
+[][]
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \subsection
+               {Utilizzo di processori dual core}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 8
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \subsection
+                {Utilizzo di dischi SSD}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 35
+[][]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
-) [49]
+[49]
+Underfull \hbox (badness 10000) in paragraph at lines 38--42
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \section
+             {Evoluzioni software}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 55
+[][]
+ []
+
+[50]) [51]
 \openout2 = `Chapters/bibliografia.aux'.
 
  (./Chapters/bibliografia.tex (./thesis.brf)
 \tf@brf=\write6
 \openout6 = `thesis.brf'.
 
- [50
+ [52
 
 
 
 
-]) [51pdfTeX warning (ext4): destination with the same identifier (name{cite.et
+]) [53pdfTeX warning (ext4): destination with the same identifier (name{cite.et
 ichetta12}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -4832,7 +4915,7 @@ Package natbib Warning: Citation(s) may have changed.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 023666A540D5803C2FDEC91F4C05216C;1569.
+(rerunfilecheck)             Checksum: 77E814D75C0C700C31171D1825915989;1715.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: 11D8A36A1847FFA3F9C64B8A958EF3F5;3146.
 
@@ -4857,10 +4940,10 @@ LaTeX Warning: There were multiply-defined labels.
 (\end occurred when \iftrue on line 116 was incomplete)
 (\end occurred when \ifnum on line 116 was incomplete) 
 Here is how much of TeX's memory you used:
- 27208 strings out of 493029
- 483900 string characters out of 6136233
+ 27219 strings out of 493029
+ 484037 string characters out of 6136233
  668762 words of memory out of 5000000
- 29609 multiletter control sequences out of 15000+600000
+ 29614 multiletter control sequences out of 15000+600000
  105661 words of font info for 520 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,14n,73p,10357b,919s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4876,10 +4959,10 @@ xmf-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
 lri8a.pfb>
-Output written on thesis.pdf (53 pages, 6083929 bytes).
+Output written on thesis.pdf (55 pages, 6100563 bytes).
 PDF statistics:
- 646 PDF objects out of 1000 (max. 8388607)
- 508 compressed objects within 6 object streams
- 128 named destinations out of 1000 (max. 500000)
- 88365 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 668 PDF objects out of 1000 (max. 8388607)
+ 528 compressed objects within 6 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 88381 words of extra memory for PDF output out of 89155 (max. 10000000)
 
