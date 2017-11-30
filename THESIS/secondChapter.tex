@@ -262,33 +262,78 @@ Questi parametri possono essere impostati solo nel file di configurazione di Pos
 \section{Considerazioni statistiche sulla ridondanza sul dato e sul metadato}
 L'occupazione dei dati del disco \`{e} maggiore rispetto a quella dei metadati, in quanto un dato rappresenta il contenuto del file stesso.\\
 
-Durante l'\textit{upload} il file viene suddiviso in \textit{chunk} di varie dimensioni. Ogni \textit{chunk} \`{e} ridondato due volte.\\
+Durante l'\textit{upload} il file viene suddiviso in \textit{chunk} di varie dimensioni. Ogni \textit{chunk} \`{e} ridondato due volte su due diversi host.\\
 Oltre la ridondanza, tramite lo \verb"XOR" byte a byte di sei \textit{chunk} viene costruito un \textit{chunk} chiamato di parit\`{a}, ridondato anch'esso due volte. 
 Nel caso sia perso un \textit{chunk} appartenente al set di parit\`{a} \`{e} possibile ricostruirlo tramite il \textit{chunk} di parit\`{a}, eseguendo l'operazione inversa.
 
-L'utilizzo di algoritmi di parit\`{a} sono applicati solo a file di svariati \textit{chunk}. Di fatto se \`{e} caricato un file di solo un \textit{chunk} di grandezza \verb"d", l'occupazione sar\`{a} \verb"4d". Se il file \`{e} di \verb"6" \textit{chunk} l'occupazione \`{e} di \verb"14d", di cui \verb"6*2*d" sono ottenuti dalla ridondanza dei \verb"6" \textit{chunk} e \verb"2*d" dalla ridondanza di parit\`{a}.\\
+L'utilizzo di algoritmi di parit\`{a} sono applicati solo a file di svariati \textit{chunk}. Di fatto se \`{e} caricato un file di solo un \textit{chunk} di grandezza \verb"d", l'occupazione sar\`{a} \verb"4 \cdot d". Se il file \`{e} di \verb"6" \textit{chunk} l'occupazione \`{e} di \verb"14d", di cui \verb"6 \cdot 2 \cdot d" sono ottenuti dalla ridondanza dei \verb"6" \textit{chunk} e \verb"2 \cdot d" dalla ridondanza di parit\`{a}.\\
 \`{E} sconveniente di conseguenza usare questo metodo di parit\`{a} per file di solo un \textit{chunk}, poich\`{e} il rapporto tra dati uploadati e dati salvati \`{e} di \verb"4" rispetto al rapporto di \verb"2,3" nel caso di file di \verb"chunk".\\
-La seguente figura illustra il caso in cui \`{e} perso un chunk, quindi anche la sua ridondanza. Questo scenario garantisce tuttavia la possibilit\`{a} di ricostruire il dato.
 
+Ciascun chunk \`{e} ridondato su dischi differenti. \\
+Per causare la perdita di un dato, quanti dischi possono essere danneggiati?\\
+
+La seguente figura illustra il caso in cui \`{e} perso un chunk, quindi anche la sua ridondanza. Questo scenario garantisce tuttavia la possibilit\`{a} di ricostruire il dato, mantendo di conseguenza la sua sicurezza:
+
+\begin{center}
+\includegraphics[scale=0.55]{img/chunk1.png}
+\end{center}
 \begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.55]{img/chunk1.png}\\
-\caption{Perdita di un \textit{chunk} \label{figura1.21}}
+\caption{Perdita di un \textit{chunk} \label{figura1.17}}
 \end{figure}
 
 Seguono i due scenari in cui pu\`{o} accadere che un dato non possa essere recuperato.
-Se viene perso un \textit{chunk} e il \textit{chunk} di parit\`{a} (quindi la sua ridondanza) non \`{e} realizzabile ricreare il dato (\textit{figura 25}). Ugualmente se sono persi due \textit{chunk} del set di parit\`{a}.(\textit{figura 26}).
+Se viene perso un \textit{chunk} e il \textit{chunk} di parit\`{a} (quindi la sua ridondanza) non \`{e} realizzabile ricreare il dato (figura ~\ref{figura1.29}). Ugualmente se sono persi due \textit{chunk} del set di parit\`{a} (figura ~\ref{figura1.30}).
+
+\begin{center}
+\includegraphics[scale=0.55]{img/chunk2.png}
+\end{center}
 \begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.55]{img/chunk2.png}\\
-\caption{Perdita di un \textit{chunk} e del \textit{chunk} di parit\`{a} \label{figura1.22}}\\
+\caption{Perdita di un \textit{chunk} e del \textit{chunk} di parit\`{a} \label{figura1.29}}
 \end{figure}
 
+\begin{center}
+\includegraphics[scale=0.55]{img/chunk3.png}
+\end{center}
 \begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.55]{img/chunk3.png}\\
-\caption{Perdita di due \textit{chunk} \label{figura1.23}}\\
+\caption{Perdita di due \textit{chunk} \label{figura1.30}}
 \end{figure}
+
+Nel peggiore dei casi la perdita di \verb"4" dischi causa l'impossibilit\`{a} di ricostruire un dato.
+La probabilit\`{a} che si rompano \verb"4" dischi su \verb"228" \`{e}:
+
+\begin{center}
+\Large
+\tfrac{1}{228} \cdot  \tfrac{1}{227} \cdot \tfrac{1}{226} \cdot \tfrac{1}{225}\\
+\end{center}
+\normalsize
+
+Tuttavia ancora non corrisponde al caso peggiore. Questo calcolo non tiene conto che i dischi si rompono con una probabilit\`{a} di un certo tipo; solitamente i dischi si rompono con probabilit\`{a} uniforme del \verb"2%".\\
+
+Affinch\`{e} questo accada \`{e} necessario considerare il seguente evento distribuito nel tempo.
+
+Ad esempio consideriamo che in un anno si rompono \verb"2" dischi su \verb"100".
+Se viene valutato un giorno ottengo:
+
+\begin{center}
+\Large
+\tfrac{100}{365} \cdot \normalsize \verb"0,02"\\
+\end{center}
+
+che corrisponde alla probabilit\`{a} che mi si rompa il disco quel preciso giorno.
+Ma se io considero di ricostruire il dato in meno di un giorno, e noi ci diamo come target \verb"3" ore.
+va diviso per 24 e moltiplicato per tre questo mi da la probabilita che un disco mi si rompa in queste tre ore in cui lo sto ricostruendo.
+perchè se mi si rompe dopo l'ho gia ricostruito quindi quella catena di probabilita si annulla.
+per che io abbia la perdit di un dato mi si devono rompere 4 dischi in quelle tre ore. 
+quindi fissato un tempo ( un giorno ) x hai la probabilita che se si rompono tutte e quattro i dischi (catena) il tutto per 100/365.... 
+
+viene un numero piccolissimo.  la probabilita che abbia una rottura. 1-quel numero.
+
+questa è la prob che si perda un chunk. io ho un danneggiamento sul file quando gli manca anche solo un chunk quindi devo considerare mediamente perche io abbia tutto un file ci deve essere la probabilita congiunta che tutti i chunk siano presenti. questo 99.999999 dovra avere almeno 11 9 .
+
+probabilta che varia sui file piccolini, sui file grossi e molto piu bassa. cmq la prob che tu perda un chunk su file grossi è molto bassa.
+
+abbiamo cosndierato la prob del caso peggiore, in realta la prob è ancora piu bassa ci sono altre prob sfavorevoli che hanno prob molto piu alta. quindi è difficile che tu riesca a perdere un dato.
+
 
 Il metadato \`{e} di piccole dimensioni, poich\`{e} rappresenta l'informazione anagrafica del dato. 
 Per questo motivo non \`{e} conveniente utilizzare metodi di parit\`{a} per ricostruire l'informazione anche se \`{e} perso in parte.

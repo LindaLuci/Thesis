@@ -1,5 +1,23 @@
 \chapter{Conclusioni e possibili evoluzioni}
 
+
+evulazione hw. 
+SSD hanno due vantaggi:
+quando costeranno il costo a storage il costo a gb sarà lo stesso degli hard disk avranno il vantaggio che il tasso di guasto sarà molto piu basso. si rompono 0 quindi si potranno ridurre queste ridondaze di dati perchè tenere x esempio la parità. vantaggio del 20 per cento. se ci permette di avere comunque due copie noi siamo tranquilli
+
+il costo dell ssd incide sul costi di servizio.
+
+ 
+
+perchè i costi di servizio sono quelli che noi facciamo pagare ai clienti per storare il dato possiamo fare pagare meno se usiamo meno storage per ogni loro dato perchè invece di usare per ogni loro gb usare 2,3 gb come in questo caso usiamo per ogni gb due gb. gli ddiamo un 30 per cento di spazio in meno che cmq ci permette di diminuire il costo a gb.
+
+
+gli ssd consumano molto meno e questo incide/influisce sui costi di esercizio, è quello che noi spendiamo che ci sia o non ci sia un cliente. il consumo elettrico consumiamo sempre sia che il cliente lo usi o no. il costo di esercizio lo diminuiamo diminuendo i consumi. se lssd ci permette di dimuinire i costumi da un punto di vista busness è un vantaggio enorme perchè subito abbiamo un taglio dei costi.
+
+ovviamente oggi hanno un costo elevato e quindi il loro costo non ci conviene farlo per ora.
+
+
+
 \section{Utilizzo di processori Dual Core}
 I processi coinvolti per la replicazione dei dati e dei metadati sono due: 
 \begin{itemize}
@@ -11,6 +29,7 @@ il \textit{frontend nodejs} che scrive sul database.\\
 
 Usando un processo a \textit{single-core}, i due processi si contengono il processore e si constringono a svariati \textit{context-switch} di memoria.\\
 Il \textit{context-switch} \`{e} fonte di \textit{overhead} non indifferente, generato ad esempio:
+
 \begin{itemize}
 \item 
 tempo impiegato a salvare in memoria lo stato;
@@ -25,8 +44,19 @@ svuotamento e ripopolamento delle cache.
 Poich\`{e} i prezzi si stanno riducendo, una possibile evoluzione \`{e} quella di usare un \textit{dual-core}, in modo che ogni processo abbia un \textit{core} dedicato e non siano eseguiti numerosi \textit{context-switch}.\\
 Ci\`{o} potrebbe consentire un vantaggio nelle prestazioni
 
-\textbf{per i processori dual-core, inserisci una piccola valutazione
-}
-
 \section{Utilizzo di dischi SSD}
 Per gli SSD, viste le prestazioni attuali invece, non ci attendiamo miglioramenti, se non in termini di minori consumi.
+
+
+
+
+evoluzioni sw
+
+
+siamo arrivati a utilizzare i databse postgres, come db relazionale, e i cluster di db una possibile evoluzione sw è quella di non limitarsi piu a offrire un servizio rest di APi basato piu su object storage , cioè storage un dato ridammi un dato. ma un qualcosa di piu evoluto che magari contenga un linguaggio di query che permetta di aggregare i dati in qualche modo. quindi cominciare a dare degli strumenti di analisi sui dati direttamente sul nostro storage invece di dare soltanto la possibilità di accedere ai dati per caricarli e scaricarli.
+questo servizio ci viene sempre piu richiesto.lo stiamo progettando.
+nelle prossime realease ci sarà la possibilità di fare analisi invece di utilizzarlo come storage e basta. 
+
+
+
+

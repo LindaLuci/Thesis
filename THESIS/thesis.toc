@@ -31,7 +31,6 @@
 \contentsline {subsubsection}{Replica sincrona e asincrona}{40}{figure.caption.24}
 \contentsline {subsubsection}{Parametri del file di configurazione di PostgreSQL}{41}{figure.caption.24}
 \contentsline {section}{\numberline {2.2}Considerazioni statistiche sulla ridondanza sul dato e sul metadato}{43}{section.2.2}
-\contentsline {section}{\numberline {2.3}Resilienza ai cambiamenti di rete}{45}{section.2.3}
 \contentsline {chapter}{\numberline {3}Definizione del quadro sperimentale}{47}{chapter.3}
 \contentsline {section}{\numberline {3.1}Lancio in configurazione 1}{47}{section.3.1}
 \contentsline {section}{\numberline {3.2}Lancio in configurazione 2}{47}{section.3.2}

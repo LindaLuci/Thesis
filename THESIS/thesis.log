@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  30 NOV 2017 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  30 NOV 2017 20:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1140,6 +1140,15 @@ LaTeX Warning: Label `figura1.100' multiply defined.
 
 LaTeX Warning: Label `figura1.17' multiply defined.
 
+
+LaTeX Warning: Label `figura1.17' multiply defined.
+
+
+LaTeX Warning: Label `figura1.17' multiply defined.
+
+
+LaTeX Warning: Label `figura1.17' multiply defined.
+
 ) (./thirdChapter.aux) (./fourthChapter.aux) (./Chapters/bibliografia.aux
 
 Package natbib Warning: Citation `etichetta12' multiply defined.
@@ -1345,7 +1354,7 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 \openout2 = `titlePage.aux'.
 
  (./titlePage.tex
-<logo/LOGO.pdf, id=88, 996.72375pt x 483.8075pt>
+<logo/LOGO.pdf, id=84, 996.72375pt x 483.8075pt>
 File: logo/LOGO.pdf Graphic file (type pdf)
  <use logo/LOGO.pdf>
 Package pdftex.def Info: logo/LOGO.pdf used on input line 10.
@@ -1469,7 +1478,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--46
 
  []
 
-<img/Shared_Nothing_Architecture.jpg, id=172, 501.875pt x 379.4175pt>
+<img/Shared_Nothing_Architecture.jpg, id=167, 501.875pt x 379.4175pt>
 File: img/Shared_Nothing_Architecture.jpg Graphic file (type jpg)
 
 <use img/Shared_Nothing_Architecture.jpg>
@@ -1504,7 +1513,7 @@ Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
 Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
  62.
 
-<img/Shared_Disk_Architecture.jpg, id=184, 715.67375pt x 512.91624pt>
+<img/Shared_Disk_Architecture.jpg, id=179, 715.67375pt x 512.91624pt>
 File: img/Shared_Disk_Architecture.jpg Graphic file (type jpg)
 
 <use img/Shared_Disk_Architecture.jpg>
@@ -1662,7 +1671,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
 
-<img/raid00.png, id=220, 602.25pt x 602.25pt>
+<img/raid00.png, id=215, 602.25pt x 602.25pt>
 File: img/raid00.png Graphic file (type png)
  <use img/raid00.png>
 Package pdftex.def Info: img/raid00.png used on input line 172.
@@ -1686,7 +1695,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 179--181
 
  []
 
-<img/raid11.png, id=232, 602.25pt x 602.25pt>
+<img/raid11.png, id=227, 602.25pt x 602.25pt>
 File: img/raid11.png Graphic file (type png)
  <use img/raid11.png>
 Package pdftex.def Info: img/raid11.png used on input line 184.
@@ -1696,7 +1705,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 192--194
 
  []
 
-<img/raid22.png, id=242, 602.25pt x 229.85875pt>
+<img/raid22.png, id=237, 602.25pt x 229.85875pt>
 File: img/raid22.png Graphic file (type png)
  <use img/raid22.png>
 Package pdftex.def Info: img/raid22.png used on input line 196.
@@ -1712,7 +1721,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 203--204
  []
 
 [14 <./img/raid11.png> <./img/raid22.png>]
-<img/raid33.png, id=253, 602.25pt x 380.42125pt>
+<img/raid33.png, id=248, 602.25pt x 380.42125pt>
 File: img/raid33.png Graphic file (type png)
  <use img/raid33.png>
 Package pdftex.def Info: img/raid33.png used on input line 206.
@@ -1722,7 +1731,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 213--215
 
  []
 
-<img/raid44.png, id=257, 602.25pt x 380.42125pt>
+<img/raid44.png, id=252, 602.25pt x 380.42125pt>
 File: img/raid44.png Graphic file (type png)
  <use img/raid44.png>
 Package pdftex.def Info: img/raid44.png used on input line 217.
@@ -1732,7 +1741,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-<img/raid55.png, id=268, 602.25pt x 380.42125pt>
+<img/raid55.png, id=263, 602.25pt x 380.42125pt>
 File: img/raid55.png Graphic file (type png)
  <use img/raid55.png>
 Package pdftex.def Info: img/raid55.png used on input line 228.
@@ -1743,13 +1752,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 236--237
  []
 
 [16 <./img/raid44.png> <./img/raid55.png>]
-<img/raid66.png, id=279, 602.25pt x 334.24875pt>
+<img/raid66.png, id=274, 602.25pt x 334.24875pt>
 File: img/raid66.png Graphic file (type png)
  <use img/raid66.png>
 Package pdftex.def Info: img/raid66.png used on input line 239.
 (pdftex.def)             Requested size: 331.23851pt x 183.83737pt.
 
-<img/raid10.png, id=283, 602.25pt x 441.65pt>
+<img/raid10.png, id=278, 602.25pt x 441.65pt>
 File: img/raid10.png Graphic file (type png)
  <use img/raid10.png>
 Package pdftex.def Info: img/raid10.png used on input line 258.
@@ -2259,7 +2268,7 @@ Underfull \hbox (badness 10000) detected at line 423
 [][]
  []
 
-[24] <img/pglogical_1.png, id=349, 652.4375pt x 250.9375pt>
+[24] <img/pglogical_1.png, id=344, 652.4375pt x 250.9375pt>
 File: img/pglogical_1.png Graphic file (type png)
 
 <use img/pglogical_1.png>
@@ -2270,7 +2279,7 @@ Overfull \hbox (7.35332pt too wide) in paragraph at lines 462--462
  [] 
  []
 
-<img/pglogical_2.png, id=352, 652.4375pt x 250.9375pt>
+<img/pglogical_2.png, id=347, 652.4375pt x 250.9375pt>
 File: img/pglogical_2.png Graphic file (type png)
 
 <use img/pglogical_2.png>
@@ -2282,7 +2291,7 @@ Overfull \hbox (7.35332pt too wide) in paragraph at lines 471--471
  []
 
 [25 <./img/pglogical_1.png>]
-<img/pglogical_3.png, id=361, 652.4375pt x 250.9375pt>
+<img/pglogical_3.png, id=356, 652.4375pt x 250.9375pt>
 File: img/pglogical_3.png Graphic file (type png)
 
 <use img/pglogical_3.png>
@@ -2293,7 +2302,7 @@ Overfull \hbox (7.35332pt too wide) in paragraph at lines 480--480
  [] 
  []
 
-<img/pglogical_4.png, id=364, 652.4375pt x 250.9375pt>
+<img/pglogical_4.png, id=359, 652.4375pt x 250.9375pt>
 File: img/pglogical_4.png Graphic file (type png)
 
 <use img/pglogical_4.png>
@@ -2332,18 +2341,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 542--543
 
  []
 
-<img/CY7.png, id=384, 1541.76pt x 522.45187pt>
+<img/CY7.png, id=379, 1541.76pt x 522.45187pt>
 File: img/CY7.png Graphic file (type png)
  <use img/CY7.png>
 Package pdftex.def Info: img/CY7.png used on input line 548.
 (pdftex.def)             Requested size: 308.34654pt x 104.48851pt.
 
-<img/CY7x2.png, id=385, 739.563pt x 456.5055pt>
+<img/CY7x2.png, id=380, 739.563pt x 456.5055pt>
 File: img/CY7x2.png Graphic file (type png)
  <use img/CY7x2.png>
 Package pdftex.def Info: img/CY7x2.png used on input line 557.
 (pdftex.def)             Requested size: 295.81996pt x 182.59895pt.
- [28 <./img/CY7.png>] <img/rack.png, id=392, 392.46625pt x 1003.75pt>
+ [28 <./img/CY7.png>] <img/rack.png, id=387, 392.46625pt x 1003.75pt>
 File: img/rack.png Graphic file (type png)
  <use img/rack.png>
 Package pdftex.def Info: img/rack.png used on input line 566.
@@ -2380,7 +2389,7 @@ Underfull \hbox (badness 10000) detected at line 4
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4.
 
-<img/pubsub_1.png, id=405, 537.50812pt x 444.91219pt>
+<img/pubsub_1.png, id=400, 537.50812pt x 444.91219pt>
 File: img/pubsub_1.png Graphic file (type png)
  <use img/pubsub_1.png>
 Package pdftex.def Info: img/pubsub_1.png used on input line 10.
@@ -2391,7 +2400,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<img/setreplica.png, id=412, 505.89pt x 469.00218pt>
+<img/setreplica.png, id=407, 505.89pt x 469.00218pt>
 File: img/setreplica.png Graphic file (type png)
  <use img/setreplica.png>
 Package pdftex.def Info: img/setreplica.png used on input line 35.
@@ -2425,7 +2434,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
  []
 
-[36] <img/focus_provider.png, id=446, 182.93344pt x 181.42781pt>
+[36] <img/focus_provider.png, id=441, 182.93344pt x 181.42781pt>
 File: img/focus_provider.png Graphic file (type png)
 
 <use img/focus_provider.png>
@@ -2534,7 +2543,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<img/prov_replica.png, id=447, 758.08218pt x 396.7322pt>
+<img/prov_replica.png, id=442, 758.08218pt x 396.7322pt>
 File: img/prov_replica.png Graphic file (type png)
 
 <use img/prov_replica.png>
@@ -2977,7 +2986,7 @@ I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
  <./img/focus_provider.png> <./img/prov_replica.png>]
-<img/sub_replica.png, id=456, 790.45313pt x 397.485pt>
+<img/sub_replica.png, id=450, 790.45313pt x 397.485pt>
 File: img/sub_replica.png Graphic file (type png)
 
 <use img/sub_replica.png>
@@ -3666,7 +3675,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
  <./img/sub_replica.png>]
-<img/prov_native.png, id=465, 783.67781pt x 388.45125pt>
+<img/prov_native.png, id=460, 783.67781pt x 388.45125pt>
 File: img/prov_native.png Graphic file (type png)
 
 <use img/prov_native.png>
@@ -3757,7 +3766,7 @@ l.201 ...me \textit{provider}. \label{figura1.17}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<img/sub_native.png, id=466, 753.5653pt x 395.22656pt>
+<img/sub_native.png, id=461, 753.5653pt x 395.22656pt>
 File: img/sub_native.png Graphic file (type png)
 
 <use img/sub_native.png>
@@ -4605,36 +4614,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
-<img/chunk1.png, id=490, 362.85562pt x 349.305pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--271
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--274
+
+ []
+
+<img/chunk1.png, id=485, 362.85562pt x 349.305pt>
 File: img/chunk1.png Graphic file (type png)
  <use img/chunk1.png>
-Package pdftex.def Info: img/chunk1.png used on input line 275.
+Package pdftex.def Info: img/chunk1.png used on input line 278.
 (pdftex.def)             Requested size: 199.5712pt x 192.11833pt.
 
-<img/chunk2.png, id=491, 412.54124pt x 328.97906pt>
+Overfull \hbox (65.83185pt too wide) has occurred while \output is active
+ []|[]|
+ []
+
+[43] <img/chunk2.png, id=492, 412.54124pt x 328.97906pt>
 File: img/chunk2.png Graphic file (type png)
  <use img/chunk2.png>
-Package pdftex.def Info: img/chunk2.png used on input line 283.
+Package pdftex.def Info: img/chunk2.png used on input line 288.
 (pdftex.def)             Requested size: 226.89838pt x 180.93904pt.
 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.284 ...hunk} di parit\`{a} \label{figura1.22}}\\
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-<img/chunk3.png, id=492, 417.05812pt x 321.45094pt>
+<img/chunk3.png, id=493, 417.05812pt x 321.45094pt>
 File: img/chunk3.png Graphic file (type png)
  <use img/chunk3.png>
-Package pdftex.def Info: img/chunk3.png used on input line 289.
+Package pdftex.def Info: img/chunk3.png used on input line 295.
 (pdftex.def)             Requested size: 229.38268pt x 176.79855pt.
+
+[44 <./img/chunk1.png> <./img/chunk2.png>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.306 \tfrac{1}{228}
+                     \cdot  \tfrac{1}{227} \cdot \tfrac{1}{226} \cdot \tfrac...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
+(Font)              scaled to size 14.6881pt on input line 306.
+! Extra }, or forgotten $.
+\@genfrac ...egingroup #4\endgroup #2#3\relax #5}}
+                                                  
+l.306 \tfrac{1}{228}
+                     \cdot  \tfrac{1}{227} \cdot \tfrac{1}{226} \cdot \tfrac...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -4643,24 +4675,100 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.290 ... due \textit{chunk} \label{figura1.23}}\\
+l.306 ...dot \tfrac{1}{226} \cdot \tfrac{1}{225}\\
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-LaTeX Font Info:    Font shape `TS1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `TS1/pplj/b/n' tried instead on input line 305.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.306 ...dot \tfrac{1}{226} \cdot \tfrac{1}{225}\\
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.306 ...dot \tfrac{1}{226} \cdot \tfrac{1}{225}\\
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.319 \tfrac{100}{365}
+                       \cdot \normalsize \verb"0,02"\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@genfrac ...egingroup #4\endgroup #2#3\relax #5}}
+                                                  
+l.319 \tfrac{100}{365}
+                       \cdot \normalsize \verb"0,02"\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 319.
+
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.319 ...100}{365} \cdot \normalsize \verb"0,02"\\
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.319 ...100}{365} \cdot \normalsize \verb"0,02"\\
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.319 ...100}{365} \cdot \normalsize \verb"0,02"\\
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 )
 Overfull \hbox (65.83185pt too wide) has occurred while \output is active
  []|[]|
  []
 
-[43] [44 <./img/chunk1.png> <./img/chunk2.png>] [45 <./img/chunk3.png>]
+[45 <./img/chunk3.png>]
 \openout2 = `thirdChapter.aux'.
 
-
-(./thirdChapter.tex [46
+ (./thirdChapter.tex [46
 
 
 
@@ -4724,7 +4832,7 @@ Package natbib Warning: Citation(s) may have changed.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E56D546EC1CF64356BC9138FBF77A5A9;1649.
+(rerunfilecheck)             Checksum: 023666A540D5803C2FDEC91F4C05216C;1569.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: 11D8A36A1847FFA3F9C64B8A958EF3F5;3146.
 
@@ -4749,29 +4857,29 @@ LaTeX Warning: There were multiply-defined labels.
 (\end occurred when \iftrue on line 116 was incomplete)
 (\end occurred when \ifnum on line 116 was incomplete) 
 Here is how much of TeX's memory you used:
- 27205 strings out of 493029
- 483768 string characters out of 6136233
+ 27208 strings out of 493029
+ 483900 string characters out of 6136233
  668762 words of memory out of 5000000
- 29604 multiletter control sequences out of 15000+600000
- 101201 words of font info for 514 fonts, out of 8000000 for 9000
+ 29609 multiletter control sequences out of 15000+600000
+ 105661 words of font info for 520 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,14n,73p,10357b,919s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf
 -dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/euler/eurb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/euler/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fpl
-bj8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/bera/fvmro8a.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
-no/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
-fb>
-Output written on thesis.pdf (53 pages, 6079677 bytes).
+msfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/euler/eurb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/e
+uler/eurm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
+lri8a.pfb>
+Output written on thesis.pdf (53 pages, 6083929 bytes).
 PDF statistics:
- 649 PDF objects out of 1000 (max. 8388607)
- 511 compressed objects within 6 object streams
- 129 named destinations out of 1000 (max. 500000)
- 86837 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 646 PDF objects out of 1000 (max. 8388607)
+ 508 compressed objects within 6 object streams
+ 128 named destinations out of 1000 (max. 500000)
+ 88365 words of extra memory for PDF output out of 89155 (max. 10000000)
 

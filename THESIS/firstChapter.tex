@@ -24,7 +24,7 @@ Un file \`{e} suddiviso in \textit{chunk} di varie dimensioni e, rispetto ai met
 La replicazione dei metadati, \`{e} essenzialmente gestito da Pglogical, implementato come estensione di PostgreSQL. \\
 \`{E} un sistema logico di replica, alternativo alla replica fisica, poich\`{e} consente di replicare i metadati in modo altamente pi\`{u} efficiente. Segue il modello di \textit{publish/subscriber} e permette l'utilizzo della replica selettiva di database.
 
-Per la copia dei dati la metodologia adoperata \`{e} pi\`{u} semplice: sar\`{a} sufficiente lanciare una query in parallelo che permette la scrittura dei \textit{chunk} su due differenti host.
+Per la copia dei dati la metodologia adoperata \`{e} pi\`{u} semplice: sar\`{a} sufficiente lanciare una query in parallelo che permette la scrittura dei \textit{chunk} su due differenti dischi.
 
 Grazie a queste configurazioni \`{e} possibile ottenere almeno una doppia ridondanza del dato in modo sicuro e corretto, mantenendo il sistema affidabile.
 
