@@ -4,15 +4,18 @@
 \subsection{Architettura del progetto}
 \subsubsection{Concetto Provider/Subscriber}
 Il modello di \textit{provider/subscriber} definisce un flusso unidirezionale di informazioni da un oggetto \textit{provider} a un numero qualsiasi di oggetti \textit{subscribers}. Il concetto \`{e} che il \textit{provider}, anche chiamato \textit{publish}, ha informazioni o eventi utili che devono essere comunicati ad altri oggetti, ovvero tutti i suoi \textit{subscriber}, che useranno tali informazioni per eseguire azioni aggiuntive o rimanere sincronizzati con il fornitore. 
+
 \begin{figure}[htbp]
 \centering
-\includegraphics[scale=0.40]{img/pubsub_1.png}\\
+\includegraphics[scale=0.55]{img/pubsub_1.png}\\
 \caption{Semplice esempio di un Provider e tre Subscriber abbonati \label{figura1.14}}
 \end{figure}
+
 Come anticipato nel capitolo precedente, la struttura base del sistema di replicazione Pglogical utilizza il modello \textit{publish/subscriber} sopra descritto.\\
 Al \textit{provider} sono "abbonati" uno o pi\`{u} nodi \textit{subscribers}. Ogni nodo che riceve i dati di replica da una fonte, quindi \textit{provider}, pu\`{o} essere configurato per essere in grado di inoltrare tali dati agli altri nodi sottoscritti a s\`{e}.\\
 Utilizzando la replica in cascata, ogni nodo \textit{subscriber} \`{e} in contemporanea mittente e destinatario. Pi\`{u} nello specifico, ogni sottoscrittore \`{e} anche \textit{provider} di altri \textit{subscribers}.\\ 
 Ci sono tre idee distinte dietro questa capacit\`{a}:
+
 \begin{enumerate}
 \item 
 La scalabilit\`{a}: un database, in particolare il \textit{publish} che riceve tutte le transazioni di aggiornamento dalle applicazioni client, ha solo una capacit\`{a} limitata di soddisfare le query dei nodi sottoscritti durante il processo di replica. 
@@ -22,15 +25,19 @@ Limitare la larghezza di banda network richiesta per un sito di backup mantenend
 \item
 Essere in grado di configurare scenari di \textit{failover}: in una configurazione da master a slave multipli, \`{e} improbabile che tutti i nodi slave siano esattamente nello stesso stato di sincronizzazione quando il master fallisce. Per garantire che uno slave possa essere promosso al master \`{e} necessario che tutti i sistemi rimanenti possano concordare lo stato dei dati. Poich\'{e} non \`{e} possibile eseguire il \textit{rollback} di una transazione confermata, questo stato \`{e} indubbiamente lo stato di sincronizzazione pi\`{u} recente di tutti i nodi slave rimanenti.\\
 \end{enumerate}
+
 %presi da slony I - ANDRANNO BENE?
 Aggiunto alle funzionalit\`{a} di PostgreSQL, che ci permette di replicare un intero database, il sistema di replicazione Pglogical pu\`{o} essere configurato per replicare in modo selettivo le righe di una tabella su entrambi i lati \textit{publisher/subscriber}.\\
 Le sequenze e le tabelle sono raggruppate in modo logico dentro un set di replica (\textit{replication set}). \\
 Ogni set corrisponde ai dati da replicare. \`{E} composto da una serie di flussi di dati di replica, che definiremo con $R_n$ (dove \verb"n" rappresenta la \verb"n-esimo" set di replica), contenente un gruppo di oggetti da replicare indipendenti da altri oggetti provenienti dallo stesso master. In ogni caso, tutte le tabelle che hanno relazioni che potrebbero essere espresse come vincoli di chiavi esterne e tutte le sequenze utilizzate per generare numeri di serie in queste tabelle dovrebbero essere contenute in uno stesso set.
+
+\begin{center}
+\includegraphics[scale=0.60]{img/setreplica.png}
+\end{center}
 \begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.60]{img/setreplica.png}\\
 \caption{Set di replica o (\textit{replication set}) \label{figura1.15}}
 \end{figure}
+
 %I parametri sono principalmente per server di invio e standby, sebbene alcuni parametri abbiano significato solo sul server master. Le impostazioni possono variare nel cluster senza problemi se necessario.
 La figura illustra un semplice esempio di una configurazione di replica. Il set di replica \`{e} composto dal flusso di dati $R_1$, $R_2$ e $R_3$.
 Questo scenario raffigura quattro host (nel seguente caso quattro nodi) in cui il \textbf{NODO A} ha il ruolo di \textit{publish} e i restanti sono i suoi sottoscrittori.\\
@@ -67,9 +74,11 @@ La rappresentazione della mappa avr\`{a} una forma simile a quella che segue:\\
 \verb"B 01 02" & \verb"41-50"\\
 \verb"B 01 03" & \verb"51-60"\\
 \hline
+\\
 \end{tabular}
 \end{center}
 \\
+
 Da questo scenario emerge che la \verb"BOARD 01" gestisce gli ID compresi tra \verb"0-10" e \verb"51-60".\\
 Il problema sta nel fatto che se la \verb"BOARD 01" muore, il successivo e quindi il \textit{subscriber}, sar\`{a} in entrambi i casi la \verb"BOARD 02".\\
 Ci\`{o} \`{e} fonte di debolezza; \`{e} fondamentale che i dati siano replicati su \textit{board} diverse. Questo implica che ogni nodo di una \textit{board} deve avere nella mappa differenti successori, allo scopo di garantire una distribuzione dei dati pi\`{u} uniforme.\\
@@ -80,15 +89,18 @@ Nello scenario descritto precedentemente, in cui sono configurate due nodi per \
 L'occupazione del disco dei metadati rispetto a quello dei dati \`{e} decisamente minore, infatti il grosso dell'occupazione del disco sono i \textit{chunk} del file. Di fatto i metadati hanno grandezza fissa; l'unico metadato che cresce \`{e} la lista di un file presente in un \textit{bucket}. I metadati possono cambiare a runtime: c'\`{e} la necessit\`{a} di gestire la replica tramite Pglogical.
 I dati, invece, quando sono scritti non cambiano nel corso del tempo, poich\`{e} hanno dimensione fissa. \\
 Per questo motivo \`{e} stata fatta la seguente distinzione:
+
 \begin{itemize}
 \item 
 la mappa che coordina i \textit{chunk} di un file, quindi i dati, gestisce pi\`{u} nodi per \textit{board},
 \item
 la mappa dei metadati, gestisce un solo nodo per \textit{board}, un solo database, quindi una sola replica (sincrona).
 \end{itemize}
+
 Siamo arrivati alla conclusione che i database per i dati e i metadati devono essere separati.\\
 Ogni \textit{board} ha otto database di dati, che corrispondono a otto nodi, e uno solo di metadati.\\
 Scrivere la ridondanza dei dati \`{e} di conseguenza pi\`{u} semplice: 
+
 \begin{enumerate}
 \item
 viene calcolato l'ID del \textit{chunk} e il rispettivo contenuto;
@@ -101,6 +113,7 @@ il \textit{frontend} si connette a due Postgres, lanciando una query in parallel
 \item
 sono chiuse le connessioni.
 \end{enumerate}
+
 \textbf{figura con due host e query in parallelo}
 Se tutte le \textit{board} sono morte, non si effettua alcuna scrittura. Di fatto se quattro \textit{board} sono gi\`{u} ho solo una \textit{board} per scrivere il dato, non rispettando la necessit\`{a} di replicarlo almeno due volte.\\
 Tuttavia la probabilit\`{a} di avere quattro \textit{board} consecutive morte \`{e} decisamente bassa.\\
@@ -114,10 +127,11 @@ La replica selettiva di Pglogical consente la giusta soluzione. In questo modo l
 %2a01:84a0:1001:a001::1:6;5000000000000000000000000000000000000000;6000000000000000000000000000000000000000;50000000
 %2a01:84a0:1001:a001::2:1;6000000000000000000000000000000000000000;7000000000000000000000000000000000000000;60000000
 Segue un esempio di come un metadato \`{e} rappresentato nella mappa:
+
 %\footnotesize
-\begin{verbatim}
-2a01:84a0:1001:a001::2:2;70;80;70
-\end{verbatim}
+\begin{center}
+\verb"2a01:84a0:1001:a001::2:2;70;80;70"
+\end{center}
 
 \begin{itemize}
 \item 
@@ -140,20 +154,21 @@ Consegue la rappresentazione del host preso in considerazione:
 
 Prendiamo in considerazione le \textit{board} successive all'host appena visto:
 
-\begin{verbatim}
-2a01:84a0:1001:a001::2:2;70;80;70
-2a01:84a0:1001:a001::2:3;80;90;80
-2a01:84a0:1001:a001::2:4;90;a0;90
-2a01:84a0:1001:a001::2:5;a0;b0;a0
-2a01:84a0:1001:a001::2:6;b0;c0;b0
-\end{verbatim}
+\begin{center}
+\verb"2a01:84a0:1001:a001::2:2;70;80;70"
+\verb"2a01:84a0:1001:a001::2:3;80;90;80"
+\verb"2a01:84a0:1001:a001::2:4;90;a0;90"
+\verb"2a01:84a0:1001:a001::2:5;a0;b0;a0"
+\verb"2a01:84a0:1001:a001::2:6;b0;c0;b0"
+\end{center}
 
-La \verb"BOARD 02 02" \`{e} \textit{provider} dei suoi quattro host successivi. \\
+La \verb"BOARD 02 02" \`{e} \textit{provider} dei suoi quattro host successivi (di conseguenza anche i predecessori, che non sono presenti in questa mappa d'esempio). \\
 Illustriamo il set di replicazione sottoscritta:
 
+\begin{center}
+\includegraphics[scale=0.50]{img/prov_replica.png}
+\end{center}
 \begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.40]{img/prov_replica.png}\\
 \caption{Set di replica della \verb"BOARD 02 02" visto come \textit{provider}. \label{figura1.17}}
 \end{figure}
 
@@ -161,10 +176,11 @@ Illustriamo il set di replicazione sottoscritta:
 $R_1$ replica i metadati con ID \verb"70, 60, 50, 40", $R_2$ \verb"70,60,50", $R_3$ \verb"70,60" e $R_4$ \verb"70".\\
 A sua volta, l'host preso in considerazione, funziona come \textit{subscriber} a un altro set di replica; come segue:
 
+\begin{center}
+\includegraphics[scale=0.50]{img/sub_replica.png}
+\end{center}
 \begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.40]{img/sub_replica.png}\\
-\caption{Set di replica della \verb"BOARD 02 02" visto come \textit{subscriber}. \label{figura1.18}}
+\caption{Set di replica della \verb"BOARD 02 02" visto come \textit{subscriber}. \label{figura1.17}}
 \end{figure}
 
 In questo modo abbiamo la certezza che il metadato sia replicato su tutti i nodi (quindi su tutte le \textit{board}) a lui "abbonate". In contemporanea ogni database funge da \textit{subscriber} di altri nodi.
@@ -178,18 +194,20 @@ Pglogical permette di gestire le repliche tra un nodo \textit{master} e una seri
 Per renderlo \textit{multi-master} sono state realizzate le repliche native ( \textit{native subscriptions}) che hanno direzione opposta alle repliche appena descritte.\\
 Quando la \verb"BOARD 02" diventa nuovamente online, pu\`{o} ottenere i nuovi metadati scritti sul nodo successivo attraverso una fase di sincronizzazione.
 
+\begin{center}
+\includegraphics[scale=0.50]{img/prov_native.png}
+\end{center}
 \begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.40]{img/prov_native.png}\\
-\caption{\textit{Native subscriptions} della \verb"BOARD 02 02" visto come \textit{provider}. \label{figura1.19}}
+\caption{\textit{Native subscriptions} della \verb"BOARD 02 02" visto come \textit{provider}. \label{figura1.17}}
 \end{figure}
 
 Di conseguenza:
 
+\begin{center}
+\includegraphics[scale=0.50]{img/sub_native.png}
+\end{center}
 \begin{figure}[htbp]
-\centering
-\includegraphics[scale=0.40]{img/sub_native.png}\\
-\caption{\textit{Native subscriptions} della \verb"BOARD 02 02" visto come \textit{subscriber}. \label{figura1.20}}
+\caption{\textit{Native subscriptions} della \verb"BOARD 02 02" visto come \textit{subscriber}. \label{figura1.17}}
 \end{figure}
 
 \subsubsection{Replica sincrona e asincrona}
@@ -228,11 +246,11 @@ Nella modalit\`{a} di replica dello streaming sincrono anche la replica deve far
 
 Il \verb"synchronous_standby_names" specifica l'elenco delle sottoscrizioni di replica che sono in grado di supportare la replica sincrona. \`{E} stato impostato come segue:
 
-\begin{verbatim}
+\begin{center}
 
-synchronous_standby_names = '1 (r1, r2, r3, r4)'
+\verb"synchronous_standby_names = '1 (r1, r2, r3, r4)'"
 
-\end{verbatim}
+\end{center}
 
 In qualsiasi momento ci sar\`{a} una replica sincrona; le transazioni in attesa di \verb"commit" saranno autorizzate a procedere dopo che questo server di standby confermer\`{a} il ricevimento dei loro dati. 
 Lo \textit{standby} sincrono \`{e} il primo nominato in questo elenco. Altri server di \textit{standby} che appaiono in seguito rappresentano le potenziali repliche sincrone; nel caso in cui \verb"r1" non possa permettere la replica, disconnettendosi per qualsiasi motivo, verr\`{a} sostituito con il successivo \textit{standby} presente in questo elenco, che diventer\`{a} la nuova replica sincrona. \\
@@ -245,7 +263,7 @@ Questi parametri possono essere impostati solo nel file di configurazione di Pos
 L'occupazione dei dati del disco \`{e} maggiore rispetto a quella dei metadati, in quanto un dato rappresenta il contenuto del file stesso.\\
 
 Durante l'\textit{upload} il file viene suddiviso in \textit{chunk} di varie dimensioni. Ogni \textit{chunk} \`{e} ridondato due volte.\\
-Oltre la ridondanza, tramite lo \verb"XOR" byte a byte \textbf{O BIT A BIT CHIEDERE A STEF} di sei \textit{chunk} viene costruito un \textit{chunk} chiamato di parit\`{a}, ridondato anch'esso due volte. 
+Oltre la ridondanza, tramite lo \verb"XOR" byte a byte di sei \textit{chunk} viene costruito un \textit{chunk} chiamato di parit\`{a}, ridondato anch'esso due volte. 
 Nel caso sia perso un \textit{chunk} appartenente al set di parit\`{a} \`{e} possibile ricostruirlo tramite il \textit{chunk} di parit\`{a}, eseguendo l'operazione inversa.
 
 L'utilizzo di algoritmi di parit\`{a} sono applicati solo a file di svariati \textit{chunk}. Di fatto se \`{e} caricato un file di solo un \textit{chunk} di grandezza \verb"d", l'occupazione sar\`{a} \verb"4d". Se il file \`{e} di \verb"6" \textit{chunk} l'occupazione \`{e} di \verb"14d", di cui \verb"6*2*d" sono ottenuti dalla ridondanza dei \verb"6" \textit{chunk} e \verb"2*d" dalla ridondanza di parit\`{a}.\\
@@ -276,12 +294,3 @@ Il metadato \`{e} di piccole dimensioni, poich\`{e} rappresenta l'informazione a
 Per questo motivo non \`{e} conveniente utilizzare metodi di parit\`{a} per ricostruire l'informazione anche se \`{e} perso in parte.
 Per il metadato \`{e} sufficiente creare quattro repliche, garantendo ugualmente la stessa sicurezza. \\
 La perdita del metadato si verifica soltanto se tutte e \verb"5" le \textit{board} contenente l'informazione muoiono.
-
-
-
-\section{Resilienza ai cambiamenti di rete}
-\textbf{CHIEDERE STEFANO ( da mettere section sopra)
-per il dato/metadato dovremmo fare dei conti per mostrare come arriviamo a quei 99.99999999%
-un'altra riflessione da fare è sull'erasure-coding
-usare un vero e proprio erasure-coding, ci costringerebbe a decodificare i dati quando li recuperiamo
-impegnando il processore, che si per sé è poco prestazionale}

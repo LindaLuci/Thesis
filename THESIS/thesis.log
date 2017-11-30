@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  30 NOV 2017 17:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  30 NOV 2017 17:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1136,11 +1136,11 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 
 LaTeX Warning: Label `figura1.100' multiply defined.
 
+) (./secondChapter.aux
 
-LaTeX Warning: Label `figura1.10' multiply defined.
+LaTeX Warning: Label `figura1.17' multiply defined.
 
-) (./secondChapter.aux) (./thirdChapter.aux) (./fourthChapter.aux)
-(./Chapters/bibliografia.aux
+) (./thirdChapter.aux) (./fourthChapter.aux) (./Chapters/bibliografia.aux
 
 Package natbib Warning: Citation `etichetta12' multiply defined.
 
@@ -2349,10 +2349,15 @@ File: img/rack.png Graphic file (type png)
 Package pdftex.def Info: img/rack.png used on input line 566.
 (pdftex.def)             Requested size: 117.74077pt x 301.12732pt.
 )
-[29 <./img/CY7x2.png> <./img/rack.png>] [30]
+[29 <./img/CY7x2.png> <./img/rack.png>]
 \openout2 = `secondChapter.aux'.
 
- (./secondChapter.tex
+ (./secondChapter.tex [30
+
+
+
+
+]
 chapter 2.
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
@@ -2375,44 +2380,33 @@ Underfull \hbox (badness 10000) detected at line 4
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4.
 
-<img/pubsub_1.png, id=406, 845.40843pt x 597.73312pt>
+<img/pubsub_1.png, id=405, 537.50812pt x 444.91219pt>
 File: img/pubsub_1.png Graphic file (type png)
  <use img/pubsub_1.png>
-Package pdftex.def Info: img/pubsub_1.png used on input line 9.
-(pdftex.def)             Requested size: 338.15738pt x 239.089pt.
+Package pdftex.def Info: img/pubsub_1.png used on input line 10.
+(pdftex.def)             Requested size: 295.63037pt x 244.70245pt.
 
-[31
-
-
-
-
- <./img/pubsub_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
+[31 <./img/pubsub_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<img/setreplica.png, id=413, 845.40843pt x 597.73312pt>
+<img/setreplica.png, id=412, 505.89pt x 469.00218pt>
 File: img/setreplica.png Graphic file (type png)
-
-<use img/setreplica.png>
-Package pdftex.def Info: img/setreplica.png used on input line 31.
-(pdftex.def)             Requested size: 507.24896pt x 358.64264pt.
-
-Overfull \hbox (123.13676pt too wide) in paragraph at lines 31--31
- [][] 
- []
+ <use img/setreplica.png>
+Package pdftex.def Info: img/setreplica.png used on input line 35.
+(pdftex.def)             Requested size: 303.53633pt x 281.40347pt.
 
 [32] [33 <./img/setreplica.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 48--58
+Underfull \hbox (badness 10000) in paragraph at lines 55--65
 
  []
 
-[34]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2420,29 +2414,28 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.73 D
-      a questo scenario emerge che la \verb"BOARD 01" gestisce gli ID compre...
-
+l.81 
+     
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[35]
-Underfull \hbox (badness 10000) in paragraph at lines 104--107
+[34] [35]
+Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
  []
 
-[36] <img/focus_provider.png, id=447, 185.94469pt x 192.72pt>
+[36] <img/focus_provider.png, id=446, 182.93344pt x 181.42781pt>
 File: img/focus_provider.png Graphic file (type png)
 
 <use img/focus_provider.png>
-Package pdftex.def Info: img/focus_provider.png used on input line 137.
-(pdftex.def)             Requested size: 130.16037pt x 134.90306pt.
+Package pdftex.def Info: img/focus_provider.png used on input line 151.
+(pdftex.def)             Requested size: 128.05252pt x 126.9986pt.
 
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.138 ...:a001::2:2;70;80;70". \label{figura1.16}}
+l.152 ...:a001::2:2;70;80;70". \label{figura1.16}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2453,7 +2446,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.138 ...:a001::2:2;70;80;70". \label{figura1.16}}
+l.152 ...:a001::2:2;70;80;70". \label{figura1.16}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2464,7 +2457,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.138 ...:a001::2:2;70;80;70". \label{figura1.16}}
+l.152 ...:a001::2:2;70;80;70". \label{figura1.16}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2475,7 +2468,7 @@ and I'll forget about whatever was undefined.
 ! Argument of \caption@ydblarg has an extra }.
 <inserted text> 
                 \par 
-l.138 ...:a001::2:2;70;80;70". \label{figura1.16}}
+l.152 ...:a001::2:2;70;80;70". \label{figura1.16}}
                                                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -2489,7 +2482,7 @@ Runaway argument?
 ! Paragraph ended before \caption@ydblarg was complete.
 <to be read again> 
                    \par 
-l.138 ...:a001::2:2;70;80;70". \label{figura1.16}}
+l.152 ...:a001::2:2;70;80;70". \label{figura1.16}}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -2502,7 +2495,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 ...:a001::2:2;70;80;70". \label{figura1.16}}
+l.152 ...:a001::2:2;70;80;70". \label{figura1.16}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2510,7 +2503,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.138 ...:a001::2:2;70;80;70". \label{figura1.16}}
+l.152 ...:a001::2:2;70;80;70". \label{figura1.16}}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2525,7 +2518,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 ...:a001::2:2;70;80;70". \label{figura1.16}}
+l.152 ...:a001::2:2;70;80;70". \label{figura1.16}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2533,7 +2526,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.138 ...:a001::2:2;70;80;70". \label{figura1.16}}
+l.152 ...:a001::2:2;70;80;70". \label{figura1.16}}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2541,17 +2534,17 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<img/prov_replica.png, id=448, 845.40843pt x 597.73312pt>
+<img/prov_replica.png, id=447, 758.08218pt x 396.7322pt>
 File: img/prov_replica.png Graphic file (type png)
 
 <use img/prov_replica.png>
-Package pdftex.def Info: img/prov_replica.png used on input line 156.
-(pdftex.def)             Requested size: 338.15738pt x 239.089pt.
+Package pdftex.def Info: img/prov_replica.png used on input line 169.
+(pdftex.def)             Requested size: 379.04016pt x 198.3656pt.
 
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.157 ...me \textit{provider}. \label{figura1.17}}
+l.172 ...me \textit{provider}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2562,7 +2555,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.157 ...me \textit{provider}. \label{figura1.17}}
+l.172 ...me \textit{provider}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2573,7 +2566,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.157 ...me \textit{provider}. \label{figura1.17}}
+l.172 ...me \textit{provider}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2584,7 +2577,7 @@ and I'll forget about whatever was undefined.
 ! Argument of \caption@ydblarg has an extra }.
 <inserted text> 
                 \par 
-l.157 ...me \textit{provider}. \label{figura1.17}}
+l.172 ...me \textit{provider}. \label{figura1.17}}
                                                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -2598,16 +2591,16 @@ Runaway argument?
 ! Paragraph ended before \caption@ydblarg was complete.
 <to be read again> 
                    \par 
-l.157 ...me \textit{provider}. \label{figura1.17}}
+l.172 ...me \textit{provider}. \label{figura1.17}}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <10.95> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 157.
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 172.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 9.30756pt on input line 157.
+(Font)              scaled to size 9.30756pt on input line 172.
 
 ! LaTeX Error: \verb illegal in command argument.
 
@@ -2615,7 +2608,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 ...me \textit{provider}. \label{figura1.17}}
+l.172 ...me \textit{provider}. \label{figura1.17}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2627,7 +2620,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 ...me \textit{provider}. \label{figura1.17}}
+l.172 ...me \textit{provider}. \label{figura1.17}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -2636,8 +2629,8 @@ If that doesn't work, type  X <return>  to quit.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -2649,8 +2642,8 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -2658,8 +2651,8 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -2671,8 +2664,8 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -2680,8 +2673,8 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -2693,8 +2686,8 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -2702,8 +2695,8 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -2715,8 +2708,8 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -2724,8 +2717,8 @@ My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 \reserved@a ->\@nil 
                     
-l.158 \end{figure}
-                  
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2735,8 +2728,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \reserved@a ->\@nil 
                     
-l.158 \end{figure}
-                  
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2746,8 +2739,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \reserved@a ->\@nil 
                     
-l.158 \end{figure}
-                  
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2757,41 +2750,28 @@ and I'll forget about whatever was undefined.
 ! Use of \@newline doesn't match its definition.
 \@ifnextchar ...eserved@d =#1\def \reserved@a {#2}
                                                   \def \reserved@b {#3}\futu...
-l.158 \end{figure}
-                  
+l.178 
+      
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-! Argument of \@xfloat has an extra }.
-<inserted text> 
-                \par 
-l.158 \end{figure}
-                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-{figure}\reserved@a \else \let \reserved@c \reserved@b \fi \fi \reserved@c 
-! Paragraph ended before \@xfloat was complete.
-<to be read again> 
-                   \par 
-l.158 \end{figure}
-                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+! Use of \@xifnch doesn't match its definition.
+\@ifnch ...ptoken \let \reserved@c \@xifnch \else 
+                                                  \ifx \@let@token \reserved...
+l.178 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 ! Undefined control sequence.
 \reserved@a ->\@nil 
                     
-l.158 \end{figure}
-                  
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2801,8 +2781,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \reserved@a ->\@nil 
                     
-l.158 \end{figure}
-                  
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2812,41 +2792,28 @@ and I'll forget about whatever was undefined.
 ! Use of \@newline doesn't match its definition.
 \@ifnextchar ...eserved@d =#1\def \reserved@a {#2}
                                                   \def \reserved@b {#3}\futu...
-l.158 \end{figure}
-                  
+l.178 
+      
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
 made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
-! Argument of \@xfloat has an extra }.
-<inserted text> 
-                \par 
-l.158 \end{figure}
-                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-{figure}\reserved@a \else \let \reserved@c \reserved@b \fi \fi \reserved@c 
-! Paragraph ended before \@xfloat was complete.
-<to be read again> 
-                   \par 
-l.158 \end{figure}
-                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+! Use of \@xifnch doesn't match its definition.
+\@ifnch ...ptoken \let \reserved@c \@xifnch \else 
+                                                  \ifx \@let@token \reserved...
+l.178 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 ! Undefined control sequence.
-\reserved@a ->\@nil 
-                    
-l.158 \end{figure}
-                  
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2856,8 +2823,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.158 \end{figure}
-                  
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2867,19 +2834,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.158 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\verbatim@nolig@list ->\do \`\do \<
-                                   \do \>\do \,\do \'\do \-
-l.158 \end{figure}
-                  
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2889,8 +2845,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \reserved@a ->\@nil 
                     
-l.158 \end{figure}
-                  
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2900,8 +2856,8 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \reserved@a ->\@nil 
                     
-l.158 \end{figure}
-                  
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2911,8 +2867,8 @@ and I'll forget about whatever was undefined.
 ! Argument of \@sverb has an extra }.
 <inserted text> 
                 \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -2924,8 +2880,8 @@ Runaway argument?
 ! Paragraph ended before \@sverb was complete.
 <to be read again> 
                    \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -2933,8 +2889,8 @@ My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 \reserved@a ->\@nil 
                     
-l.158 \end{figure}
-                  
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2944,8 +2900,8 @@ and I'll forget about whatever was undefined.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -2957,8 +2913,8 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -2966,8 +2922,8 @@ My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 \frenchspacing ->\sfcode `\.1006\sfcode `\?
                                            1005\sfcode `\!1004\sfcode `\:100...
-l.158 \end{figure}
-                  
+l.178 
+      
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2977,8 +2933,8 @@ and I'll forget about whatever was undefined.
 ! Argument of \@sverb has an extra }.
 <inserted text> 
                 \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -2990,87 +2946,52 @@ Runaway argument?
 ! Paragraph ended before \@sverb was complete.
 <to be read again> 
                    \par 
-l.158 \end{figure}
-                  
+l.178 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-! Undefined control sequence.
-\reserved@a ->\@nil 
-                    
-l.158 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces \ETC.
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces \ETC.
 ! Forbidden control sequence found while scanning text of \write.
 <inserted text> 
                 }
-l.158 \end{figure}
-                  
+l.178 
+      
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
 Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces \ETC.
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces \ETC.
 ! Forbidden control sequence found while scanning text of \write.
 <inserted text> 
                 }
-l.158 \end{figure}
-                  
+l.178 
+      
 I suspect you have forgotten a `}', causing me
 to read past where you wanted me to stop.
 I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
- <./img/focus_provider.png>]
-! Extra \else.
-\sf@end@float ...ma \penalty \@floatpenalty \else 
-                                                  \vadjust {\penalty -\@Miv ...
-l.158 \end{figure}
-                  
-I'm ignoring this; it doesn't match any \if.
-
-! You can't use `\vadjust' in vertical mode.
-\sf@end@float ...ty \@floatpenalty \else \vadjust 
-                                                  {\penalty -\@Miv \vbox {}\...
-l.158 \end{figure}
-                  
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
-
-
-! LaTeX Error: This may be a LaTeX bug.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.158 \end{figure}
-                  
-Call for help
-
-<img/sub_replica.png, id=456, 845.40843pt x 597.73312pt>
+ <./img/focus_provider.png> <./img/prov_replica.png>]
+<img/sub_replica.png, id=456, 790.45313pt x 397.485pt>
 File: img/sub_replica.png Graphic file (type png)
 
 <use img/sub_replica.png>
-Package pdftex.def Info: img/sub_replica.png used on input line 166.
-(pdftex.def)             Requested size: 338.15738pt x 239.089pt.
+Package pdftex.def Info: img/sub_replica.png used on input line 180.
+(pdftex.def)             Requested size: 395.22559pt x 198.742pt.
+
+Overfull \hbox (11.11339pt too wide) in paragraph at lines 180--181
+ [] 
+ []
 
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.167 ... \textit{subscriber}. \label{figura1.18}}
+l.183 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3081,7 +3002,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.167 ... \textit{subscriber}. \label{figura1.18}}
+l.183 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3092,7 +3013,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.167 ... \textit{subscriber}. \label{figura1.18}}
+l.183 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3103,7 +3024,7 @@ and I'll forget about whatever was undefined.
 ! Argument of \caption@ydblarg has an extra }.
 <inserted text> 
                 \par 
-l.167 ... \textit{subscriber}. \label{figura1.18}}
+l.183 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3117,7 +3038,7 @@ Runaway argument?
 ! Paragraph ended before \caption@ydblarg was complete.
 <to be read again> 
                    \par 
-l.167 ... \textit{subscriber}. \label{figura1.18}}
+l.183 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3130,7 +3051,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 ... \textit{subscriber}. \label{figura1.18}}
+l.183 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3142,7 +3063,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.167 ... \textit{subscriber}. \label{figura1.18}}
+l.183 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3151,7 +3072,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.180 
+l.196 
       
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3164,7 +3085,7 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.180 
+l.196 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3173,7 +3094,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.180 
+l.196 
       
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3186,7 +3107,7 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.180 
+l.196 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3195,7 +3116,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.180 
+l.196 
       
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3208,7 +3129,7 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.180 
+l.196 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3217,7 +3138,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.180 
+l.196 
       
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3230,7 +3151,7 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.180 
+l.196 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3239,7 +3160,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Use of \@newline doesn't match its definition.
 \new@ifnextchar ...served@d = #1\def \reserved@a {
                                                   #2}\def \reserved@b {#3}\f...
-l.180 
+l.196 
       
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -3249,7 +3170,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Use of \@newline doesn't match its definition.
 <argument> \def \reserved@a *
                              {\let \reserved@e \vadjust \let \reserved@f \no...
-l.180 
+l.196 
       
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -3259,7 +3180,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Use of \@newline doesn't match its definition.
 \@ifnextchar ... \reserved@d =#1\def \reserved@a {
                                                   #2}\def \reserved@b {#3}\f...
-l.180 
+l.196 
       
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -3269,7 +3190,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Use of \@newline doesn't match its definition.
 \@ifnextchar ...eserved@d =#1\def \reserved@a {#2}
                                                   \def \reserved@b {#3}\futu...
-l.180 
+l.196 
       
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -3279,7 +3200,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Use of \@newline doesn't match its definition.
 \new@ifnextchar ...ved@d = #1\def \reserved@a {#2}
                                                   \def \reserved@b {#3}\futu...
-l.180 
+l.196 
       
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -3289,7 +3210,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Use of \@newline doesn't match its definition.
 \@ifnextchar ... \reserved@d =#1\def \reserved@a {
                                                   #2}\def \reserved@b {#3}\f...
-l.180 
+l.196 
       
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -3299,7 +3220,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Use of \@newline doesn't match its definition.
 \@ifnextchar ...eserved@d =#1\def \reserved@a {#2}
                                                   \def \reserved@b {#3}\futu...
-l.180 
+l.196 
       
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -3309,7 +3230,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.180 
+l.196 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3320,7 +3241,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.180 
+l.196 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3331,7 +3252,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.180 
+l.196 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3342,7 +3263,7 @@ and I'll forget about whatever was undefined.
 ! Use of \@newline doesn't match its definition.
 \new@ifnextchar ...served@d = #1\def \reserved@a {
                                                   #2}\def \reserved@b {#3}\f...
-l.180 
+l.196 
       
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -3352,7 +3273,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Use of \@newline doesn't match its definition.
 <argument> \def \reserved@a *
                              {\@sverb }\reserved@a 
-l.180 
+l.196 
       
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -3362,7 +3283,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Argument of \@sverb has an extra }.
 <inserted text> 
                 \par 
-l.180 
+l.196 
       
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3375,7 +3296,7 @@ Runaway argument?
 ! Paragraph ended before \@sverb was complete.
 <to be read again> 
                    \par 
-l.180 
+l.196 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3384,7 +3305,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Use of \@newline doesn't match its definition.
 \new@ifnextchar ...ved@d = #1\def \reserved@a {#2}
                                                   \def \reserved@b {#3}\futu...
-l.180 
+l.196 
       
 If you say, e.g., `\def\a1{...}', then you must always
 put `1' after `\a', since control sequence names are
@@ -3394,7 +3315,7 @@ followed by the required stuff, so I'm ignoring it.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.180 
+l.196 
       
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3407,7 +3328,7 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.180 
+l.196 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3416,7 +3337,7 @@ My plan is to forget the whole thing and hope for the best.
 ! Undefined control sequence.
 \frenchspacing ->\sfcode `\.1006\sfcode `\?
                                            1005\sfcode `\!1004\sfcode `\:100...
-l.180 
+l.196 
       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3427,7 +3348,7 @@ and I'll forget about whatever was undefined.
 ! Argument of \@sverb has an extra }.
 <inserted text> 
                 \par 
-l.180 
+l.196 
       
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3440,24 +3361,326 @@ Runaway argument?
 ! Paragraph ended before \@sverb was complete.
 <to be read again> 
                    \par 
-l.180 
+l.196 
       
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
- <./img/prov_replica.png>]
-<img/prov_native.png, id=464, 845.40843pt x 597.73312pt>
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.196 
+      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.196 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.196 
+      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.196 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.196 
+      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.196 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.196 
+      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.196 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \@newline doesn't match its definition.
+\new@ifnextchar ...served@d = #1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.196 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+<argument> \def \reserved@a *
+                             {\let \reserved@e \vadjust \let \reserved@f \no...
+l.196 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\@ifnextchar ... \reserved@d =#1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.196 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\@ifnextchar ...eserved@d =#1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.196 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\new@ifnextchar ...ved@d = #1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.196 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\@ifnextchar ... \reserved@d =#1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.196 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\@ifnextchar ...eserved@d =#1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.196 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.196 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.196 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.196 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Use of \@newline doesn't match its definition.
+\new@ifnextchar ...served@d = #1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.196 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+<argument> \def \reserved@a *
+                             {\@sverb }\reserved@a 
+l.196 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \@sverb has an extra }.
+<inserted text> 
+                \par 
+l.196 
+      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@sverb was complete.
+<to be read again> 
+                   \par 
+l.196 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \@newline doesn't match its definition.
+\new@ifnextchar ...ved@d = #1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.196 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.196 
+      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.196 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\frenchspacing ->\sfcode `\.1006\sfcode `\?
+                                           1005\sfcode `\!1004\sfcode `\:100...
+l.196 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@sverb has an extra }.
+<inserted text> 
+                \par 
+l.196 
+      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@sverb was complete.
+<to be read again> 
+                   \par 
+l.196 
+      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+ <./img/sub_replica.png>]
+<img/prov_native.png, id=465, 783.67781pt x 388.45125pt>
 File: img/prov_native.png Graphic file (type png)
 
 <use img/prov_native.png>
-Package pdftex.def Info: img/prov_native.png used on input line 183.
-(pdftex.def)             Requested size: 338.15738pt x 239.089pt.
+Package pdftex.def Info: img/prov_native.png used on input line 198.
+(pdftex.def)             Requested size: 391.83794pt x 194.22514pt.
+
+Overfull \hbox (7.72574pt too wide) in paragraph at lines 198--199
+ [] 
+ []
 
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.184 ...me \textit{provider}. \label{figura1.19}}
+l.201 ...me \textit{provider}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3468,7 +3691,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.184 ...me \textit{provider}. \label{figura1.19}}
+l.201 ...me \textit{provider}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3479,7 +3702,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.184 ...me \textit{provider}. \label{figura1.19}}
+l.201 ...me \textit{provider}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3490,7 +3713,7 @@ and I'll forget about whatever was undefined.
 ! Argument of \caption@ydblarg has an extra }.
 <inserted text> 
                 \par 
-l.184 ...me \textit{provider}. \label{figura1.19}}
+l.201 ...me \textit{provider}. \label{figura1.17}}
                                                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3504,7 +3727,7 @@ Runaway argument?
 ! Paragraph ended before \caption@ydblarg was complete.
 <to be read again> 
                    \par 
-l.184 ...me \textit{provider}. \label{figura1.19}}
+l.201 ...me \textit{provider}. \label{figura1.17}}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3517,7 +3740,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.184 ...me \textit{provider}. \label{figura1.19}}
+l.201 ...me \textit{provider}. \label{figura1.17}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3529,22 +3752,448 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.184 ...me \textit{provider}. \label{figura1.19}}
+l.201 ...me \textit{provider}. \label{figura1.17}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<img/sub_native.png, id=465, 845.40843pt x 597.73312pt>
+<img/sub_native.png, id=466, 753.5653pt x 395.22656pt>
 File: img/sub_native.png Graphic file (type png)
 
 <use img/sub_native.png>
-Package pdftex.def Info: img/sub_native.png used on input line 191.
-(pdftex.def)             Requested size: 338.15738pt x 239.089pt.
+Package pdftex.def Info: img/sub_native.png used on input line 207.
+(pdftex.def)             Requested size: 376.78172pt x 197.6128pt.
+ [39
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.208 \end{center}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.208 \end{center}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.208 \end{center}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.208 \end{center}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.208 \end{center}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.208 \end{center}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.208 \end{center}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.208 \end{center}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \Gin@ii doesn't match its definition.
+\new@ifnextchar ...served@d = #1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \Gin@ii doesn't match its definition.
+<argument> \def \reserved@a *
+                             {\let \reserved@e \vadjust \let \reserved@f \no...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \Gin@ii doesn't match its definition.
+\@ifnextchar ... \reserved@d =#1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\@ifnextchar ...eserved@d =#1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \Gin@ii doesn't match its definition.
+\@ifnch ...eserved@d \let \reserved@c \reserved@a 
+                                                  \else \let \reserved@c \re...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \Gin@ii doesn't match its definition.
+<argument> ...et \reserved@f \nobreak \@xnewline }
+                                                  \reserved@a 
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \Gin@ii doesn't match its definition.
+\new@ifnextchar ...ved@d = #1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \Gin@ii doesn't match its definition.
+\@ifnextchar ... \reserved@d =#1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\@ifnextchar ...eserved@d =#1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \Gin@ii doesn't match its definition.
+\@ifnch ...eserved@d \let \reserved@c \reserved@a 
+                                                  \else \let \reserved@c \re...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \Gin@ii doesn't match its definition.
+\Gin@ii [#1]#2->\def \@tempa {[}\def \@tempb {#2}
+                                                 \ifx \@tempa \@tempb \def \...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \Gin@ii doesn't match its definition.
+\Gin@ii [#1]#2->\def \@tempa {[}\def \@tempb {#2}
+                                                 \ifx \@tempa \@tempb \def \...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.192 ... \textit{subscriber}. \label{figura1.20}}
+l.208 \end{center}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.208 \end{center}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.208 \end{center}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Use of \Gin@ii doesn't match its definition.
+\new@ifnextchar ...served@d = #1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \Gin@ii doesn't match its definition.
+<argument> \def \reserved@a *
+                             {\@sverb }\reserved@a 
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \@sverb has an extra }.
+<inserted text> 
+                \par 
+l.208 \end{center}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@sverb was complete.
+<to be read again> 
+                   \par 
+l.208 \end{center}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \Gin@ii doesn't match its definition.
+\new@ifnextchar ...ved@d = #1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \@gobble has an extra }.
+<inserted text> 
+                \par 
+l.208 \end{center}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@gobble was complete.
+<to be read again> 
+                   \par 
+l.208 \end{center}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Undefined control sequence.
+\frenchspacing ->\sfcode `\.1006\sfcode `\?
+                                           1005\sfcode `\!1004\sfcode `\:100...
+l.208 \end{center}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@sverb has an extra }.
+<inserted text> 
+                \par 
+l.208 \end{center}
+                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \@sverb was complete.
+<to be read again> 
+                   \par 
+l.208 \end{center}
+                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Use of \Gin@ii doesn't match its definition.
+\Gin@ii [#1]#2->\def \@tempa {[}\def \@tempb {#2}
+                                                 \ifx \@tempa \@tempb \def \...
+l.208 \end{center}
+                  
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+Runaway text?
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.208 \end{center}
+                  
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+Runaway text?
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.208 \end{center}
+                  
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+Runaway text?
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.208 \end{center}
+                  
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+Runaway text?
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
+! Forbidden control sequence found while scanning text of \write.
+<inserted text> 
+                }
+l.208 \end{center}
+                  
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+ <./img/prov_native.png>]
+! Extra \else.
+\addpenalty ...pskipa \endgroup \fi \fi \fi \else 
+                                                  \@noitemerr \fi 
+l.208 \end{center}
+                  
+I'm ignoring this; it doesn't match any \if.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \end{center}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.210 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3555,7 +4204,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.192 ... \textit{subscriber}. \label{figura1.20}}
+l.210 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3566,7 +4215,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \verbatim@nolig@list ->\do \`\do \<
                                    \do \>\do \,\do \'\do \-
-l.192 ... \textit{subscriber}. \label{figura1.20}}
+l.210 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -3577,7 +4226,7 @@ and I'll forget about whatever was undefined.
 ! Argument of \caption@ydblarg has an extra }.
 <inserted text> 
                 \par 
-l.192 ... \textit{subscriber}. \label{figura1.20}}
+l.210 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
@@ -3591,7 +4240,7 @@ Runaway argument?
 ! Paragraph ended before \caption@ydblarg was complete.
 <to be read again> 
                    \par 
-l.192 ... \textit{subscriber}. \label{figura1.20}}
+l.210 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
@@ -3604,7 +4253,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.192 ... \textit{subscriber}. \label{figura1.20}}
+l.210 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -3616,17 +4265,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.192 ... \textit{subscriber}. \label{figura1.20}}
+l.210 ... \textit{subscriber}. \label{figura1.17}}
                                                   
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[39
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--228
+
+ []
+
+[40
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -3638,8 +4292,8 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -3647,8 +4301,8 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -3660,8 +4314,8 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -3669,8 +4323,8 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -3682,8 +4336,8 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -3691,8 +4345,8 @@ My plan is to forget the whole thing and hope for the best.
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -3704,17 +4358,140 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-! Argument of \@mklab has an extra }.
+! Use of \@newline doesn't match its definition.
+\new@ifnextchar ...served@d = #1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.228 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+<argument> \def \reserved@a *
+                             {\let \reserved@e \vadjust \let \reserved@f \no...
+l.228 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\@ifnextchar ... \reserved@d =#1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.228 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\@ifnextchar ...eserved@d =#1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.228 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\new@ifnextchar ...ved@d = #1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.228 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\@ifnextchar ... \reserved@d =#1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.228 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+\@ifnextchar ...eserved@d =#1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.228 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.228 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.228 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\verbatim@nolig@list ->\do \`\do \<
+                                   \do \>\do \,\do \'\do \-
+l.228 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Use of \@newline doesn't match its definition.
+\new@ifnextchar ...served@d = #1\def \reserved@a {
+                                                  #2}\def \reserved@b {#3}\f...
+l.228 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Use of \@newline doesn't match its definition.
+<argument> \def \reserved@a *
+                             {\@sverb }\reserved@a 
+l.228 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
+
+! Argument of \@sverb has an extra }.
 <inserted text> 
                 \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -3723,102 +4500,30 @@ argument that might be the root of the problem. But if
 your `}' was spurious, just type `2' and it will go away.
 
 Runaway argument?
-! Paragraph ended before \@mklab was complete.
+! Paragraph ended before \@sverb was complete.
 <to be read again> 
                    \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-! Incomplete \iffalse; all text was ignored after line 198.
-<inserted text> 
-                \fi 
-l.198 \begin{itemize}
-                     
-A forbidden control sequence occurred in skipped text.
-This kind of error happens when you say `\if...' and forget
-the matching `\fi'. I've inserted a `\fi'; this might work.
+! Use of \@newline doesn't match its definition.
+\new@ifnextchar ...ved@d = #1\def \reserved@a {#2}
+                                                  \def \reserved@b {#3}\futu...
+l.228 
+      
+If you say, e.g., `\def\a1{...}', then you must always
+put `1' after `\a', since control sequence names are
+made up of letters only. The macro here has not been
+followed by the required stuff, so I'm ignoring it.
 
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
- <./img/sub_replica.png>] [40
 ! Argument of \@gobble has an extra }.
 <inserted text> 
                 \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -3830,17 +4535,28 @@ Runaway argument?
 ! Paragraph ended before \@gobble was complete.
 <to be read again> 
                    \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-! Argument of \@gobble has an extra }.
+! Undefined control sequence.
+\frenchspacing ->\sfcode `\.1006\sfcode `\?
+                                           1005\sfcode `\!1004\sfcode `\:100...
+l.228 
+      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \@sverb has an extra }.
 <inserted text> 
                 \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -3849,403 +4565,56 @@ argument that might be the root of the problem. But if
 your `}' was spurious, just type `2' and it will go away.
 
 Runaway argument?
-! Paragraph ended before \@gobble was complete.
+! Paragraph ended before \@sverb was complete.
 <to be read again> 
                    \par 
-l.198 \begin{itemize}
-                     
+l.228 
+      
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
-! Argument of \@gobble has an extra }.
-<inserted text> 
-                \par 
-l.198 \begin{itemize}
-                     
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@gobble was complete.
-<to be read again> 
-                   \par 
-l.198 \begin{itemize}
-                     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \@gobble has an extra }.
-<inserted text> 
-                \par 
-l.198 \begin{itemize}
-                     
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@gobble was complete.
-<to be read again> 
-                   \par 
-l.198 \begin{itemize}
-                     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \@mklab has an extra }.
-<inserted text> 
-                \par 
-l.198 \begin{itemize}
-                     
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@mklab was complete.
-<to be read again> 
-                   \par 
-l.198 \begin{itemize}
-                     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Incomplete \iffalse; all text was ignored after line 198.
-<inserted text> 
-                \fi 
-l.198 \begin{itemize}
-                     
-A forbidden control sequence occurred in skipped text.
-This kind of error happens when you say `\if...' and forget
-the matching `\fi'. I've inserted a `\fi'; this might work.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-! Argument of \@gobble has an extra }.
-<inserted text> 
-                \par 
-l.198 \begin{itemize}
-                     
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@gobble was complete.
-<to be read again> 
-                   \par 
-l.198 \begin{itemize}
-                     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \@gobble has an extra }.
-<inserted text> 
-                \par 
-l.198 \begin{itemize}
-                     
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@gobble was complete.
-<to be read again> 
-                   \par 
-l.198 \begin{itemize}
-                     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \@gobble has an extra }.
-<inserted text> 
-                \par 
-l.198 \begin{itemize}
-                     
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@gobble was complete.
-<to be read again> 
-                   \par 
-l.198 \begin{itemize}
-                     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \@gobble has an extra }.
-<inserted text> 
-                \par 
-l.198 \begin{itemize}
-                     
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@gobble was complete.
-<to be read again> 
-                   \par 
-l.198 \begin{itemize}
-                     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \@mklab has an extra }.
-<inserted text> 
-                \par 
-l.198 \begin{itemize}
-                     
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@mklab was complete.
-<to be read again> 
-                   \par 
-l.198 \begin{itemize}
-                     
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Incomplete \iffalse; all text was ignored after line 198.
-<inserted text> 
-                \fi 
-l.198 \begin{itemize}
-                     
-A forbidden control sequence occurred in skipped text.
-This kind of error happens when you say `\if...' and forget
-the matching `\fi'. I've inserted a `\fi'; this might work.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {24}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.198 \begin{itemize}
-                     
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
- <./img/prov_native.png> <./img/sub_native.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 205--210
+ <./img/sub_native.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 235--236
 
  []
 
 [41]
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 243--246
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--228
+Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--239
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
 
  []
 
 [42]
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
-
- []
-
-
-Overfull \hbox (13.31236pt too wide) in paragraph at lines 244--244
+Overfull \hbox (13.31236pt too wide) in paragraph at lines 262--262
 |\T1/pplj/m/sc/12 (-20) c o n -s i -d e -r a -z i o -n i s t a -t i -s t i -c h
  e s u l -l a r i -d o n -d a n -z a s u l d a -t o e s u l
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
-<img/chunk1.png, id=491, 362.85562pt x 349.305pt>
+<img/chunk1.png, id=490, 362.85562pt x 349.305pt>
 File: img/chunk1.png Graphic file (type png)
  <use img/chunk1.png>
-Package pdftex.def Info: img/chunk1.png used on input line 257.
+Package pdftex.def Info: img/chunk1.png used on input line 275.
 (pdftex.def)             Requested size: 199.5712pt x 192.11833pt.
 
-Overfull \hbox (65.83185pt too wide) has occurred while \output is active
- []|[]|
- []
-
-[43] <img/chunk2.png, id=496, 412.54124pt x 328.97906pt>
+<img/chunk2.png, id=491, 412.54124pt x 328.97906pt>
 File: img/chunk2.png Graphic file (type png)
  <use img/chunk2.png>
-Package pdftex.def Info: img/chunk2.png used on input line 265.
+Package pdftex.def Info: img/chunk2.png used on input line 283.
 (pdftex.def)             Requested size: 226.89838pt x 180.93904pt.
 
 
@@ -4255,16 +4624,16 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.266 ...hunk} di parit\`{a} \label{figura1.22}}\\
+l.284 ...hunk} di parit\`{a} \label{figura1.22}}\\
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<img/chunk3.png, id=497, 417.05812pt x 321.45094pt>
+<img/chunk3.png, id=492, 417.05812pt x 321.45094pt>
 File: img/chunk3.png Graphic file (type png)
  <use img/chunk3.png>
-Package pdftex.def Info: img/chunk3.png used on input line 271.
+Package pdftex.def Info: img/chunk3.png used on input line 289.
 (pdftex.def)             Requested size: 229.38268pt x 176.79855pt.
 
 
@@ -4274,24 +4643,22 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.272 ... due \textit{chunk} \label{figura1.23}}\\
+l.290 ... due \textit{chunk} \label{figura1.23}}\\
                                                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[44 <./img/chunk1.png> <./img/chunk2.png>]
 LaTeX Font Info:    Font shape `TS1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `TS1/pplj/b/n' tried instead on input line 287.
-) [45 <./img/chunk3.png>]
-! Extra \else.
-\@include ...ediate \closeout \@partaux \fi \else 
-                                                  \deadcycles \z@ \@nameuse ...
-l.116 \include{secondChapter}
-                             
-I'm ignoring this; it doesn't match any \if.
+(Font)              Font shape `TS1/pplj/b/n' tried instead on input line 305.
+)
+Overfull \hbox (65.83185pt too wide) has occurred while \output is active
+ []|[]|
+ []
 
+[43] [44 <./img/chunk1.png> <./img/chunk2.png>] [45 <./img/chunk3.png>]
 \openout2 = `thirdChapter.aux'.
+
 
 (./thirdChapter.tex [46
 
@@ -4359,27 +4726,36 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: E56D546EC1CF64356BC9138FBF77A5A9;1649.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 67E426230B22B639350903555264874B;3146.
+(rerunfilecheck)             Checksum: 11D8A36A1847FFA3F9C64B8A958EF3F5;3146.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
-(\end occurred when \ifnum on line 198 was incomplete)
-(\end occurred when \iffalse on line 158 was incomplete)
-(\end occurred when \ifnum on line 158 was incomplete)
-(\end occurred when \ifnum on line 158 was incomplete)
-(\end occurred when \ifnum on line 158 was incomplete)
+(\end occurred when \ifx on line 208 was incomplete)
+(\end occurred when \iftrue on line 208 was incomplete)
+(\end occurred when \ifx on line 208 was incomplete)
+(\end occurred when \iftrue on line 208 was incomplete)
+(\end occurred when \ifx on line 208 was incomplete)
+(\end occurred when \iffalse on line 208 was incomplete)
+(\end occurred when \ifvoid on line 208 was incomplete)
+(\end occurred when \iffalse on line 208 was incomplete)
+(\end occurred when \ifnum on line 208 was incomplete)
+(\end occurred when \ifdim on line 208 was incomplete)
+(\end occurred when \iffalse on line 208 was incomplete)
+(\end occurred when \iffalse on line 208 was incomplete)
+(\end occurred when \ifvmode on line 208 was incomplete)
+(\end occurred when \iffalse on line 208 was incomplete)
 (\end occurred when \iftrue on line 116 was incomplete)
 (\end occurred when \ifnum on line 116 was incomplete) 
 Here is how much of TeX's memory you used:
- 27210 strings out of 493029
- 483833 string characters out of 6136233
- 666762 words of memory out of 5000000
- 29608 multiletter control sequences out of 15000+600000
+ 27205 strings out of 493029
+ 483768 string characters out of 6136233
+ 668762 words of memory out of 5000000
+ 29604 multiletter control sequences out of 15000+600000
  101201 words of font info for 514 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,13n,73p,10357b,919s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 50i,14n,73p,10357b,919s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf
 -dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
@@ -4392,10 +4768,10 @@ t/fonts/type1/public/bera/fvmro8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palati
 no/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on thesis.pdf (53 pages, 5376070 bytes).
+Output written on thesis.pdf (53 pages, 6079677 bytes).
 PDF statistics:
- 650 PDF objects out of 1000 (max. 8388607)
- 512 compressed objects within 6 object streams
- 130 named destinations out of 1000 (max. 500000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 511 compressed objects within 6 object streams
+ 129 named destinations out of 1000 (max. 500000)
  86837 words of extra memory for PDF output out of 89155 (max. 10000000)
 
