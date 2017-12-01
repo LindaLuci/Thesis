@@ -32,11 +32,15 @@
 \contentsline {subsubsection}{Parametri del file di configurazione di PostgreSQL}{41}{figure.caption.24}
 \contentsline {section}{\numberline {2.2}Considerazioni statistiche sulla ridondanza sul dato e sul metadato}{43}{section.2.2}
 \contentsline {chapter}{\numberline {3}Definizione del quadro sperimentale}{47}{chapter.3}
-\contentsline {section}{\numberline {3.1}Lancio in configurazione 1}{47}{section.3.1}
-\contentsline {section}{\numberline {3.2}Lancio in configurazione 2}{47}{section.3.2}
-\contentsline {section}{\numberline {3.3}Lancio in configurazione 3}{47}{section.3.3}
-\contentsline {chapter}{\numberline {4}Conclusioni e possibili evoluzioni}{49}{chapter.4}
-\contentsline {section}{\numberline {4.1}Evoluzioni hardware}{49}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Utilizzo di processori dual core}{49}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Utilizzo di dischi SSD}{50}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Evoluzioni software}{50}{section.4.2}
+\contentsline {section}{\numberline {3.2}Dati del quadro sperimentale}{47}{section.3.2}
+\contentsline {section}{\numberline {3.3}Lanci di configurazione}{48}{section.3.3}
+\contentsline {subsubsection}{Lancio di configurazione 1}{48}{section.3.3}
+\contentsline {subsubsection}{Lancio di configurazione 2}{49}{figure.caption.28}
+\contentsline {subsubsection}{Lancio di configurazione 3}{50}{figure.caption.29}
+\contentsline {subsubsection}{Lancio di configurazione 4}{51}{figure.caption.31}
+\contentsline {subsubsection}{Lancio di configurazione 5}{52}{figure.caption.33}
+\contentsline {chapter}{\numberline {4}Conclusioni e possibili evoluzioni}{55}{chapter.4}
+\contentsline {section}{\numberline {4.1}Evoluzioni hardware}{55}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Utilizzo di processori dual core}{55}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Utilizzo di dischi SSD}{56}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Evoluzioni software}{56}{section.4.2}
