@@ -2,8 +2,13 @@
 \backcite {etichetta1}{{7}{1.1.1}{subsection.1.1.1}}
 \backcite {etichetta5}{{7}{1.1.1}{subsection.1.1.1}}
 \backcite {etichetta2}{{7}{1.1.1}{subsection.1.1.1}}
+\backcite {etichetta5}{{7}{1}{figure.caption.2}}
 \backcite {etichetta6}{{7}{1.1.1}{figure.caption.2}}
 \backcite {etichetta5}{{8}{1.1.1}{figure.caption.2}}
+\backcite {etichetta7}{{8}{1.1.1}{figure.caption.2}}
+\backcite {etichetta7}{{8}{1.1.1}{figure.caption.2}}
+\backcite {etichetta7}{{8}{2}{figure.caption.3}}
+\backcite {etichetta7}{{8}{1.1.1}{figure.caption.3}}
 \backcite {etichetta2}{{9}{1.1.1}{figure.caption.3}}
 \backcite {etichetta13}{{9}{1.1.2}{subsection.1.1.2}}
 \backcite {etichetta14}{{10}{1.1.2}{subsection.1.1.2}}
@@ -56,4 +61,4 @@
 \backcite {etichetta3}{{27}{1.2.2}{figure.caption.15}}
 \backcite {etichetta3}{{27}{1.2.2}{figure.caption.15}}
 \backcite {etichetta3}{{28}{1.2.2}{figure.caption.15}}
-\backcite {etichetta12}{{42}{2.1.2}{figure.caption.24}}
+\backcite {etichetta12}{{42}{2.1.2}{figure.caption.25}}

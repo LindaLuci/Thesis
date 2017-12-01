@@ -10,12 +10,13 @@
 \BOOKMARK [0][-]{chapter.2}{Definizione del progetto}{}% 10
 \BOOKMARK [1][-]{subsection.2.1.1}{Architettura del progetto}{chapter.2}% 11
 \BOOKMARK [2][-]{subsection.2.1.2}{Simulazione di un filesystem distribuito \(Dati e Metadati\)}{subsection.2.1.1}% 12
-\BOOKMARK [1][-]{section.2.2}{Considerazioni statistiche sulla ridondanza sul dato e sul metadato}{chapter.2}% 13
-\BOOKMARK [0][-]{chapter.3}{Definizione del quadro sperimentale}{}% 14
-\BOOKMARK [1][-]{section.3.2}{Dati del quadro sperimentale}{chapter.3}% 15
-\BOOKMARK [1][-]{section.3.3}{Lanci di configurazione}{chapter.3}% 16
-\BOOKMARK [0][-]{chapter.4}{Conclusioni e possibili evoluzioni}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Evoluzioni hardware}{chapter.4}% 18
-\BOOKMARK [2][-]{subsection.4.1.1}{Utilizzo di processori dual core}{section.4.1}% 19
-\BOOKMARK [2][-]{subsection.4.1.2}{Utilizzo di dischi SSD}{section.4.1}% 20
-\BOOKMARK [1][-]{section.4.2}{Evoluzioni software}{chapter.4}% 21
+\BOOKMARK [1][-]{section.2.2}{Considerazioni statistiche sulla ridondanza sul dato}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Considerazioni statistiche sulla ridondanza sul metadato}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Definizione del quadro sperimentale}{}% 15
+\BOOKMARK [1][-]{section.3.2}{Dati del quadro sperimentale}{chapter.3}% 16
+\BOOKMARK [1][-]{section.3.3}{Lanci di configurazione}{chapter.3}% 17
+\BOOKMARK [0][-]{chapter.4}{Conclusioni e possibili evoluzioni}{}% 18
+\BOOKMARK [1][-]{section.4.1}{Evoluzioni hardware}{chapter.4}% 19
+\BOOKMARK [2][-]{subsection.4.1.1}{Utilizzo di processori dual core}{section.4.1}% 20
+\BOOKMARK [2][-]{subsection.4.1.2}{Utilizzo di dischi SSD}{section.4.1}% 21
+\BOOKMARK [1][-]{section.4.2}{Evoluzioni software}{chapter.4}% 22

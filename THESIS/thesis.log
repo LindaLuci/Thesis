@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  1 DEC 2017 06:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.20)  1 DEC 2017 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1132,11 +1132,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (./thesis.aux
-(./titlePage.aux) (./firstChapter.aux
-
-LaTeX Warning: Label `figura1.100' multiply defined.
-
-) (./secondChapter.aux
+(./titlePage.aux) (./firstChapter.aux) (./secondChapter.aux
 
 LaTeX Warning: Label `figura1.17' multiply defined.
 
@@ -1382,7 +1378,7 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 \openout2 = `titlePage.aux'.
 
  (./titlePage.tex
-<logo/LOGO.pdf, id=88, 996.72375pt x 483.8075pt>
+<logo/LOGO.pdf, id=92, 996.72375pt x 483.8075pt>
 File: logo/LOGO.pdf Graphic file (type pdf)
  <use logo/LOGO.pdf>
 Package pdftex.def Info: logo/LOGO.pdf used on input line 10.
@@ -1467,11 +1463,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--19
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
-
- []
-
 [5
 
 
@@ -1506,56 +1497,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--46
 
  []
 
-<img/Shared_Nothing_Architecture.jpg, id=172, 501.875pt x 379.4175pt>
+<img/Shared_Nothing_Architecture.jpg, id=177, 501.875pt x 379.4175pt>
 File: img/Shared_Nothing_Architecture.jpg Graphic file (type jpg)
 
 <use img/Shared_Nothing_Architecture.jpg>
 Package pdftex.def Info: img/Shared_Nothing_Architecture.jpg used on input line
  49.
 (pdftex.def)             Requested size: 351.31009pt x 265.59042pt.
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 50.
 
-
-Package natbib Warning: Citation `etichetta7' on page 7 undefined on input line
- 50.
-
-
-Package natbib Warning: Citation `etichetta7' on page 7 undefined on input line
- 50.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--57
+Underfull \hbox (badness 10000) in paragraph at lines 54--58
 
  []
 
 [7 <./img/Shared_Nothing_Architecture.jpg>]
-LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplj/b/n' tried instead on input line 59.
-
-
-Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
- 59.
-
-
-Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
- 62.
-
-<img/Shared_Disk_Architecture.jpg, id=184, 715.67375pt x 512.91624pt>
+<img/Shared_Disk_Architecture.jpg, id=192, 715.67375pt x 512.91624pt>
 File: img/Shared_Disk_Architecture.jpg Graphic file (type jpg)
 
 <use img/Shared_Disk_Architecture.jpg>
-Package pdftex.def Info: img/Shared_Disk_Architecture.jpg used on input line 66
+Package pdftex.def Info: img/Shared_Disk_Architecture.jpg used on input line 67
 .
 (pdftex.def)             Requested size: 357.836pt x 256.45749pt.
-
-
-Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
- 67.
-
-
-Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
- 67.
 
 
 ! LaTeX Error: There's no line here to end.
@@ -1564,15 +1525,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.70 
+l.72 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
-
-
-Package natbib Warning: Citation `etichetta7' on page 8 undefined on input line
- 71.
 
 [8 <./img/Shared_Disk_Architecture.jpg>]
 
@@ -1582,18 +1539,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.84 \subsection
+l.85 \subsection
                 {Rete di pari}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 84
+Underfull \hbox (badness 10000) detected at line 85
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--89
+Underfull \hbox (badness 10000) in paragraph at lines 86--90
 
  []
 
@@ -1605,32 +1562,34 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.110 \subsection
+l.111 \subsection
                  {Sistemi di ridondanza disco (RAID)}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 110
+Underfull \hbox (badness 10000) detected at line 111
 [][]
  []
 
 
-Overfull \hbox (20.99759pt too wide) in paragraph at lines 120--121
+Overfull \hbox (26.99759pt too wide) in paragraph at lines 121--122
 []\T1/pplj/m/n/12 (-20) miglioramenti nel-la tol-le-ran-za ai gua-sti, ne se-gu
 e mi-glio-re affidabilità.[[]]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--124
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
+LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <12> not available
+(Font)              Font shape `T1/pplj/b/n' tried instead on input line 126.
 [10]
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
@@ -1639,13 +1598,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.128 \subsubsection
+l.129 \subsubsection
                     {RAID hardware e software}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 128
+Underfull \hbox (badness 10000) detected at line 129
 [][]
  []
 
@@ -1656,18 +1615,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.138 \subsubsection
+l.139 \subsubsection
                     {Controllore RAID}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 138
+Underfull \hbox (badness 10000) detected at line 139
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
 
  []
 
@@ -1679,199 +1638,105 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.148 \subsubsection
+l.149 \subsubsection
                     {Livelli RAID}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 148
+Underfull \hbox (badness 10000) detected at line 149
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--170
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
 
  []
 
-<img/raid00.png, id=220, 602.25pt x 602.25pt>
+<img/raid00.png, id=233, 602.25pt x 602.25pt>
 File: img/raid00.png Graphic file (type png)
  <use img/raid00.png>
-Package pdftex.def Info: img/raid00.png used on input line 172.
+Package pdftex.def Info: img/raid00.png used on input line 173.
 (pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
  [12]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.176 \end
-          {figure}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
  []
 
-<img/raid11.png, id=232, 602.25pt x 602.25pt>
+<img/raid11.png, id=245, 602.25pt x 602.25pt>
 File: img/raid11.png Graphic file (type png)
  <use img/raid11.png>
-Package pdftex.def Info: img/raid11.png used on input line 184.
+Package pdftex.def Info: img/raid11.png used on input line 186.
 (pdftex.def)             Requested size: 240.89572pt x 240.89572pt.
  [13 <./img/raid00.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 192--194
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
 
  []
 
-<img/raid22.png, id=242, 602.25pt x 229.85875pt>
+<img/raid22.png, id=255, 602.25pt x 229.85875pt>
 File: img/raid22.png Graphic file (type png)
  <use img/raid22.png>
-Package pdftex.def Info: img/raid22.png used on input line 196.
+Package pdftex.def Info: img/raid22.png used on input line 199.
 (pdftex.def)             Requested size: 361.35278pt x 137.91629pt.
 
-Overfull \hbox (6.61528pt too wide) in paragraph at lines 196--197
+Overfull \hbox (6.61528pt too wide) in paragraph at lines 199--200
  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--204
+Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
 [14 <./img/raid11.png> <./img/raid22.png>]
-<img/raid33.png, id=253, 602.25pt x 380.42125pt>
+<img/raid33.png, id=266, 602.25pt x 380.42125pt>
 File: img/raid33.png Graphic file (type png)
  <use img/raid33.png>
-Package pdftex.def Info: img/raid33.png used on input line 206.
+Package pdftex.def Info: img/raid33.png used on input line 210.
 (pdftex.def)             Requested size: 301.12425pt x 190.21014pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
-<img/raid44.png, id=257, 602.25pt x 380.42125pt>
+<img/raid44.png, id=270, 602.25pt x 380.42125pt>
 File: img/raid44.png Graphic file (type png)
  <use img/raid44.png>
-Package pdftex.def Info: img/raid44.png used on input line 217.
+Package pdftex.def Info: img/raid44.png used on input line 222.
 (pdftex.def)             Requested size: 301.12425pt x 190.21014pt.
  [15 <./img/raid33.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
 
  []
 
-<img/raid55.png, id=268, 602.25pt x 380.42125pt>
+<img/raid55.png, id=281, 602.25pt x 380.42125pt>
 File: img/raid55.png Graphic file (type png)
  <use img/raid55.png>
-Package pdftex.def Info: img/raid55.png used on input line 228.
+Package pdftex.def Info: img/raid55.png used on input line 234.
 (pdftex.def)             Requested size: 301.12425pt x 190.21014pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
 
  []
 
 [16 <./img/raid44.png> <./img/raid55.png>]
-<img/raid66.png, id=279, 602.25pt x 334.24875pt>
+<img/raid66.png, id=292, 602.25pt x 334.24875pt>
 File: img/raid66.png Graphic file (type png)
  <use img/raid66.png>
-Package pdftex.def Info: img/raid66.png used on input line 239.
+Package pdftex.def Info: img/raid66.png used on input line 246.
 (pdftex.def)             Requested size: 331.23851pt x 183.83737pt.
 
-<img/raid10.png, id=283, 602.25pt x 441.65pt>
+<img/raid10.png, id=296, 602.25pt x 441.65pt>
 File: img/raid10.png Graphic file (type png)
  <use img/raid10.png>
-Package pdftex.def Info: img/raid10.png used on input line 258.
+Package pdftex.def Info: img/raid10.png used on input line 266.
 (pdftex.def)             Requested size: 301.12425pt x 220.82445pt.
  [17 <./img/raid66.png>]
-! Undefined control sequence.
-\verbatim@nolig@list ->\do \`\do \<
-                                   \do \>\do \,\do \'\do \-
-l.262 ...1" \label{figura1.100} \cite{etichetta9}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\verbatim@nolig@list ->\do \`\do \<
-                                   \do \>\do \,\do \'\do \-
-l.262 ...1" \label{figura1.100} \cite{etichetta9}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\verbatim@nolig@list ->\do \`\do \<
-                                   \do \>\do \,\do \'\do \-
-l.262 ...1" \label{figura1.100} \cite{etichetta9}}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Argument of \caption@ydblarg has an extra }.
-<inserted text> 
-                \par 
-l.262 ...1" \label{figura1.100} \cite{etichetta9}}
-                                                  
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-{\@caption \@captype }{\def \reserved@a *{\@sverb }\reserved@a }\def \ETC.
-! Paragraph ended before \caption@ydblarg was complete.
-<to be read again> 
-                   \par 
-l.262 ...1" \label{figura1.100} \cite{etichetta9}}
-                                                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-
-! LaTeX Error: \verb illegal in command argument.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.262 ...1" \label{figura1.100} \cite{etichetta9}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: \verb illegal in command argument.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.262 ...1" \label{figura1.100} \cite{etichetta9}}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
 
 ! LaTeX Error: \begin{document} ended by \end{itemize}.
 
@@ -1879,7 +1744,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.264 \end{itemize}
+l.273 \end{itemize}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1888,7 +1753,7 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.264 \end{itemize}
+l.273 \end{itemize}
                    
 Things are pretty mixed up, but I think the worst is over.
 
@@ -1899,204 +1764,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.271 \subsection
+l.280 \subsection
                  {Codice di correzione errore (Erasure Coding)}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 271
+Underfull \hbox (badness 10000) detected at line 280
 [][]
  []
 
-[18
-! Argument of \@gobble has an extra }.
-<inserted text> 
-                \par 
-l.281 \begin{verbatim}
-                      
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@gobble was complete.
-<to be read again> 
-                   \par 
-l.281 \begin{verbatim}
-                      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \@gobble has an extra }.
-<inserted text> 
-                \par 
-l.281 \begin{verbatim}
-                      
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@gobble was complete.
-<to be read again> 
-                   \par 
-l.281 \begin{verbatim}
-                      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \@gobble has an extra }.
-<inserted text> 
-                \par 
-l.281 \begin{verbatim}
-                      
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@gobble was complete.
-<to be read again> 
-                   \par 
-l.281 \begin{verbatim}
-                      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Argument of \@gobble has an extra }.
-<inserted text> 
-                \par 
-l.281 \begin{verbatim}
-                      
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-! Paragraph ended before \@gobble was complete.
-<to be read again> 
-                   \par 
-l.281 \begin{verbatim}
-                      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-! Incomplete \iffalse; all text was ignored after line 281.
-<inserted text> 
-                \fi 
-l.281 \begin{verbatim}
-                      
-A forbidden control sequence occurred in skipped text.
-This kind of error happens when you say `\if...' and forget
-the matching `\fi'. I've inserted a `\fi'; this might work.
-
-! Incomplete \iffalse; all text was ignored after line 281.
-<inserted text> 
-                \fi 
-l.281 \begin{verbatim}
-                      
-A forbidden control sequence occurred in skipped text.
-This kind of error happens when you say `\if...' and forget
-the matching `\fi'. I've inserted a `\fi'; this might work.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.281 \begin{verbatim}
-                      
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.281 \begin{verbatim}
-                      
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.281 \begin{verbatim}
-                      
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.281 \begin{verbatim}
-                      
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.281 \begin{verbatim}
-                      
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces \ETC.
-! Forbidden control sequence found while scanning text of \write.
-<inserted text> 
-                }
-l.281 \begin{verbatim}
-                      
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
- <./img/raid10.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 293--294
+[18 <./img/raid10.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.295 						\verb"r = "\sqrt{
+l.304 						\verb"r = "\sqrt{
                              \frac{k}{n}}\\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2108,7 +1794,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.295 						\verb"r = "\sqrt{\frac{k}{n}}\\
+l.304 						\verb"r = "\sqrt{\frac{k}{n}}\\
                                            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2117,7 +1803,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.295 						\verb"r = "\sqrt{\frac{k}{n}}\\
+l.304 						\verb"r = "\sqrt{\frac{k}{n}}\\
                                            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2125,7 +1811,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.295 						\verb"r = "\sqrt{\frac{k}{n}}\\
+l.304 						\verb"r = "\sqrt{\frac{k}{n}}\\
                                            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2136,7 +1822,7 @@ my insertion and my current dilemma will both disappear.
 ! Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.295 						\verb"r = "\sqrt{\frac{k}{n}}\\
+l.304 						\verb"r = "\sqrt{\frac{k}{n}}\\
                                            
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2151,7 +1837,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.300 A
+l.309 A
        d esempio, in una configurazione \verb"10" di \verb"16", o EC \verb"1...
 
 Your command was ignored.
@@ -2165,13 +1851,13 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.305 \section
+l.314 \section
               {Software utilizzato per gli esperimenti}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 305
+Underfull \hbox (badness 10000) detected at line 314
 [][]
  []
 
@@ -2182,18 +1868,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.307 \subsection
+l.316 \subsection
                  {PosgreSQL}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 307
+Underfull \hbox (badness 10000) detected at line 316
 [][]
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 311--313
+Underfull \hbox (badness 10000) in paragraph at lines 320--322
 
  []
 
@@ -2205,54 +1891,54 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.351 
+l.360 
       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 354--356
+Underfull \hbox (badness 10000) in paragraph at lines 363--365
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 366--367
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 359--378
+Underfull \hbox (badness 10000) in paragraph at lines 368--387
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 380--383
+Underfull \hbox (badness 10000) in paragraph at lines 389--392
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 391--392
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--395
+Underfull \hbox (badness 10000) in paragraph at lines 402--404
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 400--402
+Underfull \hbox (badness 10000) in paragraph at lines 409--411
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--404
+Underfull \hbox (badness 10000) in paragraph at lines 412--413
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 405--408
+Underfull \hbox (badness 10000) in paragraph at lines 414--417
 
  []
 
@@ -2263,18 +1949,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.414 \subsubsection
+l.423 \subsubsection
                     {Write-Ahead Loggin (WAL)}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 414
+Underfull \hbox (badness 10000) detected at line 423
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 415--416
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
 
  []
 
@@ -2286,63 +1972,63 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.423 \subsection
+l.432 \subsection
                  {Pglogical}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 423
+Underfull \hbox (badness 10000) detected at line 432
 [][]
  []
 
-[24] <img/pglogical_1.png, id=349, 652.4375pt x 250.9375pt>
+[24] <img/pglogical_1.png, id=362, 652.4375pt x 250.9375pt>
 File: img/pglogical_1.png Graphic file (type png)
 
 <use img/pglogical_1.png>
-Package pdftex.def Info: img/pglogical_1.png used on input line 462.
-(pdftex.def)             Requested size: 391.46552pt x 150.56364pt.
-
-Overfull \hbox (7.35332pt too wide) in paragraph at lines 462--462
- [] 
- []
-
-<img/pglogical_2.png, id=352, 652.4375pt x 250.9375pt>
-File: img/pglogical_2.png Graphic file (type png)
-
-<use img/pglogical_2.png>
-Package pdftex.def Info: img/pglogical_2.png used on input line 471.
+Package pdftex.def Info: img/pglogical_1.png used on input line 471.
 (pdftex.def)             Requested size: 391.46552pt x 150.56364pt.
 
 Overfull \hbox (7.35332pt too wide) in paragraph at lines 471--471
  [] 
  []
 
-[25 <./img/pglogical_1.png>]
-<img/pglogical_3.png, id=361, 652.4375pt x 250.9375pt>
-File: img/pglogical_3.png Graphic file (type png)
+<img/pglogical_2.png, id=365, 652.4375pt x 250.9375pt>
+File: img/pglogical_2.png Graphic file (type png)
 
-<use img/pglogical_3.png>
-Package pdftex.def Info: img/pglogical_3.png used on input line 480.
+<use img/pglogical_2.png>
+Package pdftex.def Info: img/pglogical_2.png used on input line 481.
 (pdftex.def)             Requested size: 391.46552pt x 150.56364pt.
 
-Overfull \hbox (7.35332pt too wide) in paragraph at lines 480--480
+Overfull \hbox (7.35332pt too wide) in paragraph at lines 481--481
  [] 
  []
 
-<img/pglogical_4.png, id=364, 652.4375pt x 250.9375pt>
+[25 <./img/pglogical_1.png>]
+<img/pglogical_3.png, id=374, 652.4375pt x 250.9375pt>
+File: img/pglogical_3.png Graphic file (type png)
+
+<use img/pglogical_3.png>
+Package pdftex.def Info: img/pglogical_3.png used on input line 491.
+(pdftex.def)             Requested size: 391.46552pt x 150.56364pt.
+
+Overfull \hbox (7.35332pt too wide) in paragraph at lines 491--491
+ [] 
+ []
+
+<img/pglogical_4.png, id=377, 652.4375pt x 250.9375pt>
 File: img/pglogical_4.png Graphic file (type png)
 
 <use img/pglogical_4.png>
-Package pdftex.def Info: img/pglogical_4.png used on input line 489.
+Package pdftex.def Info: img/pglogical_4.png used on input line 501.
 (pdftex.def)             Requested size: 391.46552pt x 150.56364pt.
 
-Overfull \hbox (7.35332pt too wide) in paragraph at lines 489--489
+Overfull \hbox (7.35332pt too wide) in paragraph at lines 501--501
  [] 
  []
 
 [26 <./img/pglogical_2.png> <./img/pglogical_3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 514--516
+Underfull \hbox (badness 10000) in paragraph at lines 527--529
 
  []
 
@@ -2354,47 +2040,42 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.541 \section
+l.554 \section
               {Hardware utilizzato per gli esperimenti}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Underfull \hbox (badness 10000) detected at line 541
+Underfull \hbox (badness 10000) detected at line 554
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--543
+Underfull \hbox (badness 10000) in paragraph at lines 555--556
 
  []
 
-<img/CY7.png, id=384, 1541.76pt x 522.45187pt>
+<img/CY7.png, id=397, 1541.76pt x 522.45187pt>
 File: img/CY7.png Graphic file (type png)
  <use img/CY7.png>
-Package pdftex.def Info: img/CY7.png used on input line 548.
+Package pdftex.def Info: img/CY7.png used on input line 561.
 (pdftex.def)             Requested size: 308.34654pt x 104.48851pt.
 
-<img/CY7x2.png, id=385, 739.563pt x 456.5055pt>
+<img/CY7x2.png, id=398, 739.563pt x 456.5055pt>
 File: img/CY7x2.png Graphic file (type png)
  <use img/CY7x2.png>
-Package pdftex.def Info: img/CY7x2.png used on input line 557.
+Package pdftex.def Info: img/CY7x2.png used on input line 570.
 (pdftex.def)             Requested size: 295.81996pt x 182.59895pt.
- [28 <./img/CY7.png>] <img/rack.png, id=392, 392.46625pt x 1003.75pt>
+ [28 <./img/CY7.png>] <img/rack.png, id=405, 392.46625pt x 1003.75pt>
 File: img/rack.png Graphic file (type png)
  <use img/rack.png>
-Package pdftex.def Info: img/rack.png used on input line 566.
+Package pdftex.def Info: img/rack.png used on input line 580.
 (pdftex.def)             Requested size: 117.74077pt x 301.12732pt.
 )
-[29 <./img/CY7x2.png> <./img/rack.png>]
+[29 <./img/CY7x2.png>] [30 <./img/rack.png>]
 \openout2 = `secondChapter.aux'.
 
- (./secondChapter.tex [30
-
-
-
-
-]
+ (./secondChapter.tex
 chapter 2.
 
 ! LaTeX Error: Lonely \item--perhaps a missing list environment.
@@ -2417,18 +2098,23 @@ Underfull \hbox (badness 10000) detected at line 4
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 4.
 
-<img/pubsub_1.png, id=405, 537.50812pt x 444.91219pt>
+<img/pubsub_1.png, id=419, 537.50812pt x 444.91219pt>
 File: img/pubsub_1.png Graphic file (type png)
  <use img/pubsub_1.png>
 Package pdftex.def Info: img/pubsub_1.png used on input line 10.
 (pdftex.def)             Requested size: 295.63037pt x 244.70245pt.
 
-[31 <./img/pubsub_1.png>]
+[31
+
+
+
+
+ <./img/pubsub_1.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
-<img/setreplica.png, id=412, 505.89pt x 469.00218pt>
+<img/setreplica.png, id=426, 505.89pt x 469.00218pt>
 File: img/setreplica.png Graphic file (type png)
  <use img/setreplica.png>
 Package pdftex.def Info: img/setreplica.png used on input line 35.
@@ -2462,7 +2148,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--120
 
  []
 
-[36] <img/focus_provider.png, id=446, 182.93344pt x 181.42781pt>
+<img/focus_provider.png, id=452, 182.93344pt x 181.42781pt>
 File: img/focus_provider.png Graphic file (type png)
 
 <use img/focus_provider.png>
@@ -2571,7 +2257,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-<img/prov_replica.png, id=447, 758.08218pt x 396.7322pt>
+[36] <img/prov_replica.png, id=462, 758.08218pt x 396.7322pt>
 File: img/prov_replica.png Graphic file (type png)
 
 <use img/prov_replica.png>
@@ -2990,7 +2676,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces \ETC.
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces \ETC.
 ! Forbidden control sequence found while scanning text of \write.
 <inserted text> 
                 }
@@ -3002,7 +2688,7 @@ I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
 Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces \ETC.
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces \ETC.
 ! Forbidden control sequence found while scanning text of \write.
 <inserted text> 
                 }
@@ -3014,7 +2700,7 @@ I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
  <./img/focus_provider.png> <./img/prov_replica.png>]
-<img/sub_replica.png, id=456, 790.45313pt x 397.485pt>
+<img/sub_replica.png, id=470, 790.45313pt x 397.485pt>
 File: img/sub_replica.png Graphic file (type png)
 
 <use img/sub_replica.png>
@@ -3703,7 +3389,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
  <./img/sub_replica.png>]
-<img/prov_native.png, id=465, 783.67781pt x 388.45125pt>
+<img/prov_native.png, id=479, 783.67781pt x 388.45125pt>
 File: img/prov_native.png Graphic file (type png)
 
 <use img/prov_native.png>
@@ -3794,7 +3480,7 @@ l.201 ...me \textit{provider}. \label{figura1.17}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<img/sub_native.png, id=466, 753.5653pt x 395.22656pt>
+<img/sub_native.png, id=480, 753.5653pt x 395.22656pt>
 File: img/sub_native.png Graphic file (type png)
 
 <use img/sub_native.png>
@@ -4160,7 +3846,7 @@ made up of letters only. The macro here has not been
 followed by the required stuff, so I'm ignoring it.
 
 Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \ETC.
 ! Forbidden control sequence found while scanning text of \write.
 <inserted text> 
                 }
@@ -4172,7 +3858,7 @@ I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
 Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \ETC.
 ! Forbidden control sequence found while scanning text of \write.
 <inserted text> 
                 }
@@ -4184,7 +3870,7 @@ I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
 Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \ETC.
 ! Forbidden control sequence found while scanning text of \write.
 <inserted text> 
                 }
@@ -4196,7 +3882,7 @@ I'll try to recover; but if the error is serious,
 you'd better type `E' or `X' now and fix your file.
 
 Runaway text?
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces \ETC.
+\@writefile{lof}{\contentsline {figure}{\numberline {23}{\ignorespaces \ETC.
 ! Forbidden control sequence found while scanning text of \write.
 <inserted text> 
                 }
@@ -4632,12 +4318,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--259
  []
 
 [42]
-Overfull \hbox (13.31236pt too wide) in paragraph at lines 262--262
-|\T1/pplj/m/sc/12 (-20) c o n -s i -d e -r a -z i o -n i s t a -t i -s t i -c h
- e s u l -l a r i -d o n -d a n -z a s u l d a -t o e s u l
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
@@ -4652,23 +4332,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--274
 
  []
 
-<img/chunk1.png, id=490, 362.85562pt x 349.305pt>
+<img/chunk1.png, id=504, 362.85562pt x 349.305pt>
 File: img/chunk1.png Graphic file (type png)
  <use img/chunk1.png>
 Package pdftex.def Info: img/chunk1.png used on input line 278.
 (pdftex.def)             Requested size: 199.5712pt x 192.11833pt.
-
-Overfull \hbox (65.83185pt too wide) has occurred while \output is active
- []|[]|
- []
-
-[43] <img/chunk2.png, id=497, 412.54124pt x 328.97906pt>
+ [43]
+<img/chunk2.png, id=511, 412.54124pt x 328.97906pt>
 File: img/chunk2.png Graphic file (type png)
  <use img/chunk2.png>
 Package pdftex.def Info: img/chunk2.png used on input line 288.
 (pdftex.def)             Requested size: 226.89838pt x 180.93904pt.
 
-<img/chunk3.png, id=498, 417.05812pt x 321.45094pt>
+<img/chunk3.png, id=512, 417.05812pt x 321.45094pt>
 File: img/chunk3.png Graphic file (type png)
  <use img/chunk3.png>
 Package pdftex.def Info: img/chunk3.png used on input line 295.
@@ -4788,12 +4464,264 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.327 ...malsize \verb"0,02}{\normalsize \verb"24}
+                                                   \cdot \normalsize \verb"3"\\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-Overfull \hbox (65.83185pt too wide) has occurred while \output is active
- []|[]|
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 327.
+
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.327 ...malsize \verb"0,02}{\normalsize \verb"24}
+                                                   \cdot \normalsize \verb"3"\\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\verb@egroup ...erb@balance@group \@empty \egroup 
+                                                  
+l.327 ...malsize \verb"0,02}{\normalsize \verb"24}
+                                                   \cdot \normalsize \verb"3"\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \verb illegal in command argument.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...malsize \verb"0,02}{\normalsize \verb"24}
+                                                   \cdot \normalsize \verb"3"\\
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 327.
+
+
+
+! LaTeX Error: \verb illegal in command argument.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...malsize \verb"0,02}{\normalsize \verb"24}
+                                                   \cdot \normalsize \verb"3"\\
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra }, or forgotten $.
+\@genfrac ...egingroup #4\endgroup #2#3\relax #5}}
+                                                  
+l.327 ...malsize \verb"0,02}{\normalsize \verb"24}
+                                                   \cdot \normalsize \verb"3"\\
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 327.
+
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.327 ...ze \verb"24} \cdot \normalsize \verb"3"\\
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.327 ...ze \verb"24} \cdot \normalsize \verb"3"\\
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.327 ...ze \verb"24} \cdot \normalsize \verb"3"\\
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--332
+
  []
 
-[45 <./img/chunk3.png>]) [46]
+[45 <./img/chunk3.png>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.337 \tfrac{1}{228}
+                     \cdot  \tfrac{1}{227} \cdot \tfrac{1}{226} \cdot \tfrac...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@genfrac ...egingroup #4\endgroup #2#3\relax #5}}
+                                                  
+l.337 \tfrac{1}{228}
+                     \cdot  \tfrac{1}{227} \cdot \tfrac{1}{226} \cdot \tfrac...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 337.
+
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.337 ...malsize \verb"0,02}{\normalsize \verb"24}
+                                                   \cdot \normalsize \verb"3...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra }, or forgotten \endgroup.
+\verb@egroup ...erb@balance@group \@empty \egroup 
+                                                  
+l.337 ...malsize \verb"0,02}{\normalsize \verb"24}
+                                                   \cdot \normalsize \verb"3...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: \verb illegal in command argument.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.337 ...malsize \verb"0,02}{\normalsize \verb"24}
+                                                   \cdot \normalsize \verb"3...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 337.
+
+
+
+! LaTeX Error: \verb illegal in command argument.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.337 ...malsize \verb"0,02}{\normalsize \verb"24}
+                                                   \cdot \normalsize \verb"3...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 337.
+
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.337 ...ze \verb"24} \cdot \normalsize \verb"3"\\
+                                                  \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.337 ...ze \verb"24} \cdot \normalsize \verb"3"\\
+                                                  \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.337 ...ze \verb"24} \cdot \normalsize \verb"3"\\
+                                                  \\
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.337 ... \verb"24} \cdot \normalsize \verb"3"\\\\
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--342
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--350
+|\T1/pplj/m/sc/12 (-4) c o n -s i -d e -r a -z i o -n i s t a -t i -s t i -c h 
+e s u l -l a r i -d o n -d a n -z a s u l m e -t a -d a -
+ []
+
+) [46]
 \openout2 = `thirdChapter.aux'.
 
  (./thirdChapter.tex
@@ -4875,7 +4803,7 @@ Underfull \hbox (badness 10000) detected at line 29
 [][]
  []
 
-<img/round2.png, id=523, 554.07pt x 256.70906pt>
+<img/round2.png, id=537, 554.07pt x 256.70906pt>
 File: img/round2.png Graphic file (type png)
  <use img/round2.png>
 Package pdftex.def Info: img/round2.png used on input line 35.
@@ -4903,7 +4831,7 @@ Underfull \hbox (badness 10000) detected at line 42
 [][]
  []
 
-<img/round1b.png, id=528, 554.82281pt x 257.46187pt>
+<img/round1b.png, id=542, 554.82281pt x 257.46187pt>
 File: img/round1b.png Graphic file (type png)
  <use img/round1b.png>
 Package pdftex.def Info: img/round1b.png used on input line 48.
@@ -4942,13 +4870,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
  []
 
 [49 <./img/round2.png (PNG copy)> <./img/round1b.png (PNG copy)>]
-<img/round1.png, id=534, 546.54187pt x 257.46187pt>
+<img/round1.png, id=548, 546.54187pt x 257.46187pt>
 File: img/round1.png Graphic file (type png)
  <use img/round1.png>
 Package pdftex.def Info: img/round1.png used on input line 61.
 (pdftex.def)             Requested size: 382.57669pt x 180.22206pt.
 
-<img/comparison2.png, id=535, 554.82281pt x 324.46219pt>
+<img/comparison2.png, id=549, 554.82281pt x 324.46219pt>
 File: img/comparison2.png Graphic file (type png)
 
 <use img/comparison2.png>
@@ -4977,7 +4905,7 @@ Underfull \hbox (badness 10000) detected at line 77
 [][]
  []
 
-<img/round4b.png, id=542, 554.07pt x 256.70906pt>
+<img/round4b.png, id=556, 554.07pt x 256.70906pt>
 File: img/round4b.png Graphic file (type png)
  <use img/round4b.png>
 Package pdftex.def Info: img/round4b.png used on input line 83.
@@ -4988,7 +4916,7 @@ Overfull \hbox (3.73416pt too wide) in paragraph at lines 83--84
  []
 
 [51 <./img/comparison2.png (PNG copy)> <./img/round4b.png (PNG copy)>]
-<img/comparison1.png, id=548, 554.82281pt x 324.46219pt>
+<img/comparison1.png, id=562, 554.82281pt x 324.46219pt>
 File: img/comparison1.png Graphic file (type png)
 
 <use img/comparison1.png>
@@ -5017,7 +4945,7 @@ Underfull \hbox (badness 10000) detected at line 99
  []
 
 [52 <./img/comparison1.png (PNG copy)>]
-<img/round8c.png, id=555, 556.32843pt x 256.70906pt>
+<img/round8c.png, id=569, 556.32843pt x 256.70906pt>
 File: img/round8c.png Graphic file (type png)
  <use img/round8c.png>
 Package pdftex.def Info: img/round8c.png used on input line 108.
@@ -5027,7 +4955,7 @@ Overfull \hbox (5.31505pt too wide) in paragraph at lines 108--109
  [] 
  []
 
-<img/comparison_tot1.png, id=556, 554.82281pt x 324.46219pt>
+<img/comparison_tot1.png, id=570, 554.82281pt x 324.46219pt>
 File: img/comparison_tot1.png Graphic file (type png)
 
 <use img/comparison_tot1.png>
@@ -5039,7 +4967,7 @@ Overfull \hbox (4.26112pt too wide) in paragraph at lines 117--118
  []
 
 [53 <./img/round8c.png (PNG copy)> <./img/comparison_tot1.png (PNG copy)>]
-<img/comparison_tot2.png, id=563, 558.58687pt x 267.24844pt>
+<img/comparison_tot2.png, id=577, 558.58687pt x 267.24844pt>
 File: img/comparison_tot2.png Graphic file (type png)
 
 <use img/comparison_tot2.png>
@@ -5173,9 +5101,6 @@ ichetta12}) has been already used, duplicate ignored
 l.119 \include{Chapters/bibliografia}
                                      ]
 
-Package natbib Warning: There were undefined citations.
-
-
 Package natbib Warning: There were multiply defined citations.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
@@ -5190,10 +5115,15 @@ Package natbib Warning: Citation(s) may have changed.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: B9B90ED02758DAE264A5947C54853D5A;1641.
-Package rerunfilecheck Info: File `thesis.brf' has not changed.
-(rerunfilecheck)             Checksum: 11D8A36A1847FFA3F9C64B8A958EF3F5;3146.
+(rerunfilecheck)             Checksum: 09091D92380D0AFC36A9D084FE3B745D;1729.
 
+
+Package rerunfilecheck Warning: File `thesis.brf' has changed.
+(rerunfilecheck)                Rerun to get bibliographical references right.
+
+Package rerunfilecheck Info: Checksums for `thesis.brf':
+(rerunfilecheck)             Before: EF73F6DEB2FE885F4B07A6C6E97710C5;3403
+(rerunfilecheck)             After:  D382D86C39DB83A99A90DFF578BC1747;3403.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -5215,11 +5145,11 @@ LaTeX Warning: There were multiply-defined labels.
 (\end occurred when \iftrue on line 116 was incomplete)
 (\end occurred when \ifnum on line 116 was incomplete) 
 Here is how much of TeX's memory you used:
- 27286 strings out of 493029
- 485242 string characters out of 6136233
+ 27294 strings out of 493029
+ 485444 string characters out of 6136233
  668762 words of memory out of 5000000
- 29655 multiletter control sequences out of 15000+600000
- 105856 words of font info for 523 fonts, out of 8000000 for 9000
+ 29656 multiletter control sequences out of 15000+600000
+ 103857 words of font info for 526 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,14n,73p,10357b,919s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf
@@ -5234,10 +5164,10 @@ xmf-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 /palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/up
 lri8a.pfb>
-Output written on thesis.pdf (61 pages, 6335153 bytes).
+Output written on thesis.pdf (61 pages, 6343500 bytes).
 PDF statistics:
- 709 PDF objects out of 1000 (max. 8388607)
- 554 compressed objects within 6 object streams
- 148 named destinations out of 1000 (max. 500000)
- 88418 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 723 PDF objects out of 1000 (max. 8388607)
+ 566 compressed objects within 6 object streams
+ 150 named destinations out of 1000 (max. 500000)
+ 87914 words of extra memory for PDF output out of 89155 (max. 10000000)
 
