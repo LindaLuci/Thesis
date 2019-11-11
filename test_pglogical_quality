@@ -1,5 +1,0 @@
-test quality:
-
-primo thread legge e finchè sta scrivendo qualcuno aspetta.
-
-secondo thread 10 scrivono e finchè scrive non legge e aspetta che scriva tutto. dopo notifica il thread in lettura.
